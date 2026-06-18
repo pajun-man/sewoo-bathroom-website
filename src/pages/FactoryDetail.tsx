@@ -21,7 +21,7 @@ interface Factory {
   image: string;
   features: { zh: string; en: string }[];
   galleryImages: string[];
-  videos: { id: string; title: string; titleEn: string; urlZh: string; urlEn: string; poster?: string }[];
+  videos: { id: string; title: string; titleEn: string; url: string; urlZh?: string; urlEn?: string; poster?: string }[];
   phone?: string;
   phoneEn?: string;
   email?: string;
@@ -39,6 +39,7 @@ interface Factory {
   patentTechnologiesEn?: string;
   factoryStrengthTitle?: string;
   factoryStrengthTitleEn?: string;
+  [key: string]: any;
 }
 
 const defaultFactories: Factory[] = [

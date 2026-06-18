@@ -1,13 +1,21 @@
 import { useState, useEffect } from 'react';
 import categoriesData from '../data/categories.json';
 
-interface Category {
+interface Subcategory {
+  id: string;
   name: string;
-  subcategories: string[];
+  nameEn: string;
+}
+
+interface Category {
+  id: string;
+  name: string;
+  nameEn: string;
+  subcategories: Subcategory[];
 }
 
 const useCategories = () => {
-  const [categories, setCategories] = useState<Category[]>(categoriesData);
+  const [categories, setCategories] = useState<Category[]>(categoriesData as Category[]);
 
   useEffect(() => {
     const savedCategories = localStorage.getItem('categories');
@@ -25,18 +33,24 @@ const useCategories = () => {
     localStorage.setItem('categories', JSON.stringify(newCategories));
   };
 
-  const addCategory = (name: string) => {
+  const addCategory = (name: string, nameEn: string = name) => {
     if (!categories.find(c => c.name === name)) {
-      const newCategories = [...categories, { name, subcategories: [] }];
+      const newCategory: Category = {
+        id: `cat-${Date.now()}`,
+        name,
+        nameEn,
+        subcategories: []
+      };
+      const newCategories = [...categories, newCategory];
       saveCategories(newCategories);
       return true;
     }
     return false;
   };
 
-  const updateCategory = (oldName: string, newName: string) => {
-    const newCategories = categories.map(c => 
-      c.name === oldName ? { ...c, name: newName } : c
+  const updateCategory = (oldName: string, newName: string, newNameEn?: string) => {
+    const newCategories = categories.map(c =>
+      c.name === oldName ? { ...c, name: newName, nameEn: newNameEn ?? c.nameEn } : c
     );
     saveCategories(newCategories);
   };
@@ -46,22 +60,27 @@ const useCategories = () => {
     saveCategories(newCategories);
   };
 
-  const addSubcategory = (categoryName: string, subcategory: string) => {
+  const addSubcategory = (categoryName: string, subcategory: string, subcategoryEn?: string) => {
     const newCategories = categories.map(c => {
-      if (c.name === categoryName && !c.subcategories.includes(subcategory)) {
-        return { ...c, subcategories: [...c.subcategories, subcategory] };
+      if (c.name === categoryName && !c.subcategories.find(s => s.name === subcategory)) {
+        const newSub: Subcategory = {
+          id: `sub-${c.id}-${Date.now()}`,
+          name: subcategory,
+          nameEn: subcategoryEn || subcategory
+        };
+        return { ...c, subcategories: [...c.subcategories, newSub] };
       }
       return c;
     });
     saveCategories(newCategories);
   };
 
-  const updateSubcategory = (categoryName: string, oldName: string, newName: string) => {
+  const updateSubcategory = (categoryName: string, oldName: string, newName: string, newNameEn?: string) => {
     const newCategories = categories.map(c => {
       if (c.name === categoryName) {
         return {
           ...c,
-          subcategories: c.subcategories.map(s => s === oldName ? newName : s)
+          subcategories: c.subcategories.map(s => s.name === oldName ? { ...s, name: newName, nameEn: newNameEn ?? s.nameEn } : s)
         };
       }
       return c;
@@ -74,7 +93,7 @@ const useCategories = () => {
       if (c.name === categoryName) {
         return {
           ...c,
-          subcategories: c.subcategories.filter(s => s !== subcategory)
+          subcategories: c.subcategories.filter(s => s.name !== subcategory)
         };
       }
       return c;
@@ -87,7 +106,7 @@ const useCategories = () => {
   };
 
   const getCategoryBySubcategory = (subcategory: string) => {
-    return categories.find(c => c.subcategories.includes(subcategory));
+    return categories.find(c => c.subcategories.some(s => s.name === subcategory));
   };
 
   return {

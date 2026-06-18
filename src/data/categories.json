@@ -1,26 +1,154 @@
 [
   {
+    "id": "cat-1",
     "name": "淋浴房",
-    "subcategories": ["整体淋浴房", "淋浴屏风", "淋浴底座"]
+    "nameEn": "Shower Enclosures",
+    "subcategories": [
+      {
+        "id": "sub-1-1",
+        "name": "整体淋浴房",
+        "nameEn": "Integrated Shower"
+      },
+      {
+        "id": "sub-1-2",
+        "name": "淋浴屏风",
+        "nameEn": "Shower Screen"
+      },
+      {
+        "id": "sub-1-3",
+        "name": "淋浴房底座",
+        "nameEn": "Shower Base"
+      }
+    ]
   },
   {
+    "id": "cat-2",
     "name": "马桶",
-    "subcategories": ["连体马桶", "分体马桶", "壁挂马桶"]
+    "nameEn": "Toilets",
+    "subcategories": [
+      {
+        "id": "sub-2-1",
+        "name": "连体马桶",
+        "nameEn": "One-Piece Toilet"
+      },
+      {
+        "id": "sub-2-2",
+        "name": "分体马桶",
+        "nameEn": "Two-Piece Toilet"
+      },
+      {
+        "id": "sub-2-3",
+        "name": "壁挂马桶",
+        "nameEn": "Wall Hung Toilet"
+      }
+    ]
   },
   {
+    "id": "cat-3",
     "name": "盆",
-    "subcategories": ["台上盆", "台下盆", "立柱盆", "一体盆"]
+    "nameEn": "Basins",
+    "subcategories": [
+      {
+        "id": "sub-3-1",
+        "name": "台上盆",
+        "nameEn": "Countertop Basin"
+      },
+      {
+        "id": "sub-3-2",
+        "name": "台下盆",
+        "nameEn": "Undermount Basin"
+      },
+      {
+        "id": "sub-3-3",
+        "name": "立柱盆",
+        "nameEn": "Pedestal Basin"
+      },
+      {
+        "id": "sub-3-4",
+        "name": "一体盆",
+        "nameEn": "Integrated Basin"
+      }
+    ]
   },
   {
+    "id": "cat-4",
     "name": "智能马桶",
-    "subcategories": ["全自动智能马桶", "智能马桶盖", "智能小便斗"]
+    "nameEn": "Smart Toilets",
+    "subcategories": [
+      {
+        "id": "sub-4-1",
+        "name": "全自动智能马桶",
+        "nameEn": "All-in-One Smart Toilet"
+      },
+      {
+        "id": "sub-4-2",
+        "name": "智能马桶盖",
+        "nameEn": "Smart Seat Cover"
+      },
+      {
+        "id": "sub-4-3",
+        "name": "智能小便斗",
+        "nameEn": "Smart Urinal"
+      }
+    ]
   },
   {
+    "id": "cat-5",
     "name": "花洒",
-    "subcategories": ["淋浴花洒套装", "手持花洒", "头顶花洒", "淋浴龙头"]
+    "nameEn": "Showers",
+    "subcategories": [
+      {
+        "id": "sub-5-1",
+        "name": "淋浴花洒套装",
+        "nameEn": "Shower Set"
+      },
+      {
+        "id": "sub-5-2",
+        "name": "手持花洒",
+        "nameEn": "Handheld Shower"
+      },
+      {
+        "id": "sub-5-3",
+        "name": "头顶花洒",
+        "nameEn": "Rain Shower"
+      },
+      {
+        "id": "sub-5-4",
+        "name": "淋浴龙头",
+        "nameEn": "Shower Mixer"
+      }
+    ]
   },
   {
+    "id": "cat-6",
     "name": "其他产品",
-    "subcategories": ["浴室家具", "浴室柜", "镜柜", "五金配件"]
+    "nameEn": "Other Products",
+    "subcategories": [
+      {
+        "id": "sub-6-1",
+        "name": "浴室家具",
+        "nameEn": "Bathroom Furniture"
+      },
+      {
+        "id": "sub-6-2",
+        "name": "浴室柜",
+        "nameEn": "Bathroom Cabinet"
+      },
+      {
+        "id": "sub-6-3",
+        "name": "镜柜",
+        "nameEn": "Mirror Cabinet"
+      },
+      {
+        "id": "sub-6-4",
+        "name": "五金配件",
+        "nameEn": "Hardware Accessories"
+      },
+      {
+        "id": "sub-6-5",
+        "name": "地漏",
+        "nameEn": "Floor Drain"
+      }
+    ]
   }
 ]

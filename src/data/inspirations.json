@@ -10,19 +10,30 @@
     "images": [
       "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800",
       "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800",
-      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800"
+      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/2.jpg",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/2.jpg"
     ],
-    "project": "精品住宅项目",
-    "projectEn": "Premium Residential Project",
+    "designer": "张伟",
     "location": "上海·静安区",
-    "locationEn": "Jing'an District, Shanghai",
     "seo": {
       "title": "现代极简浴室设计案例 - SEWOO 灵感画廊",
       "titleEn": "Modern Minimalist Bathroom Design - SEWOO Inspiration Gallery",
       "description": "探索 SEWOO 现代极简浴室设计案例，白色主调搭配大理石纹理，智能卫浴产品应用。",
       "descriptionEn": "Explore SEWOO modern minimalist bathroom designs with white theme and marble textures.",
-      "keywords": ["现代浴室", "极简设计", "白色浴室", "智能卫浴"]
-    }
+      "keywords": [
+        "现代浴室",
+        "极简设计",
+        "白色浴室",
+        "智能卫浴"
+      ]
+    },
+    "updatedAt": "2026-06-01",
+    "videos": [],
+    "locationEn": "Jing'an District, Shanghai",
+    "project": "啊啊",
+    "projectEn": "aa",
+    "area": "1000㎡"
   },
   {
     "id": "2",
@@ -37,17 +48,26 @@
       "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800",
       "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
     ],
-    "project": "五星级酒店项目",
-    "projectEn": "5-Star Hotel Project",
+    "designer": "李娜",
     "location": "北京·朝阳区",
-    "locationEn": "Chaoyang District, Beijing",
     "seo": {
       "title": "奢华水疗风格浴室设计 - SEWOO 灵感画廊",
       "titleEn": "Luxury Spa-Inspired Bathroom - SEWOO Inspiration Gallery",
       "description": "探索 SEWOO 奢华水疗风格浴室设计案例，深色木饰面搭配金色五金，独立式浴缸配置。",
       "descriptionEn": "Explore SEWOO luxury spa-inspired bathroom designs with wood finishes and gold fixtures.",
-      "keywords": ["奢华浴室", "水疗风格", "独立浴缸", "金色五金"]
-    }
+      "keywords": [
+        "奢华浴室",
+        "水疗风格",
+        "独立浴缸",
+        "金色五金"
+      ]
+    },
+    "videos": [],
+    "project": "额额",
+    "projectEn": "ee",
+    "locationEn": "Chaoyang District, Beijing",
+    "area": "1㎡",
+    "updatedAt": "2026-06-01"
   },
   {
     "id": "3",
@@ -62,17 +82,26 @@
       "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800",
       "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
     ],
-    "project": "北欧风情别墅",
-    "projectEn": "Scandinavian Style Villa",
+    "designer": "王明",
     "location": "深圳·南山区",
-    "locationEn": "Nanshan District, Shenzhen",
     "seo": {
       "title": "北欧温馨浴室设计 - SEWOO 灵感画廊",
       "titleEn": "Scandinavian Cozy Bathroom - SEWOO Inspiration Gallery",
       "description": "探索 SEWOO 北欧风格浴室设计案例，自然木色柔和配色，温馨舒适的沐浴空间。",
       "descriptionEn": "Explore SEWOO Scandinavian bathroom designs with natural wood tones and cozy aesthetics.",
-      "keywords": ["北欧浴室", "温馨设计", "木色浴室", "功能主义"]
-    }
+      "keywords": [
+        "北欧浴室",
+        "温馨设计",
+        "木色浴室",
+        "功能主义"
+      ]
+    },
+    "videos": [],
+    "updatedAt": "2026-06-01",
+    "project": "我我",
+    "projectEn": "ww",
+    "locationEn": "Nanshan District, Shenzhen",
+    "area": "0㎡"
   },
   {
     "id": "4",
@@ -87,17 +116,26 @@
       "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800",
       "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=800"
     ],
-    "project": "艺术公寓项目",
-    "projectEn": "Artistic Apartment Project",
+    "designer": "陈静",
     "location": "广州·天河区",
-    "locationEn": "Tianhe District, Guangzhou",
     "seo": {
       "title": "当代黑色美学浴室设计 - SEWOO 灵感画廊",
       "titleEn": "Contemporary Black Bathroom - SEWOO Inspiration Gallery",
       "description": "探索 SEWOO 当代黑色美学浴室设计案例，大胆配色配合LED照明，极具个性。",
       "descriptionEn": "Explore SEWOO contemporary black bathroom designs with bold aesthetics and LED lighting.",
-      "keywords": ["黑色浴室", "当代设计", "哑光黑", "LED照明"]
-    }
+      "keywords": [
+        "黑色浴室",
+        "当代设计",
+        "哑光黑",
+        "LED照明"
+      ]
+    },
+    "videos": [],
+    "project": "揉揉",
+    "projectEn": "rr",
+    "locationEn": "Tianhe District, Guangzhou",
+    "area": "11㎡",
+    "updatedAt": "2026-06-01"
   },
   {
     "id": "5",
@@ -112,16 +150,25 @@
       "https://images.unsplash.com/photo-1585421514738-01798e348b17?w=800",
       "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800"
     ],
-    "project": "高端会所项目",
-    "projectEn": "Premium Clubhouse Project",
+    "designer": "刘芳",
     "location": "成都·锦江区",
-    "locationEn": "Jinjiang District, Chengdu",
     "seo": {
       "title": "天然石材浴室设计 - SEWOO 灵感画廊",
       "titleEn": "Natural Stone Bathroom - SEWOO Inspiration Gallery",
       "description": "探索 SEWOO 天然石材浴室设计案例，大理石和花岗岩应用，高贵材质美学。",
       "descriptionEn": "Explore SEWOO natural stone bathroom designs with marble and granite materials.",
-      "keywords": ["大理石浴室", "石材浴室", "天然材质", "高端设计"]
-    }
+      "keywords": [
+        "大理石浴室",
+        "石材浴室",
+        "天然材质",
+        "高端设计"
+      ]
+    },
+    "videos": [],
+    "project": "全球",
+    "projectEn": "qq",
+    "locationEn": "Jinjiang District, Chengdu",
+    "area": "55㎡",
+    "updatedAt": "2026-06-01"
   }
 ]

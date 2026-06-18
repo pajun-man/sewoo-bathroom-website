@@ -78,7 +78,7 @@ interface Factory {
   image: string;
   features: { zh: string; en: string }[];
   galleryImages: string[];
-  videos: { id: string; title: string; titleEn: string; urlZh: string; urlEn: string; poster?: string }[];
+  videos: { id: string; title: string; titleEn: string; url: string; urlZh?: string; urlEn?: string; poster?: string }[];
   phone: string;
   phoneEn: string;
   email: string;
@@ -96,6 +96,7 @@ interface Factory {
   patentTechnologiesEn: string;
   factoryStrengthTitle: string;
   factoryStrengthTitleEn: string;
+  [key: string]: any;
 }
 
 interface Category {
@@ -825,7 +826,8 @@ const Admin: React.FC = () => {
     if ((newFactoryVideoUrlZh.trim() || newFactoryVideoUrlEn.trim()) && editingFactory) {
       const title = newFactoryVideoTitle.trim() || '未命名视频';
       const titleEn = newFactoryVideoTitleEn.trim() || title;
-      const newVideo = { id: Date.now().toString(), title, titleEn, urlZh: newFactoryVideoUrlZh.trim(), urlEn: newFactoryVideoUrlEn.trim() };
+      const url = newFactoryVideoUrlZh.trim() || newFactoryVideoUrlEn.trim();
+      const newVideo = { id: Date.now().toString(), title, titleEn, url, urlZh: newFactoryVideoUrlZh.trim(), urlEn: newFactoryVideoUrlEn.trim() };
       setEditingFactory({ ...editingFactory, videos: [...(editingFactory.videos || []), newVideo] });
       setNewFactoryVideoUrlZh('');
       setNewFactoryVideoUrlEn('');

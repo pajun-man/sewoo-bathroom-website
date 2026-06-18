@@ -2,38 +2,91 @@
   {
     "id": "1",
     "name": "季华卫浴",
-    "nameEn": "Jihua Bathroom",
+    "nameEn": "JIHUA SANITARY",
     "category": "淋浴房",
-    "categoryEn": "Showers",
+    "categoryEn": "Shower doors",
     "location": "佛山禅城",
     "locationEn": "Chancheng, Foshan",
-    "description": "专业生产整体淋浴房、淋浴屏风、淋浴底座等产品，拥有先进的自动化生产线和严格的质量控制体系。",
-    "descriptionEn": "Specializes in producing complete shower enclosures, shower screens, and shower bases. Equipped with advanced automated production lines and strict quality control systems.",
-    "capacity": "年产能：50万套",
-    "capacityEn": "Annual Capacity: 500,000 units",
-    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800",
+    "description": "专业生产整体淋浴房、淋浴屏风、等玻璃产品，年产能20万套；自有5万平方米工作场地，100人工作团队，周边配套型材和玻璃工厂，出口欧洲，美国，东南亚等地，为各大电商平台用户提供优质货源",
+    "descriptionEn": "    We specialize in the production of integrated shower rooms, shower screens and other glass products with an annual production capacity of 200,000 sets.\n    We own a 50,000-square-meter production plant and a 100-member workforce. With supporting profile and glass manufacturers in the surrounding areas, our products are exported to Europe, the United States, Southeast Asia and other regions, supplying high-quality goods to sellers on major e-commerce platforms",
+    "capacity": "20万套/年",
+    "capacityEn": "Annual Capacity: 200,000 units",
+    "image": "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-JIHUAMain.jpg",
     "features": [
-      { "zh": "自动化生产线", "en": "Automated Production" },
-      { "zh": "ISO9001认证", "en": "ISO9001 Certified" },
-      { "zh": "环保材料", "en": "Eco-friendly Materials" },
-      { "zh": "出口品质", "en": "Export Quality" }
+      {
+        "zh": "周边材料工厂配套",
+        "en": "Supporting peripheral material factories"
+      },
+      {
+        "zh": "六条生产线",
+        "en": "Six production lines"
+      },
+      {
+        "zh": "说明书和产品资料配套提供",
+        "en": "Instructions and product documents are provided as a set."
+      },
+      {
+        "zh": "符合工程资质",
+        "en": "Comply with engineering qualification requirements"
+      }
     ],
-    "galleryImages": [],
-    "videos": [],
-    "phone": "400-888-8001",
-    "phoneEn": "+86 400-888-8001",
-    "email": "shower@sewoo.com",
-    "emailEn": "shower@sewoo.com",
+    "galleryImages": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-JIHUAFactory%20pictures%20(5).jpg",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-JIHUAFactory%20pictures.png",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-JIHUAPackaging%20picture.jpg",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-JIHUAFactory%20pictures%20(3).jpg",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-JIHUAFactory%20pictures%20(4).jpg",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-JIHUAShow%20room%20(2).jpg",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-JIHUAPictures%20of%20profiles%20and%20glass.jpg",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-JIHUAShow%20room.jpg",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-JIHUAFactory%20pictures%20(1).jpg"
+    ],
+    "videos": [
+      {
+        "id": "1780545732341",
+        "title": "展厅展示",
+        "titleEn": "Exhibition Hall Display",
+        "url": "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-JIHUAExhibition%20Hall%20Promotion.mp4"
+      },
+      {
+        "id": "1780546847137",
+        "title": "淋浴房实地安装视频",
+        "titleEn": "On-site Installation Video of Shower Room",
+        "url": "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-JIHUAInstallation%20Video.mp4"
+      },
+      {
+        "id": "1780557654840",
+        "title": "工厂展示",
+        "titleEn": "Factory Exhibition",
+        "url": "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-JIHUAJihua%20Factory.mp4"
+      }
+    ],
+    "phone": "+86 19174230029",
+    "phoneEn": "+86 19174230029",
+    "email": "3312327005@qq.com",
+    "emailEn": "3312327005@qq.com",
     "workingHours": "周一至周六 8:00-18:00",
     "workingHoursEn": "Mon-Sat 8:00-18:00",
     "certifications": [
-      { "name": "ISO9001", "nameEn": "ISO9001", "icon": "Award" },
-      { "name": "CE认证", "nameEn": "CE Certified", "icon": "Award" },
-      { "name": "ROHS", "nameEn": "ROHS", "icon": "Award" }
+      {
+        "name": "ISO9001",
+        "nameEn": "ISO9001",
+        "icon": "Award"
+      },
+      {
+        "name": "CE认证",
+        "nameEn": "CE Certified",
+        "icon": "Award"
+      },
+      {
+        "name": "ROHS",
+        "nameEn": "ROHS",
+        "icon": "Award"
+      }
     ],
-    "factoryArea": "50,000",
+    "factoryArea": "20,000",
     "factoryAreaEn": "平方米厂房面积",
-    "technicalStaff": "200+",
+    "technicalStaff": "100+",
     "technicalStaffEn": "专业技术人员",
     "exportCountries": "50+",
     "exportCountriesEn": "出口国家",
@@ -44,36 +97,83 @@
   },
   {
     "id": "2",
-    "name": "晟洁卫浴",
-    "nameEn": "Shengjie Bathroom",
+    "name": "晶洁卫浴",
+    "nameEn": "Jingjie Sanitary Ware",
     "category": "马桶/盆",
     "categoryEn": "Toilets/Basins",
     "location": "潮州",
-    "locationEn": "Chaozhou",
-    "description": "专注于陶瓷马桶、面盆等洁具产品的研发与生产，采用高温陶瓷烧制工艺，产品品质卓越。",
-    "descriptionEn": "Focuses on R&D and production of ceramic toilets and basins. Uses high-temperature ceramic firing technology for superior quality products.",
-    "capacity": "年产能：80万件",
-    "capacityEn": "Annual Capacity: 800,000 pieces",
-    "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d365f?w=800",
+    "locationEn": "ChaoZhou",
+    "description": "专注于薄边盆的研发与生产，拥有先进的陶瓷生产工艺；自主研发生产陶瓷机器和窑炉，掌握每个陶瓷产品的材料混合比例，优秀的产品给TOTO，高仪等大品牌做过代加工；合作品牌带有CE,CUPC等系列认证；合作多家马桶，智能马桶等产品工厂，强强联合整合供应链，立足于专精薄边盆的市场，建立陶瓷产品工厂直出体系",
+    "descriptionEn": "    It specializes in the R&D and production of thin-rim basins with advanced ceramic manufacturing technologies. It independently develops and manufactures ceramic processing machinery and kilns, and masters the precise material blending ratios for all ceramic products\n    Its premium-quality products have been OEM-manufactured for renowned brands including TOTO and Grohe. Its partnered brands hold certifications such as CE and CUPC.\n    The company has established cooperative ties with numerous factories producing conventional and smart toilets. Through strategic alliances and integrated supply chain management, it focuses on the niche thin-rim basin market and has built a direct factory supply system for ceramic products",
+    "capacity": "40万件/年",
+    "capacityEn": "400,000 pieces per year",
+    "image": "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factoryFactory%20outside.jpg",
     "features": [
-      { "zh": "高温烧制", "en": "High Temperature Firing" },
-      { "zh": "纳米釉面", "en": "Nano Glaze" },
-      { "zh": "节水设计", "en": "Water Saving Design" },
-      { "zh": "智能生产", "en": "Smart Production" }
+      {
+        "zh": "全自动施釉线",
+        "en": "Fully Automatic Glazing Line"
+      },
+      {
+        "zh": "高温隧道窑",
+        "en": "High-temperature tunnel kiln"
+      },
+      {
+        "zh": "环保水处理",
+        "en": "Environmental Protection Water Treatment"
+      },
+      {
+        "zh": "自主研发窑炉和陶瓷生产机器",
+        "en": "Independently develop kilns and ceramic production machinery"
+      }
     ],
-    "galleryImages": [],
-    "videos": [],
-    "phone": "400-888-8002",
-    "phoneEn": "+86 400-888-8002",
-    "email": "ceramic@sewoo.com",
-    "emailEn": "ceramic@sewoo.com",
+    "galleryImages": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factoryWorking2.jpg",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factoryWorking1.jpg",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factoryPattern%20ceramic%20basin.jpg",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factoryWorking3.jpg",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factoryOffice%20dashboard.jpg",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factoryCUPC%20BASIN.jpg",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factoryNew%20factory%20making_compressed.jpg",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factoryWorking1_compressed.jpg",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factoryShowing%20machine.jpg"
+    ],
+    "videos": [
+      {
+        "id": "1780560358192",
+        "title": "盆展示",
+        "titleEn": "Showing basin",
+        "url": "https://go.plvideo.cn/front/video/preview?vid=l431efa54b2b5fc49393d5520a496a26_l"
+      }
+    ],
+    "phone": "+86 19174230029",
+    "phoneEn": "+86 19174230029",
+    "email": "3312327005@qq.com",
+    "emailEn": "3312327005@qq.com",
     "workingHours": "周一至周六 8:00-18:00",
     "workingHoursEn": "Mon-Sat 8:00-18:00",
     "certifications": [
-      { "name": "ISO9001", "nameEn": "ISO9001", "icon": "Award" },
-      { "name": "ISO14001", "nameEn": "ISO14001", "icon": "Award" }
+      {
+        "name": "ISO9001",
+        "nameEn": "ISO9001",
+        "icon": "Award"
+      },
+      {
+        "name": "ISO14001",
+        "nameEn": "ISO14001",
+        "icon": "Award"
+      },
+      {
+        "name": "CUPC",
+        "nameEn": "CUPC",
+        "icon": "Award"
+      },
+      {
+        "name": "CE",
+        "nameEn": "CE",
+        "icon": "Award"
+      }
     ],
-    "factoryArea": "80,000",
+    "factoryArea": "40,000",
     "factoryAreaEn": "平方米厂房面积",
     "technicalStaff": "300+",
     "technicalStaffEn": "专业技术人员",
@@ -85,87 +185,202 @@
     "factoryStrengthTitleEn": "Factory Strength"
   },
   {
-    "id": "3",
+    "id": "1780552325511",
     "name": "卫之芯厨卫科技",
-    "nameEn": "Weizhixin Kitchen & Bath",
-    "category": "智能马桶",
-    "categoryEn": "Smart Toilets",
+    "nameEn": "WEZX Kitchen & Bathroom Technology",
+    "category": "浴室柜",
+    "categoryEn": "Bathroom cabinet",
     "location": "潮州",
     "locationEn": "Chaozhou",
-    "description": "专注智能卫浴产品研发与制造，提供高品质智能马桶、智能马桶盖等产品。",
-    "descriptionEn": "Specializes in R&D and manufacturing of smart bathroom products, providing high-quality smart toilets and smart toilet covers.",
-    "capacity": "年产能：30万套",
-    "capacityEn": "Annual Capacity: 300,000 units",
-    "image": "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800",
+    "description": "    专注于浴室柜的研发与生产，拥有先进的浴室柜生产工艺;主打高端实木，多层板浴室柜定制，对于工程批发项目也可大批量持续生产，优秀的产品给TOTO，高仪等大品牌做过代加工;\n    除了单独浴室柜制造外，可帮客户实现浴室柜整套配合采购，包括龙头，下水器，存水管，角阀等；\n    合作品牌带有CE,CUPC等系列认证;合作多家其他品类浴室柜和原材料工厂，强强联合整合供应链，立足于专精定制化浴室柜的市场，建立浴室柜产品工厂直出体系",
+    "descriptionEn": "    We specialize in the R&D and manufacturing of bathroom cabinets with advanced production technologies for such products. We focus on custom-made high-end solid wood and multi-layer board bathroom cabinets, and are capable of continuous mass production for bulk engineering wholesale projects. Our premium products have been OEM-manufactured for renowned brands including TOTO and Grohe.\n\n    Besides standalone bathroom cabinet production, we assist clients with one-stop supporting procurement of matching accessories such as faucets, drainers, overflow pipes and angle stop valves.\n\n    Our partnered brands hold certifications including CE and CUPC. We have built strong alliances with numerous manufacturers of other types of bathroom cabinets and raw material suppliers to integrate the supply chain. Rooted in the niche market of professional customized bathroom cabinets, we have established a direct factory supply system for bathroom cabinet products.",
+    "capacity": "10万件/年",
+    "capacityEn": "100,000 pieces per year",
+    "image": "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXmain.jpg",
     "features": [
-      { "zh": "AI智能感应", "en": "AI Smart Sensor" },
-      { "zh": "紫外线杀菌", "en": "UV Sterilization" },
-      { "zh": "语音控制", "en": "Voice Control" },
-      { "zh": "节能设计", "en": "Energy Saving" }
+      {
+        "zh": "高端定制，大牌代工",
+        "en": "High-end customization, OEM production for major brands"
+      },
+      {
+        "zh": "五年质保，质量保证，还有指导和安装服务",
+        "en": "Five-year warranty, quality assurance, plus guidance and installation services"
+      },
+      {
+        "zh": "个性化定制",
+        "en": "Personalized customization"
+      },
+      {
+        "zh": "配套齐全，材质任选",
+        "en": "Complete supporting facilities, optional materials"
+      }
     ],
-    "galleryImages": [],
-    "videos": [],
-    "phone": "400-888-8003",
-    "phoneEn": "+86 400-888-8003",
-    "email": "smart@sewoo.com",
-    "emailEn": "smart@sewoo.com",
+    "galleryImages": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXFactory%20pictures%20(5).jpg",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXFactory%20pictures%20(7).jpg",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXFactory%20pictures%20(8).jpg",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXFactory%20pictures%20(2).jpg",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXFactory%20pictures%20(3).jpg",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXFactory%20pictures%20(4).jpg",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXFactory%20pictures%20(1).jpg",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXFactory%20pictures%20(6).jpg",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXFactory%20pictures%20(9).jpg"
+    ],
+    "videos": [
+      {
+        "id": "1780555148268",
+        "title": "工厂宣传视频",
+        "titleEn": "Factory promotional video",
+        "url": "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXFactory%20promotional%20video.mp4"
+      },
+      {
+        "id": "1780555300228",
+        "title": "产品展示1",
+        "titleEn": "Samples showing (1)",
+        "url": "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXSamples%20showing%20(1).mp4"
+      },
+      {
+        "id": "1780555333945",
+        "title": "产品展示2",
+        "titleEn": "Samples showing (2)",
+        "url": "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXSamples%20showing%20(2).mp4"
+      },
+      {
+        "id": "1780555351270",
+        "title": "产品展示3",
+        "titleEn": "Samples showing (3)",
+        "url": "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXSamples%20showing%20(3).mp4"
+      },
+      {
+        "id": "1780555368721",
+        "title": "产品展示4",
+        "titleEn": "Samples showing (4)",
+        "url": "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXSamples%20showing%20(4).mp4"
+      },
+      {
+        "id": "1780555380740",
+        "title": "产品展示5",
+        "titleEn": "Samples showing (5)",
+        "url": "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXSamples%20showing%20(5).mp4"
+      },
+      {
+        "id": "1780555393042",
+        "title": "产品展示6",
+        "titleEn": "Samples showing (6)",
+        "url": "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXSamples%20showing%20(6).mp4"
+      },
+      {
+        "id": "1780555414148",
+        "title": "产品展示7",
+        "titleEn": "Samples showing (7)",
+        "url": "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXSamples%20showing%20(7).mp4"
+      },
+      {
+        "id": "1780555430559",
+        "title": "特殊镜柜展示",
+        "titleEn": "Special mirror cabinet",
+        "url": "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXSpecial%20mirror%20cabinet.mp4"
+      }
+    ],
+    "phone": "+86 19174230029",
+    "phoneEn": "",
+    "email": "3312327005@qq.com",
+    "emailEn": "3312327005@qq.com",
     "workingHours": "周一至周六 8:00-18:00",
     "workingHoursEn": "Mon-Sat 8:00-18:00",
     "certifications": [
-      { "name": "ISO9001", "nameEn": "ISO9001", "icon": "Award" },
-      { "name": "CE认证", "nameEn": "CE Certified", "icon": "Award" }
+      {
+        "name": "CE",
+        "nameEn": "CE",
+        "icon": "Award"
+      },
+      {
+        "name": "CUPC",
+        "nameEn": "CUPC",
+        "icon": "Award"
+      }
     ],
     "factoryArea": "30,000",
     "factoryAreaEn": "平方米厂房面积",
-    "technicalStaff": "150+",
+    "technicalStaff": "80+",
     "technicalStaffEn": "专业技术人员",
-    "exportCountries": "40+",
+    "exportCountries": "60+",
     "exportCountriesEn": "出口国家",
-    "patentTechnologies": "50+",
+    "patentTechnologies": "80+",
     "patentTechnologiesEn": "专利技术",
     "factoryStrengthTitle": "工厂实力展示",
     "factoryStrengthTitleEn": "Factory Strength"
   },
   {
-    "id": "4",
+    "id": "1780646670294",
     "name": "翔泰陶瓷",
     "nameEn": "Xiangtai Ceramics",
-    "category": "马桶/盆",
-    "categoryEn": "Toilets/Basins",
+    "category": "瓷砖建材",
+    "categoryEn": "Ceramic tiles and building materials",
     "location": "肇庆",
     "locationEn": "Zhaoqing",
-    "description": "专业陶瓷洁具生产基地，专注于高品质陶瓷马桶、面盆等产品的生产。",
-    "descriptionEn": "Professional ceramic sanitary ware production base, focusing on high-quality ceramic toilets and basins.",
-    "capacity": "年产能：60万件",
-    "capacityEn": "Annual Capacity: 600,000 pieces",
-    "image": "https://images.unsplash.com/photo-1585421514738-01798e348b17?w=800",
+    "description": "    我们是集研发、智造、销售为一体的现代化大中型墙地砖生产企业，全线引进国际化智能生产设备，配备300m 超长节能窑炉、7200T 大吨位数控压机、高端湿法球磨机、宽幅同步智能输送系统等成套智能化产线\n    工厂统筹全品类瓷砖量产，覆盖通体地砖、墙面砖、仿大理石板材、装饰罗马柱等中高端全系产品，依托全品类配套优势，一站式输出家装、工装整装配套解决方案\n    企业先后取得3C 强制性产品认证、ISO9001 质量管理体系、ISO14001 环境管理体系、GB/T28001 职业健康安全管理体系多项权威认证\n    深耕绿色智造，环保硬件投入超 1000 万元，年度环保运维支出 700 万元以上，合规稳定承接地产、酒店大批量集采订单",
+    "descriptionEn": "    We are a modern medium-to-large sized wall and floor tile manufacturer integrating R&D, intelligent manufacturing and sales. We have introduced full-range internationally sourced intelligent production equipment, including complete intelligent production lines equipped with an ultra-long 300-meter energy-saving kiln, 7200-ton large-tonnage numerical control presses, high-end wet ball mills, wide-format synchronous intelligent conveying systems and other supporting facilities.\n\n    Our factory arranges mass production of a full spectrum of ceramic tiles, covering mid-to-high-end full-range products such as full-body floor tiles, wall tiles, imitation marble slabs and decorative Roman columns. Leveraging our full-product matching advantages, we provide one-stop complete supporting solutions for residential decoration and commercial construction projects.\n\n    The enterprise has successively obtained multiple authoritative certifications including China Compulsory Certification (3C), ISO9001 Quality Management System Certification, ISO14001 Environmental Management System Certification and GB/T28001 Occupational Health and Safety Management System Certification.\n\n    Committed to green intelligent manufacturing, we have invested over 10 million RMB in environmental protection hardware, with annual environmental protection operation and maintenance expenses exceeding 7 million RMB, enabling us to legally and steadily undertake bulk centralized procurement orders from real estate developers and hotels.",
+    "capacity": "4320 万㎡/ 年",
+    "capacityEn": "43.2 million square meters per year",
+    "image": "",
     "features": [
-      { "zh": "高压成型", "en": "High Pressure Molding" },
-      { "zh": "隧道窑烧制", "en": "Tunnel Kiln Firing" },
-      { "zh": "品质保证", "en": "Quality Assurance" },
-      { "zh": "快速出货", "en": "Fast Delivery" }
+      {
+        "zh": "符合工程资质",
+        "en": "Comply with engineering qualification requirements"
+      },
+      {
+        "zh": "超大型智能生产设备",
+        "en": "Super-large intelligent production equipment"
+      },
+      {
+        "zh": "多个工厂生产整合产品",
+        "en": "Integrated products manufactured by multiple factories"
+      },
+      {
+        "zh": "产品和包装质量保证",
+        "en": "Quality Assurance for Products and Packaging"
+      }
     ],
     "galleryImages": [],
     "videos": [],
-    "phone": "400-888-8004",
-    "phoneEn": "+86 400-888-8004",
-    "email": "ceramic2@sewoo.com",
-    "emailEn": "ceramic2@sewoo.com",
-    "workingHours": "周一至周六 8:00-18:00",
-    "workingHoursEn": "Mon-Sat 8:00-18:00",
+    "phone": "+86 19174230029",
+    "phoneEn": "",
+    "email": "3312327005@qq.com",
+    "emailEn": "3312327005@qq.com",
+    "workingHours": "",
+    "workingHoursEn": "",
     "certifications": [
-      { "name": "ISO9001", "nameEn": "ISO9001", "icon": "Award" },
-      { "name": "ISO14001", "nameEn": "ISO14001", "icon": "Award" }
+      {
+        "name": "3C",
+        "nameEn": "3C",
+        "icon": "Award"
+      },
+      {
+        "name": "ISO9001",
+        "nameEn": "ISO9001",
+        "icon": "Award"
+      },
+      {
+        "name": "ISO14001",
+        "nameEn": "ISO14001",
+        "icon": "Award"
+      },
+      {
+        "name": "GB/T28001",
+        "nameEn": "GB/T28001",
+        "icon": "Award"
+      }
     ],
-    "factoryArea": "60,000",
-    "factoryAreaEn": "平方米厂房面积",
-    "technicalStaff": "250+",
-    "technicalStaffEn": "专业技术人员",
-    "exportCountries": "55+",
+    "factoryArea": "253734㎡",
+    "factoryAreaEn": "253734㎡",
+    "technicalStaff": "600+",
+    "technicalStaffEn": "80+",
+    "exportCountries": "50+",
     "exportCountriesEn": "出口国家",
-    "patentTechnologies": "70+",
-    "patentTechnologiesEn": "专利技术",
-    "factoryStrengthTitle": "工厂实力展示",
-    "factoryStrengthTitleEn": "Factory Strength"
+    "patentTechnologies": "",
+    "patentTechnologiesEn": "",
+    "factoryStrengthTitle": "",
+    "factoryStrengthTitleEn": ""
   }
 ]

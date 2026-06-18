@@ -10,7 +10,9 @@
     "descriptionEn": "Featuring advanced dual-flow technology, the Duoflo offers two distinct shower experiences in one fixture. Water-efficient yet luxurious.",
     "images": [
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
+      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/2.jpg",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/2.jpg"
     ],
     "specifications": {
       "材质": "不锈钢+ABS",
@@ -19,34 +21,47 @@
       "尺寸": "250mm x 250mm",
       "保修": "5年"
     },
-    "specificationsEn": {
-      "Material": "Stainless Steel + ABS",
-      "Finish": "Chrome / Matte Black",
-      "Flow Rate": "9.5 L/min",
-      "Size": "250mm x 250mm",
-      "Warranty": "5 Years"
-    },
     "features": [
       "双流量模式切换",
       "节水50%以上",
       "硅胶出水孔防堵",
       "360度旋转角度"
     ],
-    "featuresEn": [
-      "Dual-flow mode switching",
-      "Water-saving by 50%+",
-      "Anti-clog silicone nozzles",
-      "360° rotation angle"
-    ],
     "seo": {
       "title": "Duoflo 智能淋浴花洒套装 - SEWOO 高端卫浴",
       "titleEn": "Duoflo Smart Shower Set - SEWOO Premium Bath",
       "description": "了解 SEWOO Duoflo 智能淋浴花洒套装，双流量模式设计，节水环保。立即探索我们的高端淋浴产品系列。",
       "descriptionEn": "Discover the SEWOO Duoflo Smart Shower Set with dual-flow technology. Explore our premium shower collection.",
-      "keywords": ["智能淋浴", "节水花洒", "高端淋浴", "Duoflo", "SEWOO"]
+      "keywords": [
+        "智能淋浴",
+        "节水花洒",
+        "高端淋浴",
+        "Duoflo",
+        "SEWOO"
+      ]
     },
     "createdAt": "2024-01-01",
-    "updatedAt": "2024-01-15"
+    "updatedAt": "2026-06-01",
+    "documents": {
+      "manual": "",
+      "technicalData": "",
+      "imagesDownload": "",
+      "quote": "",
+      "appointment": ""
+    },
+    "specificationsEn": {
+      "Material": "Stainless steel + ABS",
+      "Surface treatment": "Chrome / Matte Black",
+      "traffic": "9.5 L/min",
+      "Size": "250mm x 250mm",
+      "Warranty": "5 years"
+    },
+    "featuresEn": [
+      "Dual traffic mode switching",
+      "Save more than 50% of water",
+      "Silicone drain hole anti-clogging",
+      "360-degree rotation angle"
+    ]
   },
   {
     "id": "2",
@@ -68,31 +83,24 @@
       "连接": "G1/2",
       "保修": "5年"
     },
-    "specificationsEn": {
-      "Material": "304 Stainless Steel",
-      "Size": "400mm x 400mm",
-      "Flow Rate": "15 L/min",
-      "Connection": "G1/2",
-      "Warranty": "5 Years"
-    },
     "features": [
       "超大降雨面积",
       "自然雨淋体验",
       "硅胶出水孔",
       "不锈钢材质耐用"
     ],
-    "featuresEn": [
-      "Oversized rainfall area",
-      "Natural rain experience",
-      "Silicone nozzles",
-      "Durable stainless steel"
-    ],
     "seo": {
       "title": "Zen 头顶花洒 - SEWOO 高端卫浴",
       "titleEn": "Zen Rain Shower Head - SEWOO Premium Bath",
       "description": "SEWOO Zen 头顶花洒，超大出水面积，自然雨淋体验。享受奢华沐浴时光。",
       "descriptionEn": "SEWOO Zen Rain Shower Head with oversized coverage. Enjoy luxurious bathing.",
-      "keywords": ["头顶花洒", "雨淋花洒", "大花洒", "Zen", "SEWOO"]
+      "keywords": [
+        "头顶花洒",
+        "雨淋花洒",
+        "大花洒",
+        "Zen",
+        "SEWOO"
+      ]
     },
     "createdAt": "2024-01-04",
     "updatedAt": "2024-01-18"
@@ -117,31 +125,24 @@
       "软管长度": "1.5m",
       "保修": "5年"
     },
-    "specificationsEn": {
-      "Material": "Brass + Chrome",
-      "Spray Modes": "3 Modes",
-      "Flow Rate": "8 L/min",
-      "Hose Length": "1.5m",
-      "Warranty": "5 Years"
-    },
     "features": [
       "三种出水模式",
       "节水起泡器",
       "防滑手柄",
       "耐腐蚀镀层"
     ],
-    "featuresEn": [
-      "Three spray modes",
-      "Water-saving aerator",
-      "Non-slip handle",
-      "Corrosion-resistant finish"
-    ],
     "seo": {
       "title": "Elegance 手持花洒 - SEWOO 高端卫浴",
       "titleEn": "Elegance Handheld Shower - SEWOO Premium Bath",
       "description": "SEWOO Elegance 手持花洒，三种出水模式，防滑手柄设计。提升您的淋浴体验。",
       "descriptionEn": "SEWOO Elegance Handheld Shower with three spray modes. Elevate your shower experience.",
-      "keywords": ["手持花洒", "淋浴喷头", "节水花洒", "Elegance", "SEWOO"]
+      "keywords": [
+        "手持花洒",
+        "淋浴喷头",
+        "节水花洒",
+        "Elegance",
+        "SEWOO"
+      ]
     },
     "createdAt": "2024-01-05",
     "updatedAt": "2024-01-19"
@@ -166,31 +167,24 @@
       "水压": "0.07-0.75 MPa",
       "保修": "5年"
     },
-    "specificationsEn": {
-      "Material": "Ceramic + ABS",
-      "Power Supply": "AC 220V",
-      "Power": "1200W",
-      "Water Pressure": "0.07-0.75 MPa",
-      "Warranty": "5 Years"
-    },
     "features": [
       "自动感应开合",
       "加热座圈多档调节",
       "多种清洗模式",
       "遥控+旋钮控制"
     ],
-    "featuresEn": [
-      "Auto-sense open/close",
-      "Multi-level heated seat",
-      "Multiple washing modes",
-      "Remote + knob control"
-    ],
     "seo": {
       "title": "Smart Toilet Pro 全自动智能马桶 - SEWOO 高端卫浴",
       "titleEn": "Smart Toilet Pro - SEWOO Premium Bath",
       "description": "SEWOO Smart Toilet Pro 全功能智能马桶，自动感应，加热座圈，清洗烘干。智能生活新体验。",
       "descriptionEn": "SEWOO Smart Toilet Pro with auto open/close and heated seat. Smart living experience.",
-      "keywords": ["智能马桶", "全自动马桶", "智能坐便器", "Smart Toilet", "SEWOO"]
+      "keywords": [
+        "智能马桶",
+        "全自动马桶",
+        "智能坐便器",
+        "Smart Toilet",
+        "SEWOO"
+      ]
     },
     "createdAt": "2024-01-06",
     "updatedAt": "2024-01-20"
@@ -215,31 +209,24 @@
       "适配尺寸": "通用型",
       "保修": "3年"
     },
-    "specificationsEn": {
-      "Material": "ABS + Stainless Steel",
-      "Power Supply": "AC 220V",
-      "Power": "600W",
-      "Compatibility": "Universal",
-      "Warranty": "3 Years"
-    },
     "features": [
       "即热式清洗",
       "暖风烘干",
       "座圈加热",
       "一键拆卸"
     ],
-    "featuresEn": [
-      "Instant heating wash",
-      "Warm air drying",
-      "Heated seat",
-      "One-click removal"
-    ],
     "seo": {
       "title": "Smart Seat 智能马桶盖 - SEWOO 高端卫浴",
       "titleEn": "Smart Seat Cover - SEWOO Premium Bath",
       "description": "SEWOO Smart Seat 智能马桶盖，即热式清洗，暖风烘干，轻松升级您的马桶。",
       "descriptionEn": "SEWOO Smart Seat Cover with instant heating and warm air drying. Upgrade your toilet easily.",
-      "keywords": ["智能马桶盖", "马桶盖", "即热清洗", "Smart Seat", "SEWOO"]
+      "keywords": [
+        "智能马桶盖",
+        "马桶盖",
+        "即热清洗",
+        "Smart Seat",
+        "SEWOO"
+      ]
     },
     "createdAt": "2024-01-07",
     "updatedAt": "2024-01-21"
@@ -264,31 +251,24 @@
       "排水": "标准下水",
       "保修": "10年"
     },
-    "specificationsEn": {
-      "Material": "Premium Ceramic",
-      "Size": "500mm x 450mm",
-      "Depth": "175mm",
-      "Drainage": "Standard",
-      "Warranty": "10 Years"
-    },
     "features": [
       "高温陶瓷烧制",
       "釉面光滑易清洁",
       "现代简约设计",
       "多种尺寸可选"
     ],
-    "featuresEn": [
-      "High-temperature fired",
-      "Smooth glaze easy to clean",
-      "Modern minimalist design",
-      "Multiple sizes available"
-    ],
     "seo": {
       "title": "Laguna 台上盆 - SEWOO 高端卫浴",
       "titleEn": "Laguna Countertop Basin - SEWOO Premium Bath",
       "description": "SEWOO Laguna 台上盆，现代简约设计，优质陶瓷材质，为您的浴室增添优雅气息。",
       "descriptionEn": "SEWOO Laguna countertop basin with modern minimalist design. Add elegance to your bathroom.",
-      "keywords": ["台上盆", "陶瓷盆", "浴室盆", "Laguna", "SEWOO"]
+      "keywords": [
+        "台上盆",
+        "陶瓷盆",
+        "浴室盆",
+        "Laguna",
+        "SEWOO"
+      ]
     },
     "createdAt": "2024-01-08",
     "updatedAt": "2024-01-22"
@@ -313,31 +293,24 @@
       "安装方式": "台下式",
       "保修": "10年"
     },
-    "specificationsEn": {
-      "Material": "Premium Ceramic",
-      "Size": "480mm x 380mm",
-      "Depth": "150mm",
-      "Installation": "Undermount",
-      "Warranty": "10 Years"
-    },
     "features": [
       "台下式安装",
       "清洁方便",
       "节省空间",
       "稳固耐用"
     ],
-    "featuresEn": [
-      "Undermount installation",
-      "Easy to clean",
-      "Space-saving",
-      "Stable and durable"
-    ],
     "seo": {
       "title": "Luna 台下盆 - SEWOO 高端卫浴",
       "titleEn": "Luna Undermount Basin - SEWOO Premium Bath",
       "description": "SEWOO Luna 台下盆，隐藏式安装设计，台面清洁更方便，适合现代简约风格浴室。",
       "descriptionEn": "SEWOO Luna undermount basin with hidden installation for easier cleaning.",
-      "keywords": ["台下盆", "嵌入式盆", "浴室盆", "Luna", "SEWOO"]
+      "keywords": [
+        "台下盆",
+        "嵌入式盆",
+        "浴室盆",
+        "Luna",
+        "SEWOO"
+      ]
     },
     "createdAt": "2024-01-09",
     "updatedAt": "2024-01-23"
@@ -362,31 +335,24 @@
       "安装方式": "落地式",
       "保修": "10年"
     },
-    "specificationsEn": {
-      "Material": "Premium Ceramic",
-      "Size": "550mm x 450mm x 850mm",
-      "Capacity": "20L",
-      "Installation": "Floor-standing",
-      "Warranty": "10 Years"
-    },
     "features": [
       "一体式设计",
       "稳固耐用",
       "优雅外观",
       "节省空间"
     ],
-    "featuresEn": [
-      "Integrated design",
-      "Stable and durable",
-      "Elegant appearance",
-      "Space-saving"
-    ],
     "seo": {
       "title": "Elegance 立柱盆 - SEWOO 高端卫浴",
       "titleEn": "Elegance Pedestal Basin - SEWOO Premium Bath",
       "description": "SEWOO Elegance 立柱盆，一体式设计，优雅大方，适合小户型浴室使用。",
       "descriptionEn": "SEWOO Elegance pedestal basin with integrated design. Perfect for small bathrooms.",
-      "keywords": ["立柱盆", "落地盆", "一体式盆", "Elegance", "SEWOO"]
+      "keywords": [
+        "立柱盆",
+        "落地盆",
+        "一体式盆",
+        "Elegance",
+        "SEWOO"
+      ]
     },
     "createdAt": "2024-01-10",
     "updatedAt": "2024-01-24"
@@ -411,31 +377,24 @@
       "用水量": "4.8L",
       "保修": "5年"
     },
-    "specificationsEn": {
-      "Material": "Premium Ceramic",
-      "Rough-in": "300mm/400mm",
-      "Flushing": "Siphonic",
-      "Water Consumption": "4.8L",
-      "Warranty": "5 Years"
-    },
     "features": [
       "虹吸静音冲水",
       "节水设计",
       "釉面自洁",
       "易安装"
     ],
-    "featuresEn": [
-      "Siphonic quiet flushing",
-      "Water-saving design",
-      "Self-cleaning glaze",
-      "Easy installation"
-    ],
     "seo": {
       "title": "Ceramic 连体马桶 - SEWOO 高端卫浴",
       "titleEn": "Ceramic One-Piece Toilet - SEWOO Premium Bath",
       "description": "SEWOO Ceramic 连体马桶，虹吸静音冲水，节水环保，适合各种风格浴室。",
       "descriptionEn": "SEWOO Ceramic one-piece toilet with siphonic flushing. Water-saving and quiet.",
-      "keywords": ["连体马桶", "陶瓷马桶", "虹吸马桶", "Ceramic", "SEWOO"]
+      "keywords": [
+        "连体马桶",
+        "陶瓷马桶",
+        "虹吸马桶",
+        "Ceramic",
+        "SEWOO"
+      ]
     },
     "createdAt": "2024-01-11",
     "updatedAt": "2024-01-25"
@@ -460,31 +419,24 @@
       "用水量": "4.5L",
       "保修": "5年"
     },
-    "specificationsEn": {
-      "Material": "Premium Ceramic",
-      "Load Capacity": "400kg",
-      "Flushing": "Wall-mounted",
-      "Water Consumption": "4.5L",
-      "Warranty": "5 Years"
-    },
     "features": [
       "隐藏式水箱",
       "节省空间",
       "清洁方便",
       "现代设计"
     ],
-    "featuresEn": [
-      "Hidden cistern",
-      "Space-saving",
-      "Easy to clean",
-      "Modern design"
-    ],
     "seo": {
       "title": "Wall Hung 壁挂马桶 - SEWOO 高端卫浴",
       "titleEn": "Wall Hung Toilet - SEWOO Premium Bath",
       "description": "SEWOO Wall Hung 壁挂马桶，隐藏式水箱，节省空间，清洁方便，适合现代简约风格浴室。",
       "descriptionEn": "SEWOO Wall Hung toilet with hidden cistern. Space-saving and easy to clean.",
-      "keywords": ["壁挂马桶", "悬挂马桶", "入墙马桶", "Wall Hung", "SEWOO"]
+      "keywords": [
+        "壁挂马桶",
+        "悬挂马桶",
+        "入墙马桶",
+        "Wall Hung",
+        "SEWOO"
+      ]
     },
     "createdAt": "2024-01-12",
     "updatedAt": "2024-01-26"
@@ -509,31 +461,24 @@
       "开门方式": "推拉",
       "保修": "5年"
     },
-    "specificationsEn": {
-      "Material": "304 Stainless Steel + Tempered Glass",
-      "Glass Thickness": "8mm",
-      "Size": "Customizable",
-      "Opening": "Sliding",
-      "Warranty": "5 Years"
-    },
     "features": [
       "304不锈钢框架",
       "8mm钢化玻璃",
       "静音滑轮",
       "防渗水设计"
     ],
-    "featuresEn": [
-      "304 stainless steel frame",
-      "8mm tempered glass",
-      "Quiet rollers",
-      "Waterproof design"
-    ],
     "seo": {
       "title": "Sliding 推拉淋浴屏风 - SEWOO 高端卫浴",
       "titleEn": "Sliding Shower Screen - SEWOO Premium Bath",
       "description": "SEWOO Sliding 推拉淋浴屏风，304不锈钢框架，钢化玻璃，滑动顺畅，节省浴室空间。",
       "descriptionEn": "SEWOO Sliding shower screen with stainless steel frame and tempered glass.",
-      "keywords": ["淋浴屏风", "推拉门", "淋浴房", "Sliding", "SEWOO"]
+      "keywords": [
+        "淋浴屏风",
+        "推拉门",
+        "淋浴房",
+        "Sliding",
+        "SEWOO"
+      ]
     },
     "createdAt": "2024-01-13",
     "updatedAt": "2024-01-27"
@@ -558,229 +503,26 @@
       "开门方式": "平开",
       "保修": "5年"
     },
-    "specificationsEn": {
-      "Material": "Aluminum Alloy + Tempered Glass",
-      "Glass Thickness": "8mm",
-      "Size": "900mm x 900mm",
-      "Opening": "Pivot",
-      "Warranty": "5 Years"
-    },
     "features": [
       "钻石型设计",
       "充分利用角落",
       "内置置物架",
       "防水胶条"
     ],
-    "featuresEn": [
-      "Diamond design",
-      "Maximize corner space",
-      "Built-in shelves",
-      "Waterproof seal"
-    ],
     "seo": {
       "title": "Corner 整体淋浴房 - SEWOO 高端卫浴",
       "titleEn": "Corner Shower Enclosure - SEWOO Premium Bath",
       "description": "SEWOO Corner 整体淋浴房，钻石型设计，充分利用角落空间，配备置物架和毛巾架。",
       "descriptionEn": "SEWOO Corner shower enclosure with diamond design. Maximize corner space utilization.",
-      "keywords": ["整体淋浴房", "转角淋浴房", "钻石型", "Corner", "SEWOO"]
+      "keywords": [
+        "整体淋浴房",
+        "转角淋浴房",
+        "钻石型",
+        "Corner",
+        "SEWOO"
+      ]
     },
     "createdAt": "2024-01-14",
     "updatedAt": "2024-01-28"
-  },
-  {
-    "id": "13",
-    "slug": "elegant-bathroom-cabinet",
-    "category": "其他产品",
-    "subcategory": "浴室柜",
-    "name": "Elegant 浴室柜",
-    "nameEn": "Elegant Bathroom Cabinet",
-    "description": "简约现代风格浴室柜，采用优质环保板材，防水防潮，收纳空间充足。",
-    "descriptionEn": "Modern minimalist bathroom cabinet made of premium eco-friendly materials, waterproof and moisture-proof with ample storage space.",
-    "images": [
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
-    ],
-    "specifications": {
-      "材质": "环保板材+实木框架",
-      "尺寸": "800mm x 500mm x 850mm",
-      "颜色": "白色/灰色/橡木色",
-      "台面": "岩板/陶瓷",
-      "保修": "5年"
-    },
-    "specificationsEn": {
-      "Material": "Eco-friendly Board + Solid Wood Frame",
-      "Size": "800mm x 500mm x 850mm",
-      "Color": "White / Gray / Oak",
-      "Countertop": "Sintered Stone / Ceramic",
-      "Warranty": "5 Years"
-    },
-    "features": [
-      "环保板材",
-      "防水防潮",
-      "大容量收纳",
-      "静音铰链"
-    ],
-    "featuresEn": [
-      "Eco-friendly materials",
-      "Waterproof and moisture-proof",
-      "Large storage capacity",
-      "Quiet hinges"
-    ],
-    "seo": {
-      "title": "Elegant 浴室柜 - SEWOO 高端卫浴",
-      "titleEn": "Elegant Bathroom Cabinet - SEWOO Premium Bath",
-      "description": "SEWOO Elegant 浴室柜，简约现代风格，优质环保板材，防水防潮。",
-      "descriptionEn": "SEWOO Elegant Bathroom Cabinet with modern minimalist design and eco-friendly materials.",
-      "keywords": ["浴室柜", "浴室家具", "卫浴柜", "Elegant", "SEWOO"]
-    },
-    "createdAt": "2024-01-15",
-    "updatedAt": "2024-01-29"
-  },
-  {
-    "id": "14",
-    "slug": "smart-led-mirror",
-    "category": "其他产品",
-    "subcategory": "镜柜",
-    "name": "Smart LED 镜柜",
-    "nameEn": "Smart LED Mirror Cabinet",
-    "description": "智能LED镜柜，带灯化妆镜，防雾功能，内置收纳空间，现代浴室必备。",
-    "descriptionEn": "Smart LED mirror cabinet with anti-fog function, built-in storage, essential for modern bathrooms.",
-    "images": [
-      "https://images.unsplash.com/photo-1565199427177-5a1999b57e64?w=800",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
-    ],
-    "specifications": {
-      "材质": "铝合金+镜面",
-      "尺寸": "600mm x 800mm",
-      "光源": "LED",
-      "功能": "防雾/调光/除雾",
-      "保修": "3年"
-    },
-    "specificationsEn": {
-      "Material": "Aluminum Alloy + Mirror",
-      "Size": "600mm x 800mm",
-      "Light Source": "LED",
-      "Features": "Anti-fog / Dimming / Demisting",
-      "Warranty": "3 Years"
-    },
-    "features": [
-      "LED灯带",
-      "智能防雾",
-      "触摸开关",
-      "内置收纳"
-    ],
-    "featuresEn": [
-      "LED light strip",
-      "Smart anti-fog",
-      "Touch switch",
-      "Built-in storage"
-    ],
-    "seo": {
-      "title": "Smart LED 镜柜 - SEWOO 高端卫浴",
-      "titleEn": "Smart LED Mirror Cabinet - SEWOO Premium Bath",
-      "description": "SEWOO Smart LED 镜柜，带灯化妆镜，防雾功能，内置收纳空间。",
-      "descriptionEn": "SEWOO Smart LED Mirror Cabinet with anti-fog and built-in storage.",
-      "keywords": ["镜柜", "LED镜", "智能镜", "Smart Mirror", "SEWOO"]
-    },
-    "createdAt": "2024-01-16",
-    "updatedAt": "2024-01-30"
-  },
-  {
-    "id": "15",
-    "slug": "premium-bathroom-accessories",
-    "category": "其他产品",
-    "subcategory": "五金配件",
-    "name": "Premium 卫浴五金套装",
-    "nameEn": "Premium Bathroom Accessories Set",
-    "description": "高品质卫浴五金配件套装，包括毛巾架、浴巾架、马桶刷架、纸巾架等，不锈钢材质，经久耐用。",
-    "descriptionEn": "Premium bathroom accessories set including towel rack, toilet paper holder, toilet brush holder, made of stainless steel for durability.",
-    "images": [
-      "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
-    ],
-    "specifications": {
-      "材质": "304不锈钢",
-      "表面处理": "抛光/拉丝",
-      "套装包含": "毛巾架+浴巾架+马桶刷架+纸巾架",
-      "安装方式": "壁挂式",
-      "保修": "5年"
-    },
-    "specificationsEn": {
-      "Material": "304 Stainless Steel",
-      "Finish": "Polished / Brushed",
-      "Set Includes": "Towel Rack + Bath Towel Rack + Toilet Brush Holder + Toilet Paper Holder",
-      "Installation": "Wall-mounted",
-      "Warranty": "5 Years"
-    },
-    "features": [
-      "304不锈钢",
-      "防腐防锈",
-      "坚固耐用",
-      "简约设计"
-    ],
-    "featuresEn": [
-      "304 stainless steel",
-      "Anti-corrosion and anti-rust",
-      "Sturdy and durable",
-      "Minimalist design"
-    ],
-    "seo": {
-      "title": "Premium 卫浴五金套装 - SEWOO 高端卫浴",
-      "titleEn": "Premium Bathroom Accessories Set - SEWOO Premium Bath",
-      "description": "SEWOO Premium 卫浴五金套装，304不锈钢材质，包括毛巾架、浴巾架等。",
-      "descriptionEn": "SEWOO Premium Bathroom Accessories Set made of 304 stainless steel.",
-      "keywords": ["五金配件", "毛巾架", "浴巾架", "Bathroom Accessories", "SEWOO"]
-    },
-    "createdAt": "2024-01-17",
-    "updatedAt": "2024-01-31"
-  },
-  {
-    "id": "16",
-    "slug": "luxury-bathroom-furniture",
-    "category": "其他产品",
-    "subcategory": "浴室家具",
-    "name": "Luxury 浴室家具套装",
-    "nameEn": "Luxury Bathroom Furniture Set",
-    "description": "豪华浴室家具套装，包含浴室柜、镜柜、置物架，采用实木材质，高端大气。",
-    "descriptionEn": "Luxury bathroom furniture set including cabinet, mirror cabinet and shelves, made of solid wood for premium quality.",
-    "images": [
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
-    ],
-    "specifications": {
-      "材质": "北美白橡木",
-      "表面处理": "环保烤漆",
-      "套装包含": "浴室柜+镜柜+置物架",
-      "风格": "现代轻奢",
-      "保修": "10年"
-    },
-    "specificationsEn": {
-      "Material": "North American White Oak",
-      "Finish": "Eco-friendly Paint",
-      "Set Includes": "Bathroom Cabinet + Mirror Cabinet + Shelves",
-      "Style": "Modern Luxury",
-      "Warranty": "10 Years"
-    },
-    "features": [
-      "实木材质",
-      "环保烤漆",
-      "轻奢设计",
-      "定制尺寸"
-    ],
-    "featuresEn": [
-      "Solid wood material",
-      "Eco-friendly paint",
-      "Luxury design",
-      "Custom size available"
-    ],
-    "seo": {
-      "title": "Luxury 浴室家具套装 - SEWOO 高端卫浴",
-      "titleEn": "Luxury Bathroom Furniture Set - SEWOO Premium Bath",
-      "description": "SEWOO Luxury 浴室家具套装，北美白橡木材质，现代轻奢风格。",
-      "descriptionEn": "SEWOO Luxury Bathroom Furniture Set made of North American white oak.",
-      "keywords": ["浴室家具", "实木家具", "轻奢风格", "Luxury Furniture", "SEWOO"]
-    },
-    "createdAt": "2024-01-18",
-    "updatedAt": "2024-02-01"
   }
 ]
