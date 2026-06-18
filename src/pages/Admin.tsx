@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Settings, Package, Palette, FileText, Building, Upload, X, Plus, Save, Edit2, Trash2, Mail, MessageSquare, FolderOpen, Download, FileImage, Phone, Calendar, Share2, Check, ChevronDown, ChevronRight, Leaf, Menu, Image as ImageIcon, Tags, Pencil } from 'lucide-react';
+import { Settings, Package, Palette, FileText, Building, Upload, X, Plus, Save, Edit2, Trash2, Mail, MessageSquare, FolderOpen, Download, FileImage, Phone, Calendar, Share2, Check, ChevronDown, ChevronRight, Leaf, Menu, Image as ImageIcon, Tags, Pencil, Database, RefreshCw, Copy as CopyIcon } from 'lucide-react';
 import defaultFactories from '../data/factories.json';
 
 interface Product {
@@ -1074,6 +1074,15 @@ const Admin: React.FC = () => {
                 >
                   <Settings className="w-5 h-5" />
                   <span>网站设置</span>
+                </button>
+                <button
+                  onClick={() => setActiveTab('dataSync')}
+                  className={`w-full flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors ${
+                    activeTab === 'dataSync' ? 'bg-blue-900 text-white' : 'text-gray-700 hover:bg-gray-100'
+                  }`}
+                >
+                  <Database className="w-5 h-5" />
+                  <span>数据同步</span>
                 </button>
               </nav>
             </div>
@@ -3996,6 +4005,157 @@ const Admin: React.FC = () => {
                           当前未设置标题，网站将显示默认标题：中文"高端卫浴"，英文"Premium Bathroom"
                         </p>
                       )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {activeTab === 'dataSync' && (
+              <div className="space-y-6">
+                <div className="bg-white rounded-lg shadow-md p-6">
+                  <div className="flex justify-between items-center mb-6">
+                    <h2 className="text-xl font-bold text-gray-900 flex items-center gap-2">
+                      <Database className="w-6 h-6 text-blue-600" />
+                      数据同步
+                    </h2>
+                    <button
+                      onClick={() => window.location.reload()}
+                      className="flex items-center gap-2 px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors"
+                    >
+                      <RefreshCw className="w-4 h-4" />
+                      刷新数据
+                    </button>
+                  </div>
+
+                  <div className="bg-blue-50 rounded-xl p-6 mb-6">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">💡 同步说明</h3>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      点击下方按钮导出当前浏览器中所有配置数据（包括工厂图片、产品、分类等）。导出后请把数据发送给开发人员，或保存为JSON文件放到项目根目录。
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <div className="flex gap-4">
+                      <button
+                        onClick={() => {
+                          const data: Record<string, any> = {};
+                          for (let i = 0; i < localStorage.length; i++) {
+                            const key = localStorage.key(i) || '';
+                            const value = localStorage.getItem(key);
+                            if (value) {
+                              try {
+                                data[key] = JSON.parse(value);
+                              } catch {
+                                data[key] = value;
+                              }
+                            }
+                          }
+                          const jsonString = JSON.stringify(data, null, 2);
+                          const blob = new Blob([jsonString], { type: 'application/json' });
+                          const url = URL.createObjectURL(blob);
+                          const a = document.createElement('a');
+                          a.href = url;
+                          a.download = `sewoo-data-export-${new Date().toISOString().slice(0,10)}.json`;
+                          document.body.appendChild(a);
+                          a.click();
+                          document.body.removeChild(a);
+                          URL.revokeObjectURL(url);
+                        }}
+                        className="flex-1 flex items-center justify-center gap-2 bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors font-medium"
+                      >
+                        <Download className="w-5 h-5" />
+                        下载数据到文件
+                      </button>
+
+                      <button
+                        onClick={() => {
+                          const data: Record<string, any> = {};
+                          for (let i = 0; i < localStorage.length; i++) {
+                            const key = localStorage.key(i) || '';
+                            const value = localStorage.getItem(key);
+                            if (value) {
+                              try {
+                                data[key] = JSON.parse(value);
+                              } catch {
+                                data[key] = value;
+                              }
+                            }
+                          }
+                          const jsonString = JSON.stringify(data, null, 2);
+                          navigator.clipboard.writeText(jsonString);
+                          alert('数据已复制到剪贴板！');
+                        }}
+                        className="flex-1 flex items-center justify-center gap-2 bg-gray-100 text-gray-700 py-3 px-6 rounded-lg hover:bg-gray-200 transition-colors font-medium"
+                      >
+                        <CopyIcon className="w-5 h-5" />
+                        复制到剪贴板
+                      </button>
+                    </div>
+
+                    <div className="bg-gray-50 rounded-lg p-6">
+                      <h3 className="text-lg font-semibold text-gray-900 mb-4">当前浏览器中的数据</h3>
+                      <div className="space-y-4">
+                        {(() => {
+                          const data: Record<string, any> = {};
+                          for (let i = 0; i < localStorage.length; i++) {
+                            const key = localStorage.key(i) || '';
+                            const value = localStorage.getItem(key);
+                            if (value) {
+                              try {
+                                data[key] = JSON.parse(value);
+                              } catch {
+                                data[key] = value;
+                              }
+                            }
+                          }
+                          const keys = Object.keys(data);
+                          if (keys.length === 0) {
+                            return (
+                              <div className="text-center py-8 text-gray-500">
+                                <Database className="w-12 h-12 mx-auto mb-4 opacity-30" />
+                                <p>当前浏览器中没有检测到配置数据</p>
+                                <p className="text-xs mt-2">请先在其他管理页面完成数据修改并保存</p>
+                              </div>
+                            );
+                          }
+                          return keys.map((key) => {
+                            const value = data[key];
+                            const isArray = Array.isArray(value);
+                            const isObject = typeof value === 'object' && value !== null;
+                            return (
+                              <div key={key} className="p-4 bg-white border border-gray-200 rounded-lg">
+                                <div className="flex items-center justify-between mb-2">
+                                  <div className="font-medium text-gray-800">{key}</div>
+                                  <div className="text-xs text-gray-400">
+                                    {isArray ? `数组 (${value.length} 项)` : isObject ? `对象 (${Object.keys(value).length} 个属性)` : '字符串'}
+                                  </div>
+                                </div>
+                                {isObject && (
+                                  <pre className="max-h-32 overflow-auto text-xs bg-gray-50 p-3 rounded">
+                                    {JSON.stringify(value, null, 2)}
+                                  </pre>
+                                )}
+                                {!isObject && (
+                                  <pre className="max-h-32 overflow-auto text-xs bg-gray-50 p-3 rounded">
+                                    {String(value)}
+                                  </pre>
+                                )}
+                              </div>
+                            );
+                          });
+                        })()}
+                      </div>
+                    </div>
+
+                    <div className="bg-yellow-50 rounded-xl p-6">
+                      <h3 className="text-lg font-semibold text-gray-900 mb-2">📋 使用步骤</h3>
+                      <ol className="text-sm text-gray-700 space-y-2 list-decimal list-inside">
+                        <li>确认上方显示了所有你修改过的数据（包括工厂图片URL）</li>
+                        <li>点击"下载数据到文件"或"复制到剪贴板"</li>
+                        <li>把导出的数据发送给开发人员</li>
+                        <li>开发人员会把数据写入配置文件并部署到云端</li>
+                      </ol>
                     </div>
                   </div>
                 </div>
