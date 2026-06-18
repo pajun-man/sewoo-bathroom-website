@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import SEO from '../components/seo/SEO';
 import { Factory, Building2, Truck, Award, ArrowRight } from 'lucide-react';
 import { useI18n } from '../contexts/I18nContext';
+import factoriesData from '../data/factories.json';
 
 interface Factory {
   id: string;
@@ -40,118 +41,7 @@ interface Factory {
   [key: string]: any;
 }
 
-const defaultFactories: Factory[] = [
-  {
-    id: '1',
-    name: '淋浴房生产基地',
-    nameEn: 'Shower Enclosure Production Base',
-    category: '淋浴房',
-    categoryEn: 'Showers',
-    location: '广东佛山',
-    locationEn: 'Foshan, Guangdong',
-    description: '专业生产整体淋浴房、淋浴屏风、淋浴底座等产品，拥有先进的自动化生产线和严格的质量控制体系。',
-    descriptionEn: 'Specializes in producing complete shower enclosures, shower screens, and shower bases. Equipped with advanced automated production lines and strict quality control systems.',
-    capacity: '年产能：50万套',
-    capacityEn: 'Annual Capacity: 500,000 units',
-    image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800',
-    features: [
-      { zh: '自动化生产线', en: 'Automated Production' },
-      { zh: 'ISO9001认证', en: 'ISO9001 Certified' },
-      { zh: '环保材料', en: 'Eco-friendly Materials' },
-      { zh: '出口品质', en: 'Export Quality' },
-    ],
-    galleryImages: [],
-    videos: [],
-  },
-  {
-    id: '2',
-    name: '陶瓷洁具工厂',
-    nameEn: 'Ceramic Sanitary Ware Factory',
-    category: '马桶/盆',
-    categoryEn: 'Toilets/Basins',
-    location: '江西景德镇',
-    locationEn: 'Jingdezhen, Jiangxi',
-    description: '专注于陶瓷马桶、面盆等洁具产品的研发与生产，采用高温陶瓷烧制工艺，产品品质卓越。',
-    descriptionEn: 'Focuses on R&D and production of ceramic toilets and basins. Uses high-temperature ceramic firing technology for superior quality products.',
-    capacity: '年产能：80万件',
-    capacityEn: 'Annual Capacity: 800,000 pieces',
-    image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d365f?w=800',
-    features: [
-      { zh: '高温烧制', en: 'High Temperature Firing' },
-      { zh: '纳米釉面', en: 'Nano Glaze' },
-      { zh: '节水设计', en: 'Water Saving Design' },
-      { zh: '智能生产', en: 'Smart Production' },
-    ],
-    galleryImages: [],
-    videos: [],
-  },
-  {
-    id: '3',
-    name: '智能卫浴工厂',
-    nameEn: 'Smart Bathroom Factory',
-    category: '智能马桶',
-    categoryEn: 'Smart Toilets',
-    location: '浙江杭州',
-    locationEn: 'Hangzhou, Zhejiang',
-    description: '专业生产智能马桶、智能马桶盖等高端智能卫浴产品，集成先进的传感技术和智能控制系统。',
-    descriptionEn: 'Specializes in producing high-end smart toilets and smart toilet seats. Integrates advanced sensor technology and intelligent control systems.',
-    capacity: '年产能：30万套',
-    capacityEn: 'Annual Capacity: 300,000 units',
-    image: 'https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800',
-    features: [
-      { zh: '智能控制', en: 'Smart Control' },
-      { zh: '即热技术', en: 'Instant Heating' },
-      { zh: '紫外线杀菌', en: 'UV Sterilization' },
-      { zh: '远程APP', en: 'Remote APP' },
-    ],
-    galleryImages: [],
-    videos: [],
-  },
-  {
-    id: '4',
-    name: '花洒生产中心',
-    nameEn: 'Shower Head Production Center',
-    category: '花洒',
-    categoryEn: 'Shower Heads',
-    location: '福建厦门',
-    locationEn: 'Xiamen, Fujian',
-    description: '生产各类淋浴花洒、手持花洒、头顶花洒等产品，采用优质不锈钢和黄铜材料，表面处理工艺精湛。',
-    descriptionEn: 'Produces various shower heads including rain showers, hand showers, and overhead showers. Uses high-quality stainless steel and brass materials with exquisite surface treatment.',
-    capacity: '年产能：100万套',
-    capacityEn: 'Annual Capacity: 1,000,000 units',
-    image: 'https://images.unsplash.com/photo-1585421514738-01798e348b17?w=800',
-    features: [
-      { zh: '优质材料', en: 'Premium Materials' },
-      { zh: '多镀层工艺', en: 'Multi-layer Coating' },
-      { zh: '节水技术', en: 'Water Saving Tech' },
-      { zh: '多样化设计', en: 'Diverse Designs' },
-    ],
-    galleryImages: [],
-    videos: [],
-  },
-  {
-    id: '5',
-    name: '浴室家具工厂',
-    nameEn: 'Bathroom Furniture Factory',
-    category: '其他产品',
-    categoryEn: 'Other Products',
-    location: '江苏苏州',
-    locationEn: 'Suzhou, Jiangsu',
-    description: '生产浴室柜、镜柜、置物架等浴室家具产品，提供定制化服务，满足不同客户需求。',
-    descriptionEn: 'Produces bathroom cabinets, mirror cabinets, and storage shelves. Offers customized services to meet diverse customer needs.',
-    capacity: '年产能：20万套',
-    capacityEn: 'Annual Capacity: 200,000 units',
-    image: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800',
-    features: [
-      { zh: '定制服务', en: 'Custom Service' },
-      { zh: '环保板材', en: 'Eco-friendly Board' },
-      { zh: '防水设计', en: 'Waterproof Design' },
-      { zh: '时尚外观', en: 'Stylish Design' },
-    ],
-    galleryImages: [],
-    videos: [],
-  },
-];
+const defaultFactories: Factory[] = factoriesData as Factory[];
 
 const FactoryPage = () => {
   const { lang } = useI18n();
