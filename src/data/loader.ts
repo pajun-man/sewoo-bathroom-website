@@ -1,6 +1,7 @@
 import defaultSeoConfig from './seo-config.json';
 import defaultProducts from './products.json';
 import defaultInspirations from './inspirations.json';
+import defaultSiteConfig from './site-config.json';
 
 // 从 localStorage 加载数据，没有的话使用默认数据
 export const loadFromStorage = (key: string, defaultValue: any) => {
@@ -16,3 +17,4 @@ export const loadFromStorage = (key: string, defaultValue: any) => {
 export const seoConfig = loadFromStorage('seoConfig', defaultSeoConfig);
 export const products = loadFromStorage('products', defaultProducts);
 export const inspirations = loadFromStorage('inspirations', defaultInspirations);
+export const siteConfig = loadFromStorage('siteConfig', defaultSiteConfig);

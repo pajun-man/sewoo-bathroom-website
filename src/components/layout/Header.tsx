@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { Menu, X, Globe, ChevronDown, ChevronRight } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { useI18n } from '../../contexts/I18nContext';
+import { siteConfig } from '../../data/loader';
 
 interface NavItem {
   path: string;
@@ -51,7 +52,7 @@ const defaultDropdownItems = [
   ]},
 ];
 
-const defaultNavItems: NavItem[] = [
+const defaultNavItems: NavItem[] = siteConfig?.navItems?.length > 0 ? siteConfig.navItems : [
   { path: '/', label: '首页', labelEn: 'Home' },
   { 
     path: '/products', 
@@ -73,9 +74,9 @@ const Header = () => {
   const [isLangOpen, setIsLangOpen] = useState(false);
   const [isProductsOpen, setIsProductsOpen] = useState(false);
   const [navItems, setNavItems] = useState<NavItem[]>(defaultNavItems);
-  const [logoUrl, setLogoUrl] = useState<string>('');
-  const [siteTitle, setSiteTitle] = useState<string>('');
-  const [siteTitleEn, setSiteTitleEn] = useState<string>('');
+  const [logoUrl, setLogoUrl] = useState<string>(siteConfig?.siteLogo || '');
+  const [siteTitle, setSiteTitle] = useState<string>(siteConfig?.siteTitle?.zh || '工厂供应链集合体');
+  const [siteTitleEn, setSiteTitleEn] = useState<string>(siteConfig?.siteTitle?.en || 'Factory Supply Chain');
 
   useEffect(() => {
     const savedNavItems = localStorage.getItem('navItems');

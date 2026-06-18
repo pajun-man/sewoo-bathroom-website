@@ -15,6 +15,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Dealers from "./pages/Dealers";
 import Admin from "./pages/Admin";
+import ExportData from "./pages/ExportData";
 import { I18nProvider } from "./contexts/I18nContext";
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
             <Route path="/dealers" element={<Layout><Dealers /></Layout>} />
             <Route path="/contact" element={<Layout><Contact /></Layout>} />
             <Route path="/admin" element={<Admin />} />
+            <Route path="/export-data" element={<ExportData />} />
             <Route path="/reset" element={<ResetPage />} />
           </Routes>
         </Router>

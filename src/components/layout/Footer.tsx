@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { Instagram, Facebook, Youtube, Mail, Phone, MapPin } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { useI18n } from '../../contexts/I18nContext';
+import { siteConfig } from '../../data/loader';
 
 interface ContactInfo {
   companyName: string;
@@ -21,7 +22,17 @@ interface FooterSocial {
   youtubeUrl: string;
 }
 
-const defaultContactInfo: ContactInfo = {
+const defaultContactInfo: ContactInfo = siteConfig?.contactInfo ? {
+  companyName: siteConfig.contactInfo.companyName || 'SEWOO',
+  slogan: siteConfig.contactInfo.slogan || '工厂供应链集合体，专注高端卫浴制造二十余年，为全球客户提供优质产品与服务。',
+  sloganEn: siteConfig.contactInfo.sloganEn || 'Factory Supply Chain Collective, specializing in premium bathroom manufacturing for over 20 years, providing quality products and services worldwide.',
+  address: siteConfig.contactInfo.address || '广东省佛山市禅城区',
+  addressEn: siteConfig.contactInfo.addressEn || 'Chancheng District, Foshan City, Guangdong Province',
+  addressLine2: siteConfig.contactInfo.addressLine2 || '卫浴产业园区88号',
+  addressLine2En: siteConfig.contactInfo.addressLine2En || 'No. 88, Bathroom Industrial Park',
+  phone: siteConfig.contactInfo.phone || '+86 400-888-9999',
+  emails: siteConfig.contactInfo.emails || ['info@sewoo-bath.com', 'support@sewoo-bath.com'],
+} : {
   companyName: 'SEWOO',
   slogan: '工厂供应链集合体，专注高端卫浴制造二十余年，为全球客户提供优质产品与服务。',
   sloganEn: 'Factory Supply Chain Collective, specializing in premium bathroom manufacturing for over 20 years, providing quality products and services worldwide.',
