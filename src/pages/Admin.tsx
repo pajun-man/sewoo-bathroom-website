@@ -4151,13 +4151,69 @@ const Admin: React.FC = () => {
                     </div>
 
                     <div className="bg-yellow-50 rounded-xl p-6">
-                      <h3 className="text-lg font-semibold text-gray-900 mb-2">📋 使用步骤</h3>
-                      <ol className="text-sm text-gray-700 space-y-2 list-decimal list-inside">
-                        <li>确认上方显示了所有你修改过的数据（包括工厂图片URL）</li>
-                        <li>点击"下载数据到文件"或"复制到剪贴板"</li>
-                        <li>把导出的数据发送给开发人员</li>
-                        <li>开发人员会把数据写入配置文件并部署到云端</li>
-                      </ol>
+                      <h3 className="text-lg font-semibold text-gray-900 mb-2">📋 云端更新完整流程</h3>
+                      <div className="text-sm text-gray-700 space-y-4">
+                        <p className="font-medium text-gray-800">您修改的内容目前保存在浏览器中，云端网站还未同步。请按以下步骤操作：</p>
+
+                        <div className="bg-white rounded-lg p-4 border border-gray-200">
+                          <div className="flex items-start gap-3 mb-3">
+                            <span className="w-7 h-7 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">1</span>
+                            <div>
+                              <div className="font-medium text-gray-900">导出数据文件</div>
+                              <div className="text-gray-600 mt-1">点击上方的 "下载数据到文件" 按钮，浏览器会下载一个 JSON 文件</div>
+                            </div>
+                          </div>
+
+                          <div className="flex items-start gap-3 mb-3">
+                            <span className="w-7 h-7 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">2</span>
+                            <div>
+                              <div className="font-medium text-gray-900">重命名并放到指定位置</div>
+                              <div className="text-gray-600 mt-1">
+                                把下载的文件重命名为 <code className="bg-gray-100 px-1.5 py-0.5 rounded text-xs font-mono">localstorage-export.json</code>，
+                                然后复制到项目根目录（和 package.json 同级）
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="flex items-start gap-3 mb-3">
+                            <span className="w-7 h-7 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">3</span>
+                            <div>
+                              <div className="font-medium text-gray-900">运行导入脚本</div>
+                              <div className="text-gray-600 mt-1">
+                                在项目根目录打开终端（按住 Shift 右键 → "在此处打开 PowerShell 窗口"），运行：
+                                <div className="bg-gray-900 text-green-400 font-mono text-xs p-2 rounded mt-2 overflow-x-auto">
+                                  npm run import-data
+                                </div>
+                                <div className="text-xs mt-1">这个脚本会把您修改的数据自动写入各个配置文件</div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="flex items-start gap-3">
+                            <span className="w-7 h-7 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">4</span>
+                            <div>
+                              <div className="font-medium text-gray-900">提交并推送到 GitHub</div>
+                              <div className="text-gray-600 mt-1">
+                                在终端继续运行以下命令，每行一个：
+                                <div className="bg-gray-900 text-green-400 font-mono text-xs p-2 rounded mt-2 overflow-x-auto space-y-1">
+                                  <div>git add -A</div>
+                                  <div>git commit -m "更新内容"</div>
+                                  <div>git push origin master:main</div>
+                                </div>
+                                <div className="text-xs mt-1">推送后 Vercel 会自动重新部署（约 2-5 分钟生效）</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="flex items-center gap-3 p-4 bg-blue-50 rounded-lg border border-blue-200">
+                          <span className="text-xl">💡</span>
+                          <div className="text-sm text-gray-700">
+                            <strong className="text-gray-900">便捷方案：</strong>您也可以直接把下载的 JSON 文件发给开发人员，由他们代为更新。
+                            但上面的流程能让您独立完成所有内容更新。
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>

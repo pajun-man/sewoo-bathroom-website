@@ -3,6 +3,7 @@ import SEO from '../components/seo/SEO';
 import Button from '../components/ui/Button';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import seoConfig from '../data/seo-config.json';
+import { siteConfig } from '../data/loader';
 import { useI18n } from '../contexts/I18nContext';
 
 interface ContactInfo {
@@ -49,6 +50,23 @@ const defaultContactInfo: ContactInfo = {
   },
 };
 
+const getInitialContactInfo = (): ContactInfo => {
+  if (typeof window !== 'undefined') {
+    const saved = localStorage.getItem('contactInfo');
+    if (saved) {
+      try {
+        return JSON.parse(saved);
+      } catch {
+        // fall through
+      }
+    }
+  }
+  if (siteConfig?.contactInfo) {
+    return siteConfig.contactInfo as ContactInfo;
+  }
+  return defaultContactInfo;
+};
+
 const Contact = () => {
   const { lang, t } = useI18n();
   const [formData, setFormData] = useState({
@@ -58,7 +76,7 @@ const Contact = () => {
     subject: '',
     message: '',
   });
-  const [contactInfo, setContactInfo] = useState<ContactInfo>(defaultContactInfo);
+  const [contactInfo, setContactInfo] = useState<ContactInfo>(getInitialContactInfo);
 
   useEffect(() => {
     const saved = localStorage.getItem('contactInfo');
@@ -66,7 +84,7 @@ const Contact = () => {
       try {
         setContactInfo(JSON.parse(saved));
       } catch {
-        setContactInfo(defaultContactInfo);
+        // keep existing
       }
     }
   }, []);
