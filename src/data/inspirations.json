@@ -1,0 +1,127 @@
+[
+  {
+    "id": "1",
+    "slug": "modern-minimalist-bathroom",
+    "style": "modern",
+    "title": "现代极简浴室设计",
+    "titleEn": "Modern Minimalist Bathroom Design",
+    "description": "以白色为主调，搭配灰色大理石纹瓷砖，营造出简洁明亮的现代浴室空间。智能马桶和LED浴室镜体现了科技与美学的完美结合。",
+    "descriptionEn": "A bright, modern bathroom with white as the primary color, complemented by gray marble-effect tiles. Smart toilet and LED mirror showcase the perfect blend of technology and aesthetics.",
+    "images": [
+      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800",
+      "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800",
+      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800"
+    ],
+    "project": "精品住宅项目",
+    "projectEn": "Premium Residential Project",
+    "location": "上海·静安区",
+    "locationEn": "Jing'an District, Shanghai",
+    "seo": {
+      "title": "现代极简浴室设计案例 - SEWOO 灵感画廊",
+      "titleEn": "Modern Minimalist Bathroom Design - SEWOO Inspiration Gallery",
+      "description": "探索 SEWOO 现代极简浴室设计案例，白色主调搭配大理石纹理，智能卫浴产品应用。",
+      "descriptionEn": "Explore SEWOO modern minimalist bathroom designs with white theme and marble textures.",
+      "keywords": ["现代浴室", "极简设计", "白色浴室", "智能卫浴"]
+    }
+  },
+  {
+    "id": "2",
+    "slug": "luxury-spa-inspired-bathroom",
+    "style": "classic",
+    "title": "奢华水疗风格浴室",
+    "titleEn": "Luxury Spa-Inspired Bathroom",
+    "description": "灵感来自顶级水疗中心的浴室设计，深色胡桃木饰面与金色五金配件相得益彰。独立式浴缸和头顶花洒营造出沉浸式的沐浴体验。",
+    "descriptionEn": "Inspired by luxury spas, this bathroom features dark walnut wood finishes paired with gold fixtures. Freestanding tub and rain shower create an immersive bathing experience.",
+    "images": [
+      "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=800",
+      "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800",
+      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
+    ],
+    "project": "五星级酒店项目",
+    "projectEn": "5-Star Hotel Project",
+    "location": "北京·朝阳区",
+    "locationEn": "Chaoyang District, Beijing",
+    "seo": {
+      "title": "奢华水疗风格浴室设计 - SEWOO 灵感画廊",
+      "titleEn": "Luxury Spa-Inspired Bathroom - SEWOO Inspiration Gallery",
+      "description": "探索 SEWOO 奢华水疗风格浴室设计案例，深色木饰面搭配金色五金，独立式浴缸配置。",
+      "descriptionEn": "Explore SEWOO luxury spa-inspired bathroom designs with wood finishes and gold fixtures.",
+      "keywords": ["奢华浴室", "水疗风格", "独立浴缸", "金色五金"]
+    }
+  },
+  {
+    "id": "3",
+    "slug": "scandinavian-cozy-bathroom",
+    "style": "minimalist",
+    "title": "北欧温馨浴室",
+    "titleEn": "Scandinavian Cozy Bathroom",
+    "description": "北欧风格浴室设计，以自然木色和柔和的灰色为主，营造出温暖舒适的沐浴空间。墙挂式浴室柜和简洁的线条体现了功能主义设计理念。",
+    "descriptionEn": "A Scandinavian bathroom with natural wood tones and soft grays, creating a warm and cozy bathing space. Wall-mounted vanity and clean lines embody functional design principles.",
+    "images": [
+      "https://images.unsplash.com/photo-1585421514738-01798e348b17?w=800",
+      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800",
+      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
+    ],
+    "project": "北欧风情别墅",
+    "projectEn": "Scandinavian Style Villa",
+    "location": "深圳·南山区",
+    "locationEn": "Nanshan District, Shenzhen",
+    "seo": {
+      "title": "北欧温馨浴室设计 - SEWOO 灵感画廊",
+      "titleEn": "Scandinavian Cozy Bathroom - SEWOO Inspiration Gallery",
+      "description": "探索 SEWOO 北欧风格浴室设计案例，自然木色柔和配色，温馨舒适的沐浴空间。",
+      "descriptionEn": "Explore SEWOO Scandinavian bathroom designs with natural wood tones and cozy aesthetics.",
+      "keywords": ["北欧浴室", "温馨设计", "木色浴室", "功能主义"]
+    }
+  },
+  {
+    "id": "4",
+    "slug": "contemporary-black-bathroom",
+    "style": "modern",
+    "title": "当代黑色美学浴室",
+    "titleEn": "Contemporary Black Aesthetic Bathroom",
+    "description": "大胆使用黑色作为主色调，配合哑光黑色五金件，打造出极具个性的当代浴室。LED照明系统的巧妙运用为空间增添了层次感。",
+    "descriptionEn": "Bold black as the primary color with matte black fixtures creates a distinctive contemporary bathroom. Clever LED lighting adds layers and depth to the space.",
+    "images": [
+      "https://images.unsplash.com/photo-1618220179428-22790b461013?w=800",
+      "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800",
+      "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=800"
+    ],
+    "project": "艺术公寓项目",
+    "projectEn": "Artistic Apartment Project",
+    "location": "广州·天河区",
+    "locationEn": "Tianhe District, Guangzhou",
+    "seo": {
+      "title": "当代黑色美学浴室设计 - SEWOO 灵感画廊",
+      "titleEn": "Contemporary Black Bathroom - SEWOO Inspiration Gallery",
+      "description": "探索 SEWOO 当代黑色美学浴室设计案例，大胆配色配合LED照明，极具个性。",
+      "descriptionEn": "Explore SEWOO contemporary black bathroom designs with bold aesthetics and LED lighting.",
+      "keywords": ["黑色浴室", "当代设计", "哑光黑", "LED照明"]
+    }
+  },
+  {
+    "id": "5",
+    "slug": "natural-stone-bathroom",
+    "style": "classic",
+    "title": "天然石材浴室",
+    "titleEn": "Natural Stone Bathroom",
+    "description": "采用天然大理石和花岗岩打造的浴室，每一块石材都独一无二。配合简约设计的卫浴产品，展现出天然材质的高贵气质。",
+    "descriptionEn": "A bathroom crafted from natural marble and granite, where each stone piece is unique. Paired with minimalist fixtures, showcasing the noble character of natural materials.",
+    "images": [
+      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800",
+      "https://images.unsplash.com/photo-1585421514738-01798e348b17?w=800",
+      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800"
+    ],
+    "project": "高端会所项目",
+    "projectEn": "Premium Clubhouse Project",
+    "location": "成都·锦江区",
+    "locationEn": "Jinjiang District, Chengdu",
+    "seo": {
+      "title": "天然石材浴室设计 - SEWOO 灵感画廊",
+      "titleEn": "Natural Stone Bathroom - SEWOO Inspiration Gallery",
+      "description": "探索 SEWOO 天然石材浴室设计案例，大理石和花岗岩应用，高贵材质美学。",
+      "descriptionEn": "Explore SEWOO natural stone bathroom designs with marble and granite materials.",
+      "keywords": ["大理石浴室", "石材浴室", "天然材质", "高端设计"]
+    }
+  }
+]

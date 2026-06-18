@@ -1,0 +1,90 @@
+{
+  "global": {
+    "siteName": "SEWOO 工厂供应链集合体",
+    "siteNameEn": "SEWOO Factory Supply Chain Collective",
+    "defaultLanguage": "zh",
+    "supportedLanguages": ["zh", "en"],
+    "defaultCurrency": "USD",
+    "contactEmail": "info@sewoo-bath.com",
+    "contactPhone": "+86 400-888-9999",
+    "socialMedia": {
+      "instagram": "https://instagram.com/sewoobath",
+      "facebook": "https://facebook.com/sewoobath",
+      "youtube": "https://youtube.com/sewoobath"
+    }
+  },
+  "pages": [
+    {
+      "page": "home",
+      "path": "/",
+      "title": "SEWOO - 工厂供应链集合体 | 高端卫浴制造商",
+      "titleEn": "SEWOO - Factory Supply Chain Collective | Premium Bathroom Manufacturer",
+      "description": "SEWOO工厂供应链集合体，专注高端卫浴制造二十余年，拥有多个现代化生产基地，为全球50+国家提供优质卫浴产品与服务。",
+      "descriptionEn": "SEWOO Factory Supply Chain Collective, specializing in premium bathroom manufacturing for over 20 years, with multiple modern production bases serving 50+ countries worldwide.",
+      "keywords": ["工厂供应链", "高端卫浴", "卫浴制造", "生产基地", "SEWOO"],
+      "ogImage": "/og-images/home.jpg",
+      "canonical": "/",
+      "robots": "index, follow"
+    },
+    {
+      "page": "products",
+      "path": "/products",
+      "title": "产品中心 - SEWOO 工厂供应链集合体",
+      "titleEn": "Products - SEWOO Factory Supply Chain Collective",
+      "description": "浏览SEWOO工厂直供的完整卫浴产品系列，包括淋浴房、陶瓷洁具、智能马桶、花洒等，所有产品均采用高品质材料和先进工艺。",
+      "descriptionEn": "Browse SEWOO's complete bathroom product range directly from our factories, including shower enclosures, ceramic ware, smart toilets, and shower heads. All products use high-quality materials.",
+      "keywords": ["卫浴产品", "淋浴房", "智能马桶", "陶瓷洁具", "SEWOO"],
+      "ogImage": "/og-images/products.jpg",
+      "canonical": "/products",
+      "robots": "index, follow"
+    },
+    {
+      "page": "inspiration",
+      "path": "/inspiration",
+      "title": "灵感画廊 - SEWOO 高端卫浴",
+      "titleEn": "Inspiration Gallery - SEWOO Premium Bathroom",
+      "description": "探索SEWOO灵感画廊，汇集全球顶尖浴室设计案例。从现代极简到奢华水疗风格，获取您的浴室装修灵感。",
+      "descriptionEn": "Explore SEWOO Inspiration Gallery featuring top bathroom designs worldwide. From modern minimalist to luxury spa styles.",
+      "keywords": ["浴室设计", "装修灵感", "浴室案例", "设计趋势"],
+      "ogImage": "/og-images/inspiration.jpg",
+      "canonical": "/inspiration",
+      "robots": "index, follow"
+    },
+    {
+      "page": "about",
+      "path": "/about",
+      "title": "关于我们 - SEWOO 工厂供应链集合体",
+      "titleEn": "About Us - SEWOO Factory Supply Chain Collective",
+      "description": "了解SEWOO工厂供应链集合体，我们是专注于高端卫浴产品研发和制造的领先企业，拥有多个现代化生产基地，以创新技术和卓越品质赢得全球客户信赖。",
+      "descriptionEn": "Learn about SEWOO Factory Supply Chain Collective. We are a leading company focused on high-end bathroom product R&D and manufacturing with multiple modern production bases.",
+      "keywords": ["SEWOO", "工厂供应链", "企业介绍", "品牌故事"],
+      "ogImage": "/og-images/about.jpg",
+      "canonical": "/about",
+      "robots": "index, follow"
+    },
+    {
+      "page": "contact",
+      "path": "/contact",
+      "title": "联系我们 - SEWOO 工厂供应链集合体",
+      "titleEn": "Contact Us - SEWOO Factory Supply Chain Collective",
+      "description": "联系SEWOO工厂供应链集合体，获取产品咨询、OEM/ODM合作、经销商合作等服务。我们的专业团队随时为您提供帮助。",
+      "descriptionEn": "Contact SEWOO Factory Supply Chain Collective for product inquiries, OEM/ODM cooperation, and dealer partnership. Our team is ready to help.",
+      "keywords": ["联系SEWOO", "OEM合作", "ODM定制", "经销商合作"],
+      "ogImage": "/og-images/contact.jpg",
+      "canonical": "/contact",
+      "robots": "index, follow"
+    },
+    {
+      "page": "dealers",
+      "path": "/dealers",
+      "title": "可持续发展 - SEWOO 工厂供应链集合体",
+      "titleEn": "Sustainability - SEWOO Factory Supply Chain Collective",
+      "description": "SEWOO工厂供应链集合体致力于可持续发展，采用环保材料和清洁生产工艺，实现绿色制造。",
+      "descriptionEn": "SEWOO Factory Supply Chain Collective is committed to sustainability, using eco-friendly materials and clean production processes for green manufacturing.",
+      "keywords": ["可持续发展", "环保", "绿色制造", "碳中和"],
+      "ogImage": "/og-images/dealers.jpg",
+      "canonical": "/dealers",
+      "robots": "index, follow"
+    }
+  ]
+}
