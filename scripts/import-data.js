@@ -103,13 +103,49 @@ function importData() {
     updatedCount++;
   }
 
-  // 更新 home-config.json
+  // 更新 home-config.json（深度合并，确保字段不丢失）
   if (data.homeConfig) {
-    const homeConfig = {
-      version: data.homeConfig.version || '2.0.0',
-      ...data.homeConfig
+    let existingHomeConfig = {};
+    const homeConfigPath = path.join(dataDir, 'home-config.json');
+    try {
+      if (fs.existsSync(homeConfigPath)) {
+        existingHomeConfig = JSON.parse(fs.readFileSync(homeConfigPath, 'utf-8'));
+      }
+    } catch (e) {
+      console.warn(`  ⚠️  读取现有的 home-config.json 失败，将使用新数据`);
+    }
+
+    const mergedHomeConfig = {
+      ...existingHomeConfig,
+      ...data.homeConfig,
+      version: data.homeConfig.version || existingHomeConfig.version || '2.0.0',
+      hero: {
+        ...existingHomeConfig.hero,
+        ...data.homeConfig.hero,
+        videos: data.homeConfig.hero?.videos || existingHomeConfig.hero?.videos || [],
+        media: data.homeConfig.hero?.media || existingHomeConfig.hero?.media || [],
+        useVideo: data.homeConfig.hero?.useVideo || existingHomeConfig.hero?.useVideo || false
+      },
+      factories: data.homeConfig.factories || existingHomeConfig.factories || [],
+      factoryStats: data.homeConfig.factoryStats || existingHomeConfig.factoryStats || {
+        capacity: { value: "50万+", label: "年产能", labelEn: "Annual Capacity" },
+        patents: { value: "30+", label: "专利技术", labelEn: "Patents" },
+        passRate: { value: "99.8%", label: "合格率", labelEn: "Pass Rate" },
+        experience: { value: "20+", label: "年行业经验", labelEn: "Years Experience" }
+      },
+      factorySection: data.homeConfig.factorySection || existingHomeConfig.factorySection || {
+        title: "五大生产基地",
+        titleEn: "Five Production Bases",
+        description: "SEWOO工厂供应链集合体在全国拥有五大专业生产基地，涵盖全品类卫浴产品制造。",
+        descriptionEn: "SEWOO Factory Supply Chain Collective has five specialized production bases nationwide.",
+        buttonText: "了解更多",
+        buttonTextEn: "Learn More"
+      },
+      featuredProducts: data.homeConfig.featuredProducts || existingHomeConfig.featuredProducts || [],
+      stats: data.homeConfig.stats || existingHomeConfig.stats || [],
+      certifications: data.homeConfig.certifications || existingHomeConfig.certifications || []
     };
-    updateJSONFile(path.join(dataDir, 'home-config.json'), homeConfig);
+    updateJSONFile(homeConfigPath, mergedHomeConfig);
     updatedCount++;
   }
 
@@ -143,17 +179,28 @@ function importData() {
     updatedCount++;
   }
 
-  // 更新 site-config.json
+  // 更新 site-config.json（读取现有文件合并，避免字段丢失）
+  const siteConfigPath = path.join(dataDir, 'site-config.json');
+  let existingSiteConfig = {};
+  try {
+    if (fs.existsSync(siteConfigPath)) {
+      existingSiteConfig = JSON.parse(fs.readFileSync(siteConfigPath, 'utf-8'));
+    }
+  } catch (e) {
+    // ignore
+  }
+
   const siteConfig = {
-    navItems: data.navItems || null,
-    siteLogo: data.siteLogo || null,
-    siteTitle: data.siteTitle || null,
-    contactInfo: data.contactInfo || null,
-    footerInfo: data.footerInfo || null,
+    ...existingSiteConfig,
+    navItems: data.navItems || existingSiteConfig.navItems || null,
+    siteLogo: data.siteLogo || existingSiteConfig.siteLogo || null,
+    siteTitle: data.siteTitle || existingSiteConfig.siteTitle || null,
+    contactInfo: data.contactInfo || existingSiteConfig.contactInfo || null,
+    footerInfo: data.footerInfo || existingSiteConfig.footerInfo || null,
   };
 
   if (siteConfig.navItems || siteConfig.siteLogo || siteConfig.siteTitle || siteConfig.contactInfo || siteConfig.footerInfo) {
-    updateJSONFile(path.join(dataDir, 'site-config.json'), siteConfig);
+    updateJSONFile(siteConfigPath, siteConfig);
     updatedCount++;
   }
 
