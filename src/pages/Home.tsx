@@ -7,6 +7,7 @@ import { ArrowRight, Droplets, Cpu, Sparkles, Leaf, Building, Award, Users, Glob
 import { useState, useEffect } from 'react';
 import { products as defaultProducts, inspirations as defaultInspirations, seoConfig } from '../data/loader';
 import defaultHomeConfig from '../data/home-config.json';
+import defaultFactories from '../data/factories.json';
 import { useI18n } from '../contexts/I18nContext';
 
 const loadFromStorage = (key: string, defaultValue: any) => {
@@ -87,7 +88,7 @@ const Home = () => {
   const { lang, t } = useI18n();
   const [featuredProducts, setFeaturedProducts] = useState(defaultProducts.slice(0, 3));
   const [featuredInspirations, setFeaturedInspirations] = useState(defaultInspirations.slice(0, 3));
-  const [factories, setFactories] = useState<Factory[]>([]);
+  const [factories, setFactories] = useState<Factory[]>(defaultFactories.slice(0, 4));
   const [homeConfig, setHomeConfig] = useState<HomeConfig>({
     hero: {
       ...defaultHomeConfig.hero,
@@ -122,6 +123,7 @@ const Home = () => {
     const savedInspirations = localStorage.getItem('inspirations');
     const savedHomeConfig = localStorage.getItem('homeConfig');
     const savedFactories = localStorage.getItem('factories');
+    const currentVersion = defaultHomeConfig.version || '1.0.0';
     
     if (savedProducts) {
       const parsed = JSON.parse(savedProducts);
@@ -135,41 +137,49 @@ const Home = () => {
     
     if (savedFactories) {
       const parsedFactories = JSON.parse(savedFactories);
-      setFactories(parsedFactories.slice(0, 4));
+      if (Array.isArray(parsedFactories) && parsedFactories.length > 0) {
+        setFactories(parsedFactories.slice(0, 4));
+      }
     }
     
     if (savedHomeConfig) {
       const parsed = JSON.parse(savedHomeConfig);
-      const compatibleConfig = { 
-        ...parsed,
-        factories: [],
-        factoryStats: parsed.factoryStats || defaultHomeConfig.factoryStats || {
-          capacity: { value: "50万+", label: "年产能", labelEn: "Annual Capacity" },
-          patents: { value: "30+", label: "专利技术", labelEn: "Patents" },
-          passRate: { value: "99.8%", label: "合格率", labelEn: "Pass Rate" },
-          experience: { value: "20+", label: "年行业经验", labelEn: "Years Experience" }
-        },
-        factorySection: parsed.factorySection || defaultHomeConfig.factorySection || {
-          title: "先进生产设施",
-          titleEn: "Advanced Manufacturing Facilities",
-          description: "SEWOO 在全国拥有多个现代化生产基地，配备先进的自动化生产线和严格的质量控制体系，确保每一件产品都达到最高品质标准。",
-          descriptionEn: "SEWOO operates multiple modern manufacturing facilities nationwide, equipped with advanced automated production lines and strict quality control systems to ensure every product meets the highest quality standards.",
-          buttonText: "参观我们的工厂",
-          buttonTextEn: "Visit Our Factory"
-        },
-        featuredProducts: ((parsed.featuredProducts || defaultHomeConfig.featuredProducts || []) as any[]).map(p => ({
-          ...p,
-          type: p.type as 'image' | 'video'
-        }))
-      };
-      if (parsed.hero) {
-        compatibleConfig.hero = {
-          ...parsed.hero,
-          media: parsed.hero.media || parsed.hero.videos?.map((v: any) => ({ ...v, type: 'video' as const })) || [],
-          useVideo: parsed.hero.useVideo || false,
+      const savedVersion = parsed.version || '1.0.0';
+      
+      if (savedVersion === currentVersion) {
+        const compatibleConfig = { 
+          ...parsed,
+          factories: [],
+          factoryStats: parsed.factoryStats || defaultHomeConfig.factoryStats || {
+            capacity: { value: "50万+", label: "年产能", labelEn: "Annual Capacity" },
+            patents: { value: "30+", label: "专利技术", labelEn: "Patents" },
+            passRate: { value: "99.8%", label: "合格率", labelEn: "Pass Rate" },
+            experience: { value: "20+", label: "年行业经验", labelEn: "Years Experience" }
+          },
+          factorySection: parsed.factorySection || defaultHomeConfig.factorySection || {
+            title: "先进生产设施",
+            titleEn: "Advanced Manufacturing Facilities",
+            description: "SEWOO 在全国拥有多个现代化生产基地，配备先进的自动化生产线和严格的质量控制体系，确保每一件产品都达到最高品质标准。",
+            descriptionEn: "SEWOO operates multiple modern manufacturing facilities nationwide, equipped with advanced automated production lines and strict quality control systems to ensure every product meets the highest quality standards.",
+            buttonText: "参观我们的工厂",
+            buttonTextEn: "Visit Our Factory"
+          },
+          featuredProducts: ((parsed.featuredProducts || defaultHomeConfig.featuredProducts || []) as any[]).map(p => ({
+            ...p,
+            type: p.type as 'image' | 'video'
+          }))
         };
+        if (parsed.hero) {
+          compatibleConfig.hero = {
+            ...parsed.hero,
+            media: parsed.hero.media || parsed.hero.videos?.map((v: any) => ({ ...v, type: 'video' as const })) || [],
+            useVideo: parsed.hero.useVideo || false,
+          };
+        }
+        setHomeConfig(compatibleConfig as HomeConfig);
+      } else {
+        localStorage.removeItem('homeConfig');
       }
-      setHomeConfig(compatibleConfig as HomeConfig);
     }
   }, []);
 
