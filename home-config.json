@@ -1,0 +1,150 @@
+{
+  "version": "2.0.0",
+  "hero": {
+    "title": "工厂供应链",
+    "titleEn": "Factory Supply Chain",
+    "subtitle": "集合体",
+    "subtitleEn": "Collective",
+    "description": "SEWOO工厂供应链集合体，整合多个现代化生产基地，为全球客户提供高品质卫浴产品OEM/ODM定制服务，一站式供应链解决方案。",
+    "descriptionEn": "SEWOO Factory Supply Chain Collective integrates multiple modern production bases, providing premium bathroom products OEM/ODM customization services and one-stop supply chain solutions for global customers.",
+    "buttonText": "探索产品",
+    "buttonTextEn": "Explore Products",
+    "button2Text": "参观工厂",
+    "button2TextEn": "Visit Factory",
+    "backgroundImage": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1920",
+    "videos": [
+      {
+        "id": "1",
+        "title": "品牌宣传片",
+        "url": ""
+      }
+    ],
+    "media": [],
+    "useVideo": false
+  },
+  "factories": [
+    {
+      "id": "1",
+      "name": "淋浴房生产基地",
+      "nameEn": "Shower Enclosure Plant",
+      "location": "广东佛山",
+      "locationEn": "Foshan, Guangdong",
+      "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600"
+    },
+    {
+      "id": "2",
+      "name": "陶瓷洁具工厂",
+      "nameEn": "Ceramic Factory",
+      "location": "江西景德镇",
+      "locationEn": "Jingdezhen, Jiangxi",
+      "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d365f?w=600"
+    },
+    {
+      "id": "3",
+      "name": "智能卫浴工厂",
+      "nameEn": "Smart Bathroom Plant",
+      "location": "浙江杭州",
+      "locationEn": "Hangzhou, Zhejiang",
+      "image": "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=600"
+    },
+    {
+      "id": "4",
+      "name": "五金配件工厂",
+      "nameEn": "Hardware Factory",
+      "location": "广东东莞",
+      "locationEn": "Dongguan, Guangdong",
+      "image": "https://images.unsplash.com/photo-1585421514738-01798e348b17?w=600"
+    }
+  ],
+  "factoryStats": {
+    "capacity": {
+      "value": "50万+",
+      "label": "年产能",
+      "labelEn": "Annual Capacity"
+    },
+    "patents": {
+      "value": "30+",
+      "label": "专利技术",
+      "labelEn": "Patents"
+    },
+    "passRate": {
+      "value": "99.8%",
+      "label": "合格率",
+      "labelEn": "Pass Rate"
+    },
+    "experience": {
+      "value": "20+",
+      "label": "年行业经验",
+      "labelEn": "Years Experience"
+    }
+  },
+  "factorySection": {
+    "title": "五大生产基地",
+    "titleEn": "Five Production Bases",
+    "description": "SEWOO工厂供应链集合体在全国拥有五大专业生产基地，涵盖淋浴房、陶瓷洁具、智能卫浴、花洒、浴室家具等全品类卫浴产品制造。",
+    "descriptionEn": "SEWOO Factory Supply Chain Collective has five specialized production bases nationwide, covering shower enclosures, ceramic ware, smart bathroom, shower heads, and bathroom furniture manufacturing.",
+    "buttonText": "了解更多",
+    "buttonTextEn": "Learn More"
+  },
+  "featuredProducts": [
+    {
+      "id": "1",
+      "name": "Duoflo 智能淋浴花洒套装",
+      "nameEn": "Duoflo Smart Shower Set",
+      "category": "花洒",
+      "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600",
+      "type": "image"
+    },
+    {
+      "id": "2",
+      "name": "Zen 头顶花洒",
+      "nameEn": "Zen Rain Shower Head",
+      "category": "花洒",
+      "image": "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=600",
+      "type": "image"
+    },
+    {
+      "id": "3",
+      "name": "Smart Toilet Pro",
+      "nameEn": "Smart Toilet Pro",
+      "category": "智能马桶",
+      "image": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600",
+      "type": "image"
+    },
+    {
+      "id": "4",
+      "name": "Laguna 台上盆",
+      "nameEn": "Laguna Countertop Basin",
+      "category": "盆",
+      "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d365f?w=600",
+      "type": "image"
+    }
+  ],
+  "stats": [
+    {
+      "value": "5",
+      "label": "生产基地",
+      "labelEn": "Production Bases"
+    },
+    {
+      "value": "50+",
+      "label": "出口国家",
+      "labelEn": "Export Countries"
+    },
+    {
+      "value": "20+",
+      "label": "年行业经验",
+      "labelEn": "Years Experience"
+    },
+    {
+      "value": "500万+",
+      "label": "年产能",
+      "labelEn": "Annual Capacity"
+    }
+  ],
+  "certifications": [
+    "ISO 9001",
+    "ISO 14001",
+    "CE认证"
+  ]
+}
