@@ -6,21 +6,32 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const dataDir = path.join(__dirname, '..', 'src', 'data');
-const exportFile = path.join(__dirname, '..', 'localstorage-export.json');
+
+function readFile(filePath) {
+  if (fs.existsSync(filePath)) {
+    const raw = fs.readFileSync(filePath, 'utf-8');
+    return JSON.parse(raw);
+  }
+  return null;
+}
+
+function writeFile(filePath, data) {
+  fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf-8');
+  console.log(`✓ 已更新 ${path.basename(filePath)}`);
+}
 
 function importData() {
-  console.log('开始导入 localStorage 数据...\n');
+  console.log('开始同步数据...\n');
 
-  // Check if export file exists
-  if (!fs.existsSync(exportFile)) {
-    console.error('错误: 找不到 localstorage-export.json 文件');
-    console.log('请先在浏览器中访问 http://localhost:5173/export-data 下载数据');
-    process.exit(1);
+  const exportFile = path.join(__dirname, '..', 'localstorage-export.json');
+  
+  let data = {};
+  
+  if (fs.existsSync(exportFile)) {
+    const rawData = fs.readFileSync(exportFile, 'utf-8');
+    data = JSON.parse(rawData);
+    console.log('从 localstorage-export.json 读取数据');
   }
-
-  // Read export file
-  const rawData = fs.readFileSync(exportFile, 'utf-8');
-  const data = JSON.parse(rawData);
 
   console.log('找到以下数据:');
   Object.keys(data).forEach(key => {
@@ -28,50 +39,32 @@ function importData() {
   });
   console.log('');
 
-  // Import homeConfig
+  // 更新 home-config.json
   if (data.homeConfig) {
-    const filePath = path.join(dataDir, 'home-config.json');
-    fs.writeFileSync(filePath, JSON.stringify(data.homeConfig, null, 2), 'utf-8');
-    console.log('✓ 已更新 home-config.json');
+    writeFile(path.join(dataDir, 'home-config.json'), data.homeConfig);
   }
 
-  // Import factories
+  // 更新 factories.json
   if (data.factories) {
-    const filePath = path.join(dataDir, 'factories.json');
-    fs.writeFileSync(filePath, JSON.stringify(data.factories, null, 2), 'utf-8');
-    console.log('✓ 已更新 factories.json');
+    writeFile(path.join(dataDir, 'factories.json'), data.factories);
   }
 
-  // Import products
+  // 更新 products.json
   if (data.products) {
-    const filePath = path.join(dataDir, 'products.json');
-    fs.writeFileSync(filePath, JSON.stringify(data.products, null, 2), 'utf-8');
-    console.log('✓ 已更新 products.json');
+    writeFile(path.join(dataDir, 'products.json'), data.products);
   }
 
-  // Import inspirations
+  // 更新 inspirations.json
   if (data.inspirations) {
-    const filePath = path.join(dataDir, 'inspirations.json');
-    fs.writeFileSync(filePath, JSON.stringify(data.inspirations, null, 2), 'utf-8');
-    console.log('✓ 已更新 inspirations.json');
+    writeFile(path.join(dataDir, 'inspirations.json'), data.inspirations);
   }
 
-  // Import categories
+  // 更新 categories.json
   if (data.categories) {
-    const filePath = path.join(dataDir, 'categories.json');
-    fs.writeFileSync(filePath, JSON.stringify(data.categories, null, 2), 'utf-8');
-    console.log('✓ 已更新 categories.json');
+    writeFile(path.join(dataDir, 'categories.json'), data.categories);
   }
 
-  // Import partners
-  if (data.partners) {
-    const partnersData = { partners: data.partners };
-    const filePath = path.join(dataDir, 'partners.json');
-    fs.writeFileSync(filePath, JSON.stringify(partnersData, null, 2), 'utf-8');
-    console.log('✓ 已创建 partners.json');
-  }
-
-  // Import navItems, siteLogo, siteTitle, contactInfo, footerInfo to site-config.json
+  // 更新 site-config.json
   const siteConfig = {};
   if (data.navItems) siteConfig.navItems = data.navItems;
   if (data.siteLogo) siteConfig.siteLogo = data.siteLogo;
@@ -84,12 +77,10 @@ function importData() {
   if (data.sustainability) siteConfig.sustainability = data.sustainability;
 
   if (Object.keys(siteConfig).length > 0) {
-    const filePath = path.join(dataDir, 'site-config.json');
-    fs.writeFileSync(filePath, JSON.stringify(siteConfig, null, 2), 'utf-8');
-    console.log('✓ 已创建 site-config.json');
+    writeFile(path.join(dataDir, 'site-config.json'), siteConfig);
   }
 
-  console.log('\n导入完成！请运行 npm run build 重新构建项目。');
+  console.log('\n同步完成！');
 }
 
 importData();
