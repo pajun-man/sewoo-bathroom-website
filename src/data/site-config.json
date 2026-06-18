@@ -1,1 +1,30 @@
-{}
+{
+  "navItems": null,
+  "siteLogo": null,
+  "siteTitle": null,
+  "contactInfo": {
+    "companyName": "SEWOO",
+    "slogan": "工厂供应链集合体，专注高端卫浴制造二十余年，为全球客户提供优质产品与服务。",
+    "sloganEn": "Factory Supply Chain Collective, specializing in premium bathroom manufacturing for over 20 years, providing quality products and services worldwide.",
+    "address": "广东省佛山市禅城区",
+    "addressEn": "Chancheng District, Foshan City, Guangdong Province",
+    "addressLine2": "卫浴产业园区88号",
+    "addressLine2En": "No. 88, Bathroom Industrial Park",
+    "phone": "19174230029",
+    "phoneHours": "周一至周六 9:00-18:00",
+    "phoneHoursEn": "Mon-Sat 9:00-18:00",
+    "emails": [
+      "3312327005@qq.com",
+      ""
+    ],
+    "workTime": {
+      "weekday": "周一至周五: 9:00 - 18:00",
+      "weekdayEn": "Monday-Friday: 9:00 - 18:00",
+      "saturday": "周六: 9:00 - 17:00",
+      "saturdayEn": "Saturday: 9:00 - 17:00",
+      "sunday": "周日: 休息",
+      "sundayEn": "Sunday: Closed"
+    }
+  },
+  "footerInfo": null
+}
