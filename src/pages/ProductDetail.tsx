@@ -113,8 +113,8 @@ const ProductDetail = () => {
         keywords={product.seo?.keywords || []}
       />
 
-      <div className="max-w-7xl mx-auto px-4 py-8">
-        <div className="flex items-center space-x-4 mb-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+        <div className="flex flex-wrap items-center gap-2 sm:gap-4 mb-6 sm:mb-8 text-sm sm:text-base">
           <Link to="/products" className="inline-flex items-center text-gray-600 hover:text-blue-900">
             <ArrowLeft className="w-5 h-5 mr-2" />
             {lang === 'zh' ? '返回产品中心' : 'Back to Products'}
@@ -129,22 +129,22 @@ const ProductDetail = () => {
       </div>
 
       <ProductLayout currentCategory={product.category} currentSubcategory={product.subcategory}>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 mb-12 sm:mb-16">
           <div className="space-y-4">
-            <div className="aspect-square rounded-lg overflow-hidden bg-gray-100 border border-gray-200">
+            <div className="aspect-square rounded-lg sm:rounded-xl overflow-hidden bg-gray-100 border border-gray-200">
               <img
                 src={product.images[activeImageIndex]}
-                alt={product.name}
+                alt={lang === 'zh' ? product.name : (product.nameEn || product.name)}
                 className="w-full h-full object-cover"
               />
             </div>
             {product.images.length > 1 && (
-              <div className="grid grid-cols-4 gap-3">
+              <div className="grid grid-cols-4 sm:grid-cols-4 gap-2 sm:gap-3">
                 {product.images.map((image: string, index: number) => (
                   <button
                     key={index}
                     onClick={() => setActiveImageIndex(index)}
-                    className={`aspect-square rounded-lg overflow-hidden bg-gray-100 border-2 transition-all ${
+                    className={`aspect-square rounded-md sm:rounded-lg overflow-hidden bg-gray-100 border-2 transition-all ${
                       activeImageIndex === index 
                         ? 'border-blue-900 shadow-md' 
                         : 'border-gray-200 hover:border-gray-300'
@@ -153,6 +153,7 @@ const ProductDetail = () => {
                     <img
                       src={image}
                       alt={`${product.name} ${index + 1}`}
+                      loading="lazy"
                       className="w-full h-full object-cover"
                     />
                   </button>
@@ -162,39 +163,39 @@ const ProductDetail = () => {
           </div>
 
           <div>
-            <div className="inline-block bg-blue-100 text-blue-900 px-4 py-1 rounded-full text-sm font-medium mb-4">
+            <div className="inline-block bg-blue-100 text-blue-900 px-3 sm:px-4 py-1 rounded-full text-xs sm:text-sm font-medium mb-3 sm:mb-4">
               {getSubcategoryLabel(product.subcategory)}
             </div>
-            <h1 className="text-4xl font-bold text-gray-900 mb-2">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-1 sm:mb-2 leading-tight">
               {lang === 'zh' ? product.name : product.nameEn || product.name}
             </h1>
-            <p className="text-gray-600 text-lg mb-6">
+            <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6">
               {lang === 'zh' ? product.nameEn : product.name}
             </p>
 
-            <p className="text-gray-700 text-lg mb-8 leading-relaxed">
+            <p className="text-sm sm:text-lg text-gray-700 mb-6 sm:mb-8 leading-relaxed">
               {lang === 'zh' ? product.description : product.descriptionEn || product.description}
             </p>
 
-            <div className="bg-gray-50 rounded-lg p-6 mb-8">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">{lang === 'zh' ? '产品特点' : 'Product Features'}</h3>
-              <div className="grid grid-cols-2 gap-3">
+            <div className="bg-gray-50 rounded-lg sm:rounded-xl p-4 sm:p-6 mb-6 sm:mb-8">
+              <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-3 sm:mb-4">{lang === 'zh' ? '产品特点' : 'Product Features'}</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3">
                 {(lang === 'zh' ? product.features : product.featuresEn || product.features).map((feature: string, index: number) => (
-                  <div key={index} className="flex items-center">
-                    <Check className="w-5 h-5 text-green-600 mr-2 flex-shrink-0" />
+                  <div key={index} className="flex items-center text-sm sm:text-base">
+                    <Check className="w-4 h-4 sm:w-5 sm:h-5 text-green-600 mr-2 flex-shrink-0" />
                     <span className="text-gray-700">{feature}</span>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="bg-gray-900 text-white rounded-lg p-6 mb-8">
-              <h3 className="text-lg font-semibold mb-4">{lang === 'zh' ? '技术参数' : 'Technical Specifications'}</h3>
-              <div className="space-y-3">
+            <div className="bg-gray-900 text-white rounded-lg sm:rounded-xl p-4 sm:p-6 mb-6 sm:mb-8">
+              <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">{lang === 'zh' ? '技术参数' : 'Technical Specifications'}</h3>
+              <div className="space-y-2 sm:space-y-3">
                 {Object.entries(lang === 'zh' ? (product.specifications as Record<string, string>) : (product.specificationsEn as Record<string, string> || product.specifications as Record<string, string>)).map(([key, value]) => (
-                  <div key={key} className="flex justify-between items-center py-2 border-b border-gray-700 last:border-b-0">
-                    <span className="text-gray-400">{key}</span>
-                    <span className="font-medium">{value}</span>
+                  <div key={key} className="flex justify-between items-start gap-4 py-2 border-b border-gray-700 last:border-b-0 text-sm sm:text-base">
+                    <span className="text-gray-400 flex-shrink-0">{key}</span>
+                    <span className="font-medium text-right break-words">{value}</span>
                   </div>
                 ))}
               </div>
@@ -204,7 +205,7 @@ const ProductDetail = () => {
               <button 
                 onClick={() => product.documents?.manual && window.open(product.documents.manual, '_blank')}
                 disabled={!product.documents?.manual}
-                className={`w-full flex items-center justify-center space-x-3 px-6 py-3 rounded-lg transition-colors ${
+                className={`w-full flex items-center justify-center gap-2 sm:gap-3 px-4 py-2.5 sm:px-6 sm:py-3 text-sm sm:text-base rounded-lg transition-colors ${
                   product.documents?.manual 
                     ? 'bg-gray-100 text-gray-700 hover:bg-gray-200' 
                     : 'bg-gray-50 text-gray-400 cursor-not-allowed'
@@ -216,7 +217,7 @@ const ProductDetail = () => {
               <button 
                 onClick={() => product.documents?.technicalData && window.open(product.documents.technicalData, '_blank')}
                 disabled={!product.documents?.technicalData}
-                className={`w-full flex items-center justify-center space-x-3 px-6 py-3 rounded-lg transition-colors ${
+                className={`w-full flex items-center justify-center gap-2 sm:gap-3 px-4 py-2.5 sm:px-6 sm:py-3 text-sm sm:text-base rounded-lg transition-colors ${
                   product.documents?.technicalData 
                     ? 'bg-gray-100 text-gray-700 hover:bg-gray-200' 
                     : 'bg-gray-50 text-gray-400 cursor-not-allowed'
@@ -228,7 +229,7 @@ const ProductDetail = () => {
               <button 
                 onClick={() => product.documents?.imagesDownload && window.open(product.documents.imagesDownload, '_blank')}
                 disabled={!product.documents?.imagesDownload}
-                className={`w-full flex items-center justify-center space-x-3 px-6 py-3 rounded-lg transition-colors ${
+                className={`w-full flex items-center justify-center gap-2 sm:gap-3 px-4 py-2.5 sm:px-6 sm:py-3 text-sm sm:text-base rounded-lg transition-colors ${
                   product.documents?.imagesDownload 
                     ? 'bg-gray-100 text-gray-700 hover:bg-gray-200' 
                     : 'bg-gray-50 text-gray-400 cursor-not-allowed'
@@ -239,7 +240,7 @@ const ProductDetail = () => {
               </button>
             </div>
 
-            <div className="flex gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Button 
                 size="lg" 
                 className="flex-1"
@@ -261,10 +262,10 @@ const ProductDetail = () => {
 
         {relatedProducts.length > 0 && (
           <div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 sm:mb-8">
               {lang === 'zh' ? '相关产品' : 'Related Products'}
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-6 lg:gap-8">
               {relatedProducts.map((relatedProduct: any) => (
                 <ProductCard
                   key={relatedProduct.id}

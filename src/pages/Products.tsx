@@ -40,22 +40,22 @@ const Products = () => {
         canonical={productsPageConfig?.canonical}
       />
 
-      <div className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold mb-4">{lang === 'zh' ? '产品中心' : 'Products'}</h1>
-          <p className="text-xl opacity-90">
+      <div className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white py-12 sm:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2 sm:mb-4">{lang === 'zh' ? '产品中心' : 'Products'}</h1>
+          <p className="text-base sm:text-lg lg:text-xl opacity-90 px-2 sm:px-0">
             {lang === 'zh' ? '探索我们的高端卫浴产品系列' : 'Explore our premium bathroom product series'}
           </p>
         </div>
       </div>
 
       <ProductLayout>
-        <div className="flex justify-between items-center mb-8">
-          <h2 className="text-2xl font-bold text-gray-900">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-6 mb-6 sm:mb-8">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900">
             {activeCategory || (lang === 'zh' ? '全部产品' : 'All Products')}
           </h2>
-          <div className="flex items-center space-x-4">
-            <span className="text-gray-600">
+          <div className="flex items-center">
+            <span className="text-sm sm:text-base text-gray-600">
               {activeCategory 
                 ? `${getProductsByCategory(activeCategory).length} ${lang === 'zh' ? '款产品' : 'products'}`
                 : `${productList.length} ${lang === 'zh' ? '款产品' : 'products'}`
@@ -64,7 +64,7 @@ const Products = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-6">
           {(activeCategory ? getProductsByCategory(activeCategory) : productList).map((product: any) => (
             <ProductCard
               key={product.id}
