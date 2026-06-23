@@ -1,14 +1,44 @@
+import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import SEO from '../components/seo/SEO';
 import ProductCard from '../components/ui/ProductCard';
 import ProductLayout from '../components/layout/ProductLayout';
 import { ArrowLeft } from 'lucide-react';
-import products from '../data/products.json';
+import defaultProducts from '../data/products.json';
 import { useI18n } from '../contexts/I18nContext';
 
 const Category = () => {
   const { lang } = useI18n();
   const { category } = useParams();
+  const [productList, setProductList] = useState<any[]>([]);
+  
+  useEffect(() => {
+    const savedProducts = localStorage.getItem('products');
+    const savedDeletedProducts = localStorage.getItem('deletedProducts');
+    const deletedIds: string[] = savedDeletedProducts ? JSON.parse(savedDeletedProducts) : [];
+    let mergedProducts = [...defaultProducts];
+    
+    if (savedProducts) {
+      try {
+        const parsed = JSON.parse(savedProducts);
+        if (Array.isArray(parsed)) {
+          parsed.forEach((p: any) => {
+            const existingIndex = mergedProducts.findIndex((mp: any) => mp.id === p.id);
+            if (existingIndex >= 0) {
+              mergedProducts[existingIndex] = p;
+            } else {
+              mergedProducts.push(p);
+            }
+          });
+        }
+      } catch (error) {
+        console.error('Failed to parse products from localStorage:', error);
+      }
+    }
+    
+    mergedProducts = mergedProducts.filter((p: any) => !deletedIds.includes(p.id));
+    setProductList(mergedProducts);
+  }, []);
   
   if (!category) {
     return (
@@ -22,9 +52,7 @@ const Category = () => {
   }
 
   const decodedCategory = decodeURIComponent(category);
-  const savedProducts = localStorage.getItem('products');
-  const dataSource = savedProducts ? JSON.parse(savedProducts) : products;
-  const filteredProducts = dataSource.filter((p: any) => p.category === decodedCategory);
+  const filteredProducts = productList.filter((p: any) => p.category === decodedCategory);
   
   const subcategories = [...new Set(filteredProducts.map((p: any) => p.subcategory))] as string[];
 
@@ -113,17 +141,25 @@ const Category = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {filteredProducts.map((product: any) => (
-            <ProductCard
-              key={product.id}
-              id={product.id}
-              slug={product.slug}
-              category={product.category}
-              name={lang === 'zh' ? product.name : product.nameEn || product.name}
-              image={product.images[0]}
-              description={lang === 'zh' ? product.description : product.descriptionEn || product.description}
-            />
-          ))}
+          {filteredProducts.map((product: any) => {
+            const displayCertifications = lang === 'zh' 
+              ? (product.certifications || [])
+              : (product.certificationsEn || product.certifications || []);
+            return (
+              <ProductCard
+                key={product.id}
+                id={product.id}
+                slug={product.slug}
+                category={product.category}
+                name={lang === 'zh' ? product.name : product.nameEn || product.name}
+                nameEn={product.nameEn}
+                image={product.images[0]}
+                description={lang === 'zh' ? product.description : product.descriptionEn || product.description}
+                descriptionEn={product.descriptionEn}
+                certifications={displayCertifications}
+              />
+            );
+          })}
         </div>
 
         {filteredProducts.length === 0 && (

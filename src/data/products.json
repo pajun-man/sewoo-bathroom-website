@@ -148,90 +148,6 @@
     "updatedAt": "2024-01-19"
   },
   {
-    "id": "4",
-    "slug": "smart-toilet-pro",
-    "category": "智能马桶",
-    "subcategory": "全自动智能马桶",
-    "name": "Smart Toilet Pro 全自动智能马桶",
-    "nameEn": "Smart Toilet Pro",
-    "description": "全功能智能马桶，配备自动开合、加热座圈、清洗功能、烘干功能和除臭系统。为您提供全方位的舒适体验。",
-    "descriptionEn": "A full-featured smart toilet with automatic open/close, heated seat, washing, drying, and deodorizing functions for ultimate comfort.",
-    "images": [
-      "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
-    ],
-    "specifications": {
-      "材质": "陶瓷+ABS",
-      "供电": "AC 220V",
-      "功率": "1200W",
-      "水压": "0.07-0.75 MPa",
-      "保修": "5年"
-    },
-    "features": [
-      "自动感应开合",
-      "加热座圈多档调节",
-      "多种清洗模式",
-      "遥控+旋钮控制"
-    ],
-    "seo": {
-      "title": "Smart Toilet Pro 全自动智能马桶 - SEWOO 高端卫浴",
-      "titleEn": "Smart Toilet Pro - SEWOO Premium Bath",
-      "description": "SEWOO Smart Toilet Pro 全功能智能马桶，自动感应，加热座圈，清洗烘干。智能生活新体验。",
-      "descriptionEn": "SEWOO Smart Toilet Pro with auto open/close and heated seat. Smart living experience.",
-      "keywords": [
-        "智能马桶",
-        "全自动马桶",
-        "智能坐便器",
-        "Smart Toilet",
-        "SEWOO"
-      ]
-    },
-    "createdAt": "2024-01-06",
-    "updatedAt": "2024-01-20"
-  },
-  {
-    "id": "5",
-    "slug": "smart-toilet-seat",
-    "category": "智能马桶",
-    "subcategory": "智能马桶盖",
-    "name": "Smart Seat 智能马桶盖",
-    "nameEn": "Smart Seat Cover",
-    "description": "智能马桶盖，支持加热座圈、清洗功能、烘干功能，轻松升级您的普通马桶为智能马桶。",
-    "descriptionEn": "Smart toilet seat cover with heated seat, washing, and drying functions. Upgrade your regular toilet to smart easily.",
-    "images": [
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800",
-      "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800"
-    ],
-    "specifications": {
-      "材质": "ABS+不锈钢",
-      "供电": "AC 220V",
-      "功率": "600W",
-      "适配尺寸": "通用型",
-      "保修": "3年"
-    },
-    "features": [
-      "即热式清洗",
-      "暖风烘干",
-      "座圈加热",
-      "一键拆卸"
-    ],
-    "seo": {
-      "title": "Smart Seat 智能马桶盖 - SEWOO 高端卫浴",
-      "titleEn": "Smart Seat Cover - SEWOO Premium Bath",
-      "description": "SEWOO Smart Seat 智能马桶盖，即热式清洗，暖风烘干，轻松升级您的马桶。",
-      "descriptionEn": "SEWOO Smart Seat Cover with instant heating and warm air drying. Upgrade your toilet easily.",
-      "keywords": [
-        "智能马桶盖",
-        "马桶盖",
-        "即热清洗",
-        "Smart Seat",
-        "SEWOO"
-      ]
-    },
-    "createdAt": "2024-01-07",
-    "updatedAt": "2024-01-21"
-  },
-  {
     "id": "6",
     "slug": "laguna-washbasin",
     "category": "盆",
@@ -524,5 +440,871 @@
     },
     "createdAt": "2024-01-14",
     "updatedAt": "2024-01-28"
+  },
+  {
+    "id": "13",
+    "slug": "smart-toilet-2230b",
+    "category": "智能马桶",
+    "subcategory": "全自动智能马桶",
+    "name": "SEWOO-2230B 智能马桶",
+    "nameEn": "SEWOO-2230B Smart Toilet",
+    "description": "SEWOO-2230B智能马桶，采用高品质陶瓷材质，座高390/420mm可选，支持脚感冲水、臀部清洗、暖风烘干等多种功能。获得CUPC水路安全认证和ETL电路安全认证。",
+    "descriptionEn": "SEWOO-2230B Smart Toilet with premium ceramic material, seat height 390/420mm, featuring foot sensor flushing, hip washing, warm wind drying. CUPC and ETL certified.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXSEWOO-2230B-C.png"
+    ],
+    "specifications": {
+      "材质": "优质陶瓷+ABS",
+      "座高": "390/420mm",
+      "尺寸": "670 x 380 x 490mm",
+      "电压": "110-220V",
+      "坑距": "S-trap: 300/400mm; P-trap: 180mm",
+      "保修": "5年"
+    },
+    "features": [
+      "脚感冲水",
+      "臀部清洗",
+      "暖风烘干",
+      "座圈加热",
+      "夜灯照明",
+      "漏电保护",
+      "IPX4防水"
+    ],
+    "certifications": [
+      "CUPC",
+      "ETL"
+    ],
+    "seo": {
+      "title": "SEWOO-2230B 智能马桶 - CUPC认证",
+      "titleEn": "SEWOO-2230B Smart Toilet - CUPC Certified",
+      "description": "SEWOO-2230B智能马桶，脚感冲水，臀部清洗，暖风烘干，CUPC水路认证，ETL电路认证。",
+      "descriptionEn": "SEWOO-2230B Smart Toilet with foot sensor flushing, CUPC and ETL certified.",
+      "keywords": [
+        "智能马桶",
+        "CUPC认证",
+        "ETL认证",
+        "脚感冲水",
+        "SEWOO"
+      ],
+      "keywordsEn": [
+        "Smart toilet",
+        "CUPC certification",
+        "ETL certification",
+        "foot sensor flushing",
+        "SEWOO"
+      ]
+    },
+    "createdAt": "2024-01-15",
+    "updatedAt": "2026-06-23",
+    "documents": {
+      "manual": "",
+      "technicalData": "",
+      "imagesDownload": "",
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
+    },
+    "featuresEn": [
+      "Foot Sensor Flush",
+      "Night Light Illumination",
+      "Rear Wash",
+      "Leakage Protection",
+      "Warm Air Drying",
+      "IPX4 Waterproof",
+      "Heated Seat"
+    ],
+    "specificationsEn": {
+      "Material": "High-quality Ceramic + ABS",
+      "Seat Height": "390/420mm",
+      "Dimensions": "670 x 380 x 490mm",
+      "Voltage": "110-220V",
+      "Rough-in Distance": "S-trap: 300/400mm; P-trap: 180mm",
+      "Warranty": "5 Years"
+    },
+    "certificationsEn": [
+      "CUPC",
+      "ETL"
+    ]
+  },
+  {
+    "id": "14",
+    "slug": "smart-toilet-2230c",
+    "category": "智能马桶",
+    "subcategory": "全自动智能马桶",
+    "name": "SEWOO-2230C 智能马桶",
+    "nameEn": "SEWOO-2230C Smart Toilet",
+    "description": "SEWOO-2230C智能马桶，在2230B基础上增加自动翻盖功能，支持脚感翻盖和遥控翻盖，使用更加便捷。获得CUPC水路安全认证和ETL电路安全认证。",
+    "descriptionEn": "SEWOO-2230C Smart Toilet with auto open/close cover, foot sensor flip and remote control flip. CUPC and ETL certified.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXSEWOO-2230B-C.png"
+    ],
+    "specifications": {
+      "材质": "优质陶瓷+ABS",
+      "座高": "390/420mm",
+      "尺寸": "670 x 380 x 490mm",
+      "电压": "110-220V",
+      "坑距": "S-trap: 300/400mm; P-trap: 180mm",
+      "保修": "5年"
+    },
+    "features": [
+      "自动翻盖",
+      "脚感翻盖",
+      "臀部清洗",
+      "暖风烘干",
+      "座圈加热",
+      "夜灯照明",
+      "漏电保护",
+      "IPX4防水"
+    ],
+    "certifications": [
+      "CUPC",
+      "ETL"
+    ],
+    "seo": {
+      "title": "SEWOO-2230C 智能马桶 - 自动翻盖",
+      "titleEn": "SEWOO-2230C Smart Toilet - Auto Cover",
+      "description": "SEWOO-2230C智能马桶，自动翻盖，脚感翻盖，遥控翻盖，CUPC水路认证，ETL电路认证。",
+      "descriptionEn": "SEWOO-2230C Smart Toilet with auto open/close cover, CUPC and ETL certified.",
+      "keywords": [
+        "智能马桶",
+        "自动翻盖",
+        "CUPC认证",
+        "ETL认证",
+        "SEWOO"
+      ],
+      "keywordsEn": [
+        "Smart toilet",
+        "auto lid opening",
+        "CUPC certified",
+        "ETL certified",
+        "SEWOO"
+      ]
+    },
+    "createdAt": "2024-01-15",
+    "updatedAt": "2026-06-23",
+    "documents": {
+      "manual": "",
+      "technicalData": "",
+      "imagesDownload": "",
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
+    },
+    "featuresEn": [
+      "Auto Flip Cover",
+      "Seat Heating",
+      "Foot Sensor Flip",
+      "Night Light",
+      "Rear Wash",
+      "Leakage Protection",
+      "Warm Air Drying",
+      "IPX4 Waterproof"
+    ],
+    "specificationsEn": {
+      "Material": "Premium ceramic + ABS material",
+      "Seat height": "390/420 mm",
+      "Dimensions": "670 x 380 x 490 mm",
+      "Voltage": "110-220V",
+      "Rough-in distance": "S-trap: 300/400mm; P-trap: 180mm",
+      "Warranty": "5 years"
+    },
+    "certificationsEn": [
+      "CUPC",
+      "ETL"
+    ]
+  },
+  {
+    "id": "15",
+    "slug": "smart-toilet-2209b",
+    "category": "智能马桶",
+    "subcategory": "全自动智能马桶",
+    "name": "SEWOO-2209B 智能马桶",
+    "nameEn": "SEWOO-2209B Smart Toilet",
+    "description": "SEWOO-2209B智能马桶，座高390/420mm，尺寸670x380x510mm，支持脚感冲水、臀部清洗、暖风烘干等功能。获得CUPC水路安全认证和ETL电路安全认证。",
+    "descriptionEn": "SEWOO-2209B Smart Toilet with seat height 390/420mm, size 670x380x510mm, foot sensor flushing. CUPC and ETL certified.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXSEWOO-2209B%20-C.png"
+    ],
+    "specifications": {
+      "材质": "优质陶瓷+ABS",
+      "座高": "390/420mm",
+      "尺寸": "670 x 380 x 510mm",
+      "电压": "110-220V",
+      "坑距": "S-trap: 300/400mm; P-trap: 180mm",
+      "保修": "5年"
+    },
+    "features": [
+      "脚感冲水",
+      "臀部清洗",
+      "暖风烘干",
+      "座圈加热",
+      "夜灯照明",
+      "漏电保护",
+      "IPX4防水"
+    ],
+    "certifications": [
+      "CUPC",
+      "ETL"
+    ],
+    "seo": {
+      "title": "SEWOO-2209B 智能马桶 - CUPC认证",
+      "titleEn": "SEWOO-2209B Smart Toilet - CUPC Certified",
+      "description": "SEWOO-2209B智能马桶，脚感冲水，臀部清洗，暖风烘干，CUPC水路认证，ETL电路认证。",
+      "descriptionEn": "SEWOO-2209B Smart Toilet with foot sensor flushing, CUPC and ETL certified.",
+      "keywords": [
+        "智能马桶",
+        "CUPC认证",
+        "ETL认证",
+        "脚感冲水",
+        "SEWOO"
+      ],
+      "keywordsEn": [
+        "Smart toilet",
+        "CUPC certification",
+        "ETL certification",
+        "foot sensor flush",
+        "SEWOO"
+      ]
+    },
+    "createdAt": "2024-01-16",
+    "updatedAt": "2026-06-23",
+    "documents": {
+      "manual": "",
+      "technicalData": "",
+      "imagesDownload": "",
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
+    },
+    "featuresEn": [
+      "Foot Sensor Flush",
+      "Night Light Illumination",
+      "Rear Wash",
+      "Leakage Protection",
+      "Warm Air Drying",
+      "IPX4 Waterproof",
+      "Heated Seat"
+    ],
+    "specificationsEn": {
+      "Material": "High-quality ceramic + ABS",
+      "Seat Height": "390/420mm",
+      "Dimension": "670 x 380 x 510mm",
+      "Voltage": "110-220V",
+      "Rough-in Distance:": "S-trap: 300/400mm; P-trap: 180mm",
+      "Warranty": "5 Years"
+    },
+    "certificationsEn": [
+      "CUPC",
+      "ETL"
+    ]
+  },
+  {
+    "id": "16",
+    "slug": "smart-toilet-2209c",
+    "category": "智能马桶",
+    "subcategory": "全自动智能马桶",
+    "name": "SEWOO-2209C 智能马桶",
+    "nameEn": "SEWOO-2209C Smart Toilet",
+    "description": "SEWOO-2209C智能马桶，在2209B基础上增加自动翻盖功能，支持脚感翻盖和遥控翻盖，使用更加便捷。获得CUPC水路安全认证和ETL电路安全认证。",
+    "descriptionEn": "SEWOO-2209C Smart Toilet with auto open/close cover, foot sensor flip and remote control flip. CUPC and ETL certified.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXSEWOO-2209B%20-C.png"
+    ],
+    "specifications": {
+      "材质": "优质陶瓷+ABS",
+      "座高": "390/420mm",
+      "尺寸": "670 x 380 x 510mm",
+      "电压": "110-220V",
+      "坑距": "S-trap: 300/400mm; P-trap: 180mm",
+      "保修": "5年"
+    },
+    "features": [
+      "自动翻盖",
+      "脚感翻盖",
+      "臀部清洗",
+      "暖风烘干",
+      "座圈加热",
+      "夜灯照明",
+      "漏电保护",
+      "IPX4防水"
+    ],
+    "certifications": [
+      "CUPC",
+      "ETL"
+    ],
+    "seo": {
+      "title": "SEWOO-2209C 智能马桶 - 自动翻盖",
+      "titleEn": "SEWOO-2209C Smart Toilet - Auto Cover",
+      "description": "SEWOO-2209C智能马桶，自动翻盖，脚感翻盖，遥控翻盖，CUPC水路认证，ETL电路认证。",
+      "descriptionEn": "SEWOO-2209C Smart Toilet with auto open/close cover, CUPC and ETL certified.",
+      "keywords": [
+        "智能马桶",
+        "自动翻盖",
+        "CUPC认证",
+        "ETL认证",
+        "SEWOO"
+      ],
+      "keywordsEn": [
+        "Smart toilet",
+        "auto lid opening",
+        "CUPC certified",
+        "ETL certified",
+        "SEWOO"
+      ]
+    },
+    "createdAt": "2024-01-16",
+    "updatedAt": "2026-06-23",
+    "documents": {
+      "manual": "",
+      "technicalData": "",
+      "imagesDownload": "",
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
+    },
+    "specificationsEn": {
+      "Material": "High-quality ceramic + ABS",
+      "Seat Height": "390/420mm",
+      "Dimension": "670 x 380 x 510mm",
+      "Voltage": "110-220V",
+      "Rough-in Distance": "S-trap: 300/400mm; P-trap: 180mm",
+      "Warranty": "5 Years"
+    },
+    "featuresEn": [
+      "Auto Lid Opening",
+      "Foot Sensor Lid Opening",
+      "Rear Wash Function",
+      "Warm Air Drying",
+      "Heated Seat",
+      "Night Light",
+      "Leakage Protection",
+      "IPX4 Waterproof Rating"
+    ],
+    "certificationsEn": [
+      "CUPC",
+      "ETL"
+    ]
+  },
+  {
+    "id": "17",
+    "slug": "smart-toilet-2213b",
+    "category": "智能马桶",
+    "subcategory": "全自动智能马桶",
+    "name": "SEWOO-2213B 智能马桶",
+    "nameEn": "SEWOO-2213B Smart Toilet",
+    "description": "SEWOO-2213B智能马桶，座高390/420mm，尺寸670x380x490mm，支持脚感冲水、LED显示屏、臀部清洗、暖风烘干等功能。获得CUPC水路安全认证和ETL电路安全认证。",
+    "descriptionEn": "SEWOO-2213B Smart Toilet with seat height 390/420mm, LED display, foot sensor flushing. CUPC and ETL certified.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXSEWOO-2213B-C.png"
+    ],
+    "specifications": {
+      "材质": "优质陶瓷+ABS",
+      "座高": "390/420mm",
+      "尺寸": "670 x 380 x 490mm",
+      "电压": "110-220V",
+      "坑距": "S-trap: 300/400mm; P-trap: 180mm",
+      "保修": "5年"
+    },
+    "features": [
+      "脚感冲水",
+      "LED显示屏",
+      "臀部清洗",
+      "暖风烘干",
+      "座圈加热",
+      "夜灯照明",
+      "漏电保护",
+      "IPX4防水"
+    ],
+    "certifications": [
+      "CUPC",
+      "ETL"
+    ],
+    "seo": {
+      "title": "SEWOO-2213B 智能马桶 - LED显示屏",
+      "titleEn": "SEWOO-2213B Smart Toilet - LED Display",
+      "description": "SEWOO-2213B智能马桶，LED显示屏，脚感冲水，臀部清洗，暖风烘干，CUPC水路认证，ETL电路认证。",
+      "descriptionEn": "SEWOO-2213B Smart Toilet with LED display, foot sensor flushing, CUPC and ETL certified.",
+      "keywords": [
+        "智能马桶",
+        "LED显示屏",
+        "CUPC认证",
+        "ETL认证",
+        "SEWOO"
+      ],
+      "keywordsEn": [
+        "smart toilet",
+        "LED display",
+        "CUPC certification",
+        "ETL certification",
+        "SEWOO"
+      ]
+    },
+    "createdAt": "2024-01-17",
+    "updatedAt": "2026-06-23",
+    "documents": {
+      "manual": "",
+      "technicalData": "",
+      "imagesDownload": "",
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
+    },
+    "featuresEn": [
+      "Foot Sensor Flush",
+      "LED Display Screen",
+      "Rear Wash Function",
+      "Warm Air Drying",
+      "Heated Seat",
+      "Night Light",
+      "Leakage Protection",
+      "IPX4 Waterproof Rating"
+    ],
+    "specificationsEn": {
+      "Material": "High-quality ceramic + ABS",
+      "Seat Height": "390/420mm",
+      "Dimension": "670 x 380 x 490mm",
+      "Voltage": "110-220V",
+      "Rough-in Distance": "S-trap: 300/400mm; P-trap: 180mm",
+      "Warranty": "5 Years"
+    },
+    "certificationsEn": [
+      "CUPC",
+      "ETL"
+    ]
+  },
+  {
+    "id": "18",
+    "slug": "smart-toilet-2213c",
+    "category": "智能马桶",
+    "subcategory": "全自动智能马桶",
+    "name": "SEWOO-2213C 智能马桶",
+    "nameEn": "SEWOO-2213C Smart Toilet",
+    "description": "SEWOO-2213C智能马桶，在2213B基础上增加自动翻盖功能，支持脚感翻盖和遥控翻盖，LED显示屏实时显示工作状态。获得CUPC水路安全认证和ETL电路安全认证。",
+    "descriptionEn": "SEWOO-2213C Smart Toilet with auto open/close cover, LED display, foot sensor flip. CUPC and ETL certified.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXSEWOO-2213B-C.png"
+    ],
+    "specifications": {
+      "材质": "优质陶瓷+ABS",
+      "座高": "390/420mm",
+      "尺寸": "670 x 380 x 490mm",
+      "电压": "110-220V",
+      "坑距": "S-trap: 300/400mm; P-trap: 180mm",
+      "保修": "5年"
+    },
+    "features": [
+      "自动翻盖",
+      "脚感翻盖",
+      "LED显示屏",
+      "臀部清洗",
+      "暖风烘干",
+      "座圈加热",
+      "夜灯照明",
+      "漏电保护",
+      "IPX4防水"
+    ],
+    "certifications": [
+      "CUPC",
+      "ETL"
+    ],
+    "seo": {
+      "title": "SEWOO-2213C 智能马桶 - 自动翻盖+LED",
+      "titleEn": "SEWOO-2213C Smart Toilet - Auto Cover + LED",
+      "description": "SEWOO-2213C智能马桶，自动翻盖，脚感翻盖，LED显示屏，CUPC水路认证，ETL电路认证。",
+      "descriptionEn": "SEWOO-2213C Smart Toilet with auto open/close cover and LED display, CUPC and ETL certified.",
+      "keywords": [
+        "智能马桶",
+        "自动翻盖",
+        "LED显示屏",
+        "CUPC认证",
+        "ETL认证",
+        "SEWOO"
+      ],
+      "keywordsEn": [
+        "Smart toilet",
+        "auto open lid",
+        "LED display",
+        "CUPC certified",
+        "ETL certified",
+        "SEWOO"
+      ]
+    },
+    "createdAt": "2024-01-17",
+    "updatedAt": "2026-06-23",
+    "documents": {
+      "manual": "",
+      "technicalData": "",
+      "imagesDownload": "",
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
+    },
+    "specificationsEn": {
+      "Material": "High-quality ceramic + ABS",
+      "Seat Height": "390/420mm",
+      "Dimension": "670 x 380 x 490mm",
+      "Voltage": "110-220V",
+      "Rough-in Distance": "S-trap: 300/400mm; P-trap: 180mm",
+      "Warranty": "5 Years"
+    },
+    "featuresEn": [
+      "Auto Lid Opening",
+      "Foot Sensor Lid Opening",
+      "LED Display Screen",
+      "Rear Wash Function",
+      "Warm Air Drying",
+      "Heated Seat",
+      "Night Light",
+      "Leakage Protection",
+      "IPX4 Waterproof"
+    ],
+    "certificationsEn": [
+      "CUPC",
+      "ETL"
+    ]
+  },
+  {
+    "id": "19",
+    "slug": "smart-toilet-2208b",
+    "category": "智能马桶",
+    "subcategory": "全自动智能马桶",
+    "name": "SEWOO-2208B 智能马桶",
+    "nameEn": "SEWOO-2208B Smart Toilet",
+    "description": "SEWOO-2208B智能马桶，座高390/420mm，尺寸680x420x520mm，支持脚感冲水、LED显示屏、臀部清洗、暖风烘干等功能。获得CUPC水路安全认证和ETL电路安全认证。",
+    "descriptionEn": "SEWOO-2208B Smart Toilet with seat height 390/420mm, size 680x420x520mm, LED display. CUPC and ETL certified.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXSEWOO-2208B-C.png"
+    ],
+    "specifications": {
+      "材质": "优质陶瓷+ABS",
+      "座高": "390/420mm",
+      "尺寸": "680 x 420 x 520mm",
+      "电压": "110-220V",
+      "坑距": "S-trap: 300/400mm; P-trap: 180mm",
+      "保修": "5年"
+    },
+    "features": [
+      "脚感冲水",
+      "LED显示屏",
+      "臀部清洗",
+      "暖风烘干",
+      "座圈加热",
+      "夜灯照明",
+      "漏电保护",
+      "IPX4防水"
+    ],
+    "certifications": [
+      "CUPC",
+      "ETL"
+    ],
+    "seo": {
+      "title": "SEWOO-2208B 智能马桶 - LED显示屏",
+      "titleEn": "SEWOO-2208B Smart Toilet - LED Display",
+      "description": "SEWOO-2208B智能马桶，LED显示屏，脚感冲水，臀部清洗，暖风烘干，CUPC水路认证，ETL电路认证。",
+      "descriptionEn": "SEWOO-2208B Smart Toilet with LED display, foot sensor flushing, CUPC and ETL certified.",
+      "keywords": [
+        "智能马桶",
+        "LED显示屏",
+        "CUPC认证",
+        "ETL认证",
+        "SEWOO"
+      ],
+      "keywordsEn": [
+        "smart toilet",
+        "LED display screen",
+        "CUPC certification",
+        "ETL certification",
+        "SEWOO"
+      ]
+    },
+    "createdAt": "2024-01-18",
+    "updatedAt": "2026-06-23",
+    "documents": {
+      "manual": "",
+      "technicalData": "",
+      "imagesDownload": "",
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
+    },
+    "featuresEn": [
+      "Foot Sensor Flush",
+      "LED Display Screen",
+      "Rear Wash",
+      "Warm Air Drying",
+      "Heated Seat",
+      "Night Light Illumination",
+      "Leakage Protection",
+      "IPX4 Waterproof"
+    ],
+    "specificationsEn": {
+      "Material": "High-quality Ceramic + ABS",
+      "Seat Height": "390/420mm",
+      "Dimensions": "680 x 420 x 520mm",
+      "Voltage": "110-220V",
+      "Rough-in Distance": "S-trap: 300/400mm; P-trap: 180mm",
+      "Warranty": "5 Years"
+    },
+    "certificationsEn": [
+      "CUPC",
+      "ETL"
+    ]
+  },
+  {
+    "id": "20",
+    "slug": "smart-toilet-2208c",
+    "category": "智能马桶",
+    "subcategory": "全自动智能马桶",
+    "name": "SEWOO-2208C 智能马桶",
+    "nameEn": "SEWOO-2208C Smart Toilet",
+    "description": "SEWOO-2208C智能马桶，在2208B基础上增加自动翻盖功能，支持脚感翻盖和遥控翻盖，LED显示屏实时显示工作状态。获得CUPC水路安全认证和ETL电路安全认证。",
+    "descriptionEn": "SEWOO-2208C Smart Toilet with auto open/close cover, LED display, foot sensor flip. CUPC and ETL certified.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXSEWOO-2208B-C.png"
+    ],
+    "specifications": {
+      "材质": "优质陶瓷+ABS",
+      "座高": "390/420mm",
+      "尺寸": "680 x 420 x 520mm",
+      "电压": "110-220V",
+      "坑距": "S-trap: 300/400mm; P-trap: 180mm",
+      "保修": "5年"
+    },
+    "features": [
+      "自动翻盖",
+      "脚感翻盖",
+      "LED显示屏",
+      "臀部清洗",
+      "暖风烘干",
+      "座圈加热",
+      "夜灯照明",
+      "漏电保护",
+      "IPX4防水"
+    ],
+    "certifications": [
+      "CUPC",
+      "ETL"
+    ],
+    "seo": {
+      "title": "SEWOO-2208C 智能马桶 - 自动翻盖+LED",
+      "titleEn": "SEWOO-2208C Smart Toilet - Auto Cover + LED",
+      "description": "SEWOO-2208C智能马桶，自动翻盖，脚感翻盖，LED显示屏，CUPC水路认证，ETL电路认证。",
+      "descriptionEn": "SEWOO-2208C Smart Toilet with auto open/close cover and LED display, CUPC and ETL certified.",
+      "keywords": [
+        "智能马桶",
+        "自动翻盖",
+        "LED显示屏",
+        "CUPC认证",
+        "ETL认证",
+        "SEWOO"
+      ],
+      "keywordsEn": [
+        "Smart toilet",
+        "auto lid opening",
+        "LED display",
+        "CUPC certified",
+        "ETL certified",
+        "SEWOO"
+      ]
+    },
+    "createdAt": "2024-01-18",
+    "updatedAt": "2026-06-23",
+    "documents": {
+      "manual": "",
+      "technicalData": "",
+      "imagesDownload": "",
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
+    },
+    "featuresEn": [
+      "Auto Flip Cover",
+      "Foot Sensor Flip",
+      "LED Display Screen",
+      "Rear Wash",
+      "Warm Air Drying",
+      "Seat Heating",
+      "Night Light",
+      "Leakage Protection",
+      "IPX4 Waterproof"
+    ],
+    "specificationsEn": {
+      "Material": "Premium ceramic + ABS material",
+      "Seat height": "390/420mm",
+      "Dimensions": "680 x 420 x 520mm",
+      "Voltage": "110-220V",
+      "Rough-in distance": "S-trap: 300/400mm; P-trap: 180mm",
+      "Warranty": "5 years"
+    },
+    "certificationsEn": [
+      "CUPC",
+      "ETL"
+    ]
+  },
+  {
+    "id": "21",
+    "slug": "smart-toilet-2014b",
+    "category": "智能马桶",
+    "subcategory": "全自动智能马桶",
+    "name": "SEWOO-2014B 智能马桶",
+    "nameEn": "SEWOO-2014B Smart Toilet",
+    "description": "SEWOO-2014B智能马桶，座高390/420mm，尺寸680x410x520mm，支持脚触冲水、臀部清洗、暖风烘干等功能。获得CUPC水路安全认证和ETL电路安全认证。",
+    "descriptionEn": "SEWOO-2014B Smart Toilet with seat height 390/420mm, size 680x410x520mm, foot touch flushing. CUPC and ETL certified.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXSEWOO-2014B-C.png"
+    ],
+    "specifications": {
+      "材质": "优质陶瓷+ABS",
+      "座高": "390/420mm",
+      "尺寸": "680 x 410 x 520mm",
+      "电压": "110-220V",
+      "坑距": "S-trap: 250/300mm; P-trap: 180mm",
+      "保修": "5年"
+    },
+    "features": [
+      "脚触冲水",
+      "臀部清洗",
+      "暖风烘干",
+      "座圈加热",
+      "夜灯照明",
+      "漏电保护",
+      "IPX4防水"
+    ],
+    "certifications": [
+      "CUPC",
+      "ETL"
+    ],
+    "seo": {
+      "title": "SEWOO-2014B 智能马桶 - 脚触冲水",
+      "titleEn": "SEWOO-2014B Smart Toilet - Foot Touch",
+      "description": "SEWOO-2014B智能马桶，脚触冲水，臀部清洗，暖风烘干，CUPC水路认证，ETL电路认证。",
+      "descriptionEn": "SEWOO-2014B Smart Toilet with foot touch flushing, CUPC and ETL certified.",
+      "keywords": [
+        "智能马桶",
+        "脚触冲水",
+        "CUPC认证",
+        "ETL认证",
+        "SEWOO"
+      ],
+      "keywordsEn": [
+        "Smart toilet",
+        "foot-sensor flushing",
+        "CUPC certified",
+        "ETL certified",
+        "SEWOO"
+      ]
+    },
+    "createdAt": "2024-01-19",
+    "updatedAt": "2026-06-23",
+    "documents": {
+      "manual": "",
+      "technicalData": "",
+      "imagesDownload": "",
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
+    },
+    "featuresEn": [
+      "Foot Sensor Flush",
+      "Night Light Illumination",
+      "Rear Wash",
+      "Leakage Protection",
+      "Warm Air Drying",
+      "IPX4 Waterproof",
+      "Heated Seat"
+    ],
+    "specificationsEn": {
+      "Material": "High-quality Ceramic + ABS",
+      "Seat Height": "390/420mm",
+      "Dimensions": "680 x 410 x 520mm",
+      "Voltage": "110-220V",
+      "Rough-in Distance": "S-trap: 250/300mm; P-trap: 180mm",
+      "Warranty": "5 Years"
+    },
+    "certificationsEn": [
+      "CUPC",
+      "ETL"
+    ]
+  },
+  {
+    "id": "22",
+    "slug": "smart-toilet-2014c",
+    "category": "智能马桶",
+    "subcategory": "全自动智能马桶",
+    "name": "SEWOO-2014C 智能马桶",
+    "nameEn": "SEWOO-2014C Smart Toilet",
+    "description": "SEWOO-2014C智能马桶，在2014B基础上增加自动翻盖功能，支持脚触翻盖和遥控翻盖。获得CUPC水路安全认证和ETL电路安全认证。",
+    "descriptionEn": "SEWOO-2014C Smart Toilet with auto open/close cover, foot touch flip and remote control flip. CUPC and ETL certified.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXSEWOO-2014B-C.png"
+    ],
+    "specifications": {
+      "材质": "优质陶瓷+ABS",
+      "座高": "390/420mm",
+      "尺寸": "680 x 410 x 520mm",
+      "电压": "110-220V",
+      "坑距": "S-trap: 250/300mm; P-trap: 180mm",
+      "保修": "5年"
+    },
+    "features": [
+      "自动翻盖",
+      "脚触翻盖",
+      "脚触冲水",
+      "臀部清洗",
+      "暖风烘干",
+      "座圈加热",
+      "夜灯照明",
+      "漏电保护",
+      "IPX4防水"
+    ],
+    "certifications": [
+      "CUPC",
+      "ETL"
+    ],
+    "seo": {
+      "title": "SEWOO-2014C 智能马桶 - 自动翻盖+脚触",
+      "titleEn": "SEWOO-2014C Smart Toilet - Auto Cover + Foot Touch",
+      "description": "SEWOO-2014C智能马桶，自动翻盖，脚触翻盖，脚触冲水，CUPC水路认证，ETL电路认证。",
+      "descriptionEn": "SEWOO-2014C Smart Toilet with auto open/close cover and foot touch, CUPC and ETL certified.",
+      "keywords": [
+        "智能马桶",
+        "自动翻盖",
+        "脚触冲水",
+        "CUPC认证",
+        "ETL认证",
+        "SEWOO"
+      ],
+      "keywordsEn": [
+        "Smart toilet",
+        "auto lid opening",
+        "foot sensor flushing",
+        "CUPC certification",
+        "ETL certification",
+        "SEWOO"
+      ]
+    },
+    "createdAt": "2024-01-19",
+    "updatedAt": "2026-06-23",
+    "documents": {
+      "manual": "",
+      "technicalData": "",
+      "imagesDownload": "",
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
+    },
+    "specificationsEn": {
+      "Material": "Premium ceramic + ABS material",
+      "Seat height": "390/420mm",
+      "Dimensions": "680 x 410 x 520mm",
+      "Voltage": "110-220V",
+      "Rough-in distance": "S-trap: 250/300mm; P-trap: 180mm",
+      "Warranty": "5 years"
+    },
+    "featuresEn": [
+      "Auto Lid Opening",
+      "Foot Touch Lid Opening",
+      "Foot Touch Flush",
+      "Rear Wash Function",
+      "Warm Air Drying",
+      "Heated Seat",
+      "Night Light",
+      "Leakage Protection",
+      "IPX4 Waterproof"
+    ],
+    "certificationsEn": [
+      "CUPC",
+      "ETL"
+    ]
   }
 ]

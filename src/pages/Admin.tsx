@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Settings, Package, Palette, FileText, Building, Upload, X, Plus, Save, Edit2, Trash2, Mail, MessageSquare, FolderOpen, Download, FileImage, Phone, Calendar, Share2, Check, ChevronDown, ChevronRight, Leaf, Menu, Image as ImageIcon, Tags, Pencil, Database, RefreshCw, Copy as CopyIcon } from 'lucide-react';
 import defaultFactories from '../data/factories.json';
+import defaultProducts from '../data/products.json';
 
 interface Product {
   id: string;
@@ -155,6 +156,8 @@ const Admin: React.FC = () => {
   const [newFeatureEn, setNewFeatureEn] = useState('');
   const [newSpecKeyEn, setNewSpecKeyEn] = useState('');
   const [newSpecValueEn, setNewSpecValueEn] = useState('');
+  const [newCertification, setNewCertification] = useState('');
+  const [newCertificationEn, setNewCertificationEn] = useState('');
   const [newFactoryFeature, setNewFactoryFeature] = useState('');
   const [newFactoryFeatureEn, setNewFactoryFeatureEn] = useState('');
   const [newFactoryVideoTitle, setNewFactoryVideoTitle] = useState('');
@@ -165,6 +168,7 @@ const Admin: React.FC = () => {
   const [newFactoryCertNameEn, setNewFactoryCertNameEn] = useState('');
   const [newVideoUrl, setNewVideoUrl] = useState('');
   const [newFactoryImageUrl, setNewFactoryImageUrl] = useState('');
+  const [newProductImageUrl, setNewProductImageUrl] = useState('');
   const [newInspirationImageUrl, setNewInspirationImageUrl] = useState('');
   const [newStyle, setNewStyle] = useState('');
   const [newStyleEn, setNewStyleEn] = useState('');
@@ -172,36 +176,45 @@ const Admin: React.FC = () => {
   const [sustainabilityData, setSustainabilityData] = useState({
     id: 'sustainability',
     heroTitle: '可持续发展',
+    heroTitleEn: 'Sustainability',
     heroSubtitle: 'SEWOO 致力于可持续发展，创造更美好的未来',
+    heroSubtitleEn: 'SEWOO is committed to sustainability for a better future',
     heroDescription: '我们相信，企业的成功应该与环境的可持续发展相辅相成',
+    heroDescriptionEn: 'We believe business success should go hand in hand with environmental sustainability',
     commitments: [
-      { icon: 'Droplets', title: '水资源保护', description: '开发节水型产品，帮助全球用户减少水资源消耗。', stat: '40%', statLabel: '节水率' },
-      { icon: 'Leaf', title: '绿色生产', description: '采用环保材料和清洁生产工艺，减少碳排放。', stat: '100%', statLabel: '可再生能源' },
-      { icon: 'Recycle', title: '循环经济', description: '推行产品全生命周期管理，实现资源的循环利用。', stat: '95%', statLabel: '材料回收率' },
-      { icon: 'Sun', title: '清洁能源', description: '积极投资太阳能和风能项目，为碳中和目标努力。', stat: '零', statLabel: '碳排放' },
+      { icon: 'Droplets', title: '水资源保护', titleEn: 'Water Conservation', description: '开发节水型产品，帮助全球用户减少水资源消耗。', descriptionEn: 'Developing water-saving products to help global users reduce water consumption.', stat: '40%', statLabel: '节水率', statLabelEn: 'Water Saving Rate' },
+      { icon: 'Leaf', title: '绿色生产', titleEn: 'Green Production', description: '采用环保材料和清洁生产工艺，减少碳排放。', descriptionEn: 'Using eco-friendly materials and clean production processes to reduce carbon emissions.', stat: '100%', statLabel: '可再生能源', statLabelEn: 'Renewable Energy' },
+      { icon: 'Recycle', title: '循环经济', titleEn: 'Circular Economy', description: '推行产品全生命周期管理，实现资源的循环利用。', descriptionEn: 'Implementing product lifecycle management for resource recycling.', stat: '95%', statLabel: '材料回收率', statLabelEn: 'Material Recovery Rate' },
+      { icon: 'Sun', title: '清洁能源', titleEn: 'Clean Energy', description: '积极投资太阳能和风能项目，为碳中和目标努力。', descriptionEn: 'Actively investing in solar and wind energy projects for carbon neutrality.', stat: 'Zero', statLabel: '碳排放', statLabelEn: 'Carbon Emission' },
     ],
     initiatives: [
-      { title: '节水技术研发', description: '持续投入研发更高效的节水技术。', image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600' },
-      { title: '环保材料创新', description: '使用可回收和生物降解材料。', image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d365f?w=600' },
-      { title: '碳中和工厂', description: '所有生产基地已实现碳中和。', image: 'https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=600' },
+      { title: '节水技术研发', titleEn: 'Water-Saving Technology R&D', description: '持续投入研发更高效的节水技术。', descriptionEn: 'Continuously investing in more efficient water-saving technologies.', image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600' },
+      { title: '环保材料创新', titleEn: 'Eco-Friendly Material Innovation', description: '使用可回收和生物降解材料。', descriptionEn: 'Using recyclable and biodegradable materials.', image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d365f?w=600' },
+      { title: '碳中和工厂', titleEn: 'Carbon-Neutral Factory', description: '所有生产基地已实现碳中和。', descriptionEn: 'All production bases have achieved carbon neutrality.', image: 'https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=600' },
     ],
     socialTitle: '回馈社会，创造价值',
+    socialTitleEn: 'Giving Back to Society, Creating Value',
     socialDescription: '我们不仅关注环境保护，也致力于改善社区生活。',
+    socialDescriptionEn: 'We not only focus on environmental protection, but also strive to improve community life.',
     goals: [
-      { year: '2025', target: '所有产品实现节水认证' },
-      { year: '2027', target: '碳中和生产全面实现' },
-      { year: '2030', target: '100%可回收包装材料' },
-      { year: '2035', target: '零废弃物填埋' },
+      { year: '2025', target: '所有产品实现节水认证', targetEn: 'All products achieve water-saving certification' },
+      { year: '2027', target: '碳中和生产全面实现', targetEn: 'Full carbon-neutral production achieved' },
+      { year: '2030', target: '100%可回收包装材料', targetEn: '100% recyclable packaging materials' },
+      { year: '2035', target: '零废弃物填埋', targetEn: 'Zero waste to landfill' },
     ],
     stats: {
       certifications: '50+',
       certificationsLabel: '环保认证',
+      certificationsLabelEn: 'Eco Certifications',
       greenProducts: '100',
       greenProductsLabel: '绿色产品',
-      carbonReduction: '50万',
+      greenProductsLabelEn: 'Green Products',
+      carbonReduction: '500K',
       carbonReductionLabel: '碳排放减少',
-      treesPlanted: '10万',
+      carbonReductionLabelEn: 'Carbon Reduction',
+      treesPlanted: '100K',
       treesPlantedLabel: '树种植',
+      treesPlantedLabelEn: 'Trees Planted',
     },
   });
   const [newSubcategory, setNewSubcategory] = useState('');
@@ -318,7 +331,29 @@ const Admin: React.FC = () => {
     const savedMessages = localStorage.getItem('contactMessages');
     const savedStyles = localStorage.getItem('designStyles');
 
-    if (savedProducts) setProductList(JSON.parse(savedProducts));
+    const savedDeletedProducts = localStorage.getItem('deletedProducts');
+    const deletedIds: string[] = savedDeletedProducts ? JSON.parse(savedDeletedProducts) : [];
+
+    if (savedProducts) {
+      const parsedProducts = JSON.parse(savedProducts);
+      let mergedProducts = [...defaultProducts];
+      // 先合并 localStorage 的更新数据
+      parsedProducts.forEach((p: any) => {
+        const existingIndex = mergedProducts.findIndex((mp: any) => mp.id === p.id);
+        if (existingIndex >= 0) {
+          mergedProducts[existingIndex] = p;
+        } else {
+          mergedProducts.push(p);
+        }
+      });
+      // 过滤掉已删除的产品
+      mergedProducts = mergedProducts.filter((p: any) => !deletedIds.includes(p.id));
+      setProductList(mergedProducts);
+    } else {
+      // 没有保存的产品数据，但可能有删除记录，也需要过滤
+      const filteredProducts = defaultProducts.filter((p: any) => !deletedIds.includes(p.id));
+      setProductList(filteredProducts);
+    }
     if (savedInspirations) setInspirationList(JSON.parse(savedInspirations));
     if (savedPages) {
       const parsedPages = JSON.parse(savedPages);
@@ -572,6 +607,13 @@ const Admin: React.FC = () => {
       const updatedList = productList.filter(p => p.id !== id);
       setProductList(updatedList);
       localStorage.setItem('products', JSON.stringify(updatedList));
+      // 记录被删除的产品 ID，防止刷新后又从 JSON 文件恢复
+      const savedDeleted = localStorage.getItem('deletedProducts');
+      const deletedIds: string[] = savedDeleted ? JSON.parse(savedDeleted) : [];
+      if (!deletedIds.includes(id)) {
+        deletedIds.push(id);
+        localStorage.setItem('deletedProducts', JSON.stringify(deletedIds));
+      }
     }
   };
 
@@ -768,6 +810,36 @@ const Admin: React.FC = () => {
     }
   };
 
+  const addCertification = () => {
+    if (newCertification.trim() && editingProduct) {
+      setEditingProduct({ ...editingProduct, certifications: [...(editingProduct.certifications || []), newCertification.trim()] });
+      setNewCertification('');
+    }
+  };
+
+  const addCertificationEn = () => {
+    if (newCertificationEn.trim() && editingProduct) {
+      setEditingProduct({ ...editingProduct, certificationsEn: [...(editingProduct.certificationsEn || []), newCertificationEn.trim()] });
+      setNewCertificationEn('');
+    }
+  };
+
+  const removeCertification = (index: number) => {
+    if (editingProduct) {
+      const newCerts = [...(editingProduct.certifications || [])];
+      newCerts.splice(index, 1);
+      setEditingProduct({ ...editingProduct, certifications: newCerts });
+    }
+  };
+
+  const removeCertificationEn = (index: number) => {
+    if (editingProduct) {
+      const newCerts = [...(editingProduct.certificationsEn || [])];
+      newCerts.splice(index, 1);
+      setEditingProduct({ ...editingProduct, certificationsEn: newCerts });
+    }
+  };
+
   const removeSpecification = (key: string) => {
     if (editingProduct) {
       const newSpecs = { ...editingProduct.specifications };
@@ -870,6 +942,13 @@ const Admin: React.FC = () => {
     if (newInspirationImageUrl.trim() && editingInspiration) {
       setEditingInspiration({ ...editingInspiration, images: [...(editingInspiration.images || []), newInspirationImageUrl.trim()] });
       setNewInspirationImageUrl('');
+    }
+  };
+
+  const addProductImageUrl = () => {
+    if (newProductImageUrl.trim() && editingProduct) {
+      setEditingProduct({ ...editingProduct, images: [...editingProduct.images, newProductImageUrl.trim()] });
+      setNewProductImageUrl('');
     }
   };
 
@@ -1108,9 +1187,11 @@ const Admin: React.FC = () => {
                       images: [],
                       features: [],
                       featuresEn: [],
+                      certifications: [],
+                      certificationsEn: [],
                       specifications: {},
                       specificationsEn: {},
-                      seo: { title: '', description: '', keywords: [] },
+                      seo: { title: '', titleEn: '', description: '', descriptionEn: '', keywords: [], keywordsEn: [] },
                       documents: { manual: '', technicalData: '', imagesDownload: '', quote: '', appointment: '' },
                       createdAt: new Date().toISOString().split('T')[0],
                       updatedAt: new Date().toISOString().split('T')[0],
@@ -1228,6 +1309,23 @@ const Admin: React.FC = () => {
                         onChange={handleProductImageUpload}
                         className="hidden"
                       />
+                      <div className="mt-3 flex items-center space-x-2">
+                        <input
+                          type="url"
+                          value={newProductImageUrl}
+                          onChange={(e) => setNewProductImageUrl(e.target.value)}
+                          onKeyPress={(e) => e.key === 'Enter' && addProductImageUrl()}
+                          placeholder="输入图片链接（如 https://...）"
+                          className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                        />
+                        <button 
+                          onClick={addProductImageUrl}
+                          className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 flex items-center space-x-1"
+                        >
+                          <Plus className="w-4 h-4" />
+                          <span>添加链接</span>
+                        </button>
+                      </div>
                     </div>
 
                     <div>
@@ -1295,7 +1393,64 @@ const Admin: React.FC = () => {
                       </div>
                     </div>
 
-                    <div>
+                    <div className="mt-4">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                          <label className="block text-sm font-medium text-gray-700 mb-2">认证标签（中文）</label>
+                          <div className="flex flex-wrap gap-2">
+                            {(editingProduct.certifications || []).map((cert, index) => (
+                              <span key={index} className="inline-flex items-center px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">
+                                {cert}
+                                <button onClick={() => removeCertification(index)} className="ml-1 hover:text-orange-600">
+                                  <X className="w-3 h-3" />
+                                </button>
+                              </span>
+                            ))}
+                            <div className="flex items-center space-x-2">
+                              <input
+                                type="text"
+                                value={newCertification}
+                                onChange={(e) => setNewCertification(e.target.value)}
+                                onKeyPress={(e) => e.key === 'Enter' && addCertification()}
+                                className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 w-32"
+                                placeholder="添加认证..."
+                              />
+                              <button onClick={addCertification} className="px-3 py-2 bg-orange-600 text-white rounded-lg hover:bg-orange-700">
+                                <Plus className="w-4 h-4" />
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <label className="block text-sm font-medium text-gray-700 mb-2">认证标签（英文）</label>
+                          <div className="flex flex-wrap gap-2">
+                            {(editingProduct.certificationsEn || []).map((cert, index) => (
+                              <span key={index} className="inline-flex items-center px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">
+                                {cert}
+                                <button onClick={() => removeCertificationEn(index)} className="ml-1 hover:text-teal-600">
+                                  <X className="w-3 h-3" />
+                                </button>
+                              </span>
+                            ))}
+                            <div className="flex items-center space-x-2">
+                              <input
+                                type="text"
+                                value={newCertificationEn}
+                                onChange={(e) => setNewCertificationEn(e.target.value)}
+                                onKeyPress={(e) => e.key === 'Enter' && addCertificationEn()}
+                                className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 w-32"
+                                placeholder="Add certification..."
+                              />
+                              <button onClick={addCertificationEn} className="px-3 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700">
+                                <Plus className="w-4 h-4" />
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="mt-4">
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
                           <label className="block text-sm font-medium text-gray-700 mb-2">产品参数（中文）</label>
@@ -1443,7 +1598,7 @@ const Admin: React.FC = () => {
                       <h4 className="font-semibold mb-4">SEO设置</h4>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
-                          <label className="block text-sm font-medium text-gray-700 mb-1">SEO标题</label>
+                          <label className="block text-sm font-medium text-gray-700 mb-1">SEO标题（中文）</label>
                           <input
                             type="text"
                             value={editingProduct.seo.title}
@@ -1452,22 +1607,50 @@ const Admin: React.FC = () => {
                           />
                         </div>
                         <div>
-                          <label className="block text-sm font-medium text-gray-700 mb-1">SEO描述</label>
+                          <label className="block text-sm font-medium text-gray-700 mb-1">SEO标题（英文）</label>
+                          <input
+                            type="text"
+                            value={editingProduct.seo.titleEn || ''}
+                            onChange={(e) => setEditingProduct({ ...editingProduct, seo: { ...editingProduct.seo, titleEn: e.target.value } })}
+                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                          />
+                        </div>
+                        <div>
+                          <label className="block text-sm font-medium text-gray-700 mb-1">SEO描述（中文）</label>
                           <textarea
                             value={editingProduct.seo.description}
                             onChange={(e) => setEditingProduct({ ...editingProduct, seo: { ...editingProduct.seo, description: e.target.value } })}
                             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
                           />
                         </div>
+                        <div>
+                          <label className="block text-sm font-medium text-gray-700 mb-1">SEO描述（英文）</label>
+                          <textarea
+                            value={editingProduct.seo.descriptionEn || ''}
+                            onChange={(e) => setEditingProduct({ ...editingProduct, seo: { ...editingProduct.seo, descriptionEn: e.target.value } })}
+                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                          />
+                        </div>
                       </div>
-                      <div className="mt-4">
-                        <label className="block text-sm font-medium text-gray-700 mb-1">SEO关键词（用逗号分隔）</label>
-                        <input
-                          type="text"
-                          value={editingProduct.seo.keywords.join(', ')}
-                          onChange={(e) => setEditingProduct({ ...editingProduct, seo: { ...editingProduct.seo, keywords: e.target.value.split(',').map(k => k.trim()).filter(k => k) } })}
-                          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
-                        />
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                        <div>
+                          <label className="block text-sm font-medium text-gray-700 mb-1">SEO关键词（中文，用逗号分隔）</label>
+                          <input
+                            type="text"
+                            value={editingProduct.seo.keywords.join(', ')}
+                            onChange={(e) => setEditingProduct({ ...editingProduct, seo: { ...editingProduct.seo, keywords: e.target.value.split(',').map(k => k.trim()).filter(k => k) } })}
+                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                          />
+                        </div>
+                        <div>
+                          <label className="block text-sm font-medium text-gray-700 mb-1">SEO关键词（英文，用逗号分隔）</label>
+                          <input
+                            type="text"
+                            value={(editingProduct.seo.keywordsEn || []).join(', ')}
+                            onChange={(e) => setEditingProduct({ ...editingProduct, seo: { ...editingProduct.seo, keywordsEn: e.target.value.split(',').map(k => k.trim()).filter(k => k) } })}
+                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                          />
+                        </div>
                       </div>
                     </div>
 
@@ -2196,7 +2379,7 @@ const Admin: React.FC = () => {
                   <div className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-1">页面标题</label>
+                        <label className="block text-sm font-medium text-gray-700 mb-1">页面标题（中文）</label>
                         <input
                           type="text"
                           value={sustainabilityData.heroTitle}
@@ -2205,7 +2388,16 @@ const Admin: React.FC = () => {
                         />
                       </div>
                       <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-1">副标题</label>
+                        <label className="block text-sm font-medium text-gray-700 mb-1">页面标题（英文）</label>
+                        <input
+                          type="text"
+                          value={sustainabilityData.heroTitleEn}
+                          onChange={(e) => setSustainabilityData({ ...sustainabilityData, heroTitleEn: e.target.value })}
+                          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-1">副标题（中文）</label>
                         <input
                           type="text"
                           value={sustainabilityData.heroSubtitle}
@@ -2213,23 +2405,43 @@ const Admin: React.FC = () => {
                           className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
                         />
                       </div>
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-1">副标题（英文）</label>
+                        <input
+                          type="text"
+                          value={sustainabilityData.heroSubtitleEn}
+                          onChange={(e) => setSustainabilityData({ ...sustainabilityData, heroSubtitleEn: e.target.value })}
+                          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                        />
+                      </div>
                     </div>
 
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-1">描述</label>
-                      <textarea
-                        value={sustainabilityData.heroDescription}
-                        onChange={(e) => setSustainabilityData({ ...sustainabilityData, heroDescription: e.target.value })}
-                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
-                        rows={3}
-                      />
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-1">描述（中文）</label>
+                        <textarea
+                          value={sustainabilityData.heroDescription}
+                          onChange={(e) => setSustainabilityData({ ...sustainabilityData, heroDescription: e.target.value })}
+                          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                          rows={3}
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-1">描述（英文）</label>
+                        <textarea
+                          value={sustainabilityData.heroDescriptionEn}
+                          onChange={(e) => setSustainabilityData({ ...sustainabilityData, heroDescriptionEn: e.target.value })}
+                          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                          rows={3}
+                        />
+                      </div>
                     </div>
 
                     <div className="border-t pt-6">
                       <h4 className="font-semibold text-gray-900 mb-4">社会责任</h4>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
-                          <label className="block text-sm font-medium text-gray-700 mb-1">标题</label>
+                          <label className="block text-sm font-medium text-gray-700 mb-1">标题（中文）</label>
                           <input
                             type="text"
                             value={sustainabilityData.socialTitle}
@@ -2238,10 +2450,28 @@ const Admin: React.FC = () => {
                           />
                         </div>
                         <div>
-                          <label className="block text-sm font-medium text-gray-700 mb-1">描述</label>
+                          <label className="block text-sm font-medium text-gray-700 mb-1">标题（英文）</label>
+                          <input
+                            type="text"
+                            value={sustainabilityData.socialTitleEn}
+                            onChange={(e) => setSustainabilityData({ ...sustainabilityData, socialTitleEn: e.target.value })}
+                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                          />
+                        </div>
+                        <div>
+                          <label className="block text-sm font-medium text-gray-700 mb-1">描述（中文）</label>
                           <textarea
                             value={sustainabilityData.socialDescription}
                             onChange={(e) => setSustainabilityData({ ...sustainabilityData, socialDescription: e.target.value })}
+                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                            rows={2}
+                          />
+                        </div>
+                        <div>
+                          <label className="block text-sm font-medium text-gray-700 mb-1">描述（英文）</label>
+                          <textarea
+                            value={sustainabilityData.socialDescriptionEn}
+                            onChange={(e) => setSustainabilityData({ ...sustainabilityData, socialDescriptionEn: e.target.value })}
                             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
                             rows={2}
                           />
@@ -2258,7 +2488,14 @@ const Admin: React.FC = () => {
                             value={sustainabilityData.stats.certificationsLabel || '环保认证'}
                             onChange={(e) => setSustainabilityData({ ...sustainabilityData, stats: { ...sustainabilityData.stats, certificationsLabel: e.target.value }})}
                             className="block text-sm font-medium text-gray-700 mb-1 w-full px-2 py-1 border border-gray-200 rounded focus:ring-1 focus:ring-blue-500"
-                            placeholder="标签名称"
+                            placeholder="标签名称（中文）"
+                          />
+                          <input
+                            type="text"
+                            value={sustainabilityData.stats.certificationsLabelEn || 'Eco Certifications'}
+                            onChange={(e) => setSustainabilityData({ ...sustainabilityData, stats: { ...sustainabilityData.stats, certificationsLabelEn: e.target.value }})}
+                            className="block text-xs text-gray-500 mb-1 w-full px-2 py-1 border border-gray-200 rounded focus:ring-1 focus:ring-blue-500"
+                            placeholder="标签名称（英文）"
                           />
                           <input
                             type="text"
@@ -2274,7 +2511,14 @@ const Admin: React.FC = () => {
                             value={sustainabilityData.stats.greenProductsLabel || '绿色产品'}
                             onChange={(e) => setSustainabilityData({ ...sustainabilityData, stats: { ...sustainabilityData.stats, greenProductsLabel: e.target.value }})}
                             className="block text-sm font-medium text-gray-700 mb-1 w-full px-2 py-1 border border-gray-200 rounded focus:ring-1 focus:ring-blue-500"
-                            placeholder="标签名称"
+                            placeholder="标签名称（中文）"
+                          />
+                          <input
+                            type="text"
+                            value={sustainabilityData.stats.greenProductsLabelEn || 'Green Products'}
+                            onChange={(e) => setSustainabilityData({ ...sustainabilityData, stats: { ...sustainabilityData.stats, greenProductsLabelEn: e.target.value }})}
+                            className="block text-xs text-gray-500 mb-1 w-full px-2 py-1 border border-gray-200 rounded focus:ring-1 focus:ring-blue-500"
+                            placeholder="标签名称（英文）"
                           />
                           <input
                             type="text"
@@ -2290,7 +2534,14 @@ const Admin: React.FC = () => {
                             value={sustainabilityData.stats.carbonReductionLabel || '碳排放减少'}
                             onChange={(e) => setSustainabilityData({ ...sustainabilityData, stats: { ...sustainabilityData.stats, carbonReductionLabel: e.target.value }})}
                             className="block text-sm font-medium text-gray-700 mb-1 w-full px-2 py-1 border border-gray-200 rounded focus:ring-1 focus:ring-blue-500"
-                            placeholder="标签名称"
+                            placeholder="标签名称（中文）"
+                          />
+                          <input
+                            type="text"
+                            value={sustainabilityData.stats.carbonReductionLabelEn || 'Carbon Reduction'}
+                            onChange={(e) => setSustainabilityData({ ...sustainabilityData, stats: { ...sustainabilityData.stats, carbonReductionLabelEn: e.target.value }})}
+                            className="block text-xs text-gray-500 mb-1 w-full px-2 py-1 border border-gray-200 rounded focus:ring-1 focus:ring-blue-500"
+                            placeholder="标签名称（英文）"
                           />
                           <input
                             type="text"
@@ -2306,7 +2557,14 @@ const Admin: React.FC = () => {
                             value={sustainabilityData.stats.treesPlantedLabel || '树种植'}
                             onChange={(e) => setSustainabilityData({ ...sustainabilityData, stats: { ...sustainabilityData.stats, treesPlantedLabel: e.target.value }})}
                             className="block text-sm font-medium text-gray-700 mb-1 w-full px-2 py-1 border border-gray-200 rounded focus:ring-1 focus:ring-blue-500"
-                            placeholder="标签名称"
+                            placeholder="标签名称（中文）"
+                          />
+                          <input
+                            type="text"
+                            value={sustainabilityData.stats.treesPlantedLabelEn || 'Trees Planted'}
+                            onChange={(e) => setSustainabilityData({ ...sustainabilityData, stats: { ...sustainabilityData.stats, treesPlantedLabelEn: e.target.value }})}
+                            className="block text-xs text-gray-500 mb-1 w-full px-2 py-1 border border-gray-200 rounded focus:ring-1 focus:ring-blue-500"
+                            placeholder="标签名称（英文）"
                           />
                           <input
                             type="text"
@@ -2325,7 +2583,7 @@ const Admin: React.FC = () => {
                         <div key={index} className="bg-white rounded-lg p-4 mb-3">
                           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
                             <div>
-                              <label className="block text-sm font-medium text-gray-700 mb-1">标题</label>
+                              <label className="block text-sm font-medium text-gray-700 mb-1">标题（中文）</label>
                               <input
                                 type="text"
                                 value={commitment.title}
@@ -2338,13 +2596,39 @@ const Admin: React.FC = () => {
                               />
                             </div>
                             <div>
-                              <label className="block text-sm font-medium text-gray-700 mb-1">描述</label>
+                              <label className="block text-sm font-medium text-gray-700 mb-1">标题（英文）</label>
+                              <input
+                                type="text"
+                                value={commitment.titleEn || ''}
+                                onChange={(e) => {
+                                  const newCommitments = [...sustainabilityData.commitments];
+                                  newCommitments[index] = { ...commitment, titleEn: e.target.value };
+                                  setSustainabilityData({ ...sustainabilityData, commitments: newCommitments });
+                                }}
+                                className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm"
+                              />
+                            </div>
+                            <div className="md:col-span-2">
+                              <label className="block text-sm font-medium text-gray-700 mb-1">描述（中文）</label>
                               <input
                                 type="text"
                                 value={commitment.description}
                                 onChange={(e) => {
                                   const newCommitments = [...sustainabilityData.commitments];
                                   newCommitments[index] = { ...commitment, description: e.target.value };
+                                  setSustainabilityData({ ...sustainabilityData, commitments: newCommitments });
+                                }}
+                                className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm"
+                              />
+                            </div>
+                            <div className="md:col-span-2">
+                              <label className="block text-sm font-medium text-gray-700 mb-1">描述（英文）</label>
+                              <input
+                                type="text"
+                                value={commitment.descriptionEn || ''}
+                                onChange={(e) => {
+                                  const newCommitments = [...sustainabilityData.commitments];
+                                  newCommitments[index] = { ...commitment, descriptionEn: e.target.value };
                                   setSustainabilityData({ ...sustainabilityData, commitments: newCommitments });
                                 }}
                                 className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm"
@@ -2364,13 +2648,26 @@ const Admin: React.FC = () => {
                               />
                             </div>
                             <div>
-                              <label className="block text-sm font-medium text-gray-700 mb-1">单位</label>
+                              <label className="block text-sm font-medium text-gray-700 mb-1">单位（中文）</label>
                               <input
                                 type="text"
                                 value={commitment.statLabel}
                                 onChange={(e) => {
                                   const newCommitments = [...sustainabilityData.commitments];
                                   newCommitments[index] = { ...commitment, statLabel: e.target.value };
+                                  setSustainabilityData({ ...sustainabilityData, commitments: newCommitments });
+                                }}
+                                className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm"
+                              />
+                            </div>
+                            <div>
+                              <label className="block text-sm font-medium text-gray-700 mb-1">单位（英文）</label>
+                              <input
+                                type="text"
+                                value={commitment.statLabelEn || ''}
+                                onChange={(e) => {
+                                  const newCommitments = [...sustainabilityData.commitments];
+                                  newCommitments[index] = { ...commitment, statLabelEn: e.target.value };
                                   setSustainabilityData({ ...sustainabilityData, commitments: newCommitments });
                                 }}
                                 className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm"
@@ -2384,7 +2681,7 @@ const Admin: React.FC = () => {
                     <div className="border-t pt-6">
                       <h4 className="font-semibold text-gray-900 mb-4">发展目标</h4>
                       {sustainabilityData.goals.map((goal, index) => (
-                        <div key={index} className="flex items-center space-x-4 mb-2">
+                        <div key={index} className="flex flex-col md:flex-row items-stretch md:items-center gap-2 md:space-x-4 mb-3">
                           <input
                             type="text"
                             value={goal.year}
@@ -2393,7 +2690,7 @@ const Admin: React.FC = () => {
                               newGoals[index] = { ...goal, year: e.target.value };
                               setSustainabilityData({ ...sustainabilityData, goals: newGoals });
                             }}
-                            className="w-24 px-3 py-2 border border-gray-300 rounded-lg text-sm"
+                            className="w-full md:w-24 px-3 py-2 border border-gray-300 rounded-lg text-sm"
                             placeholder="年份"
                           />
                           <input
@@ -2405,7 +2702,18 @@ const Admin: React.FC = () => {
                               setSustainabilityData({ ...sustainabilityData, goals: newGoals });
                             }}
                             className="flex-1 px-3 py-2 border border-gray-300 rounded-lg text-sm"
-                            placeholder="目标"
+                            placeholder="目标（中文）"
+                          />
+                          <input
+                            type="text"
+                            value={goal.targetEn || ''}
+                            onChange={(e) => {
+                              const newGoals = [...sustainabilityData.goals];
+                              newGoals[index] = { ...goal, targetEn: e.target.value };
+                              setSustainabilityData({ ...sustainabilityData, goals: newGoals });
+                            }}
+                            className="flex-1 px-3 py-2 border border-gray-300 rounded-lg text-sm"
+                            placeholder="目标（英文）"
                           />
                         </div>
                       ))}
@@ -2417,7 +2725,7 @@ const Admin: React.FC = () => {
                         <div key={index} className="bg-white rounded-lg p-4 mb-3">
                           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                             <div>
-                              <label className="block text-sm font-medium text-gray-700 mb-1">标题</label>
+                              <label className="block text-sm font-medium text-gray-700 mb-1">标题（中文）</label>
                               <input
                                 type="text"
                                 value={initiative.title}
@@ -2430,13 +2738,13 @@ const Admin: React.FC = () => {
                               />
                             </div>
                             <div>
-                              <label className="block text-sm font-medium text-gray-700 mb-1">描述</label>
+                              <label className="block text-sm font-medium text-gray-700 mb-1">标题（英文）</label>
                               <input
                                 type="text"
-                                value={initiative.description}
+                                value={initiative.titleEn || ''}
                                 onChange={(e) => {
                                   const newInitiatives = [...sustainabilityData.initiatives];
-                                  newInitiatives[index] = { ...initiative, description: e.target.value };
+                                  newInitiatives[index] = { ...initiative, titleEn: e.target.value };
                                   setSustainabilityData({ ...sustainabilityData, initiatives: newInitiatives });
                                 }}
                                 className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm"
@@ -2450,6 +2758,32 @@ const Admin: React.FC = () => {
                                 onChange={(e) => {
                                   const newInitiatives = [...sustainabilityData.initiatives];
                                   newInitiatives[index] = { ...initiative, image: e.target.value };
+                                  setSustainabilityData({ ...sustainabilityData, initiatives: newInitiatives });
+                                }}
+                                className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm"
+                              />
+                            </div>
+                            <div className="md:col-span-2">
+                              <label className="block text-sm font-medium text-gray-700 mb-1">描述（中文）</label>
+                              <input
+                                type="text"
+                                value={initiative.description}
+                                onChange={(e) => {
+                                  const newInitiatives = [...sustainabilityData.initiatives];
+                                  newInitiatives[index] = { ...initiative, description: e.target.value };
+                                  setSustainabilityData({ ...sustainabilityData, initiatives: newInitiatives });
+                                }}
+                                className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm"
+                              />
+                            </div>
+                            <div className="md:col-span-1">
+                              <label className="block text-sm font-medium text-gray-700 mb-1">描述（英文）</label>
+                              <input
+                                type="text"
+                                value={initiative.descriptionEn || ''}
+                                onChange={(e) => {
+                                  const newInitiatives = [...sustainabilityData.initiatives];
+                                  newInitiatives[index] = { ...initiative, descriptionEn: e.target.value };
                                   setSustainabilityData({ ...sustainabilityData, initiatives: newInitiatives });
                                 }}
                                 className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm"
@@ -2951,7 +3285,7 @@ const Admin: React.FC = () => {
                       <h4 className="font-semibold text-gray-900 mb-4">Banner文字内容</h4>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
-                          <label className="block text-sm font-medium text-gray-700 mb-1">标题</label>
+                          <label className="block text-sm font-medium text-gray-700 mb-1">标题（中文）</label>
                           <input
                             type="text"
                             value={homeConfig.hero.title}
@@ -2960,7 +3294,16 @@ const Admin: React.FC = () => {
                           />
                         </div>
                         <div>
-                          <label className="block text-sm font-medium text-gray-700 mb-1">副标题</label>
+                          <label className="block text-sm font-medium text-gray-700 mb-1">标题（英文）</label>
+                          <input
+                            type="text"
+                            value={homeConfig.hero.titleEn}
+                            onChange={(e) => setHomeConfig({ ...homeConfig, hero: { ...homeConfig.hero, titleEn: e.target.value } })}
+                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                          />
+                        </div>
+                        <div>
+                          <label className="block text-sm font-medium text-gray-700 mb-1">副标题（中文）</label>
                           <input
                             type="text"
                             value={homeConfig.hero.subtitle}
@@ -2968,8 +3311,17 @@ const Admin: React.FC = () => {
                             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
                           />
                         </div>
-                        <div className="md:col-span-2">
-                          <label className="block text-sm font-medium text-gray-700 mb-1">描述文字</label>
+                        <div>
+                          <label className="block text-sm font-medium text-gray-700 mb-1">副标题（英文）</label>
+                          <input
+                            type="text"
+                            value={homeConfig.hero.subtitleEn}
+                            onChange={(e) => setHomeConfig({ ...homeConfig, hero: { ...homeConfig.hero, subtitleEn: e.target.value } })}
+                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                          />
+                        </div>
+                        <div>
+                          <label className="block text-sm font-medium text-gray-700 mb-1">描述文字（中文）</label>
                           <textarea
                             value={homeConfig.hero.description}
                             onChange={(e) => setHomeConfig({ ...homeConfig, hero: { ...homeConfig.hero, description: e.target.value } })}
@@ -2978,7 +3330,16 @@ const Admin: React.FC = () => {
                           />
                         </div>
                         <div>
-                          <label className="block text-sm font-medium text-gray-700 mb-1">按钮1文字</label>
+                          <label className="block text-sm font-medium text-gray-700 mb-1">描述文字（英文）</label>
+                          <textarea
+                            value={homeConfig.hero.descriptionEn}
+                            onChange={(e) => setHomeConfig({ ...homeConfig, hero: { ...homeConfig.hero, descriptionEn: e.target.value } })}
+                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                            rows={3}
+                          />
+                        </div>
+                        <div>
+                          <label className="block text-sm font-medium text-gray-700 mb-1">按钮1文字（中文）</label>
                           <input
                             type="text"
                             value={homeConfig.hero.buttonText}
@@ -2987,7 +3348,16 @@ const Admin: React.FC = () => {
                           />
                         </div>
                         <div>
-                          <label className="block text-sm font-medium text-gray-700 mb-1">按钮2文字</label>
+                          <label className="block text-sm font-medium text-gray-700 mb-1">按钮1文字（英文）</label>
+                          <input
+                            type="text"
+                            value={homeConfig.hero.buttonTextEn}
+                            onChange={(e) => setHomeConfig({ ...homeConfig, hero: { ...homeConfig.hero, buttonTextEn: e.target.value } })}
+                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                          />
+                        </div>
+                        <div>
+                          <label className="block text-sm font-medium text-gray-700 mb-1">按钮2文字（中文）</label>
                           <input
                             type="text"
                             value={homeConfig.hero.button2Text}
@@ -2995,6 +3365,68 @@ const Admin: React.FC = () => {
                             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
                           />
                         </div>
+                        <div>
+                          <label className="block text-sm font-medium text-gray-700 mb-1">按钮2文字（英文）</label>
+                          <input
+                            type="text"
+                            value={homeConfig.hero.button2TextEn}
+                            onChange={(e) => setHomeConfig({ ...homeConfig, hero: { ...homeConfig.hero, button2TextEn: e.target.value } })}
+                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="border-b border-orange-200 pb-6">
+                      <h4 className="font-semibold text-gray-900 mb-4">认证标签</h4>
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        {(homeConfig.certifications || []).map((cert, index) => (
+                          <span key={index} className="inline-flex items-center px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">
+                            {cert}
+                            <button 
+                              onClick={() => {
+                                const newCerts = [...(homeConfig.certifications || [])];
+                                newCerts.splice(index, 1);
+                                setHomeConfig({ ...homeConfig, certifications: newCerts });
+                              }} 
+                              className="ml-1 hover:text-green-600"
+                            >
+                              <X className="w-3 h-3" />
+                            </button>
+                          </span>
+                        ))}
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <input
+                          type="text"
+                          placeholder="输入认证名称，如 ISO 9001"
+                          className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                          onKeyPress={(e) => {
+                            if (e.key === 'Enter' && e.currentTarget.value.trim()) {
+                              const newCert = e.currentTarget.value.trim();
+                              if (!homeConfig.certifications?.includes(newCert)) {
+                                setHomeConfig({ ...homeConfig, certifications: [...(homeConfig.certifications || []), newCert] });
+                              }
+                              e.currentTarget.value = '';
+                            }
+                          }}
+                          id="new-hero-cert-input"
+                        />
+                        <button 
+                          onClick={() => {
+                            const input = document.getElementById('new-hero-cert-input') as HTMLInputElement;
+                            if (input && input.value.trim()) {
+                              const newCert = input.value.trim();
+                              if (!homeConfig.certifications?.includes(newCert)) {
+                                setHomeConfig({ ...homeConfig, certifications: [...(homeConfig.certifications || []), newCert] });
+                              }
+                              input.value = '';
+                            }
+                          }}
+                          className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700"
+                        >
+                          <Plus className="w-4 h-4" />
+                        </button>
                       </div>
                     </div>
 

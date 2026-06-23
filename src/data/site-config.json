@@ -1,16 +1,19 @@
 {
   "navItems": null,
-  "siteLogo": null,
-  "siteTitle": null,
+  "siteLogo": "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/%E5%85%AC%E5%8F%B8logo%E7%AE%80%E7%BA%A6%E7%89%88%20(1).png",
+  "siteTitle": {
+    "zh": "让世界更好的卫浴供应工厂",
+    "en": "A Sanitary Ware Supply Factory Making the World a Better Place"
+  },
   "contactInfo": {
     "companyName": "SEWOO",
-    "slogan": "工厂供应链集合体，专注高端卫浴制造二十余年，为全球客户提供优质产品与服务。",
-    "sloganEn": "Factory Supply Chain Collective, specializing in premium bathroom manufacturing for over 20 years, providing quality products and services worldwide.",
-    "address": "广东省佛山市禅城区",
-    "addressEn": "Chancheng District, Foshan City, Guangdong Province",
-    "addressLine2": "卫浴产业园区88号",
-    "addressLine2En": "No. 88, Bathroom Industrial Park",
-    "phone": "19174230029",
+    "slogan": "工厂集合体，专注卫浴制造二十余年，为全球客户提供优质产品与服务",
+    "sloganEn": "A conglomerate of factories specializing in sanitary ware manufacturing for over two decades, delivering premium products and services to clients worldwide",
+    "address": "佛山市禅城区",
+    "addressEn": "Chancheng District, Foshan City",
+    "addressLine2": "张槎街道青柯村上东后坑工业区C2",
+    "addressLine2En": "C2, Shangdong Houkeng Industrial Zone, Qingke Village, Zhangcha Subdistrict",
+    "phone": "+86 19174230029",
     "phoneHours": "周一至周六 9:00-18:00",
     "phoneHoursEn": "Mon-Sat 9:00-18:00",
     "emails": [
@@ -26,5 +29,15 @@
       "sundayEn": "Sunday: Closed"
     }
   },
-  "footerInfo": null
+  "footerInfo": {
+    "companyName": "SEWOO",
+    "slogan": "工厂集合体，专注卫浴制造二十余年，为全球客户提供优质产品与服务，我们的目标，是让世界更好",
+    "address": "广东省佛山市禅城区",
+    "addressLine2": "卫浴产业园区88号",
+    "phone": "+86 400-888-9999",
+    "email": "info@sewoo-bath.com",
+    "instagramUrl": "https://instagram.com/sewoobath",
+    "facebookUrl": "https://facebook.com/sewoobath",
+    "youtubeUrl": "https://youtube.com/sewoobath"
+  }
 }
