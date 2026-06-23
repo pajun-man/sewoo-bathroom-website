@@ -226,7 +226,24 @@ const Home = () => {
     }
   }, []);
 
-  const homePageConfig = seoConfig.pages.find(p => p.page === 'home');
+  const defaultHomePageConfig = seoConfig.pages.find(p => p.page === 'home');
+  
+  const [homePageFromStorage, setHomePageFromStorage] = useState<any>(null);
+  
+  useEffect(() => {
+    try {
+      const savedPages = localStorage.getItem('pages');
+      if (savedPages) {
+        const pages = JSON.parse(savedPages);
+        const homePage = pages.find((p: any) => p.name === '首页' || p.id === '1');
+        if (homePage) {
+          setHomePageFromStorage(homePage);
+        }
+      }
+    } catch (error) {
+      console.error('Failed to load home page from storage:', error);
+    }
+  }, []);
 
   const getActiveMedia = () => {
     if (homeConfig.hero.useVideo && homeConfig.hero.media.length > 0) {
@@ -237,13 +254,25 @@ const Home = () => {
 
   const activeMedia = getActiveMedia();
 
+  const seoTitle = lang === 'zh'
+    ? (homePageFromStorage?.title || defaultHomePageConfig?.title || seoConfig.global.siteName)
+    : (homePageFromStorage?.titleEn || defaultHomePageConfig?.titleEn || seoConfig.global.siteNameEn);
+  
+  const seoDescription = lang === 'zh'
+    ? (homePageFromStorage?.description || defaultHomePageConfig?.description || '')
+    : (homePageFromStorage?.descriptionEn || defaultHomePageConfig?.descriptionEn || '');
+
+  const seoKeywords = lang === 'zh'
+    ? (homePageFromStorage?.keywords || defaultHomePageConfig?.keywords || [])
+    : (homePageFromStorage?.keywordsEn || defaultHomePageConfig?.keywords || []);
+
   return (
     <>
       <SEO
-        title={homePageConfig?.title || seoConfig.global.siteName}
-        description={homePageConfig?.description || ''}
-        keywords={homePageConfig?.keywords || []}
-        canonical={homePageConfig?.canonical}
+        title={seoTitle}
+        description={seoDescription}
+        keywords={seoKeywords}
+        canonical={defaultHomePageConfig?.canonical}
       />
 
       <div className="flex flex-col">
@@ -300,31 +329,28 @@ const Home = () => {
                   className="w-full h-full object-cover"
                   style={{ opacity: 0.5 }}
                 />
-              ) : (
-                <video
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  preload="auto"
-                  crossOrigin="anonymous"
-                  poster={homeConfig.hero.backgroundImage}
+              ) : activeMedia.url.includes('plvideo.cn') || activeMedia.url.includes('polyv') ? (
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src={activeMedia.url + (activeMedia.url.includes('?') ? '&' : '?') + 'autoPlay=1&muted=1&loop=1'}
+                  title="Hero Video"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
                   className="w-full h-full object-cover"
                   style={{ opacity: 0.5 }}
-                  onError={(e) => {
-                    console.error('Video playback error:', e);
-                    const video = e.target as HTMLVideoElement;
-                    video.style.display = 'none';
-                  }}
-                  onLoadedData={(e) => {
-                    const video = e.target as HTMLVideoElement;
-                    if (video.paused) {
-                      video.play().catch(err => console.error('Auto-play failed:', err));
-                    }
-                  }}
-                >
-                  <source src={activeMedia.url} type="video/mp4" />
-                </video>
+                />
+              ) : (
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src={activeMedia.url}
+                  title="Hero Video"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full object-cover"
+                  style={{ opacity: 0.5 }}
+                />
               )}
             </div>
           ) : (

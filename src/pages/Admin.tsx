@@ -15,13 +15,18 @@ interface Product {
   descriptionEn: string;
   images: string[];
   features: string[];
-  featuresEn: string[];
+  featuresEn?: string[];
+  certifications?: string[];
+  certificationsEn?: string[];
   specifications: Record<string, string>;
-  specificationsEn: Record<string, string>;
+  specificationsEn?: Record<string, string>;
   seo: {
     title: string;
+    titleEn?: string;
     description: string;
+    descriptionEn?: string;
     keywords: string[];
+    keywordsEn?: string[];
   };
   documents: {
     manual: string;
@@ -60,6 +65,10 @@ interface Page {
   name: string;
   title: string;
   titleEn: string;
+  description: string;
+  descriptionEn: string;
+  keywords: string[];
+  keywordsEn: string[];
   content: string;
   contentEn: string;
 }
@@ -348,11 +357,11 @@ const Admin: React.FC = () => {
       });
       // 过滤掉已删除的产品
       mergedProducts = mergedProducts.filter((p: any) => !deletedIds.includes(p.id));
-      setProductList(mergedProducts);
+      setProductList(mergedProducts as Product[]);
     } else {
       // 没有保存的产品数据，但可能有删除记录，也需要过滤
       const filteredProducts = defaultProducts.filter((p: any) => !deletedIds.includes(p.id));
-      setProductList(filteredProducts);
+      setProductList(filteredProducts as Product[]);
     }
     if (savedInspirations) setInspirationList(JSON.parse(savedInspirations));
     if (savedPages) {
@@ -430,9 +439,9 @@ const Admin: React.FC = () => {
 
     if (!localStorage.getItem('pages')) {
       const defaultPages: Page[] = [
-        { id: '1', name: '首页', title: 'SEWOO - 高端卫浴解决方案', titleEn: 'SEWOO - Premium Bathroom Solutions', content: '<h2>欢迎来到 SEWOO 卫浴</h2><p>我们提供高品质的卫浴产品...</p>', contentEn: '<h2>Welcome to SEWOO Bathroom</h2><p>We provide premium bathroom products...</p>' },
-        { id: '2', name: '关于我们', title: '关于 SEWOO', titleEn: 'About SEWOO', content: '<h2>关于我们</h2><p>SEWOO 成立于2003年，是中国高端卫浴品牌的代表之一...</p>', contentEn: '<h2>About Us</h2><p>Founded in 2003, SEWOO is one of China\'s leading premium bathroom brands...</p>' },
-        { id: '3', name: '可持续发展', title: '可持续发展', titleEn: 'Sustainability', content: '<h2>我们的可持续发展承诺</h2><p>SEWOO 致力于环保和可持续发展...</p>', contentEn: '<h2>Our Sustainability Commitment</h2><p>SEWOO is committed to environmental protection and sustainability...</p>' },
+        { id: '1', name: '首页', title: 'SEWOO - 工厂供应链集合体 | 高端卫浴制造商', titleEn: 'SEWOO - Factory Supply Chain Collective | Premium Bathroom Manufacturer', description: 'SEWOO工厂供应链集合体，专注高端卫浴制造二十余年，拥有多个现代化生产基地，为全球50+国家提供优质卫浴产品与服务。', descriptionEn: 'SEWOO Factory Supply Chain Collective, specializing in premium bathroom manufacturing for over 20 years, with multiple modern production bases serving 50+ countries worldwide.', keywords: ['工厂供应链', '高端卫浴', '卫浴制造', '生产基地', 'SEWOO'], keywordsEn: ['factory supply chain', 'premium bathroom', 'bathroom manufacturing', 'production base', 'SEWOO'], content: '<h2>欢迎来到 SEWOO 卫浴</h2><p>我们提供高品质的卫浴产品...</p>', contentEn: '<h2>Welcome to SEWOO Bathroom</h2><p>We provide premium bathroom products...</p>' },
+        { id: '2', name: '关于我们', title: '关于我们 - SEWOO 工厂供应链集合体', titleEn: 'About Us - SEWOO Factory Supply Chain Collective', description: '了解SEWOO工厂供应链集合体，我们是专注于高端卫浴产品研发和制造的领先企业，拥有多个现代化生产基地，以创新技术和卓越品质赢得全球客户信赖。', descriptionEn: 'Learn about SEWOO Factory Supply Chain Collective. We are a leading company focused on high-end bathroom product R&D and manufacturing with multiple modern production bases.', keywords: ['SEWOO', '工厂供应链', '企业介绍', '品牌故事'], keywordsEn: ['SEWOO', 'factory supply chain', 'company introduction', 'brand story'], content: '<h2>关于我们</h2><p>SEWOO 成立于2003年，是中国高端卫浴品牌的代表之一...</p>', contentEn: '<h2>About Us</h2><p>Founded in 2003, SEWOO is one of China\'s leading premium bathroom brands...</p>' },
+        { id: '3', name: '可持续发展', title: '可持续发展 - SEWOO 工厂供应链集合体', titleEn: 'Sustainability - SEWOO Factory Supply Chain Collective', description: 'SEWOO工厂供应链集合体致力于可持续发展，采用环保材料和清洁生产工艺，实现绿色制造。', descriptionEn: 'SEWOO Factory Supply Chain Collective is committed to sustainability, using eco-friendly materials and clean production processes for green manufacturing.', keywords: ['可持续发展', '环保', '绿色制造', '碳中和'], keywordsEn: ['sustainability', 'environment', 'green manufacturing', 'carbon neutrality'], content: '<h2>我们的可持续发展承诺</h2><p>SEWOO 致力于环保和可持续发展...</p>', contentEn: '<h2>Our Sustainability Commitment</h2><p>SEWOO is committed to environmental protection and sustainability...</p>' },
       ];
       setPageList(defaultPages);
       localStorage.setItem('pages', JSON.stringify(defaultPages));
@@ -2282,7 +2291,7 @@ const Admin: React.FC = () => {
                   <div className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-1">页面标题</label>
+                        <label className="block text-sm font-medium text-gray-700 mb-1">页面标题（中文）</label>
                         <input
                           type="text"
                           value={editingPage.title}
@@ -2291,7 +2300,7 @@ const Admin: React.FC = () => {
                         />
                       </div>
                       <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-1">英文标题</label>
+                        <label className="block text-sm font-medium text-gray-700 mb-1">页面标题（英文）</label>
                         <input
                           type="text"
                           value={editingPage.titleEn}
@@ -2301,23 +2310,67 @@ const Admin: React.FC = () => {
                       </div>
                     </div>
 
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-1">SEO描述（中文）</label>
+                        <textarea
+                          value={editingPage.description || ''}
+                          onChange={(e) => setEditingPage({ ...editingPage, description: e.target.value })}
+                          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                          rows={3}
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-1">SEO描述（英文）</label>
+                        <textarea
+                          value={editingPage.descriptionEn || ''}
+                          onChange={(e) => setEditingPage({ ...editingPage, descriptionEn: e.target.value })}
+                          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                          rows={3}
+                        />
+                      </div>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-1">关键词（中文，用逗号分隔）</label>
+                        <input
+                          type="text"
+                          value={(editingPage.keywords || []).join(', ')}
+                          onChange={(e) => setEditingPage({ ...editingPage, keywords: e.target.value.split(',').map(k => k.trim()).filter(k => k) })}
+                          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                          placeholder="关键词1, 关键词2, 关键词3"
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-1">关键词（英文，用逗号分隔）</label>
+                        <input
+                          type="text"
+                          value={(editingPage.keywordsEn || []).join(', ')}
+                          onChange={(e) => setEditingPage({ ...editingPage, keywordsEn: e.target.value.split(',').map(k => k.trim()).filter(k => k) })}
+                          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                          placeholder="keyword1, keyword2, keyword3"
+                        />
+                      </div>
+                    </div>
+
                     <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-1">页面内容</label>
+                      <label className="block text-sm font-medium text-gray-700 mb-1">页面内容（中文）</label>
                       <textarea
                         value={editingPage.content}
                         onChange={(e) => setEditingPage({ ...editingPage, content: e.target.value })}
                         className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
-                        rows={8}
+                        rows={6}
                       />
                     </div>
 
                     <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-1">英文内容</label>
+                      <label className="block text-sm font-medium text-gray-700 mb-1">页面内容（英文）</label>
                       <textarea
                         value={editingPage.contentEn}
                         onChange={(e) => setEditingPage({ ...editingPage, contentEn: e.target.value })}
                         className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
-                        rows={8}
+                        rows={6}
                       />
                     </div>
 

@@ -11,7 +11,19 @@ const About = () => {
   
   const savedPages = localStorage.getItem('pages');
   const pages = savedPages ? JSON.parse(savedPages) : [];
-  const aboutPage = pages.find((p: any) => p.name === '关于我们');
+  const aboutPage = pages.find((p: any) => p.name === '关于我们' || p.id === '2');
+
+  const seoTitle = lang === 'zh'
+    ? (aboutPage?.title || aboutPageConfig?.title || '关于我们')
+    : (aboutPage?.titleEn || aboutPageConfig?.titleEn || 'About Us');
+  
+  const seoDescription = lang === 'zh'
+    ? (aboutPage?.description || aboutPageConfig?.description || '')
+    : (aboutPage?.descriptionEn || aboutPageConfig?.descriptionEn || '');
+
+  const seoKeywords = lang === 'zh'
+    ? (aboutPage?.keywords || aboutPageConfig?.keywords || [])
+    : (aboutPage?.keywordsEn || aboutPageConfig?.keywords || []);
 
   const milestones = [
     { year: '2003', event: lang === 'zh' ? 'SEWOO 成立，首个生产基地投产' : 'SEWOO Founded, First Production Base' },
@@ -47,9 +59,9 @@ const About = () => {
   return (
     <>
       <SEO
-        title={aboutPage?.title || aboutPageConfig?.title || '关于我们'}
-        description={aboutPageConfig?.description || ''}
-        keywords={aboutPageConfig?.keywords || []}
+        title={seoTitle}
+        description={seoDescription}
+        keywords={seoKeywords}
         canonical={aboutPageConfig?.canonical}
       />
 

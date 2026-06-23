@@ -4,8 +4,18 @@ import { Leaf, Droplets, Recycle, Sun, Heart, Award, TrendingUp, Globe } from 'l
 import seoConfig from '../data/seo-config.json';
 import { useI18n } from '../contexts/I18nContext';
 
+const iconMap: Record<string, typeof Leaf> = {
+  Droplets,
+  Leaf,
+  Recycle,
+  Sun,
+  Heart,
+  Award,
+  Globe,
+};
+
 interface Commitment {
-  icon: typeof Leaf;
+  icon: string;
   title: string;
   titleEn: string;
   description: string;
@@ -70,7 +80,7 @@ const defaultSustainabilityData: SustainabilityData = {
   heroDescriptionEn: 'We believe business success should go hand in hand with environmental sustainability',
   commitments: [
     {
-      icon: Droplets,
+      icon: 'Droplets',
       title: '水资源保护',
       titleEn: 'Water Conservation',
       description: '开发节水型产品，帮助全球用户减少水资源消耗。我们的智能马桶和花洒产品可节省高达40%的用水量。',
@@ -80,7 +90,7 @@ const defaultSustainabilityData: SustainabilityData = {
       statLabelEn: 'Water Saving Rate',
     },
     {
-      icon: Leaf,
+      icon: 'Leaf',
       title: '绿色生产',
       titleEn: 'Green Production',
       description: '采用环保材料和清洁生产工艺，减少碳排放。我们的工厂已实现100%可再生能源供电。',
@@ -90,7 +100,7 @@ const defaultSustainabilityData: SustainabilityData = {
       statLabelEn: 'Renewable Energy',
     },
     {
-      icon: Recycle,
+      icon: 'Recycle',
       title: '循环经济',
       titleEn: 'Circular Economy',
       description: '推行产品全生命周期管理，从原材料采购到产品回收，实现资源的循环利用。',
@@ -100,7 +110,7 @@ const defaultSustainabilityData: SustainabilityData = {
       statLabelEn: 'Material Recovery Rate',
     },
     {
-      icon: Sun,
+      icon: 'Sun',
       title: '清洁能源',
       titleEn: 'Clean Energy',
       description: '积极投资太阳能和风能项目，减少生产过程中的碳排放，为碳中和目标努力。',
@@ -226,7 +236,10 @@ const Dealers = () => {
               className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300"
             >
               <div className="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-lg mb-6">
-                <item.icon className="w-8 h-8 text-green-600" />
+                {(() => {
+                  const IconComponent = iconMap[item.icon] || Leaf;
+                  return <IconComponent className="w-8 h-8 text-green-600" />;
+                })()}
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">
                 {lang === 'zh' ? item.title : item.titleEn}
@@ -263,11 +276,17 @@ const Dealers = () => {
                 key={index}
                 className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
               >
-                <div className="aspect-video overflow-hidden">
+                <div className="aspect-video overflow-hidden bg-gray-100">
                   <img
                     src={item.image}
                     alt={item.title}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="225" viewBox="0 0 400 225"%3E%3Crect fill="%23e5e7eb" width="400" height="225"/%3E%3Ctext fill="%239ca3af" font-family="sans-serif" font-size="16" x="50%25" y="50%25" text-anchor="middle" dy=".3em"%3E图片加载中%3C/text%3E%3C/svg%3E';
+                    }}
                   />
                 </div>
                 <div className="p-6">
