@@ -9,8 +9,8 @@
     "descriptionEn": "SEWOO Factory Supply Chain Collective integrates multiple modern production bases, providing premium bathroom products OEM/ODM customization services and one-stop supply chain solutions for global customers.",
     "buttonText": "探索产品",
     "buttonTextEn": "Explore Products",
-    "button2Text": "参观工厂",
-    "button2TextEn": "Visit Factory",
+    "button2Text": "关于我们",
+    "button2TextEn": "About Us",
     "backgroundImage": "",
     "videos": [
       {
@@ -24,7 +24,7 @@
         "id": "1782199961090",
         "type": "video",
         "title": "Banner视频",
-        "url": "https://share.plvideo.cn/front/video/preview?vid=l431efa54babc7ef1bc243f608170821_l"
+        "url": ""
       }
     ],
     "useVideo": true

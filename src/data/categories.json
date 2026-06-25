@@ -10,14 +10,29 @@
         "nameEn": "Integrated Shower"
       },
       {
-        "id": "sub-1-2",
-        "name": "淋浴屏风",
-        "nameEn": "Shower Screen"
-      },
-      {
         "id": "sub-1-3",
         "name": "淋浴房底座",
         "nameEn": "Shower Base"
+      },
+      {
+        "id": "cat-1-1782271585931",
+        "name": "平开淋浴房",
+        "nameEn": "Flat-opening shower room"
+      },
+      {
+        "id": "cat-1-1782271593264",
+        "name": "滑动淋浴房",
+        "nameEn": "Sliding shower room"
+      },
+      {
+        "id": "cat-1-1782271601814",
+        "name": "折叠淋浴房",
+        "nameEn": "Folding shower room"
+      },
+      {
+        "id": "cat-1-1782282420899",
+        "name": "淋浴隔断",
+        "nameEn": "Shower partition"
       }
     ]
   },
@@ -120,34 +135,34 @@
     ]
   },
   {
-    "id": "cat-6",
-    "name": "其他产品",
-    "nameEn": "Other Products",
+    "id": "1782285717796",
+    "name": "浴缸",
+    "nameEn": "Bathtubs",
     "subcategories": [
       {
-        "id": "sub-6-1",
-        "name": "浴室家具",
-        "nameEn": "Bathroom Furniture"
+        "id": "1782285717796-1782285767517",
+        "name": "普通亚克力浴缸",
+        "nameEn": "Ordinary acrylic bathtub"
       },
       {
-        "id": "sub-6-2",
-        "name": "浴室柜",
-        "nameEn": "Bathroom Cabinet"
+        "id": "1782285717796-1782285776138",
+        "name": "人造石浴缸",
+        "nameEn": "Artificial stone bathtub"
       },
       {
-        "id": "sub-6-3",
-        "name": "镜柜",
-        "nameEn": "Mirror Cabinet"
+        "id": "1782285717796-1782285810110",
+        "name": "按摩浴缸",
+        "nameEn": "Jacuzzis"
       },
       {
-        "id": "sub-6-4",
-        "name": "五金配件",
-        "nameEn": "Hardware Accessories"
+        "id": "1782285717796-1782285821129",
+        "name": "铸铁浴缸",
+        "nameEn": "Cast iron bathtub"
       },
       {
-        "id": "sub-6-5",
-        "name": "地漏",
-        "nameEn": "Floor Drain"
+        "id": "1782285717796-1782285887050",
+        "name": "户外大池",
+        "nameEn": "Outdoor pool"
       }
     ]
   },
@@ -156,11 +171,6 @@
     "name": "蒸汽房与桑拿房",
     "nameEn": "Steam Room & Sauna Room",
     "subcategories": [
-      {
-        "id": "sub-7-1",
-        "name": "蒸汽淋浴一体机",
-        "nameEn": "Steam Shower Combo"
-      },
       {
         "id": "sub-7-2",
         "name": "多功能桑拿房",
@@ -175,6 +185,11 @@
         "id": "sub-7-4",
         "name": "桑拿房组合",
         "nameEn": "Sauna Combination"
+      },
+      {
+        "id": "cat-7-1782289780922",
+        "name": "蒸汽淋浴一体机",
+        "nameEn": "Steam Shower Combo"
       }
     ]
   }

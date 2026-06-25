@@ -358,90 +358,6 @@
     "updatedAt": "2024-01-26"
   },
   {
-    "id": "11",
-    "slug": "sliding-shower-enclosure",
-    "category": "淋浴房",
-    "subcategory": "淋浴屏风",
-    "name": "Sliding 推拉淋浴屏风",
-    "nameEn": "Sliding Shower Screen",
-    "description": "推拉式淋浴屏风，304不锈钢框架，钢化玻璃，滑动顺畅，节省浴室空间。",
-    "descriptionEn": "Sliding shower screen with 304 stainless steel frame, tempered glass, smooth sliding, space-saving design.",
-    "images": [
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
-    ],
-    "specifications": {
-      "材质": "304不锈钢+钢化玻璃",
-      "玻璃厚度": "8mm",
-      "尺寸": "定制",
-      "开门方式": "推拉",
-      "保修": "5年"
-    },
-    "features": [
-      "304不锈钢框架",
-      "8mm钢化玻璃",
-      "静音滑轮",
-      "防渗水设计"
-    ],
-    "seo": {
-      "title": "Sliding 推拉淋浴屏风 - SEWOO 高端卫浴",
-      "titleEn": "Sliding Shower Screen - SEWOO Premium Bath",
-      "description": "SEWOO Sliding 推拉淋浴屏风，304不锈钢框架，钢化玻璃，滑动顺畅，节省浴室空间。",
-      "descriptionEn": "SEWOO Sliding shower screen with stainless steel frame and tempered glass.",
-      "keywords": [
-        "淋浴屏风",
-        "推拉门",
-        "淋浴房",
-        "Sliding",
-        "SEWOO"
-      ]
-    },
-    "createdAt": "2024-01-13",
-    "updatedAt": "2024-01-27"
-  },
-  {
-    "id": "12",
-    "slug": "corner-shower-enclosure",
-    "category": "淋浴房",
-    "subcategory": "整体淋浴房",
-    "name": "Corner 整体淋浴房",
-    "nameEn": "Corner Shower Enclosure",
-    "description": "转角式整体淋浴房，钻石型设计，充分利用角落空间，配备置物架和毛巾架。",
-    "descriptionEn": "Corner shower enclosure with diamond design, making full use of corner space, equipped with shelves and towel rack.",
-    "images": [
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
-    ],
-    "specifications": {
-      "材质": "铝合金+钢化玻璃",
-      "玻璃厚度": "8mm",
-      "尺寸": "900mm x 900mm",
-      "开门方式": "平开",
-      "保修": "5年"
-    },
-    "features": [
-      "钻石型设计",
-      "充分利用角落",
-      "内置置物架",
-      "防水胶条"
-    ],
-    "seo": {
-      "title": "Corner 整体淋浴房 - SEWOO 高端卫浴",
-      "titleEn": "Corner Shower Enclosure - SEWOO Premium Bath",
-      "description": "SEWOO Corner 整体淋浴房，钻石型设计，充分利用角落空间，配备置物架和毛巾架。",
-      "descriptionEn": "SEWOO Corner shower enclosure with diamond design. Maximize corner space utilization.",
-      "keywords": [
-        "整体淋浴房",
-        "转角淋浴房",
-        "钻石型",
-        "Corner",
-        "SEWOO"
-      ]
-    },
-    "createdAt": "2024-01-14",
-    "updatedAt": "2024-01-28"
-  },
-  {
     "id": "13",
     "slug": "smart-toilet-2230b",
     "category": "智能马桶",
@@ -1135,59 +1051,65 @@
   },
   {
     "id": "21",
-    "slug": "smart-toilet-2014b",
-    "category": "智能马桶",
-    "subcategory": "全自动智能马桶",
-    "name": "SEWOO-2014B 智能马桶",
-    "nameEn": "SEWOO-2014B Smart Toilet",
-    "description": "SEWOO-2014B智能马桶，座高390/420mm，尺寸680x410x520mm，支持脚触冲水、臀部清洗、暖风烘干等功能。获得CUPC水路安全认证和ETL电路安全认证。",
-    "descriptionEn": "SEWOO-2014B Smart Toilet with seat height 390/420mm, size 680x410x520mm, foot touch flushing. CUPC and ETL certified.",
+    "slug": "ay6-502-shower-enclosure",
+    "category": "淋浴房",
+    "subcategory": "滑动淋浴房",
+    "name": "SEWOO-AY6-502镀铬色一字型滑动淋浴房",
+    "nameEn": "SEWOO-AY6-502 One-piece sliding shower room with chrome finish",
+    "description": "AY6系列镀铬色一字型滑动淋浴房，采用304不锈钢边框，哑光银色表面处理，搭配6-10mm钢化安全玻璃。简约现代设计，适用于各种浴室风格，可定制尺寸满足不同空间需求",
+    "descriptionEn": "AY6 Series Chrome One-Piece Sliding Shower Room adopts 304 stainless steel frames with matte silver finish, paired with 6-10mm tempered safety glass. Featuring a minimalist modern design, it fits all types of bathroom styles and supports custom sizes to meet diverse space requirements",
     "images": [
-      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXSEWOO-2014B-C.png"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXAY6-502.png"
     ],
     "specifications": {
-      "材质": "优质陶瓷+ABS",
-      "座高": "390/420mm",
-      "尺寸": "680 x 410 x 520mm",
-      "电压": "110-220V",
-      "坑距": "S-trap: 250/300mm; P-trap: 180mm",
+      "边框材质": "304不锈钢",
+      "表面处理": "哑光银",
+      "玻璃厚度": "6/8/10mm",
+      "玻璃类型": "透明钢化玻璃",
+      "配件材质": "304不锈钢/铝合金",
+      "配件颜色": "哑光银",
+      "高度范围": "1850-2200mm",
+      "宽度范围": "1200-1600mm",
+      "可定制": "是",
       "保修": "5年"
     },
     "features": [
-      "脚触冲水",
-      "臀部清洗",
-      "暖风烘干",
-      "座圈加热",
-      "夜灯照明",
-      "漏电保护",
-      "IPX4防水"
+      "304不锈钢边框，耐腐蚀",
+      "6-10mm钢化安全玻璃",
+      "哑光银高级表面处理",
+      "可定制尺寸",
+      "静音滑轮设计",
+      "防水密封条",
+      "简约现代设计"
     ],
     "certifications": [
-      "CUPC",
-      "ETL"
+      "CE",
+      "CCC",
+      "SGS"
     ],
     "seo": {
-      "title": "SEWOO-2014B 智能马桶 - 脚触冲水",
-      "titleEn": "SEWOO-2014B Smart Toilet - Foot Touch",
-      "description": "SEWOO-2014B智能马桶，脚触冲水，臀部清洗，暖风烘干，CUPC水路认证，ETL电路认证。",
-      "descriptionEn": "SEWOO-2014B Smart Toilet with foot touch flushing, CUPC and ETL certified.",
+      "title": "SEWOO-AY6-502镀铬色一字型滑动淋浴房 - SEWOO 高端卫浴",
+      "titleEn": "AY6-502 Matte Silver Shower Screen - SEWOO Premium Bath",
+      "description": "SEWOO AY6-502SEWOO-AY6-502镀铬色一字型滑动淋浴房，304不锈钢边框，钢化安全玻璃，可定制尺寸。高品质淋浴房解决方案",
+      "descriptionEn": "SEWOO AY6-502 SEWOO-AY6-502 Chrome Single Sliding Shower Room, with 304 stainless steel frames and tempered safety glass; custom sizes available. Premium shower room solutions",
       "keywords": [
-        "智能马桶",
-        "脚触冲水",
-        "CUPC认证",
-        "ETL认证",
+        "滑动淋浴房，一字型，淋浴房",
+        "哑光银",
+        "304不锈钢",
+        "钢化玻璃",
         "SEWOO"
       ],
       "keywordsEn": [
-        "Smart toilet",
-        "foot-sensor flushing",
-        "CUPC certified",
-        "ETL certified",
+        "Sliding shower room",
+        "straight shape shower enclosure",
+        "matte silver",
+        "304 stainless steel",
+        "tempered glass",
         "SEWOO"
       ]
     },
-    "createdAt": "2024-01-19",
-    "updatedAt": "2026-06-23",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24",
     "documents": {
       "manual": "",
       "technicalData": "",
@@ -1195,26 +1117,31 @@
       "quote": "3312327005@qq.com",
       "appointment": "3312327005@qq.com"
     },
-    "featuresEn": [
-      "Foot Sensor Flush",
-      "Night Light Illumination",
-      "Rear Wash",
-      "Leakage Protection",
-      "Warm Air Drying",
-      "IPX4 Waterproof",
-      "Heated Seat"
-    ],
     "specificationsEn": {
-      "Material": "High-quality Ceramic + ABS",
-      "Seat Height": "390/420mm",
-      "Dimensions": "680 x 410 x 520mm",
-      "Voltage": "110-220V",
-      "Rough-in Distance": "S-trap: 250/300mm; P-trap: 180mm",
-      "Warranty": "5 Years"
+      "Frame material": "304 Stainless steel",
+      "Surface finish": "Matte silver",
+      "Glass thickness": "6/8/10mm",
+      "Glass type": "Clear tempered glass",
+      "Accessory material": "304 stainless steel / Aluminum alloy",
+      "Accessory color": "Matte silver",
+      "Height range": "1850-2200mm",
+      "Width range": "1200-1600mm",
+      "Customizable": "Yes",
+      "Warranty": "5 years"
     },
+    "featuresEn": [
+      "304 stainless steel frame, corrosion resistant",
+      "6-10mm tempered safety glass",
+      "Premium matte silver finish",
+      "Customizable sizes",
+      "Silent roller design",
+      "Waterproof sealing strip",
+      "Modern minimalist design"
+    ],
     "certificationsEn": [
-      "CUPC",
-      "ETL"
+      "CE",
+      "CCC",
+      "SGS"
     ]
   },
   {
@@ -1308,207 +1235,16 @@
     ]
   },
   {
-    "id": "21",
-    "slug": "ay6-502-shower-enclosure",
-    "category": "淋浴房",
-    "subcategory": "淋浴屏风",
-    "name": "AY6-502 哑光银淋浴屏风",
-    "nameEn": "AY6-502 Matte Silver Shower Screen",
-    "description": "AY6系列高端淋浴屏风，采用304不锈钢边框，哑光银色表面处理，搭配6-10mm钢化安全玻璃。简约现代设计，适用于各种浴室风格，可定制尺寸满足不同空间需求。",
-    "descriptionEn": "AY6 series premium shower screen with 304 stainless steel frame in matte silver finish, featuring 6-10mm tempered safety glass. Modern minimalist design suitable for various bathroom styles, customizable sizes available.",
-    "images": [
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800",
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800"
-    ],
-    "specifications": {
-      "边框材质": "304不锈钢",
-      "表面处理": "哑光银",
-      "玻璃厚度": "6/8/10mm",
-      "玻璃类型": "透明钢化玻璃",
-      "配件材质": "304不锈钢/铝合金",
-      "配件颜色": "哑光银",
-      "高度范围": "1850-2200mm",
-      "宽度范围": "1200-1600mm",
-      "可定制": "是",
-      "保修": "5年"
-    },
-    "features": [
-      "304不锈钢边框，耐腐蚀",
-      "6-10mm钢化安全玻璃",
-      "哑光银高级表面处理",
-      "可定制尺寸",
-      "静音滑轮设计",
-      "防水密封条",
-      "简约现代设计"
-    ],
-    "certifications": [
-      "CE",
-      "CCC"
-    ],
-    "seo": {
-      "title": "AY6-502 哑光银淋浴屏风 - SEWOO 高端卫浴",
-      "titleEn": "AY6-502 Matte Silver Shower Screen - SEWOO Premium Bath",
-      "description": "SEWOO AY6-502哑光银淋浴屏风，304不锈钢边框，钢化安全玻璃，可定制尺寸。高品质淋浴房解决方案。",
-      "descriptionEn": "SEWOO AY6-502 matte silver shower screen with 304 stainless steel frame and tempered safety glass. Customizable sizes available.",
-      "keywords": [
-        "淋浴屏风",
-        "淋浴房",
-        "哑光银",
-        "304不锈钢",
-        "钢化玻璃",
-        "SEWOO"
-      ],
-      "keywordsEn": [
-        "Shower screen",
-        "shower enclosure",
-        "matte silver",
-        "304 stainless steel",
-        "tempered glass",
-        "SEWOO"
-      ]
-    },
-    "createdAt": "2026-06-24",
-    "updatedAt": "2026-06-24",
-    "documents": {
-      "manual": "",
-      "technicalData": "",
-      "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
-    },
-    "specificationsEn": {
-      "Frame material": "304 Stainless steel",
-      "Surface finish": "Matte silver",
-      "Glass thickness": "6/8/10mm",
-      "Glass type": "Clear tempered glass",
-      "Accessory material": "304 stainless steel / Aluminum alloy",
-      "Accessory color": "Matte silver",
-      "Height range": "1850-2200mm",
-      "Width range": "1200-1600mm",
-      "Customizable": "Yes",
-      "Warranty": "5 years"
-    },
-    "featuresEn": [
-      "304 stainless steel frame, corrosion resistant",
-      "6-10mm tempered safety glass",
-      "Premium matte silver finish",
-      "Customizable sizes",
-      "Silent roller design",
-      "Waterproof sealing strip",
-      "Modern minimalist design"
-    ],
-    "certificationsEn": [
-      "CE",
-      "CCC"
-    ]
-  },
-  {
-    "id": "22",
-    "slug": "ck1-502-shower-enclosure",
-    "category": "淋浴房",
-    "subcategory": "淋浴屏风",
-    "name": "CK1-502 黑色吊轮淋浴房",
-    "nameEn": "CK1-502 Black Sliding Shower Enclosure",
-    "description": "CK1系列黑色吊轮淋浴房，采用304不锈钢吊轮系统，黑色高端表面处理。10mm钢化安全玻璃，滑动顺畅静音，现代工业风格设计，打造个性化浴室空间。",
-    "descriptionEn": "CK1 series black sliding shower enclosure with 304 stainless steel roller system in premium black finish. 10mm tempered safety glass, smooth and silent sliding, modern industrial style design.",
-    "images": [
-      "https://images.unsplash.com/photo-1556909114-f6e7ad7d365f?w=800",
-      "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800"
-    ],
-    "specifications": {
-      "边框材质": "304不锈钢",
-      "表面处理": "黑色",
-      "玻璃厚度": "10mm",
-      "玻璃类型": "透明钢化玻璃",
-      "配件材质": "304不锈钢/铝合金",
-      "配件颜色": "黑色",
-      "高度范围": "1850-2200mm",
-      "宽度范围": "1200-1600mm",
-      "可定制": "是",
-      "保修": "5年"
-    },
-    "features": [
-      "304不锈钢吊轮系统",
-      "10mm钢化安全玻璃",
-      "黑色高端表面处理",
-      "滑动顺畅静音",
-      "可定制尺寸",
-      "防水密封条",
-      "现代工业风格"
-    ],
-    "certifications": [
-      "CE",
-      "CCC"
-    ],
-    "seo": {
-      "title": "CK1-502 黑色吊轮淋浴房 - SEWOO 高端卫浴",
-      "titleEn": "CK1-502 Black Sliding Shower Enclosure - SEWOO Premium Bath",
-      "description": "SEWOO CK1-502黑色吊轮淋浴房，304不锈钢吊轮系统，10mm钢化玻璃，滑动静音。现代工业风格卫浴首选。",
-      "descriptionEn": "SEWOO CK1-502 black sliding shower enclosure with 304 stainless steel roller system and 10mm tempered glass. Silent sliding. Modern industrial style.",
-      "keywords": [
-        "淋浴房",
-        "吊轮淋浴房",
-        "黑色淋浴房",
-        "304不锈钢",
-        "钢化玻璃",
-        "SEWOO"
-      ],
-      "keywordsEn": [
-        "Shower enclosure",
-        "sliding shower",
-        "black shower",
-        "304 stainless steel",
-        "tempered glass",
-        "SEWOO"
-      ]
-    },
-    "createdAt": "2026-06-24",
-    "updatedAt": "2026-06-24",
-    "documents": {
-      "manual": "",
-      "technicalData": "",
-      "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
-    },
-    "specificationsEn": {
-      "Frame material": "304 Stainless steel",
-      "Surface finish": "Black",
-      "Glass thickness": "10mm",
-      "Glass type": "Clear tempered glass",
-      "Accessory material": "304 stainless steel / Aluminum alloy",
-      "Accessory color": "Black",
-      "Height range": "1850-2200mm",
-      "Width range": "1200-1600mm",
-      "Customizable": "Yes",
-      "Warranty": "5 years"
-    },
-    "featuresEn": [
-      "304 stainless steel roller system",
-      "10mm tempered safety glass",
-      "Premium black finish",
-      "Smooth and silent sliding",
-      "Customizable sizes",
-      "Waterproof sealing strip",
-      "Modern industrial style"
-    ],
-    "certificationsEn": [
-      "CE",
-      "CCC"
-    ]
-  },
-  {
     "id": "23",
     "slug": "ck2-502-shower-enclosure",
     "category": "淋浴房",
-    "subcategory": "淋浴屏风",
-    "name": "CK2-502 哑光银吊轮淋浴房",
-    "nameEn": "CK2-502 Matte Silver Sliding Shower Enclosure",
-    "description": "CK2系列哑光银吊轮淋浴房，采用304不锈钢吊轮系统，哑光银色表面处理。10mm钢化安全玻璃，高端吊轮设计，滑动顺畅静音，简约大气。",
-    "descriptionEn": "CK2 series matte silver sliding shower enclosure with 304 stainless steel roller system in matte silver finish. 10mm tempered safety glass, premium roller design with smooth silent sliding.",
+    "subcategory": "滑动淋浴房",
+    "name": "SEWOO-CK2-502 镀铬吊轮滑动淋浴房",
+    "nameEn": "SEWOO-CK2-502 Chrome Plated Sliding Roller for Shower Room",
+    "description": "CK2系列镀铬吊轮一字型滑动淋浴房，采用304不锈钢吊轮系统，镀铬表面处理。10mm钢化安全玻璃，高端吊轮设计，滑动顺畅静音，简约大气",
+    "descriptionEn": "CK2 Series Chrome-Plated Linear type Sliding Shower Door Hanging Rollers feature a 304 stainless steel hanging roller system with chrome-plated surface finishing. Equipped with 10mm tempered safety glass and an upscale hanging roller design, they deliver smooth, quiet sliding performance with a minimalist and elegant appearance",
     "images": [
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800",
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXCK2-502.png"
     ],
     "specifications": {
       "边框材质": "304不锈钢",
@@ -1533,7 +1269,8 @@
     ],
     "certifications": [
       "CE",
-      "CCC"
+      "CCC",
+      "SGS"
     ],
     "seo": {
       "title": "CK2-502 哑光银吊轮淋浴房 - SEWOO 高端卫浴",
@@ -1543,15 +1280,15 @@
       "keywords": [
         "淋浴房",
         "吊轮淋浴房",
-        "哑光银淋浴房",
+        "镀铬淋浴房",
         "304不锈钢",
         "钢化玻璃",
         "SEWOO"
       ],
       "keywordsEn": [
-        "Shower enclosure",
-        "sliding shower",
-        "matte silver shower",
+        "Shower room",
+        "hanging roller shower room",
+        "chrome-plated shower room",
         "304 stainless steel",
         "tempered glass",
         "SEWOO"
@@ -1563,8 +1300,8 @@
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
     },
     "specificationsEn": {
       "Frame material": "304 Stainless steel",
@@ -1589,21 +1326,21 @@
     ],
     "certificationsEn": [
       "CE",
-      "CCC"
+      "CCC",
+      "SGS"
     ]
   },
   {
     "id": "24",
     "slug": "ck5-511-shower-enclosure",
     "category": "淋浴房",
-    "subcategory": "淋浴屏风",
-    "name": "CK5-511 黑色单开门淋浴房",
-    "nameEn": "CK5-511 Black Single Door Shower Enclosure",
-    "description": "CK5系列黑色单开门淋浴房，采用304不锈钢五金配件，黑色高端表面处理。10mm钢化安全玻璃，单开门设计节省空间，现代简约风格，适合中小型浴室。",
-    "descriptionEn": "CK5 series black single door shower enclosure with 304 stainless steel hardware in premium black finish. 10mm tempered safety glass, single door design saves space, modern minimalist style.",
+    "subcategory": "滑动淋浴房",
+    "name": "SEWOO-CK5-511 黑色一字型单滑动淋浴房",
+    "nameEn": "SEWOO-CK5-511 Black Linear type Single Sliding Shower Room",
+    "description": "CK5系列黑色一字型单滑动淋浴房，采用304不锈钢五金配件，黑色高端表面处理。10mm钢化安全玻璃，单滑动设计节省空间，现代简约风格，适合中小型浴室",
+    "descriptionEn": "CK5 Series Black Linear type Single Sliding Shower Room equipped with 304 stainless steel hardware fittings and featuring premium black surface finish. Constructed with 10mm tempered safety glass, its single sliding design saves space. Boasting a modern minimalist style, it is ideal for small and medium-sized bathrooms",
     "images": [
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXCK5-511.png"
     ],
     "specifications": {
       "边框材质": "304不锈钢",
@@ -1629,16 +1366,17 @@
     ],
     "certifications": [
       "CE",
-      "CCC"
+      "CCC",
+      "SGS"
     ],
     "seo": {
-      "title": "CK5-511 黑色单开门淋浴房 - SEWOO 高端卫浴",
-      "titleEn": "CK5-511 Black Single Door Shower Enclosure - SEWOO Premium Bath",
-      "description": "SEWOO CK5-511黑色单开门淋浴房，304不锈钢五金，10mm钢化玻璃，节省空间。中小型浴室理想选择。",
-      "descriptionEn": "SEWOO CK5-511 black single door shower enclosure with 304 stainless steel hardware and 10mm tempered glass. Space-saving design.",
+      "title": "CK5-511 黑色单滑动淋浴房 - SEWOO 高端卫浴",
+      "titleEn": "CK5-511 Black Single Door Sliding Shower Enclosure - SEWOO Premium Bath",
+      "description": "SEWOO CK5-511黑色单滑动淋浴房，304不锈钢五金，10mm钢化玻璃，节省空间。中小型浴室理想选择。",
+      "descriptionEn": "SEWOO CK5-511 black single sliding door shower enclosure with 304 stainless steel hardware and 10mm tempered glass. Space-saving design.",
       "keywords": [
         "淋浴房",
-        "单开门淋浴房",
+        "单滑动淋浴房",
         "黑色淋浴房",
         "304不锈钢",
         "钢化玻璃",
@@ -1646,7 +1384,7 @@
       ],
       "keywordsEn": [
         "Shower enclosure",
-        "single door shower",
+        "single sliding door shower",
         "black shower",
         "304 stainless steel",
         "tempered glass",
@@ -1659,8 +1397,8 @@
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
     },
     "specificationsEn": {
       "Frame material": "304 Stainless steel",
@@ -1686,21 +1424,21 @@
     ],
     "certificationsEn": [
       "CE",
-      "CCC"
+      "CCC",
+      "SGS"
     ]
   },
   {
     "id": "25",
     "slug": "ss1-511-shower-enclosure",
     "category": "淋浴房",
-    "subcategory": "淋浴屏风",
-    "name": "SS1-511 哑光银单开门淋浴房",
-    "nameEn": "SS1-511 Matte Silver Single Door Shower Enclosure",
-    "description": "SS1系列哑光银单开门淋浴房，采用304不锈钢五金配件，哑光银色表面处理。10mm钢化安全玻璃，单开门设计，简约经典风格，品质卓越。",
-    "descriptionEn": "SS1 series matte silver single door shower enclosure with 304 stainless steel hardware in matte silver finish. 10mm tempered safety glass, single door design, classic minimalist style.",
+    "subcategory": "滑动淋浴房",
+    "name": "SEWOO-SS1-511 镀铬吊轮一字型单滑动淋浴房",
+    "nameEn": "SEWOO-SS1-511 Chrome Plated Hanging Roller Straight Single Sliding Shower Room",
+    "description": "SS1系列镀铬吊轮一字型单滑动淋浴房，采用304不锈钢五金配件，镀铬表面处理。10mm钢化安全玻璃，单滑动设计，简约经典风格，品质卓越",
+    "descriptionEn": "SS1 Series Chrome Plated Hanging Roller Straight Single Sliding Shower Room is equipped with 304 stainless steel hardware fittings with chrome-plated surface finish. It features 10mm tempered safety glass and a single sliding design, boasting a simple and classic style with outstanding quality",
     "images": [
-      "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=800",
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXSS1-511.png"
     ],
     "specifications": {
       "边框材质": "304不锈钢",
@@ -1726,23 +1464,24 @@
     ],
     "certifications": [
       "CE",
-      "CCC"
+      "CCC",
+      "SGS"
     ],
     "seo": {
-      "title": "SS1-511 哑光银单开门淋浴房 - SEWOO 高端卫浴",
-      "titleEn": "SS1-511 Matte Silver Single Door Shower Enclosure - SEWOO Premium Bath",
-      "description": "SEWOO SS1-511哑光银单开门淋浴房，304不锈钢五金，10mm钢化玻璃，经典设计。高品质淋浴房。",
-      "descriptionEn": "SEWOO SS1-511 matte silver single door shower enclosure with 304 stainless steel hardware and 10mm tempered glass. Classic design.",
+      "title": "SS1-511 哑光银单滑动淋浴房 - SEWOO 高端卫浴",
+      "titleEn": "SS1-511 Matte Silver Single Sliding Door Shower Enclosure - SEWOO Premium Bath",
+      "description": "SEWOO SS1-511哑光银单滑动淋浴房，304不锈钢五金，10mm钢化玻璃，经典设计。高品质淋浴房。",
+      "descriptionEn": "SEWOO SS1-511 matte silver single sliding door shower enclosure with 304 stainless steel hardware and 10mm tempered glass. Classic design.",
       "keywords": [
         "淋浴房",
-        "单开门淋浴房",
+        "单滑动淋浴房",
         "哑光银淋浴房",
         "304不锈钢",
         "钢化玻璃",
         "SEWOO"
       ],
       "keywordsEn": [
-        "Shower enclosure",
+        "Shower sliding enclosure",
         "single door shower",
         "matte silver shower",
         "304 stainless steel",
@@ -1756,8 +1495,8 @@
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
     },
     "specificationsEn": {
       "Frame material": "304 Stainless steel",
@@ -1783,21 +1522,21 @@
     ],
     "certificationsEn": [
       "CE",
-      "CCC"
+      "CCC",
+      "SGS"
     ]
   },
   {
     "id": "26",
     "slug": "qa1-122a-shower-enclosure",
     "category": "淋浴房",
-    "subcategory": "整体淋浴房",
-    "name": "QA1-122A 扇形整体淋浴房",
-    "nameEn": "QA1-122A Quadrant Shower Enclosure",
-    "description": "QA1系列扇形整体淋浴房，采用铝合金边框，亮银色表面处理。6/8mm钢化安全玻璃，304不锈钢/铝合金配件。优雅的弧形设计，完美利用浴室角落空间，可定制尺寸满足不同需求。",
-    "descriptionEn": "QA1 series quadrant shower enclosure with aluminum frame in bright silver finish. 6/8mm tempered safety glass with 304 stainless steel/aluminum hardware. Elegant curved design perfectly utilizes corner space, customizable sizes available.",
+    "subcategory": "滑动淋浴房",
+    "name": "SEWOO-QA1-122A 扇形滑动淋浴房",
+    "nameEn": "SEWOO-QA1-122A Quadrant Sliding Shower Enclosure",
+    "description": "QA1系列扇形滑动淋浴房，采用铝合金边框，亮银色表面处理。6/8mm钢化安全玻璃，304不锈钢/铝合金配件。优雅的弧形设计，完美利用浴室角落空间，可定制尺寸满足不同需求",
+    "descriptionEn": "QA1 series quadrant shower sliding enclosure with aluminum frame in bright silver finish. 6/8mm tempered safety glass with 304 stainless steel/aluminum hardware. Elegant curved design perfectly utilizes corner space, customizable sizes available",
     "images": [
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800",
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXQA1-122A.png"
     ],
     "specifications": {
       "边框材质": "铝合金",
@@ -1824,18 +1563,27 @@
     ],
     "certifications": [
       "CE",
-      "CCC"
+      "CCC",
+      "SGS"
     ],
     "seo": {
-      "title": "QA1-122A 扇形整体淋浴房 - SEWOO 高端卫浴",
-      "titleEn": "QA1-122A Quadrant Shower Enclosure - SEWOO Premium Bath",
-      "description": "SEWOO QA1-122A扇形整体淋浴房，铝合金边框，亮银色，6/8mm钢化玻璃。优雅弧形设计，完美利用角落空间。高品质淋浴房。",
-      "descriptionEn": "SEWOO QA1-122A quadrant shower enclosure with aluminum frame, bright silver finish, 6/8mm tempered glass. Elegant curved design for corner spaces.",
+      "title": "QA1-122A 扇形滑动淋浴房 - SEWOO 高端卫浴",
+      "titleEn": "QA1-122A Quadrant Sliding Shower Enclosure - SEWOO Premium Bath",
+      "description": "SEWOO QA1-122A扇形滑动淋浴房，铝合金边框，亮银色，6/8mm钢化玻璃。优雅弧形设计，完美利用角落空间。高品质淋浴房。",
+      "descriptionEn": "SEWOO QA1-122A quadrant sliding shower enclosure with aluminum frame, bright silver finish, 6/8mm tempered glass. Elegant curved design for corner spaces.",
       "keywords": [
         "淋浴房",
-        "整体淋浴房",
+        "滑动淋浴房",
         "扇形淋浴房",
         "铝合金淋浴房",
+        "QA1-122A",
+        "SEWOO"
+      ],
+      "keywordsEn": [
+        "Shower room",
+        "sliding shower room",
+        "fan-shaped shower room",
+        "aluminum alloy shower room",
         "QA1-122A",
         "SEWOO"
       ]
@@ -1846,8 +1594,8 @@
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
     },
     "specificationsEn": {
       "Frame Material": "Aluminum",
@@ -1874,21 +1622,21 @@
     ],
     "certificationsEn": [
       "CE",
-      "CCC"
+      "CCC",
+      "SGS"
     ]
   },
   {
     "id": "27",
     "slug": "qa2-222-shower-enclosure",
     "category": "淋浴房",
-    "subcategory": "整体淋浴房",
-    "name": "QA2-222 长方形整体淋浴房",
-    "nameEn": "QA2-222 Rectangular Shower Enclosure",
-    "description": "QA2系列长方形整体淋浴房，采用铝合金边框，亮银色表面处理。6/8mm钢化安全玻璃，304不锈钢/铝合金配件。简约大气的长方形设计，宽敞淋浴空间，双开门设计进出方便，可定制尺寸。",
-    "descriptionEn": "QA2 series rectangular shower enclosure with aluminum frame in bright silver finish. 6/8mm tempered safety glass with 304 stainless steel/aluminum hardware. Spacious rectangular design with double doors for easy access, customizable sizes available.",
+    "subcategory": "滑动淋浴房",
+    "name": "SEWOO-QA2-222 长方形滑动淋浴房",
+    "nameEn": "SEWOO-QA2-222 Rectangular Sliding Shower Enclosure",
+    "description": "QA2系列长方形滑动淋浴房，采用铝合金边框，亮银色表面处理。6/8mm钢化安全玻璃，304不锈钢/铝合金配件。简约大气的长方形设计，宽敞淋浴空间，双开门设计进出方便，可定制尺寸",
+    "descriptionEn": "QA2 series rectangular sliding shower enclosure with aluminum frame in bright silver finish. 6/8mm tempered safety glass with 304 stainless steel/aluminum hardware. Spacious rectangular design with double doors for easy access, customizable sizes available",
     "images": [
-      "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXQA2-222.png"
     ],
     "specifications": {
       "边框材质": "铝合金",
@@ -1917,18 +1665,27 @@
     ],
     "certifications": [
       "CE",
-      "CCC"
+      "CCC",
+      "SGS"
     ],
     "seo": {
-      "title": "QA2-222 长方形整体淋浴房 - SEWOO 高端卫浴",
-      "titleEn": "QA2-222 Rectangular Shower Enclosure - SEWOO Premium Bath",
-      "description": "SEWOO QA2-222长方形整体淋浴房，铝合金边框，亮银色，6/8mm钢化玻璃。宽敞淋浴空间，双开门设计。高品质淋浴房。",
-      "descriptionEn": "SEWOO QA2-222 rectangular shower enclosure with aluminum frame, bright silver finish, 6/8mm tempered glass. Spacious shower space with double doors.",
+      "title": "QA2-222 长方形滑动淋浴房 - SEWOO 高端卫浴",
+      "titleEn": "QA2-222 Rectangular Sliding Shower Enclosure - SEWOO Premium Bath",
+      "description": "SEWOO QA2-222长方形滑动淋浴房，铝合金边框，亮银色，6/8mm钢化玻璃。宽敞淋浴空间，双开门设计。高品质淋浴房",
+      "descriptionEn": "SEWOO QA2-222 rectangular sliding shower enclosure with aluminum frame, bright silver finish, 6/8mm tempered glass. Spacious shower space with double doors",
       "keywords": [
         "淋浴房",
-        "整体淋浴房",
+        "滑动淋浴房",
         "长方形淋浴房",
         "铝合金淋浴房",
+        "QA2-222",
+        "SEWOO"
+      ],
+      "keywordsEn": [
+        "Shower room",
+        "sliding shower room",
+        "rectangular shower room",
+        "aluminum alloy shower room",
         "QA2-222",
         "SEWOO"
       ]
@@ -1939,8 +1696,8 @@
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
     },
     "specificationsEn": {
       "Frame Material": "Aluminum",
@@ -1969,21 +1726,21 @@
     ],
     "certificationsEn": [
       "CE",
-      "CCC"
+      "CCC",
+      "SGS"
     ]
   },
   {
     "id": "28",
     "slug": "qk1-502-shower-screen",
     "category": "淋浴房",
-    "subcategory": "淋浴屏风",
-    "name": "QK1-502 折叠门淋浴屏风",
-    "nameEn": "QK1-502 Folding Shower Screen",
-    "description": "QK1系列折叠门淋浴屏风，采用304不锈钢边框，亮银色表面处理。6/8/10mm钢化安全玻璃，304不锈钢/铝合金配件。折叠门设计最大化利用空间，开启方便，适合小浴室使用，可定制尺寸。",
-    "descriptionEn": "QK1 series folding shower screen with 304 stainless steel frame in bright silver finish. 6/8/10mm tempered safety glass with 304 stainless steel/aluminum hardware. Space-saving folding door design, perfect for small bathrooms, customizable sizes available.",
+    "subcategory": "折叠淋浴房",
+    "name": "SEWOO-QK1-502 折叠门淋浴屏风",
+    "nameEn": "SEWOO-QK1-502 Folding Shower Screen",
+    "description": "QK1系列折叠门淋浴屏风，采用304不锈钢边框，亮银色表面处理。6/8/10mm钢化安全玻璃，304不锈钢/铝合金配件。折叠门设计最大化利用空间，开启方便，适合小浴室使用，可定制尺寸",
+    "descriptionEn": "QK1 series folding shower screen with 304 stainless steel frame in bright silver finish. 6/8/10mm tempered safety glass with 304 stainless steel/aluminum hardware. Space-saving folding door design, perfect for small bathrooms, customizable sizes available",
     "images": [
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800",
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXQK1-502.png"
     ],
     "specifications": {
       "边框材质": "304不锈钢",
@@ -2011,18 +1768,26 @@
     ],
     "certifications": [
       "CE",
-      "CCC"
+      "CCC",
+      "SGS"
     ],
     "seo": {
-      "title": "QK1-502 折叠门淋浴屏风 - SEWOO 高端卫浴",
-      "titleEn": "QK1-502 Folding Shower Screen - SEWOO Premium Bath",
+      "title": "SEWOO-QK1-502 折叠门淋浴屏风 - SEWOO 高端卫浴",
+      "titleEn": "SEWOO-QK1-502 Folding Shower Screen - SEWOO Premium Bath",
       "description": "SEWOO QK1-502折叠门淋浴屏风，304不锈钢边框，亮银色，6-10mm钢化玻璃。折叠门设计节省空间，适合小浴室。高品质淋浴屏风。",
       "descriptionEn": "SEWOO QK1-502 folding shower screen with 304 stainless steel frame, bright silver finish, 6-10mm tempered glass. Space-saving folding door design for small bathrooms.",
       "keywords": [
         "淋浴房",
-        "淋浴屏风",
-        "折叠门淋浴房",
+        "一字型淋浴房，折叠门淋浴房",
         "不锈钢淋浴房",
+        "QK1-502",
+        "SEWOO"
+      ],
+      "keywordsEn": [
+        "shower room",
+        "straight-line shower room",
+        "folding door shower room",
+        "stainless steel shower room",
         "QK1-502",
         "SEWOO"
       ]
@@ -2033,8 +1798,8 @@
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
     },
     "specificationsEn": {
       "Frame Material": "304 Stainless Steel",
@@ -2062,303 +1827,21 @@
     ],
     "certificationsEn": [
       "CE",
-      "CCC"
-    ]
-  },
-  {
-    "id": "29",
-    "slug": "qf1-221-shower-screen",
-    "category": "淋浴房",
-    "subcategory": "淋浴屏风",
-    "name": "QF1-221 黑色推拉门淋浴屏风",
-    "nameEn": "QF1-221 Black Sliding Shower Screen",
-    "description": "QF1系列黑色推拉门淋浴屏风，采用304不锈钢边框，黑色高端表面处理。6/8/10mm钢化安全玻璃，304不锈钢/铝合金黑色配件。推拉门设计节省空间，现代工业风格，打造高端黑色浴室空间，可定制尺寸。",
-    "descriptionEn": "QF1 series black sliding shower screen with 304 stainless steel frame in premium black finish. 6/8/10mm tempered safety glass with 304 stainless steel/aluminum black hardware. Space-saving sliding door design with modern industrial style for premium black bathroom.",
-    "images": [
-      "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
-    ],
-    "specifications": {
-      "边框材质": "304不锈钢",
-      "表面处理": "黑色",
-      "玻璃厚度": "6/8/10mm",
-      "玻璃类型": "透明钢化玻璃",
-      "配件材质": "304不锈钢/铝合金",
-      "配件颜色": "黑色",
-      "开门方式": "推拉门",
-      "高度范围": "1850-2200mm",
-      "宽度范围": "500-750mm / 400-800mm",
-      "可定制": "是",
-      "保修": "5年"
-    },
-    "features": [
-      "304不锈钢边框",
-      "黑色高端表面处理",
-      "6/8/10mm钢化安全玻璃",
-      "304不锈钢五金配件",
-      "推拉门设计节省空间",
-      "现代工业风格",
-      "可定制尺寸",
-      "防水密封条",
-      "高端黑色设计"
-    ],
-    "certifications": [
-      "CE",
-      "CCC"
-    ],
-    "seo": {
-      "title": "QF1-221 黑色推拉门淋浴屏风 - SEWOO 高端卫浴",
-      "titleEn": "QF1-221 Black Sliding Shower Screen - SEWOO Premium Bath",
-      "description": "SEWOO QF1-221黑色推拉门淋浴屏风，304不锈钢边框，黑色高端表面处理，6-10mm钢化玻璃。现代工业风格，打造高端黑色浴室。",
-      "descriptionEn": "SEWOO QF1-221 black sliding shower screen with 304 stainless steel frame, premium black finish, 6-10mm tempered glass. Modern industrial style for premium black bathroom.",
-      "keywords": [
-        "淋浴房",
-        "淋浴屏风",
-        "黑色淋浴房",
-        "推拉门淋浴房",
-        "不锈钢淋浴房",
-        "QF1-221",
-        "SEWOO"
-      ]
-    },
-    "createdAt": "2026-06-24",
-    "updatedAt": "2026-06-24",
-    "documents": {
-      "manual": "",
-      "technicalData": "",
-      "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
-    },
-    "specificationsEn": {
-      "Frame Material": "304 Stainless Steel",
-      "Finish": "Black",
-      "Glass Thickness": "6/8/10mm",
-      "Glass Type": "Clear Tempered Glass",
-      "Hardware Material": "304 Stainless Steel / Aluminum",
-      "Hardware Color": "Black",
-      "Door Type": "Sliding Door",
-      "Height Range": "1850-2200mm",
-      "Width Range": "500-750mm / 400-800mm",
-      "Customizable": "Yes",
-      "Warranty": "5 years"
-    },
-    "featuresEn": [
-      "304 stainless steel frame",
-      "Premium black finish",
-      "6/8/10mm tempered safety glass",
-      "304 stainless steel hardware",
-      "Space-saving sliding door",
-      "Modern industrial style",
-      "Customizable sizes",
-      "Waterproof sealing strip",
-      "Premium black design"
-    ],
-    "certificationsEn": [
-      "CE",
-      "CCC"
-    ]
-  },
-  {
-    "id": "30",
-    "slug": "qd1-511-shower-screen",
-    "category": "淋浴房",
-    "subcategory": "淋浴屏风",
-    "name": "QD1-511 黑色单开门淋浴屏风",
-    "nameEn": "QD1-511 Black Single Door Shower Screen",
-    "description": "QD1系列黑色单开门淋浴屏风，采用304不锈钢边框，黑色高端表面处理。6/8/10mm钢化安全玻璃，304不锈钢亮银色配件。单开门设计简约大气，黑框亮银配件搭配，现代轻奢风格，可定制尺寸。",
-    "descriptionEn": "QD1 series black single door shower screen with 304 stainless steel frame in premium black finish. 6/8/10mm tempered safety glass with 304 stainless steel bright silver hardware. Single door design with black frame and silver hardware, modern luxury style.",
-    "images": [
-      "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=800",
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800"
-    ],
-    "specifications": {
-      "边框材质": "304不锈钢",
-      "表面处理": "黑色",
-      "玻璃厚度": "6/8/10mm",
-      "玻璃类型": "透明钢化玻璃",
-      "配件材质": "304不锈钢/铝合金",
-      "配件颜色": "亮银色",
-      "开门方式": "单开门",
-      "高度范围": "1850-2200mm",
-      "宽度范围": "500-750mm / 400-800mm",
-      "可定制": "是",
-      "保修": "5年"
-    },
-    "features": [
-      "304不锈钢边框",
-      "黑色高端表面处理",
-      "6/8/10mm钢化安全玻璃",
-      "304不锈钢五金配件",
-      "单开门设计简约大气",
-      "黑框银配件轻奢搭配",
-      "可定制尺寸",
-      "防水密封条",
-      "现代轻奢风格"
-    ],
-    "certifications": [
-      "CE",
-      "CCC"
-    ],
-    "seo": {
-      "title": "QD1-511 黑色单开门淋浴屏风 - SEWOO 高端卫浴",
-      "titleEn": "QD1-511 Black Single Door Shower Screen - SEWOO Premium Bath",
-      "description": "SEWOO QD1-511黑色单开门淋浴屏风，304不锈钢黑框，亮银色配件，6-10mm钢化玻璃。现代轻奢风格，高品质淋浴屏风。",
-      "descriptionEn": "SEWOO QD1-511 black single door shower screen with 304 stainless steel black frame, bright silver hardware, 6-10mm tempered glass. Modern luxury style.",
-      "keywords": [
-        "淋浴房",
-        "淋浴屏风",
-        "黑色淋浴房",
-        "单开门淋浴房",
-        "不锈钢淋浴房",
-        "QD1-511",
-        "SEWOO"
-      ]
-    },
-    "createdAt": "2026-06-24",
-    "updatedAt": "2026-06-24",
-    "documents": {
-      "manual": "",
-      "technicalData": "",
-      "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
-    },
-    "specificationsEn": {
-      "Frame Material": "304 Stainless Steel",
-      "Finish": "Black",
-      "Glass Thickness": "6/8/10mm",
-      "Glass Type": "Clear Tempered Glass",
-      "Hardware Material": "304 Stainless Steel / Aluminum",
-      "Hardware Color": "Bright Silver",
-      "Door Type": "Single Door",
-      "Height Range": "1850-2200mm",
-      "Width Range": "500-750mm / 400-800mm",
-      "Customizable": "Yes",
-      "Warranty": "5 years"
-    },
-    "featuresEn": [
-      "304 stainless steel frame",
-      "Premium black finish",
-      "6/8/10mm tempered safety glass",
-      "304 stainless steel hardware",
-      "Elegant single door design",
-      "Black frame with silver hardware",
-      "Customizable sizes",
-      "Waterproof sealing strip",
-      "Modern luxury style"
-    ],
-    "certificationsEn": [
-      "CE",
-      "CCC"
-    ]
-  },
-  {
-    "id": "31",
-    "slug": "qe1-502-shower-screen",
-    "category": "淋浴房",
-    "subcategory": "淋浴屏风",
-    "name": "QE1-502 哑光银推拉门淋浴屏风",
-    "nameEn": "QE1-502 Matte Silver Sliding Shower Screen",
-    "description": "QE1系列哑光银推拉门淋浴屏风，采用304不锈钢边框，哑光银色高级表面处理。6/8/10mm钢化安全玻璃，304不锈钢/铝合金哑光银配件。推拉门设计节省空间，哑光质感高级优雅，现代简约风格，可定制尺寸。",
-    "descriptionEn": "QE1 series matte silver sliding shower screen with 304 stainless steel frame in premium matte silver finish. 6/8/10mm tempered safety glass with 304 stainless steel/aluminum matte silver hardware. Space-saving sliding door design with elegant matte finish, modern minimalist style.",
-    "images": [
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
-    ],
-    "specifications": {
-      "边框材质": "304不锈钢",
-      "表面处理": "哑光银",
-      "玻璃厚度": "6/8/10mm",
-      "玻璃类型": "透明钢化玻璃",
-      "配件材质": "304不锈钢/铝合金",
-      "配件颜色": "哑光银",
-      "开门方式": "推拉门",
-      "高度范围": "1850-2200mm",
-      "宽度范围": "400-600mm",
-      "可定制": "是",
-      "保修": "5年"
-    },
-    "features": [
-      "304不锈钢边框",
-      "哑光银高级表面处理",
-      "6/8/10mm钢化安全玻璃",
-      "304不锈钢五金配件",
-      "推拉门设计节省空间",
-      "哑光质感高级优雅",
-      "可定制尺寸",
-      "防水密封条",
-      "现代简约风格"
-    ],
-    "certifications": [
-      "CE",
-      "CCC"
-    ],
-    "seo": {
-      "title": "QE1-502 哑光银推拉门淋浴屏风 - SEWOO 高端卫浴",
-      "titleEn": "QE1-502 Matte Silver Sliding Shower Screen - SEWOO Premium Bath",
-      "description": "SEWOO QE1-502哑光银推拉门淋浴屏风，304不锈钢边框，哑光银色表面处理，6-10mm钢化玻璃。高级哑光质感，现代简约风格。",
-      "descriptionEn": "SEWOO QE1-502 matte silver sliding shower screen with 304 stainless steel frame, matte silver finish, 6-10mm tempered glass. Premium matte texture, modern minimalist style.",
-      "keywords": [
-        "淋浴房",
-        "淋浴屏风",
-        "哑光银淋浴房",
-        "推拉门淋浴房",
-        "不锈钢淋浴房",
-        "QE1-502",
-        "SEWOO"
-      ]
-    },
-    "createdAt": "2026-06-24",
-    "updatedAt": "2026-06-24",
-    "documents": {
-      "manual": "",
-      "technicalData": "",
-      "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
-    },
-    "specificationsEn": {
-      "Frame Material": "304 Stainless Steel",
-      "Finish": "Matte Silver",
-      "Glass Thickness": "6/8/10mm",
-      "Glass Type": "Clear Tempered Glass",
-      "Hardware Material": "304 Stainless Steel / Aluminum",
-      "Hardware Color": "Matte Silver",
-      "Door Type": "Sliding Door",
-      "Height Range": "1850-2200mm",
-      "Width Range": "400-600mm",
-      "Customizable": "Yes",
-      "Warranty": "5 years"
-    },
-    "featuresEn": [
-      "304 stainless steel frame",
-      "Premium matte silver finish",
-      "6/8/10mm tempered safety glass",
-      "304 stainless steel hardware",
-      "Space-saving sliding door",
-      "Elegant matte texture",
-      "Customizable sizes",
-      "Waterproof sealing strip",
-      "Modern minimalist style"
-    ],
-    "certificationsEn": [
-      "CE",
-      "CCC"
+      "CCC",
+      "SGS"
     ]
   },
   {
     "id": "32",
     "slug": "qe1-502y-bath-shower-screen",
     "category": "淋浴房",
-    "subcategory": "淋浴屏风",
-    "name": "QE1-502-Y 哑光银浴缸淋浴屏风",
-    "nameEn": "QE1-502-Y Matte Silver Bath Shower Screen",
-    "description": "QE1系列哑光银浴缸淋浴屏风，专为浴缸设计的淋浴屏风。采用304不锈钢边框，哑光银色高级表面处理。6/8/10mm钢化安全玻璃，304不锈钢/铝合金哑光银配件。推拉门设计，一屏两用，泡澡淋浴随心切换，可定制尺寸。",
-    "descriptionEn": "QE1 series matte silver bath shower screen specially designed for bathtubs. 304 stainless steel frame with premium matte silver finish. 6/8/10mm tempered safety glass with 304 stainless steel/aluminum matte silver hardware. Sliding door design, dual function for both bath and shower.",
+    "subcategory": "滑动淋浴房",
+    "name": "SEWOO-QE1-502-Y 哑光银浴缸滑动淋浴屏风",
+    "nameEn": "SEWOO-QE1-502-Y Matte Silver Bath Sliding Shower Screen",
+    "description": "QE1系列哑光银浴缸滑动淋浴屏风，专为浴缸设计的淋浴屏风。采用304不锈钢边框，哑光银色高级表面处理。6/8/10mm钢化安全玻璃，304不锈钢/铝合金哑光银配件。推拉门设计，一屏两用，泡澡淋浴随心切换，可定制尺寸",
+    "descriptionEn": "QE1 series matte silver bath sliding shower screen specially designed for bathtubs. 304 stainless steel frame with premium matte silver finish. 6/8/10mm tempered safety glass with 304 stainless steel/aluminum matte silver hardware. Sliding door design, dual function for both bath and shower",
     "images": [
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800",
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXQE1-502-Y.png"
     ],
     "specifications": {
       "边框材质": "304不锈钢",
@@ -2387,7 +1870,8 @@
     ],
     "certifications": [
       "CE",
-      "CCC"
+      "CCC",
+      "SGS"
     ],
     "seo": {
       "title": "QE1-502-Y 哑光银浴缸淋浴屏风 - SEWOO 高端卫浴",
@@ -2395,11 +1879,21 @@
       "description": "SEWOO QE1-502-Y哑光银浴缸淋浴屏风，304不锈钢边框，哑光银色表面处理，6-10mm钢化玻璃。专为浴缸设计，泡澡淋浴两用。",
       "descriptionEn": "SEWOO QE1-502-Y matte silver bath shower screen with 304 stainless steel frame, matte silver finish, 6-10mm tempered glass. Designed for bathtubs, dual function bath and shower.",
       "keywords": [
-        "淋浴房",
+        "滑动淋浴房，淋浴房",
         "淋浴屏风",
         "浴缸淋浴房",
         "哑光银淋浴房",
         "推拉门淋浴房",
+        "QE1-502-Y",
+        "SEWOO"
+      ],
+      "keywordsEn": [
+        "Sliding shower room",
+        "shower room",
+        "shower screen",
+        "bathtub shower room",
+        "matte silver shower room",
+        "sliding door shower room",
         "QE1-502-Y",
         "SEWOO"
       ]
@@ -2410,8 +1904,8 @@
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
     },
     "specificationsEn": {
       "Frame Material": "304 Stainless Steel",
@@ -2440,7 +1934,8 @@
     ],
     "certificationsEn": [
       "CE",
-      "CCC"
+      "CCC",
+      "SGS"
     ]
   },
   {
@@ -2448,13 +1943,12 @@
     "slug": "rd-221-shower-enclosure",
     "category": "淋浴房",
     "subcategory": "平开淋浴房",
-    "name": "RD-221 亮银色平开门淋浴房",
-    "nameEn": "RD-221 Bright Silver Pivot Shower Enclosure",
+    "name": "SEWOO-RD-221 亮银色平开门淋浴房",
+    "nameEn": "SEWOO-RD-221 Bright Silver Pivot Opening Shower Enclosure",
     "description": "RD系列亮银色平开门淋浴房，采用C304不锈钢边框，亮银色表面处理。6/8/10mm钢化安全玻璃，304不锈钢/铝合金亮银色配件。平开门设计简约大气，转轴结构耐用稳定，可伸缩调节适应不同墙面，现代简约风格。",
-    "descriptionEn": "RD series bright silver pivot shower enclosure with C304 stainless steel frame in bright silver finish. 6/8/10mm tempered safety glass with 304 stainless steel/aluminum bright silver hardware. Elegant pivot door design with durable hinge structure, adjustable wall profiles for uneven walls.",
+    "descriptionEn": "RD series bright silver pivot opening shower enclosure with C304 stainless steel frame in bright silver finish. 6/8/10mm tempered safety glass with 304 stainless steel/aluminum bright silver hardware. Elegant pivot door design with durable hinge structure, adjustable wall profiles for uneven walls.",
     "images": [
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXRD-221.png"
     ],
     "specifications": {
       "边框材质": "C304不锈钢",
@@ -2483,7 +1977,8 @@
     ],
     "certifications": [
       "CE",
-      "CCC"
+      "CCC",
+      "SGS"
     ],
     "seo": {
       "title": "RD-221 亮银色平开门淋浴房 - SEWOO 高端卫浴",
@@ -2498,6 +1993,15 @@
         "不锈钢淋浴房",
         "RD-221",
         "SEWOO"
+      ],
+      "keywordsEn": [
+        "Shower room",
+        "hinged flat-opening shower room",
+        "pivot door shower room",
+        "bright silver shower room",
+        "stainless steel shower room",
+        "RD-221",
+        "SEWOO"
       ]
     },
     "createdAt": "2026-06-24",
@@ -2506,8 +2010,8 @@
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
     },
     "specificationsEn": {
       "Frame Material": "C304 Stainless Steel",
@@ -2536,21 +2040,21 @@
     ],
     "certificationsEn": [
       "CE",
-      "CCC"
+      "CCC",
+      "SGS"
     ]
   },
   {
     "id": "34",
     "slug": "fs20821v-shower-enclosure",
     "category": "淋浴房",
-    "subcategory": "整体淋浴房",
-    "name": "FS20821-V 哑光黑方形淋浴房",
-    "nameEn": "FS20821-V Matte Black Square Shower Enclosure",
-    "description": "FS系列哑光黑方形淋浴房，采用SUS304不锈钢边框，哑光黑色高级表面处理。8mm白玻钢化安全玻璃。方正大气的L型转角设计，宽敞淋浴空间，现代轻奢风格，打造高端黑色浴室空间。",
-    "descriptionEn": "FS series matte black square shower enclosure with SUS304 stainless steel frame in premium matte black finish. 8mm white tempered safety glass. Spacious L-shaped corner design with generous shower space, modern luxury style for premium black bathroom.",
+    "subcategory": "滑动淋浴房",
+    "name": "SEWOO-FS20821-V 哑光黑方形滑动淋浴房",
+    "nameEn": "SEWOO-FS20821-V Matte Black Sliding Square Shower Enclosure",
+    "description": "FS系列哑光黑滑动方形淋浴房，采用SUS304不锈钢边框，哑光黑色高级表面处理。8mm白玻钢化安全玻璃。方正大气的L型转角设计，宽敞淋浴空间，现代轻奢风格，打造高端黑色浴室空间。",
+    "descriptionEn": "FS series matte black sliding square shower enclosure with SUS304 stainless steel frame in premium matte black finish. 8mm white tempered safety glass. Spacious L-shaped corner design with generous shower space, modern luxury style for premium black bathroom.",
     "images": [
-      "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXFS20821-1.png"
     ],
     "specifications": {
       "边框材质": "SUS304不锈钢",
@@ -2576,7 +2080,8 @@
     ],
     "certifications": [
       "CE",
-      "CCC"
+      "CCC",
+      "SGS"
     ],
     "seo": {
       "title": "FS20821-V 哑光黑方形淋浴房 - SEWOO 高端卫浴",
@@ -2585,10 +2090,19 @@
       "descriptionEn": "SEWOO FS20821-V matte black square shower enclosure with SUS304 stainless steel frame, matte black finish, 8mm white tempered glass. L-shaped corner design, modern luxury style.",
       "keywords": [
         "淋浴房",
-        "整体淋浴房",
+        "滑动淋浴房",
         "方形淋浴房",
         "哑光黑淋浴房",
         "不锈钢淋浴房",
+        "FS20821-V",
+        "SEWOO"
+      ],
+      "keywordsEn": [
+        "Shower room",
+        "sliding shower room",
+        "square shower room",
+        "matte black shower room",
+        "stainless steel shower room",
         "FS20821-V",
         "SEWOO"
       ]
@@ -2599,8 +2113,8 @@
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
     },
     "specificationsEn": {
       "Frame Material": "SUS304 Stainless Steel",
@@ -2626,21 +2140,21 @@
     ],
     "certificationsEn": [
       "CE",
-      "CCC"
+      "CCC",
+      "SGS"
     ]
   },
   {
     "id": "35",
     "slug": "fs6221-30-shower-enclosure",
     "category": "淋浴房",
-    "subcategory": "整体淋浴房",
-    "name": "FS6221-30 哑光黑长方形淋浴房",
-    "nameEn": "FS6221-30 Matte Black Rectangular Shower Enclosure",
-    "description": "FS系列哑光黑长方形淋浴房，采用SUS304不锈钢边框，哑光黑色高级表面处理。8mm白玻钢化安全玻璃。长方形大空间设计，单开门进出方便，现代轻奢风格，打造舒适宽敞的淋浴体验。",
-    "descriptionEn": "FS series matte black rectangular shower enclosure with SUS304 stainless steel frame in premium matte black finish. 8mm white tempered safety glass. Spacious rectangular design with single door for easy access, modern luxury style for comfortable shower experience.",
+    "subcategory": "滑动淋浴房",
+    "name": "SEWOO-FS6221-30 哑光黑长方形滑动淋浴房",
+    "nameEn": "SEWOO-FS6221-30 Matte Black Rectangular Sliding Shower Enclosure",
+    "description": "FS系列哑光黑长方形滑动淋浴房，采用SUS304不锈钢边框，哑光黑色高级表面处理。8mm白玻钢化安全玻璃。长方形大空间设计，单开门进出方便，现代轻奢风格，打造舒适宽敞的淋浴体验",
+    "descriptionEn": "FS series matte black rectangular sliding shower enclosure with SUS304 stainless steel frame in premium matte black finish. 8mm white tempered safety glass. Spacious rectangular design with single door for easy access, modern luxury style for comfortable shower experience",
     "images": [
-      "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=800",
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXFS6221-30.png"
     ],
     "specifications": {
       "边框材质": "SUS304不锈钢",
@@ -2666,7 +2180,8 @@
     ],
     "certifications": [
       "CE",
-      "CCC"
+      "CCC",
+      "SGS"
     ],
     "seo": {
       "title": "FS6221-30 哑光黑长方形淋浴房 - SEWOO 高端卫浴",
@@ -2675,10 +2190,19 @@
       "descriptionEn": "SEWOO FS6221-30 matte black rectangular shower enclosure with SUS304 stainless steel frame, matte black finish, 8mm white tempered glass. Spacious rectangular design, modern luxury style.",
       "keywords": [
         "淋浴房",
-        "整体淋浴房",
+        "滑动淋浴房",
         "长方形淋浴房",
         "哑光黑淋浴房",
         "不锈钢淋浴房",
+        "FS6221-30",
+        "SEWOO"
+      ],
+      "keywordsEn": [
+        "Shower room",
+        "sliding shower room",
+        "rectangular shower room",
+        "matte black shower room",
+        "stainless steel shower room",
         "FS6221-30",
         "SEWOO"
       ]
@@ -2689,8 +2213,8 @@
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
     },
     "specificationsEn": {
       "Frame Material": "SUS304 Stainless Steel",
@@ -2716,21 +2240,21 @@
     ],
     "certificationsEn": [
       "CE",
-      "CCC"
+      "CCC",
+      "SGS"
     ]
   },
   {
     "id": "36",
     "slug": "fs12821-shower-enclosure",
     "category": "淋浴房",
-    "subcategory": "整体淋浴房",
-    "name": "FS12821 哑光黑钻石型淋浴房",
-    "nameEn": "FS12821 Matte Black Diamond Shower Enclosure",
-    "description": "FS系列哑光黑钻石型淋浴房，采用SUS304不锈钢边框，哑光黑色高级表面处理。8mm白玻钢化安全玻璃。钻石型转角设计，充分利用角落空间，造型时尚独特，现代轻奢风格。",
-    "descriptionEn": "FS series matte black diamond shower enclosure with SUS304 stainless steel frame in premium matte black finish. 8mm white tempered safety glass. Diamond corner design maximizes corner space utilization with unique stylish look, modern luxury style.",
+    "subcategory": "滑动淋浴房",
+    "name": "SEWOO-FS12821 哑光黑钻石转角滑动淋浴房",
+    "nameEn": "SEWOO-FS12821 Matte Black Diamond Corner Sliding Shower Room",
+    "description": "FS系列哑光黑滑动钻石型淋浴房，采用SUS304不锈钢边框，哑光黑色高级表面处理。8mm白玻钢化安全玻璃。钻石型转角设计，充分利用角落空间，造型时尚独特，现代轻奢风格。",
+    "descriptionEn": "FS series matte black diamond sliding shower enclosure with SUS304 stainless steel frame in premium matte black finish. 8mm white tempered safety glass. Diamond corner design maximizes corner space utilization with unique stylish look, modern luxury style.",
     "images": [
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXFS12821.png"
     ],
     "specifications": {
       "边框材质": "SUS304不锈钢",
@@ -2757,7 +2281,8 @@
     ],
     "certifications": [
       "CE",
-      "CCC"
+      "CCC",
+      "SGS"
     ],
     "seo": {
       "title": "FS12821 哑光黑钻石型淋浴房 - SEWOO 高端卫浴",
@@ -2766,10 +2291,19 @@
       "descriptionEn": "SEWOO FS12821 matte black diamond shower enclosure with SUS304 stainless steel frame, matte black finish, 8mm white tempered glass. Diamond design, stylish and unique.",
       "keywords": [
         "淋浴房",
-        "整体淋浴房",
+        "滑动淋浴房",
         "钻石型淋浴房",
         "哑光黑淋浴房",
         "不锈钢淋浴房",
+        "FS12821",
+        "SEWOO"
+      ],
+      "keywordsEn": [
+        "Shower room",
+        "sliding shower room",
+        "diamond-shaped shower room",
+        "matte black shower room",
+        "stainless steel shower room",
         "FS12821",
         "SEWOO"
       ]
@@ -2780,8 +2314,8 @@
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
     },
     "specificationsEn": {
       "Frame Material": "SUS304 Stainless Steel",
@@ -2808,33 +2342,33 @@
     ],
     "certificationsEn": [
       "CE",
-      "CCC"
+      "CCC",
+      "SGS"
     ]
   },
   {
     "id": "37",
     "slug": "fs26-45v-shower-enclosure",
     "category": "淋浴房",
-    "subcategory": "整体淋浴房",
-    "name": "FS26-45V 哑光黑扇形淋浴房",
-    "nameEn": "FS26-45V Matte Black Quadrant Shower Enclosure",
-    "description": "FS系列哑光黑扇形淋浴房，采用SUS304不锈钢边框，哑光黑色高级表面处理。8mm白玻钢化安全玻璃。优雅的弧形扇形设计，完美利用角落空间，现代轻奢风格，打造高端浴室空间。",
-    "descriptionEn": "FS series matte black quadrant shower enclosure with SUS304 stainless steel frame in premium matte black finish. 8mm white tempered safety glass. Elegant curved quadrant design perfectly utilizes corner space, modern luxury style for premium bathroom.",
+    "subcategory": "滑动淋浴房",
+    "name": "SEWOO-FS26-45V 哑光黑方形双向滑动淋浴房",
+    "nameEn": "SEWOO-FS26-45V Matte Black Square Double Sliding Shower Enclosure",
+    "description": "FS系列哑光黑方形双向滑动淋浴房，采用SUS304不锈钢边框，哑光黑色高级表面处理。8mm白玻钢化安全玻璃。优雅的方形设计，完美利用角落空间，现代轻奢风格，打造高端浴室空间",
+    "descriptionEn": "FS series matte black quadrant shower enclosure with SUS304 stainless steel frame in premium matte black finish. 8mm white tempered safety glass. Elegant, curved quadrant design perfectly square space, modern luxury style for premium bathroom.",
     "images": [
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800",
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXFS26-45V.png"
     ],
     "specifications": {
       "边框材质": "SUS304不锈钢",
       "表面处理": "哑光黑",
       "玻璃厚度": "8mm",
       "玻璃类型": "白玻钢化玻璃",
-      "形状": "扇形",
       "开门方式": "双开门",
       "高度范围": "1900-2200mm",
       "宽度范围": "800-1300mm",
       "可定制": "是",
-      "保修": "5年"
+      "保修": "5年",
+      "形状": "方形"
     },
     "features": [
       "SUS304不锈钢边框",
@@ -2852,16 +2386,25 @@
       "CCC"
     ],
     "seo": {
-      "title": "FS26-45V 哑光黑扇形淋浴房 - SEWOO 高端卫浴",
-      "titleEn": "FS26-45V Matte Black Quadrant Shower Enclosure - SEWOO Premium Bath",
-      "description": "SEWOO FS26-45V哑光黑扇形淋浴房，SUS304不锈钢边框，哑光黑表面处理，8mm白玻钢化玻璃。优雅弧形设计，完美利用角落空间。",
-      "descriptionEn": "SEWOO FS26-45V matte black quadrant shower enclosure with SUS304 stainless steel frame, matte black finish, 8mm white tempered glass. Elegant curved design for corner spaces.",
+      "title": "FS26-45V 哑光黑方形双向滑动淋浴房 - SEWOO 高端卫浴",
+      "titleEn": "FS26-45V Matte BlackSquare Two-way Sliding Shower Room - SEWOO Premium Bath",
+      "description": "FS系列哑光黑方形双向滑动淋浴房，采用SUS304不锈钢边框，哑光黑色高级表面处理。8mm白玻钢化安全玻璃。优雅的方形设计，完美利用角落空间，现代轻奢风格，打造高端浴室空间",
+      "descriptionEn": "FS series matte black quadrant shower enclosure with SUS304 stainless steel frame in premium matte black finish. 8mm white tempered safety glass. Elegant, curved quadrant design perfectly square space, modern luxury style for premium bathroom.",
       "keywords": [
         "淋浴房",
         "整体淋浴房",
-        "扇形淋浴房",
+        "方形淋浴房",
         "哑光黑淋浴房",
         "不锈钢淋浴房",
+        "FS26-45V",
+        "SEWOO"
+      ],
+      "keywordsEn": [
+        "Shower room",
+        "integrated shower room",
+        "square shower room",
+        "matte black shower room",
+        "stainless steel shower room",
         "FS26-45V",
         "SEWOO"
       ]
@@ -2872,20 +2415,20 @@
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
     },
     "specificationsEn": {
       "Frame Material": "SUS304 Stainless Steel",
       "Finish": "Matte Black",
       "Glass Thickness": "8mm",
       "Glass Type": "White Tempered Glass",
-      "Shape": "Quadrant",
       "Door Type": "Double Door",
       "Height Range": "1900-2200mm",
       "Width Range": "800-1300mm",
       "Customizable": "Yes",
-      "Warranty": "5 years"
+      "Warranty": "5 years",
+      "Shape": "Square"
     },
     "featuresEn": [
       "SUS304 stainless steel frame",
@@ -2907,14 +2450,13 @@
     "id": "38",
     "slug": "fl8511-shower-enclosure",
     "category": "淋浴房",
-    "subcategory": "平开淋浴房",
-    "name": "FL8511 亮银色转轴门淋浴房",
-    "nameEn": "FL8511 Bright Silver Hinge Shower Enclosure",
-    "description": "FL系列亮银色转轴门淋浴房，采用高品质铝合金边框，亮银色表面处理。6mm白玻钢化安全玻璃。转轴门设计开合顺畅，L型转角设计节省空间，经济实惠之选，现代简约风格。",
-    "descriptionEn": "FL series bright silver hinge shower enclosure with high-quality aluminum frame in bright silver finish. 6mm white tempered safety glass. Smooth hinge door operation with L-shaped corner design for space saving, economical choice with modern minimalist style.",
+    "subcategory": "折叠淋浴房",
+    "name": "SEWOO-FL8511 亮银色转轴折叠门淋浴房",
+    "nameEn": "SEWOO-FL8511 Bright Silver Hinge Folding Shower Enclosure",
+    "description": "FL系列亮银色转轴折叠门淋浴房，采用高品质铝合金边框，亮银色表面处理。6mm白玻钢化安全玻璃。转轴门设计开合顺畅，L型转角设计节省空间，经济实惠之选，现代简约风格",
+    "descriptionEn": "FL series bright silver hinge folding shower enclosure with high-quality aluminum frame in bright silver finish. 6mm white tempered safety glass. Smooth hinge door operation with L-shaped corner design for space saving, economical choice with modern minimalist style",
     "images": [
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800",
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXFL8511.png"
     ],
     "specifications": {
       "边框材质": "高品质铝合金",
@@ -2941,19 +2483,29 @@
     ],
     "certifications": [
       "CE",
-      "CCC"
+      "CCC",
+      "SGS"
     ],
     "seo": {
-      "title": "FL8511 亮银色转轴门淋浴房 - SEWOO 高端卫浴",
-      "titleEn": "FL8511 Bright Silver Hinge Shower Enclosure - SEWOO Premium Bath",
-      "description": "SEWOO FL8511亮银色转轴门淋浴房，高品质铝合金边框，亮银色表面处理，6mm白玻钢化玻璃。转轴门设计，经济实惠。",
-      "descriptionEn": "SEWOO FL8511 bright silver hinge shower enclosure with high-quality aluminum frame, bright silver finish, 6mm white tempered glass. Hinge door design, economical choice.",
+      "title": "SEWOO-FL8511 亮银色转轴折叠门淋浴房",
+      "titleEn": "SEWOO-FL8511 Bright Silver Hinge Folding Shower Enclosure",
+      "description": "FL系列亮银色转轴折叠门淋浴房，采用高品质铝合金边框，亮银色表面处理。6mm白玻钢化安全玻璃。转轴门设计开合顺畅，L型转角设计节省空间，经济实惠之选，现代简约风格",
+      "descriptionEn": "FL series bright silver hinge folding shower enclosure with high-quality aluminum frame in bright silver finish. 6mm white tempered safety glass. Smooth hinge door operation with L-shaped corner design for space saving, economical choice with modern minimalist style",
       "keywords": [
         "淋浴房",
-        "平开淋浴房",
+        "折叠淋浴房",
         "转轴门淋浴房",
         "亮银色淋浴房",
         "铝合金淋浴房",
+        "FL8511",
+        "SEWOO"
+      ],
+      "keywordsEn": [
+        "shower room",
+        "folding shower room",
+        "pivot door shower room",
+        "bright silver shower room",
+        "aluminum alloy shower room",
         "FL8511",
         "SEWOO"
       ]
@@ -2964,8 +2516,8 @@
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
     },
     "specificationsEn": {
       "Frame Material": "High-quality Aluminum",
@@ -2992,21 +2544,21 @@
     ],
     "certificationsEn": [
       "CE",
-      "CCC"
+      "CCC",
+      "SGS"
     ]
   },
   {
     "id": "39",
     "slug": "ts11832-shower-screen",
     "category": "淋浴房",
-    "subcategory": "淋浴屏风",
-    "name": "TS11832 哑光黑大面积隔断淋浴房",
-    "nameEn": "TS11832 Matte Black Large Partition Shower Screen",
-    "description": "TS系列哑光黑大面积隔断淋浴房，采用SUS304不锈钢边框，哑光黑色高级表面处理。8mm白玻钢化安全玻璃。超大宽度设计，可做整面浴室隔断，多扇门组合，现代工业风格，打造开放式淋浴空间。",
-    "descriptionEn": "TS series matte black large partition shower screen with SUS304 stainless steel frame in premium matte black finish. 8mm white tempered safety glass. Extra-wide design for full bathroom partition, multiple door panels combination, modern industrial style for open shower space.",
+    "subcategory": "整体淋浴房",
+    "name": "SEWOO-TS11832 哑光黑大面积滑动可连通隔断淋浴房",
+    "nameEn": "SEWOO-TS11832 Matte Black Large-Sliding Connectable Partition Shower Enclosure",
+    "description": "TS系列哑光黑大面积滑动可连通隔断淋浴房，采用SUS304不锈钢边框，哑光黑色高级表面处理。8mm白玻钢化安全玻璃。超大宽度设计，可做整面浴室隔断，多扇门组合，现代工业风格，打造开放式淋浴空间",
+    "descriptionEn": "TS series Matte Black Large-Sliding Connectable Partition Shower Enclosurewith SUS304 stainless steel frame in premium matte black finish. 8mm white tempered safety glass. Extra-wide design for full bathroom partition, multiple door panels combination, modern industrial style for open shower space",
     "images": [
-      "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800",
-      "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXTS11832.png"
     ],
     "specifications": {
       "边框材质": "SUS304不锈钢",
@@ -3032,19 +2584,30 @@
     ],
     "certifications": [
       "CE",
-      "CCC"
+      "CCC",
+      "SGS"
     ],
     "seo": {
-      "title": "TS11832 哑光黑大面积隔断淋浴房 - SEWOO 高端卫浴",
-      "titleEn": "TS11832 Matte Black Large Partition Shower Screen - SEWOO Premium Bath",
-      "description": "SEWOO TS11832哑光黑大面积隔断淋浴房，SUS304不锈钢边框，哑光黑表面处理，8mm白玻钢化玻璃。超大宽度设计，现代工业风格。",
-      "descriptionEn": "SEWOO TS11832 matte black large partition shower screen with SUS304 stainless steel frame, matte black finish, 8mm white tempered glass. Extra-wide design, modern industrial style.",
+      "title": "SEWOO-TS11832 哑光黑大面积滑动可连通隔断淋浴房",
+      "titleEn": "SEWOO-TS11832 Matte Black Large-Sliding Connectable Partition Shower Enclosure",
+      "description": "TS系列哑光黑大面积滑动可连通隔断淋浴房，采用SUS304不锈钢边框，哑光黑色高级表面处理。8mm白玻钢化安全玻璃。超大宽度设计，可做整面浴室隔断，多扇门组合，现代工业风格，打造开放式淋浴空间。",
+      "descriptionEn": "TS series Matte Black Large-Sliding Connectable Partition Shower Enclosurewith SUS304 stainless steel frame in premium matte black finish. 8mm white tempered safety glass. Extra-wide design for full bathroom partition, multiple door panels combination, modern industrial style for open shower space",
       "keywords": [
         "淋浴房",
         "淋浴屏风",
         "隔断淋浴房",
-        "哑光黑淋浴房",
+        "滑动淋浴房，平开淋浴房，整体淋浴房，哑光黑淋浴房",
         "不锈钢淋浴房",
+        "TS11832",
+        "SEWOO"
+      ],
+      "keywordsEn": [
+        "segmented shower room",
+        "sliding shower room",
+        "hinged shower room",
+        "integrated shower room",
+        "matte black shower room",
+        "stainless steel shower room",
         "TS11832",
         "SEWOO"
       ]
@@ -3055,8 +2618,8 @@
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
     },
     "specificationsEn": {
       "Frame Material": "SUS304 Stainless Steel",
@@ -3082,21 +2645,21 @@
     ],
     "certificationsEn": [
       "CE",
-      "CCC"
+      "CCC",
+      "SGS"
     ]
   },
   {
     "id": "40",
     "slug": "92p10-changhong-shower-screen",
     "category": "淋浴房",
-    "subcategory": "淋浴屏风",
-    "name": "92P10 长虹玻璃淋浴隔断",
-    "nameEn": "92P10 Changhong Glass Shower Partition",
-    "description": "92P10系列长虹玻璃淋浴隔断，采用SUS304不锈钢五金配件。8mm长虹钢化安全玻璃，竖条纹纹理独特美观，透光不透视，兼具隐私性与装饰性。极简无边框设计，打造高级感浴室空间。",
-    "descriptionEn": "92P10 series Changhong glass shower partition with SUS304 stainless steel hardware. 8mm Changhong ribbed tempered safety glass with unique vertical stripe texture, translucent yet private, combining privacy and decoration. Minimalist frameless design for premium bathroom feel.",
+    "subcategory": "淋浴隔断",
+    "name": "SEWOO-92P10 长虹玻璃淋浴隔断",
+    "nameEn": "SEWOO-92P10 Changhong Glass Shower Partition",
+    "description": "92P10系列长虹玻璃淋浴隔断，采用SUS304不锈钢五金配件。8mm长虹钢化安全玻璃，竖条纹纹理独特美观，透光不透视，兼具隐私性与装饰性。极简无边框设计，打造高级感浴室空间",
+    "descriptionEn": "92P10 series Changhong glass shower partition with SUS304 stainless steel hardware. 8mm Changhong ribbed tempered safety glass with unique vertical stripe texture, translucent yet private, combining privacy and decoration. Minimalist frameless design for premium bathroom feel",
     "images": [
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800",
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX92P10.png"
     ],
     "specifications": {
       "五金材质": "SUS304不锈钢",
@@ -3121,19 +2684,29 @@
     ],
     "certifications": [
       "CE",
-      "CCC"
+      "CCC",
+      "SGS"
     ],
     "seo": {
-      "title": "92P10 长虹玻璃淋浴隔断 - SEWOO 高端卫浴",
-      "titleEn": "92P10 Changhong Glass Shower Partition - SEWOO Premium Bath",
-      "description": "SEWOO 92P10长虹玻璃淋浴隔断，SUS304不锈钢五金，8mm长虹钢化玻璃。极简无边框设计，透光不透视，高级感十足。",
-      "descriptionEn": "SEWOO 92P10 Changhong glass shower partition with SUS304 stainless steel hardware, 8mm Changhong tempered glass. Minimalist frameless design, translucent privacy, premium feel.",
+      "title": "SEWOO-92P10 长虹玻璃淋浴隔断",
+      "titleEn": "SEWOO-92P10 Changhong Glass Shower Partition",
+      "description": "92P10系列长虹玻璃淋浴隔断，采用SUS304不锈钢五金配件。8mm长虹钢化安全玻璃，竖条纹纹理独特美观，透光不透视，兼具隐私性与装饰性。极简无边框设计，打造高级感浴室空间",
+      "descriptionEn": "92P10 series Changhong glass shower partition with SUS304 stainless steel hardware. 8mm Changhong ribbed tempered safety glass with unique vertical stripe texture, translucent yet private, combining privacy and decoration. Minimalist frameless design for premium bathroom feel",
       "keywords": [
         "淋浴房",
         "淋浴屏风",
         "长虹玻璃",
         "淋浴隔断",
         "无边框淋浴房",
+        "92P10",
+        "SEWOO"
+      ],
+      "keywordsEn": [
+        "shower room",
+        "shower screen",
+        "chameleon glass",
+        "shower partition",
+        "frameless shower room",
         "92P10",
         "SEWOO"
       ]
@@ -3144,8 +2717,8 @@
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
     },
     "specificationsEn": {
       "Hardware Material": "SUS304 Stainless Steel",
@@ -3170,21 +2743,21 @@
     ],
     "certificationsEn": [
       "CE",
-      "CCC"
+      "CCC",
+      "SGS"
     ]
   },
   {
     "id": "41",
     "slug": "96p10-black-changhong-shower-screen",
     "category": "淋浴房",
-    "subcategory": "淋浴屏风",
-    "name": "96P10 哑光黑长虹玻璃淋浴隔断",
-    "nameEn": "96P10 Matte Black Changhong Glass Shower Partition",
-    "description": "96P10系列哑光黑长虹玻璃淋浴隔断，采用SUS304不锈钢边框，哑光黑色高级表面处理。8mm长虹钢化安全玻璃，竖条纹纹理独特美观，透光不透视。黑色边框与长虹玻璃经典搭配，打造高级轻奢浴室空间。",
-    "descriptionEn": "96P10 series matte black Changhong glass shower partition with SUS304 stainless steel frame in premium matte black finish. 8mm Changhong ribbed tempered safety glass with unique vertical stripe texture, translucent yet private. Classic combination of black frame and Changhong glass for premium luxury bathroom.",
+    "subcategory": "淋浴隔断",
+    "name": "SEWOO-96P10 哑光黑长虹玻璃淋浴隔断",
+    "nameEn": "SEWOO-96P10 Matte Black Changhong Glass Shower Partition",
+    "description": "96P10系列哑光黑长虹玻璃淋浴隔断，采用SUS304不锈钢边框，哑光黑色高级表面处理。8mm长虹钢化安全玻璃，竖条纹纹理独特美观，透光不透视。黑色边框与长虹玻璃经典搭配，打造高级轻奢浴室空间",
+    "descriptionEn": "96P10 series matte black Changhong glass shower partition with SUS304 stainless steel frame in premium matte black finish. 8mm Changhong ribbed tempered safety glass with unique vertical stripe texture, translucent yet private. Classic combination of black frame and Changhong glass for premium luxury bathroom",
     "images": [
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800",
-      "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX96P10.png"
     ],
     "specifications": {
       "边框材质": "SUS304不锈钢",
@@ -3209,19 +2782,29 @@
     ],
     "certifications": [
       "CE",
-      "CCC"
+      "CCC",
+      "SGS"
     ],
     "seo": {
-      "title": "96P10 哑光黑长虹玻璃淋浴隔断 - SEWOO 高端卫浴",
-      "titleEn": "96P10 Matte Black Changhong Glass Shower Partition - SEWOO Premium Bath",
-      "description": "SEWOO 96P10哑光黑长虹玻璃淋浴隔断，SUS304不锈钢黑框，8mm长虹钢化玻璃。经典黑框长虹搭配，高级轻奢风格。",
-      "descriptionEn": "SEWOO 96P10 matte black Changhong glass shower partition with SUS304 stainless steel black frame, 8mm Changhong tempered glass. Classic black frame with Changhong glass, premium luxury style.",
+      "title": "SEWOO-96P10 哑光黑长虹玻璃淋浴隔断",
+      "titleEn": "SEWOO-96P10 Matte Black Changhong Glass Shower Partition",
+      "description": "96P10系列哑光黑长虹玻璃淋浴隔断，采用SUS304不锈钢边框，哑光黑色高级表面处理。8mm长虹钢化安全玻璃，竖条纹纹理独特美观，透光不透视。黑色边框与长虹玻璃经典搭配，打造高级轻奢浴室空间",
+      "descriptionEn": "96P10 series matte black Changhong glass shower partition with SUS304 stainless steel frame in premium matte black finish. 8mm Changhong ribbed tempered safety glass with unique vertical stripe texture, translucent yet private. Classic combination of black frame and Changhong glass for premium luxury bathroom",
       "keywords": [
         "淋浴房",
         "淋浴屏风",
         "长虹玻璃",
         "哑光黑淋浴房",
         "淋浴隔断",
+        "96P10",
+        "SEWOO"
+      ],
+      "keywordsEn": [
+        "shower room",
+        "shower screen",
+        "chameleon glass",
+        "matte black shower room",
+        "shower partition",
         "96P10",
         "SEWOO"
       ]
@@ -3232,8 +2815,8 @@
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
     },
     "specificationsEn": {
       "Frame Material": "SUS304 Stainless Steel",
@@ -3258,7 +2841,8 @@
     ],
     "certificationsEn": [
       "CE",
-      "CCC"
+      "CCC",
+      "SGS"
     ]
   },
   {
@@ -3266,13 +2850,12 @@
     "slug": "fc-123a-steam-shower",
     "category": "蒸汽房与桑拿房",
     "subcategory": "蒸汽淋浴一体机",
-    "name": "FC-123A 蒸汽淋浴一体机",
-    "nameEn": "FC-123A Steam Shower Combo",
-    "description": "FC-123A蒸汽淋浴一体机，尺寸1200x900x2190mm。配备3KW蒸汽系统、触摸控制面板、头顶花洒、USB接口、冷热水龙头、手持花洒、分水器、背部水按摩、玻璃置物架、座椅、臭氧消毒、照明排气扇、漏电保护、钢化玻璃。一站式享受蒸汽SPA与淋浴体验。",
-    "descriptionEn": "FC-123A steam shower combo, size 1200x900x2190mm. Features 3KW steam system, touch control panel, overhead shower, USB, hot/cold faucet, hand shower, diverter, back water massage, glass shelf, seat, ozone, light & exhaust fan, leakage protection, tempered glass. One-stop steam SPA and shower experience.",
+    "name": "SEWOO-FC-123A 蒸汽淋浴一体机",
+    "nameEn": "SEWOO-FC-123A Steam Shower Combo",
+    "description": "FC-123A蒸汽淋浴一体机，尺寸1200x900x2190mm。配备3KW蒸汽系统、触摸控制面板、头顶花洒、USB接口、冷热水龙头、手持花洒、分水器、背部水按摩、玻璃置物架、座椅、臭氧消毒、照明排气扇、漏电保护、钢化玻璃。一站式享受蒸汽SPA与淋浴体验",
+    "descriptionEn": "FC-123A steam shower combo, size 1200x900x2190mm. Features 3KW steam system, touch control panel, overhead shower, USB, hot/cold faucet, hand shower, diverter, back water massage, glass shelf, seat, ozone, light & exhaust fan, leakage protection, tempered glass. One-stop steam SPA and shower experience",
     "images": [
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800",
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXFC-123A.png"
     ],
     "specifications": {
       "尺寸": "1200x900x2190mm",
@@ -3313,6 +2896,14 @@
         "蒸汽SPA",
         "FC-123A",
         "SEWOO"
+      ],
+      "keywordsEn": [
+        "Steam room",
+        "steam shower all-in-one unit",
+        "sauna room",
+        "steam SPA",
+        "FC-123A",
+        "SEWOO"
       ]
     },
     "createdAt": "2026-06-24",
@@ -3321,8 +2912,8 @@
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
     },
     "specificationsEn": {
       "Size": "1200x900x2190mm",
@@ -3357,13 +2948,12 @@
     "slug": "fc-123b-shower-cabin",
     "category": "蒸汽房与桑拿房",
     "subcategory": "蒸汽淋浴一体机",
-    "name": "FC-123B 淋浴房一体机",
-    "nameEn": "FC-123B Shower Cabin Combo",
-    "description": "FC-123B淋浴房一体机（无蒸汽版），尺寸1200x900x2150mm。配备触摸控制面板、头顶花洒、USB接口、冷热水龙头、手持花洒、分水器、背部水按摩、玻璃置物架、钢化玻璃。多功能淋浴房，经济实惠之选。",
-    "descriptionEn": "FC-123B shower cabin combo (without steam), size 1200x900x2150mm. Features touch control panel, overhead shower, USB, hot/cold faucet, hand shower, diverter, back water massage, glass shelf, tempered glass. Multi-function shower cabin, economical choice.",
+    "name": "SEWOO-FC-123B 淋浴房一体机",
+    "nameEn": "SEWOO-FC-123B Shower Cabin Combo",
+    "description": "FC-123B淋浴房一体机（无蒸汽版），尺寸1200x900x2150mm。配备触摸控制面板、头顶花洒、USB接口、冷热水龙头、手持花洒、分水器、背部水按摩、玻璃置物架、钢化玻璃。多功能淋浴房，经济实惠之选",
+    "descriptionEn": "FC-123B shower cabin combo (without steam), size 1200x900x2150mm. Features touch control panel, overhead shower, USB, hot/cold faucet, hand shower, diverter, back water massage, glass shelf, tempered glass. Multi-function shower cabin, economical choice",
     "images": [
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXFC-123B.png"
     ],
     "specifications": {
       "尺寸": "1200x900x2150mm",
@@ -3399,6 +2989,13 @@
         "多功能淋浴房",
         "FC-123B",
         "SEWOO"
+      ],
+      "keywordsEn": [
+        "shower room",
+        "integrated shower unit",
+        "multi-functional shower room",
+        "FC-123B",
+        "SEWOO"
       ]
     },
     "createdAt": "2026-06-24",
@@ -3407,8 +3004,8 @@
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
     },
     "specificationsEn": {
       "Size": "1200x900x2150mm",
@@ -3439,13 +3036,12 @@
     "slug": "fc-sn02-sauna-shower",
     "category": "蒸汽房与桑拿房",
     "subcategory": "蒸汽淋浴一体机",
-    "name": "FC-SN02 桑拿淋浴一体机",
-    "nameEn": "FC-SN02 Sauna Shower Combo",
+    "name": "SEWOO-FC-SN02 桑拿淋浴一体机",
+    "nameEn": "SEWOO-FC-SN02 Sauna Shower Combo",
     "description": "FC-SN02桑拿淋浴一体机，尺寸1800x1200x2280mm（右版）。配备3KW蒸汽系统、干蒸桑拿炉、钢化玻璃、温度计、安全灯、木板、木勺、木椅、触摸控制面板、头顶花洒、手持花洒、冷热水龙头、分水器、背部水按摩、脚底按摩、排水器、免提电话、FM收音机、温度时间设置、照明排气扇、漏电保护。蒸汽桑拿淋浴三合一。",
     "descriptionEn": "FC-SN02 sauna shower combo, size 1800x1200x2280mm (right version). Features 3KW steam system, dry sauna stove, tempered glass, thermometer, safety lamp, wood board/spoon/chair, touch control, overhead/hand shower, hot/cold faucet, diverter, back/foot massage, drainer, hands-free phone, FM radio, temp/time setting, light/exhaust fan, leakage protection. Steam sauna shower 3-in-1.",
     "images": [
-      "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXFC-SN02.png"
     ],
     "specifications": {
       "尺寸": "1800x1200x2280mm",
@@ -3488,6 +3084,14 @@
         "蒸汽桑拿",
         "FC-SN02",
         "SEWOO"
+      ],
+      "keywordsEn": [
+        "Steam room",
+        "sauna room",
+        "integrated sauna shower unit",
+        "steam sauna",
+        "FC-SN02",
+        "SEWOO"
       ]
     },
     "createdAt": "2026-06-24",
@@ -3496,8 +3100,8 @@
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
     },
     "specificationsEn": {
       "Size": "1800x1200x2280mm",
@@ -3534,13 +3138,12 @@
     "slug": "fc-115-steam-shower",
     "category": "蒸汽房与桑拿房",
     "subcategory": "蒸汽淋浴一体机",
-    "name": "FC-115 蒸汽淋浴一体机",
-    "nameEn": "FC-115 Steam Shower Combo",
+    "name": "SEWOO-FC-115 蒸汽淋浴一体机",
+    "nameEn": "SEWOO-FC-115 Steam Shower Combo",
     "description": "FC-115蒸汽淋浴一体机，尺寸1180x950x2200mm（左/右版本可选）。配备3KW蒸汽系统、FM收音机、触摸控制面板、头顶花洒、手持花洒、冷热水龙头、分水器、背部水按摩、脚底按摩、排水器、免提电话、温度时间设置、照明排气扇、漏电保护、PVC木纹底座。紧凑设计，功能齐全。",
     "descriptionEn": "FC-115 steam shower combo, size 1180x950x2200mm (left/right version available). Features 3KW steam system, FM radio, touch control panel, overhead/hand shower, hot/cold faucet, diverter, back/foot massage, drainer, hands-free phone, temp/time setting, light/exhaust fan, leakage protection, PVC wood base. Compact design with full features.",
     "images": [
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800",
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXFC-115.png"
     ],
     "specifications": {
       "尺寸": "1180x950x2200mm",
@@ -3580,6 +3183,13 @@
         "桑拿房",
         "FC-115",
         "SEWOO"
+      ],
+      "keywordsEn": [
+        "Steam room",
+        "steam shower integrated unit",
+        "sauna room",
+        "FC-115",
+        "SEWOO"
       ]
     },
     "createdAt": "2026-06-24",
@@ -3588,8 +3198,8 @@
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
     },
     "specificationsEn": {
       "Size": "1180x950x2200mm",
@@ -3624,13 +3234,12 @@
     "slug": "fc-sn03-sauna-shower",
     "category": "蒸汽房与桑拿房",
     "subcategory": "蒸汽淋浴一体机",
-    "name": "FC-SN03 桑拿淋浴一体机",
-    "nameEn": "FC-SN03 Sauna Shower Combo",
-    "description": "FC-SN03桑拿淋浴一体机，尺寸1900x1280x2250mm（左版）。配备3KW蒸汽系统、干蒸桑拿炉、钢化玻璃、温度计、安全灯、木板、木勺、木椅、触摸控制面板、头顶花洒、手持花洒、冷热水龙头、分水器、背部水按摩、脚底按摩、排水器、免提电话、FM收音机、温度时间设置、照明排气扇、漏电保护。超大空间蒸汽桑拿淋浴三合一。",
-    "descriptionEn": "FC-SN03 sauna shower combo, size 1900x1280x2250mm (left version). Features 3KW steam system, dry sauna stove, tempered glass, thermometer, safety lamp, wood board/spoon/chair, touch control, overhead/hand shower, hot/cold faucet, diverter, back/foot massage, drainer, hands-free phone, FM radio, temp/time setting, light/exhaust fan, leakage protection. Extra-large steam sauna shower 3-in-1.",
+    "name": "SEWOO-FC-SN03 桑拿淋浴一体机",
+    "nameEn": "SEWOO-FC-SN03 Sauna Shower Combo",
+    "description": "FC-SN03桑拿淋浴一体机，尺寸1900x1280x2250mm（左版）。配备3KW蒸汽系统、干蒸桑拿炉、钢化玻璃、温度计、安全灯、木板、木勺、木椅、触摸控制面板、头顶花洒、手持花洒、冷热水龙头、分水器、背部水按摩、脚底按摩、排水器、免提电话、FM收音机、温度时间设置、照明排气扇、漏电保护。超大空间蒸汽桑拿淋浴三合一",
+    "descriptionEn": "FC-SN03 sauna shower combo, size 1900x1280x2250mm (left version). Features 3KW steam system, dry sauna stove, tempered glass, thermometer, safety lamp, wood board/spoon/chair, touch control, overhead/hand shower, hot/cold faucet, diverter, back/foot massage, drainer, hands-free phone, FM radio, temp/time setting, light/exhaust fan, leakage protection. Extra-large steam sauna shower 3-in-1",
     "images": [
-      "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800",
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXFC-SN03.png"
     ],
     "specifications": {
       "尺寸": "1900x1280x2250mm",
@@ -3673,6 +3282,14 @@
         "蒸汽桑拿",
         "FC-SN03",
         "SEWOO"
+      ],
+      "keywordsEn": [
+        "Steam room",
+        "sauna room",
+        "integrated sauna shower unit",
+        "steam sauna",
+        "FC-SN03",
+        "SEWOO"
       ]
     },
     "createdAt": "2026-06-24",
@@ -3681,8 +3298,8 @@
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
     },
     "specificationsEn": {
       "Size": "1900x1280x2250mm",
@@ -3719,13 +3336,12 @@
     "slug": "fc-116-steam-shower",
     "category": "蒸汽房与桑拿房",
     "subcategory": "蒸汽淋浴一体机",
-    "name": "FC-116 蒸汽淋浴一体机",
-    "nameEn": "FC-116 Steam Shower Combo",
+    "name": "SEWOO-FC-116 蒸汽淋浴一体机",
+    "nameEn": "SEWOO-FC-116 Steam Shower Combo",
     "description": "FC-116蒸汽淋浴一体机，尺寸950x950x2250mm。配备3KW蒸汽系统、FM收音机、触摸控制面板、头顶花洒、手持花洒、冷热水龙头、分水器、背部水按摩、脚底按摩、排水器、免提电话、温度时间设置、照明排气扇、漏电保护、PVC木纹底座。小巧紧凑，适合小浴室。",
     "descriptionEn": "FC-116 steam shower combo, size 950x950x2250mm. Features 3KW steam system, FM radio, touch control panel, overhead/hand shower, hot/cold faucet, diverter, back/foot massage, drainer, hands-free phone, temp/time setting, light/exhaust fan, leakage protection, PVC wood base. Compact design for small bathrooms.",
     "images": [
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXFC-116.png"
     ],
     "specifications": {
       "尺寸": "950x950x2250mm",
@@ -3765,16 +3381,24 @@
         "小浴室蒸汽房",
         "FC-116",
         "SEWOO"
+      ],
+      "keywordsEn": [
+        "Steam room",
+        "steam shower all-in-one unit",
+        "sauna room",
+        "small bathroom steam room",
+        "FC-116",
+        "SEWOO"
       ]
     },
     "createdAt": "2026-06-24",
-    "updatedAt": "2026-06-24",
+    "updatedAt": "2026-06-25",
     "documents": {
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
     },
     "specificationsEn": {
       "Size": "950x950x2250mm",
@@ -3808,13 +3432,12 @@
     "slug": "fc-119-steam-bath",
     "category": "蒸汽房与桑拿房",
     "subcategory": "多功能桑拿房",
-    "name": "FC-119 多功能蒸汽按摩浴缸房",
-    "nameEn": "FC-119 Multi-function Steam Massage Bath",
+    "name": "SEWOO-FC-119 多功能蒸汽按摩浴缸房",
+    "nameEn": "SEWOO-FC-119 Multi-function Steam Massage Bath",
     "description": "FC-119多功能蒸汽按摩浴缸房，尺寸1300x1300x2250mm。配备3KW蒸汽系统、漩涡按摩浴缸（1HP水泵）、控制面板、头顶花洒、手持花洒、冷热水龙头、分水器、背部水按摩、脚底按摩、排水器、免提电话、FM收音机、温度时间设置、照明排气扇、漏电保护。蒸汽+按摩浴缸+淋浴三合一豪华SPA。",
     "descriptionEn": "FC-119 multi-function steam massage bath, size 1300x1300x2250mm. Features 3KW steam system, whirlpool massage bathtub (1HP water pump), control panel, overhead/hand shower, hot/cold faucet, diverter, back/foot massage, drainer, hands-free phone, FM radio, temp/time setting, light/exhaust fan, leakage protection. Steam + massage bath + shower 3-in-1 luxury SPA.",
     "images": [
-      "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800",
-      "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXFC-119.png"
     ],
     "specifications": {
       "尺寸": "1300x1300x2250mm",
@@ -3856,16 +3479,24 @@
         "蒸汽按摩浴缸",
         "FC-119",
         "SEWOO"
+      ],
+      "keywordsEn": [
+        "Steam room",
+        "massage bathtub",
+        "multi-functional sauna room",
+        "steam massage bathtub",
+        "FC-119",
+        "SEWOO"
       ]
     },
     "createdAt": "2026-06-24",
-    "updatedAt": "2026-06-24",
+    "updatedAt": "2026-06-25",
     "documents": {
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
     },
     "specificationsEn": {
       "Size": "1300x1300x2250mm",
@@ -3901,13 +3532,12 @@
     "slug": "fc-110-steam-shower",
     "category": "蒸汽房与桑拿房",
     "subcategory": "多功能桑拿房",
-    "name": "FC-110 多功能蒸汽房",
-    "nameEn": "FC-110 Multi-function Steam Room",
+    "name": "SEWOO-FC-110 多功能蒸汽房",
+    "nameEn": "SEWOO-FC-110 Multi-function Steam Room",
     "description": "FC-110多功能蒸汽房，尺寸1080x1080x2230mm（左/右版本可选）。配备3KW蒸汽系统、FM收音机、触摸控制面板、头顶花洒、手持花洒、冷热水龙头、分水器、背部水按摩、脚底按摩、排水器、免提电话、温度时间设置、照明排气扇、漏电保护。方正设计，功能齐全。",
     "descriptionEn": "FC-110 multi-function steam room, size 1080x1080x2230mm (left/right version available). Features 3KW steam system, FM radio, touch control panel, overhead/hand shower, hot/cold faucet, diverter, back/foot massage, drainer, hands-free phone, temp/time setting, light/exhaust fan, leakage protection. Square design with full features.",
     "images": [
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800",
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXFC-110.png"
     ],
     "specifications": {
       "尺寸": "1080x1080x2230mm",
@@ -3946,16 +3576,23 @@
         "蒸汽淋浴一体机",
         "FC-110",
         "SEWOO"
+      ],
+      "keywordsEn": [
+        "Steam room",
+        "multi-functional sauna room",
+        "steam shower integrated machine",
+        "FC-110",
+        "SEWOO"
       ]
     },
     "createdAt": "2026-06-24",
-    "updatedAt": "2026-06-24",
+    "updatedAt": "2026-06-25",
     "documents": {
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
     },
     "specificationsEn": {
       "Size": "1080x1080x2230mm",
@@ -3989,13 +3626,12 @@
     "slug": "fc-112-steam-shower",
     "category": "蒸汽房与桑拿房",
     "subcategory": "多功能桑拿房",
-    "name": "FC-112 多功能蒸汽房",
-    "nameEn": "FC-112 Multi-function Steam Room",
+    "name": "SEWOO-FC-112 多功能蒸汽房",
+    "nameEn": "SEWOO-FC-112 Multi-function Steam Room",
     "description": "FC-112多功能蒸汽房，尺寸1000x1000x2230mm（左/右版本可选）。配备3KW蒸汽系统、FM收音机、触摸控制面板、头顶花洒、手持花洒、冷热水龙头、分水器、背部水按摩、脚底按摩、排水器、免提电话、温度时间设置、照明排气扇、漏电保护。紧凑方正设计。",
     "descriptionEn": "FC-112 multi-function steam room, size 1000x1000x2230mm (left/right version available). Features 3KW steam system, FM radio, touch control panel, overhead/hand shower, hot/cold faucet, diverter, back/foot massage, drainer, hands-free phone, temp/time setting, light/exhaust fan, leakage protection. Compact square design.",
     "images": [
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXFC-112.png"
     ],
     "specifications": {
       "尺寸": "1000x1000x2230mm",
@@ -4034,16 +3670,24 @@
         "蒸汽淋浴一体机",
         "FC-112",
         "SEWOO"
+      ],
+      "keywordsEn": [
+        "Steam room",
+        "sauna room",
+        "integrated sauna shower unit",
+        "steam sauna",
+        "FC-SN03",
+        "SEWOO"
       ]
     },
     "createdAt": "2026-06-24",
-    "updatedAt": "2026-06-24",
+    "updatedAt": "2026-06-25",
     "documents": {
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
     },
     "specificationsEn": {
       "Size": "1000x1000x2230mm",
@@ -4077,13 +3721,12 @@
     "slug": "fc-103-steam-shower",
     "category": "蒸汽房与桑拿房",
     "subcategory": "多功能桑拿房",
-    "name": "FC-103 多功能蒸汽房",
-    "nameEn": "FC-103 Multi-function Steam Room",
+    "name": "SEWOO-FC-103 多功能蒸汽房",
+    "nameEn": "SEWOO-FC-103 Multi-function Steam Room",
     "description": "FC-103多功能蒸汽房，尺寸900x900x2220mm。配备3KW蒸汽系统、FM收音机、控制面板、头顶花洒、手持花洒、冷热水龙头、分水器、背部水按摩、脚底按摩、排水器、免提电话、温度时间设置、照明排气扇、漏电保护。最小尺寸，适合紧凑空间。",
     "descriptionEn": "FC-103 multi-function steam room, size 900x900x2220mm. Features 3KW steam system, FM radio, control panel, overhead/hand shower, hot/cold faucet, diverter, back/foot massage, drainer, hands-free phone, temp/time setting, light/exhaust fan, leakage protection. Smallest size for compact spaces.",
     "images": [
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800",
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXFC-103.png"
     ],
     "specifications": {
       "尺寸": "900x900x2220mm",
@@ -4120,16 +3763,23 @@
         "小浴室蒸汽房",
         "FC-103",
         "SEWOO"
+      ],
+      "keywordsEn": [
+        "Steam Room",
+        "Multi-functional Sauna Room",
+        "Small Bathroom Steam Room",
+        "FC-103",
+        "SEWOO"
       ]
     },
     "createdAt": "2026-06-24",
-    "updatedAt": "2026-06-24",
+    "updatedAt": "2026-06-25",
     "documents": {
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
     },
     "specificationsEn": {
       "Size": "900x900x2220mm",
@@ -4161,13 +3811,12 @@
     "slug": "ln-1057-dry-sauna",
     "category": "蒸汽房与桑拿房",
     "subcategory": "干蒸桑拿房",
-    "name": "LN-1057 铁杉木干蒸桑拿房",
-    "nameEn": "LN-1057 Hemlock Dry Sauna Room",
+    "name": "SEWOO-LN-1057 铁杉木干蒸桑拿房",
+    "nameEn": "SEWOO-LN-1057 Hemlock Dry Sauna Room",
     "description": "LN-1057铁杉木干蒸桑拿房，尺寸2500x2000x2000mm，可非标定制。采用优质铁杉木（Hemlock）材质，可做桑拿房、光波房、频谱房。配备电脑控制面板、出入风口、温度调节、时间调节、灯光、电源箱、远红外线暖板、电源线、合页锁珠、桑拿门、拉手、纯铜锁扣、底座、地台板、墙身板、FM收音、USB接口。大型定制桑拿房。",
     "descriptionEn": "LN-1057 hemlock dry sauna room, size 2500x2000x2000mm, customizable. Premium hemlock wood material, can be sauna room, far-infrared steam room, spectrum room. Features computer control panel, ventilation, temp/time adjustment, lighting, power box, far-infrared heating panel, sauna door, pure copper lock, base, floor board, wall board, FM radio, USB. Large custom sauna room.",
     "images": [
-      "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800",
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXLN-1057.png"
     ],
     "specifications": {
       "尺寸": "2500x2000x2000mm",
@@ -4208,16 +3857,25 @@
         "频谱房",
         "LN-1057",
         "SEWOO"
+      ],
+      "keywordsEn": [
+        "Sauna room",
+        "dry steam sauna room",
+        "hemlock sauna room",
+        "light wave room",
+        "spectrum room",
+        "LN-1057",
+        "SEWOO"
       ]
     },
     "createdAt": "2026-06-24",
-    "updatedAt": "2026-06-24",
+    "updatedAt": "2026-06-25",
     "documents": {
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
     },
     "specificationsEn": {
       "Size": "2500x2000x2000mm",
@@ -4251,13 +3909,12 @@
     "slug": "ln-1029-dry-sauna",
     "category": "蒸汽房与桑拿房",
     "subcategory": "干蒸桑拿房",
-    "name": "LN-1029 铁杉木干蒸桑拿房",
-    "nameEn": "LN-1029 Hemlock Dry Sauna Room",
+    "name": "SEWOO-LN-1029 铁杉木干蒸桑拿房",
+    "nameEn": "SEWOO-LN-1029 Hemlock Dry Sauna Room",
     "description": "LN-1029铁杉木干蒸桑拿房，尺寸1200x1050x2000mm，可非标定制。采用优质铁杉木（Hemlock）材质，可做桑拿房、光波房、频谱房。配备电脑控制面板、出入风口、温度调节、时间调节、灯光、电源箱、远红外线暖板、桑拿门、纯铜锁扣、底座、地台板、墙身板、FM收音、USB接口。紧凑型桑拿房。",
     "descriptionEn": "LN-1029 hemlock dry sauna room, size 1200x1050x2000mm, customizable. Premium hemlock wood material, can be sauna room, far-infrared steam room, spectrum room. Features computer control panel, ventilation, temp/time adjustment, lighting, power box, far-infrared heating panel, sauna door, pure copper lock, base, floor/wall board, FM radio, USB. Compact sauna room.",
     "images": [
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXLN-1029.png"
     ],
     "specifications": {
       "尺寸": "1200x1050x2000mm",
@@ -4297,16 +3954,25 @@
         "频谱房",
         "LN-1029",
         "SEWOO"
+      ],
+      "keywordsEn": [
+        "Sauna Room",
+        "Dry Sauna Room",
+        "Hemlock Sauna Room",
+        "Light Wave Room",
+        "Spectrum Room",
+        "LN-1029",
+        "SEWOO"
       ]
     },
     "createdAt": "2026-06-24",
-    "updatedAt": "2026-06-24",
+    "updatedAt": "2026-06-25",
     "documents": {
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
     },
     "specificationsEn": {
       "Size": "1200x1050x2000mm",
@@ -4339,13 +4005,12 @@
     "slug": "ln-1038-dry-sauna",
     "category": "蒸汽房与桑拿房",
     "subcategory": "干蒸桑拿房",
-    "name": "LN-1038 铁杉木干蒸桑拿房",
-    "nameEn": "LN-1038 Hemlock Dry Sauna Room",
+    "name": "SEWOO-LN-1038 铁杉木干蒸桑拿房",
+    "nameEn": "SEWOO-LN-1038 Hemlock Dry Sauna Room",
     "description": "LN-1038铁杉木干蒸桑拿房，尺寸1500x1000x2000mm或1800x1000x2000mm可选，可非标定制。采用优质铁杉木（Hemlock）材质，可做桑拿房、光波房、频谱房。配备电脑控制面板、出入风口、温度调节、时间调节、灯光、电源箱、远红外线暖板、桑拿门、纯铜锁扣、底座、地台板、墙身板、FM收音、USB接口。中型桑拿房。",
     "descriptionEn": "LN-1038 hemlock dry sauna room, size 1500x1000x2000mm or 1800x1000x2000mm available, customizable. Premium hemlock wood material, can be sauna room, far-infrared steam room, spectrum room. Features computer control panel, ventilation, temp/time adjustment, lighting, power box, far-infrared heating panel, sauna door, pure copper lock, base, floor/wall board, FM radio, USB. Medium sauna room.",
     "images": [
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800",
-      "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXLN-1038.png"
     ],
     "specifications": {
       "尺寸": "1500x1000x2000mm / 1800x1000x2000mm",
@@ -4386,16 +4051,25 @@
         "频谱房",
         "LN-1038",
         "SEWOO"
+      ],
+      "keywordsEn": [
+        "Sauna room",
+        "dry sauna room",
+        "hemlock sauna room",
+        "light wave room",
+        "spectrum room",
+        "LN-1038",
+        "SEWOO"
       ]
     },
     "createdAt": "2026-06-24",
-    "updatedAt": "2026-06-24",
+    "updatedAt": "2026-06-25",
     "documents": {
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
     },
     "specificationsEn": {
       "Size": "1500x1000x2000mm / 1800x1000x2000mm",
@@ -4429,13 +4103,12 @@
     "slug": "ln-1045-dry-sauna",
     "category": "蒸汽房与桑拿房",
     "subcategory": "干蒸桑拿房",
-    "name": "LN-1045 铁杉木干蒸桑拿房",
-    "nameEn": "LN-1045 Hemlock Dry Sauna Room",
+    "name": "SEWOO-LN-1045 铁杉木干蒸桑拿房",
+    "nameEn": "SEWOO-LN-1045 Hemlock Dry Sauna Room",
     "description": "LN-1045铁杉木干蒸桑拿房，尺寸1400x1000x2000mm，可非标定制。采用优质铁杉木（Hemlock）材质，可做桑拿房、光波房、频谱房。配备电脑控制面板、出入风口、温度调节、时间调节、灯光、电源箱、远红外线暖板、桑拿门、纯铜锁扣、底座、地台板、墙身板、FM收音、USB接口。中型桑拿房。",
     "descriptionEn": "LN-1045 hemlock dry sauna room, size 1400x1000x2000mm, customizable. Premium hemlock wood material, can be sauna room, far-infrared steam room, spectrum room. Features computer control panel, ventilation, temp/time adjustment, lighting, power box, far-infrared heating panel, sauna door, pure copper lock, base, floor/wall board, FM radio, USB. Medium sauna room.",
     "images": [
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXLN-1045.png"
     ],
     "specifications": {
       "尺寸": "1400x1000x2000mm",
@@ -4475,16 +4148,25 @@
         "频谱房",
         "LN-1045",
         "SEWOO"
+      ],
+      "keywordsEn": [
+        "Sauna room",
+        "dry sauna room",
+        "hemlock sauna room",
+        "light wave room",
+        "spectrum room",
+        "LN-1045",
+        "SEWOO"
       ]
     },
     "createdAt": "2026-06-24",
-    "updatedAt": "2026-06-24",
+    "updatedAt": "2026-06-25",
     "documents": {
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
     },
     "specificationsEn": {
       "Size": "1400x1000x2000mm",
@@ -4517,13 +4199,12 @@
     "slug": "ln-f08-sauna-combo",
     "category": "蒸汽房与桑拿房",
     "subcategory": "桑拿房组合",
-    "name": "LN-F08 铁杉木桑拿房组合",
-    "nameEn": "LN-F08 Hemlock Sauna Combination",
+    "name": "SEWOO-LN-F08 铁杉木桑拿房组合",
+    "nameEn": "SEWOO-LN-F08 Hemlock Sauna Combination",
     "description": "LN-F08铁杉木桑拿房组合，尺寸3000x1500x2000mm，可非标定制。采用优质铁杉木材质，大型组合式桑拿房。配备桑拿炉3KW、蒸汽器3KW、收音机、电话接口、电源盒、温度显示器/调节器、时间显示器/调节器、排气扇、桑拿灯、背景灯、背部肩部按摩、头顶花洒、手持花洒、防漏电、功能切换、脚按摩。蒸汽桑拿按摩组合豪华SPA。",
     "descriptionEn": "LN-F08 hemlock sauna combination, size 3000x1500x2000mm, customizable. Premium hemlock wood, large combination sauna room. Features sauna stove 3KW, steam generator 3KW, radio, phone interface, power box, temp display/adjuster, time display/adjuster, exhaust fan, sauna light, background light, back/shoulder massage, overhead/hand shower, leakage protection, function switch, foot massage. Steam sauna massage combination luxury SPA.",
     "images": [
-      "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800",
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXLN-F08.png"
     ],
     "specifications": {
       "尺寸": "3000x1500x2000mm",
@@ -4565,16 +4246,24 @@
         "蒸汽桑拿组合",
         "LN-F08",
         "SEWOO"
+      ],
+      "keywordsEn": [
+        "Sauna room",
+        "sauna room set",
+        "hemlock wood sauna room",
+        "steam sauna set",
+        "LN-F08",
+        "SEWOO"
       ]
     },
     "createdAt": "2026-06-24",
-    "updatedAt": "2026-06-24",
+    "updatedAt": "2026-06-25",
     "documents": {
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
     },
     "specificationsEn": {
       "Size": "3000x1500x2000mm",
@@ -4610,13 +4299,12 @@
     "slug": "ln-f13-sauna-combo",
     "category": "蒸汽房与桑拿房",
     "subcategory": "桑拿房组合",
-    "name": "LN-F13 铁杉木桑拿房组合",
-    "nameEn": "LN-F13 Hemlock Sauna Combination",
+    "name": "SEWOO-LN-F13 铁杉木桑拿房组合",
+    "nameEn": "SEWOO-LN-F13 Hemlock Sauna Combination",
     "description": "LN-F13铁杉木桑拿房组合，尺寸1800x1200x2000mm或2000x1300x2000mm可选，可非标定制。采用优质铁杉木材质，中型组合式桑拿房。配备桑拿炉3KW、蒸汽器3KW、收音机、电话接口、电源盒、温度显示器/调节器、时间显示器/调节器、排气扇、桑拿灯、背景灯、背部肩部按摩、头顶花洒、手持花洒、防漏电、功能切换、脚按摩。蒸汽桑拿按摩组合。",
     "descriptionEn": "LN-F13 hemlock sauna combination, size 1800x1200x2000mm or 2000x1300x2000mm available, customizable. Premium hemlock wood, medium combination sauna room. Features sauna stove 3KW, steam generator 3KW, radio, phone interface, power box, temp display/adjuster, time display/adjuster, exhaust fan, sauna light, background light, back/shoulder massage, overhead/hand shower, leakage protection, function switch, foot massage. Steam sauna massage combination.",
     "images": [
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXLN-F13.png"
     ],
     "specifications": {
       "尺寸": "1800x1200x2000mm / 2000x1300x2000mm",
@@ -4657,16 +4345,24 @@
         "蒸汽桑拿组合",
         "LN-F13",
         "SEWOO"
+      ],
+      "keywordsEn": [
+        "sauna room",
+        "sauna room set",
+        "hemlock sauna room",
+        "steam sauna set",
+        "LN-F13",
+        "SEWOO"
       ]
     },
     "createdAt": "2026-06-24",
-    "updatedAt": "2026-06-24",
+    "updatedAt": "2026-06-25",
     "documents": {
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
     },
     "specificationsEn": {
       "Size": "1800x1200x2000mm / 2000x1300x2000mm",
@@ -4701,13 +4397,12 @@
     "slug": "ln-f09-sauna-combo",
     "category": "蒸汽房与桑拿房",
     "subcategory": "桑拿房组合",
-    "name": "LN-F09 白松木桑拿房组合",
-    "nameEn": "LN-F09 White Pine Sauna Combination",
+    "name": "SEWOO-LN-F09 白松木桑拿房组合",
+    "nameEn": "SEWOO-LN-F09 White Pine Sauna Combination",
     "description": "LN-F09白松木桑拿房组合，尺寸4500x1500x2150mm，可非标定制。采用优质白松木材质，超大组合式桑拿房。配备桑拿炉3KW、蒸汽器3KW、收音机、电话接口、电源盒、温度显示器/调节器、时间显示器/调节器、排气扇、桑拿灯、背景灯、背部肩部按摩、头顶花洒、手持花洒、防漏电、功能切换、脚按摩。超大空间蒸汽桑拿按摩组合豪华SPA。",
     "descriptionEn": "LN-F09 white pine sauna combination, size 4500x1500x2150mm, customizable. Premium white pine wood, extra-large combination sauna room. Features sauna stove 3KW, steam generator 3KW, radio, phone interface, power box, temp display/adjuster, time display/adjuster, exhaust fan, sauna light, background light, back/shoulder massage, overhead/hand shower, leakage protection, function switch, foot massage. Extra-large steam sauna massage combination luxury SPA.",
     "images": [
-      "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800",
-      "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXLN-F09.png"
     ],
     "specifications": {
       "尺寸": "4500x1500x2150mm",
@@ -4749,16 +4444,24 @@
         "蒸汽桑拿组合",
         "LN-F09",
         "SEWOO"
+      ],
+      "keywordsEn": [
+        "Sauna Room",
+        "Sauna Room Set",
+        "White Pine Sauna Room",
+        "Steam Sauna Set",
+        "LN-F09",
+        "SEWOO"
       ]
     },
     "createdAt": "2026-06-24",
-    "updatedAt": "2026-06-24",
+    "updatedAt": "2026-06-25",
     "documents": {
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
     },
     "specificationsEn": {
       "Size": "4500x1500x2150mm",
@@ -4794,13 +4497,12 @@
     "slug": "ln-f10-sauna-combo",
     "category": "蒸汽房与桑拿房",
     "subcategory": "桑拿房组合",
-    "name": "LN-F10 白松木桑拿房组合",
-    "nameEn": "LN-F10 White Pine Sauna Combination",
+    "name": "SEWOO-LN-F10 白松木桑拿房组合",
+    "nameEn": "SEWOO-LN-F10 White Pine Sauna Combination",
     "description": "LN-F10白松木桑拿房组合，尺寸3000x1500x2100mm，可非标定制。采用优质白松木材质，大型组合式桑拿房。配备桑拿炉3KW、蒸汽器3KW、收音机、电话接口、电源盒、温度显示器/调节器、时间显示器/调节器、排气扇、桑拿灯、背景灯、背部肩部按摩、头顶花洒、手持花洒、防漏电、功能切换、脚按摩。蒸汽桑拿按摩组合豪华SPA。",
     "descriptionEn": "LN-F10 white pine sauna combination, size 3000x1500x2100mm, customizable. Premium white pine wood, large combination sauna room. Features sauna stove 3KW, steam generator 3KW, radio, phone interface, power box, temp display/adjuster, time display/adjuster, exhaust fan, sauna light, background light, back/shoulder massage, overhead/hand shower, leakage protection, function switch, foot massage. Steam sauna massage combination luxury SPA.",
     "images": [
-      "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=800",
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXLN-F10.png"
     ],
     "specifications": {
       "尺寸": "3000x1500x2100mm",
@@ -4841,16 +4543,24 @@
         "蒸汽桑拿组合",
         "LN-F10",
         "SEWOO"
+      ],
+      "keywordsEn": [
+        "sauna room",
+        "sauna room combination",
+        "white pine sauna room",
+        "steam sauna combination",
+        "LN-F10",
+        "SEWOO"
       ]
     },
     "createdAt": "2026-06-24",
-    "updatedAt": "2026-06-24",
+    "updatedAt": "2026-06-25",
     "documents": {
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
     },
     "specificationsEn": {
       "Size": "3000x1500x2100mm",
@@ -4885,13 +4595,12 @@
     "slug": "ln-f11-sauna-combo",
     "category": "蒸汽房与桑拿房",
     "subcategory": "桑拿房组合",
-    "name": "LN-F11 白松木桑拿房组合",
-    "nameEn": "LN-F11 White Pine Sauna Combination",
+    "name": "SEWOO-LN-F11 白松木桑拿房组合",
+    "nameEn": "SEWOO-LN-F11 White Pine Sauna Combination",
     "description": "LN-F11白松木桑拿房组合，尺寸2300x1100x2000mm，可非标定制。采用优质白松木材质，中型组合式桑拿房。配备桑拿炉3KW、蒸汽器3KW、收音机、电话接口、电源盒、温度显示器/调节器、时间显示器/调节器、排气扇、桑拿灯、背景灯、背部肩部按摩、头顶花洒、手持花洒、防漏电、功能切换、脚按摩。蒸汽桑拿按摩组合。",
     "descriptionEn": "LN-F11 white pine sauna combination, size 2300x1100x2000mm, customizable. Premium white pine wood, medium combination sauna room. Features sauna stove 3KW, steam generator 3KW, radio, phone interface, power box, temp display/adjuster, time display/adjuster, exhaust fan, sauna light, background light, back/shoulder massage, overhead/hand shower, leakage protection, function switch, foot massage. Steam sauna massage combination.",
     "images": [
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXLN-F11.png"
     ],
     "specifications": {
       "尺寸": "2300x1100x2000mm",
@@ -4932,16 +4641,24 @@
         "蒸汽桑拿组合",
         "LN-F11",
         "SEWOO"
+      ],
+      "keywordsEn": [
+        "Sauna room",
+        "sauna room combination",
+        "white pine sauna room",
+        "steam sauna combination",
+        "LN-F11",
+        "SEWOO"
       ]
     },
     "createdAt": "2026-06-24",
-    "updatedAt": "2026-06-24",
+    "updatedAt": "2026-06-25",
     "documents": {
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
     },
     "specificationsEn": {
       "Size": "2300x1100x2000mm",
