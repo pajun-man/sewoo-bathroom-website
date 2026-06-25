@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { useEffect } from "react";
-import { Analytics as VercelAnalytics } from "@vercel/analytics/react";
 import Layout from "./components/layout/Layout";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
@@ -84,7 +83,6 @@ function App() {
             <Route path="/export-data" element={<ExportData />} />
             <Route path="/reset" element={<ResetPage />} />
           </Routes>
-          <VercelAnalytics />
         </Router>
       </HelmetProvider>
     </I18nProvider>

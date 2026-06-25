@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Settings, Package, Palette, FileText, Building, Upload, X, Plus, Save, Edit2, Trash2, Mail, MessageSquare, FolderOpen, Download, FileImage, Phone, Calendar, Share2, Check, ChevronDown, ChevronRight, Leaf, Menu, Image as ImageIcon, Tags, Pencil, Database, RefreshCw, Copy as CopyIcon } from 'lucide-react';
 import defaultFactories from '../data/factories.json';
 import defaultProducts from '../data/products.json';
+import defaultCategories from '../data/categories.json';
 
 interface Product {
   id: string;
@@ -227,6 +228,10 @@ const Admin: React.FC = () => {
     },
   });
   const [newSubcategory, setNewSubcategory] = useState('');
+  const [newSubcategoryEn, setNewSubcategoryEn] = useState('');
+  const [editingSubcategoryId, setEditingSubcategoryId] = useState<string | null>(null);
+  const [editSubName, setEditSubName] = useState('');
+  const [editSubNameEn, setEditSubNameEn] = useState('');
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
 
   const [partners, setPartners] = useState<{ id: string; name: string; nameEn: string; logo: string; isEditing?: boolean }[]>([
@@ -343,26 +348,32 @@ const Admin: React.FC = () => {
     const savedDeletedProducts = localStorage.getItem('deletedProducts');
     const deletedIds: string[] = savedDeletedProducts ? JSON.parse(savedDeletedProducts) : [];
 
+    let mergedProducts = [...defaultProducts];
     if (savedProducts) {
-      const parsedProducts = JSON.parse(savedProducts);
-      let mergedProducts = [...defaultProducts];
-      // 先合并 localStorage 的更新数据
-      parsedProducts.forEach((p: any) => {
-        const existingIndex = mergedProducts.findIndex((mp: any) => mp.id === p.id);
-        if (existingIndex >= 0) {
-          mergedProducts[existingIndex] = p;
-        } else {
-          mergedProducts.push(p);
+      try {
+        const parsedProducts = JSON.parse(savedProducts);
+        if (Array.isArray(parsedProducts)) {
+          parsedProducts.forEach((p: any) => {
+            const existingIndex = mergedProducts.findIndex((mp: any) => mp.id === p.id);
+            if (existingIndex >= 0) {
+              mergedProducts[existingIndex] = p;
+            } else {
+              mergedProducts.push(p);
+            }
+          });
         }
-      });
-      // 过滤掉已删除的产品
-      mergedProducts = mergedProducts.filter((p: any) => !deletedIds.includes(p.id));
-      setProductList(mergedProducts as Product[]);
-    } else {
-      // 没有保存的产品数据，但可能有删除记录，也需要过滤
-      const filteredProducts = defaultProducts.filter((p: any) => !deletedIds.includes(p.id));
-      setProductList(filteredProducts as Product[]);
+      } catch (error) {
+        console.error('Failed to parse saved products:', error);
+      }
     }
+    const filteredProducts = mergedProducts.filter((p: any) => !deletedIds.includes(p.id));
+    const seenIds = new Set<string>();
+    const uniqueProducts = filteredProducts.filter((p: any) => {
+      if (!p.id || seenIds.has(p.id)) return false;
+      seenIds.add(p.id);
+      return true;
+    });
+    setProductList(uniqueProducts as Product[]);
     if (savedInspirations) setInspirationList(JSON.parse(savedInspirations));
     if (savedPages) {
       const parsedPages = JSON.parse(savedPages);
@@ -397,44 +408,33 @@ const Admin: React.FC = () => {
     initCategories();
     
     function initCategories() {
-      const defaultCategories: Category[] = [
-        { id: 'cat-1', name: '淋浴房', nameEn: 'Shower Enclosures', subcategories: [
-          { id: 'sub-1-1', name: '整体淋浴房', nameEn: 'Integrated Shower' },
-          { id: 'sub-1-2', name: '淋浴屏风', nameEn: 'Shower Screen' },
-          { id: 'sub-1-3', name: '淋浴房底座', nameEn: 'Shower Base' },
-        ]},
-        { id: 'cat-2', name: '马桶', nameEn: 'Toilets', subcategories: [
-          { id: 'sub-2-1', name: '连体马桶', nameEn: 'One-Piece Toilet' },
-          { id: 'sub-2-2', name: '分体马桶', nameEn: 'Two-Piece Toilet' },
-          { id: 'sub-2-3', name: '壁挂马桶', nameEn: 'Wall Hung Toilet' },
-        ]},
-        { id: 'cat-3', name: '盆', nameEn: 'Basins', subcategories: [
-          { id: 'sub-3-1', name: '台上盆', nameEn: 'Countertop Basin' },
-          { id: 'sub-3-2', name: '台下盆', nameEn: 'Undermount Basin' },
-          { id: 'sub-3-3', name: '立柱盆', nameEn: 'Pedestal Basin' },
-          { id: 'sub-3-4', name: '一体盆', nameEn: 'Integrated Basin' },
-        ]},
-        { id: 'cat-4', name: '智能马桶', nameEn: 'Smart Toilets', subcategories: [
-          { id: 'sub-4-1', name: '全自动智能马桶', nameEn: 'All-in-One Smart Toilet' },
-          { id: 'sub-4-2', name: '智能马桶盖', nameEn: 'Smart Seat Cover' },
-          { id: 'sub-4-3', name: '智能小便斗', nameEn: 'Smart Urinal' },
-        ]},
-        { id: 'cat-5', name: '花洒', nameEn: 'Showers', subcategories: [
-          { id: 'sub-5-1', name: '淋浴花洒套装', nameEn: 'Shower Set' },
-          { id: 'sub-5-2', name: '手持花洒', nameEn: 'Handheld Shower' },
-          { id: 'sub-5-3', name: '头顶花洒', nameEn: 'Rain Shower' },
-          { id: 'sub-5-4', name: '淋浴龙头', nameEn: 'Shower Mixer' },
-        ]},
-        { id: 'cat-6', name: '其他产品', nameEn: 'Other Products', subcategories: [
-          { id: 'sub-6-1', name: '浴室家具', nameEn: 'Bathroom Furniture' },
-          { id: 'sub-6-2', name: '浴室柜', nameEn: 'Bathroom Cabinet' },
-          { id: 'sub-6-3', name: '镜柜', nameEn: 'Mirror Cabinet' },
-          { id: 'sub-6-4', name: '五金配件', nameEn: 'Hardware Accessories' },
-          { id: 'sub-6-5', name: '地漏', nameEn: 'Floor Drain' },
-        ]},
-      ];
-      setCategories(defaultCategories);
-      localStorage.setItem('categories', JSON.stringify(defaultCategories));
+      // 从JSON文件导入默认分类作为基础
+      const jsonCategories = defaultCategories;
+      
+      if (savedCategories) {
+        try {
+          const parsedCategories = JSON.parse(savedCategories);
+          if (Array.isArray(parsedCategories)) {
+            // 合并：JSON中的新分类追加，已有分类保持localStorage版本
+            const mergedCategories = [...parsedCategories];
+            jsonCategories.forEach((cat: any) => {
+              const existingIndex = mergedCategories.findIndex((mc: any) => mc.id === cat.id);
+              if (existingIndex < 0) {
+                mergedCategories.push(cat);
+              }
+            });
+            setCategories(mergedCategories);
+          } else {
+            setCategories(jsonCategories);
+          }
+        } catch (error) {
+          console.error('Failed to parse saved categories:', error);
+          setCategories(jsonCategories);
+        }
+      } else {
+        setCategories(jsonCategories);
+        localStorage.setItem('categories', JSON.stringify(jsonCategories));
+      }
     }
 
     if (!localStorage.getItem('pages')) {
@@ -590,25 +590,43 @@ const Admin: React.FC = () => {
       .replace(/--+/g, '-');
   };
 
-  const handleSaveProduct = () => {
-    if (!editingProduct) return;
-    
-    const isNewProduct = !productList.some(p => p.id === editingProduct.id);
-    const productWithSlug = {
-      ...editingProduct,
-      slug: editingProduct.slug || generateSlug(editingProduct.name),
-      updatedAt: new Date().toISOString().split('T')[0],
-      createdAt: isNewProduct ? new Date().toISOString().split('T')[0] : editingProduct.createdAt,
-    };
+  const [isSavingProduct, setIsSavingProduct] = useState(false);
 
-    const updatedList = isNewProduct 
-      ? [...productList, productWithSlug]
-      : productList.map(p => p.id === editingProduct.id ? productWithSlug : p);
+  const handleSaveProduct = () => {
+    if (!editingProduct || isSavingProduct) return;
     
-    setProductList(updatedList);
-    localStorage.setItem('products', JSON.stringify(updatedList));
-    setEditingProduct(null);
-    alert('产品保存成功！');
+    setIsSavingProduct(true);
+    
+    try {
+      const isNewProduct = !productList.some(p => p.id === editingProduct.id);
+      const productWithSlug = {
+        ...editingProduct,
+        slug: editingProduct.slug || generateSlug(editingProduct.name),
+        updatedAt: new Date().toISOString().split('T')[0],
+        createdAt: isNewProduct ? new Date().toISOString().split('T')[0] : editingProduct.createdAt,
+      };
+
+      let updatedList: Product[];
+      if (isNewProduct) {
+        updatedList = [...productList, productWithSlug];
+      } else {
+        updatedList = productList.map(p => p.id === editingProduct.id ? productWithSlug : p);
+      }
+      
+      const seenIds = new Set<string>();
+      const uniqueList = updatedList.filter(p => {
+        if (seenIds.has(p.id)) return false;
+        seenIds.add(p.id);
+        return true;
+      });
+    
+      setProductList(uniqueList);
+      localStorage.setItem('products', JSON.stringify(uniqueList));
+      setEditingProduct(null);
+      alert('产品保存成功！');
+    } finally {
+      setIsSavingProduct(false);
+    }
   };
 
   const handleDeleteProduct = (id: string) => {
@@ -798,11 +816,41 @@ const Admin: React.FC = () => {
 
   const addSubcategory = () => {
     if (newSubcategory.trim() && editingCategory) {
-      const newSub = { id: `${editingCategory.id}-${Date.now()}`, name: newSubcategory.trim(), nameEn: '' };
+      const newSub = { 
+        id: `${editingCategory.id}-${Date.now()}`, 
+        name: newSubcategory.trim(), 
+        nameEn: newSubcategoryEn.trim() || newSubcategory.trim() 
+      };
       const updatedCategory = { ...editingCategory, subcategories: [...editingCategory.subcategories, newSub] };
       setEditingCategory(updatedCategory);
       setNewSubcategory('');
+      setNewSubcategoryEn('');
     }
+  };
+
+  const startEditSubcategory = (sub: { id: string; name: string; nameEn: string }) => {
+    setEditingSubcategoryId(sub.id);
+    setEditSubName(sub.name);
+    setEditSubNameEn(sub.nameEn || '');
+  };
+
+  const saveEditSubcategory = () => {
+    if (!editingSubcategoryId || !editingCategory || !editSubName.trim()) return;
+    const updatedSubs = editingCategory.subcategories.map(s => 
+      s.id === editingSubcategoryId 
+        ? { ...s, name: editSubName.trim(), nameEn: editSubNameEn.trim() || editSubName.trim() }
+        : s
+    );
+    setEditingCategory({ ...editingCategory, subcategories: updatedSubs });
+    setEditingSubcategoryId(null);
+    setEditSubName('');
+    setEditSubNameEn('');
+  };
+
+  const cancelEditSubcategory = () => {
+    setEditingSubcategoryId(null);
+    setEditSubName('');
+    setEditSubNameEn('');
   };
 
   const addFeature = () => {
@@ -1758,26 +1806,83 @@ const Admin: React.FC = () => {
 
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-2">子分类</label>
-                      <div className="flex flex-wrap gap-2">
-                        {(editingCategory.subcategories || []).map((sub, index) => (
-                          <span key={sub.id} className="inline-flex items-center px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">
-                            {sub.name}
-                            <button onClick={() => {
-                              const newSubs = editingCategory.subcategories.filter(s => s.id !== sub.id);
-                              setEditingCategory({ ...editingCategory, subcategories: newSubs });
-                            }} className="ml-1 hover:text-green-600">
-                              <X className="w-3 h-3" />
-                            </button>
-                          </span>
+                      <div className="space-y-3">
+                        {(editingCategory.subcategories || []).map((sub) => (
+                          editingSubcategoryId === sub.id ? (
+                            <div key={sub.id} className="flex items-center gap-2 p-2 bg-green-50 rounded-lg border border-green-200">
+                              <input
+                                type="text"
+                                value={editSubName}
+                                onChange={(e) => setEditSubName(e.target.value)}
+                                className="flex-1 px-3 py-1.5 border border-gray-300 rounded text-sm"
+                                placeholder="中文名"
+                              />
+                              <input
+                                type="text"
+                                value={editSubNameEn}
+                                onChange={(e) => setEditSubNameEn(e.target.value)}
+                                className="flex-1 px-3 py-1.5 border border-gray-300 rounded text-sm"
+                                placeholder="英文名"
+                              />
+                              <button
+                                onClick={saveEditSubcategory}
+                                className="p-1.5 text-green-600 hover:bg-green-100 rounded"
+                                title="保存"
+                              >
+                                <Check className="w-4 h-4" />
+                              </button>
+                              <button
+                                onClick={cancelEditSubcategory}
+                                className="p-1.5 text-gray-400 hover:bg-gray-100 rounded"
+                                title="取消"
+                              >
+                                <X className="w-4 h-4" />
+                              </button>
+                            </div>
+                          ) : (
+                            <div key={sub.id} className="flex items-center justify-between p-2 bg-green-50 rounded-lg">
+                              <div className="flex items-center gap-2">
+                                <span className="text-green-800 font-medium text-sm">{sub.name}</span>
+                                <span className="text-green-600 text-xs">/ {sub.nameEn || sub.name}</span>
+                              </div>
+                              <div className="flex items-center gap-1">
+                                <button
+                                  onClick={() => startEditSubcategory(sub)}
+                                  className="p-1 text-green-600 hover:bg-green-100 rounded"
+                                  title="编辑"
+                                >
+                                  <Pencil className="w-3.5 h-3.5" />
+                                </button>
+                                <button
+                                  onClick={() => {
+                                    const newSubs = editingCategory.subcategories.filter(s => s.id !== sub.id);
+                                    setEditingCategory({ ...editingCategory, subcategories: newSubs });
+                                  }}
+                                  className="p-1 text-red-500 hover:bg-red-50 rounded"
+                                  title="删除"
+                                >
+                                  <X className="w-3.5 h-3.5" />
+                                </button>
+                              </div>
+                            </div>
+                          )
                         ))}
-                        <div className="flex items-center space-x-2">
+                        <div className="flex items-center gap-2 pt-2 border-t border-gray-100">
                           <input
                             type="text"
                             value={newSubcategory}
                             onChange={(e) => setNewSubcategory(e.target.value)}
                             onKeyPress={(e) => e.key === 'Enter' && addSubcategory()}
-                            className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 w-32"
-                            placeholder="添加子分类..."
+                            className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 text-sm"
+                            placeholder="子分类中文名"
+                          />
+                          <input
+                            type="text"
+                            value={newSubcategoryEn}
+                            onChange={(e) => setNewSubcategoryEn(e.target.value)}
+                            onKeyPress={(e) => e.key === 'Enter' && addSubcategory()}
+                            className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 text-sm"
+                            placeholder="子分类英文名"
                           />
                           <button onClick={addSubcategory} className="px-3 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-800">
                             <Plus className="w-4 h-4" />

@@ -1,22 +1,43 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import SEO from '../components/seo/SEO';
 import ProductCard from '../components/ui/ProductCard';
 import ProductLayout from '../components/layout/ProductLayout';
 import { ArrowLeft } from 'lucide-react';
 import defaultProducts from '../data/products.json';
+import defaultCategories from '../data/categories.json';
 import { useI18n } from '../contexts/I18nContext';
 
 const Subcategory = () => {
   const { lang } = useI18n();
   const { subcategory } = useParams();
   const [productList, setProductList] = useState<any[]>([]);
+  const [categories, setCategories] = useState<any[]>(defaultCategories);
   
   useEffect(() => {
     const savedProducts = localStorage.getItem('products');
     const savedDeletedProducts = localStorage.getItem('deletedProducts');
+    const savedCategories = localStorage.getItem('categories');
     const deletedIds: string[] = savedDeletedProducts ? JSON.parse(savedDeletedProducts) : [];
     let mergedProducts = [...defaultProducts];
+    
+    if (savedCategories) {
+      try {
+        const parsed = JSON.parse(savedCategories);
+        if (Array.isArray(parsed)) {
+          const merged = [...parsed];
+          defaultCategories.forEach((cat: any) => {
+            const existingIndex = merged.findIndex((mc: any) => mc.id === cat.id);
+            if (existingIndex < 0) {
+              merged.push(cat);
+            }
+          });
+          setCategories(merged);
+        }
+      } catch (error) {
+        console.error('Failed to parse categories from localStorage:', error);
+      }
+    }
     
     if (savedProducts) {
       try {
@@ -37,7 +58,13 @@ const Subcategory = () => {
     }
     
     mergedProducts = mergedProducts.filter((p: any) => !deletedIds.includes(p.id));
-    setProductList(mergedProducts);
+    const seenIds = new Set<string>();
+    const uniqueProducts = mergedProducts.filter((p: any) => {
+      if (!p.id || seenIds.has(p.id)) return false;
+      seenIds.add(p.id);
+      return true;
+    });
+    setProductList(uniqueProducts);
   }, []);
   
   if (!subcategory) {
@@ -56,42 +83,19 @@ const Subcategory = () => {
   
   const category = productList.find((p: any) => p.subcategory === decodedSubcategory)?.category || '产品';
 
-  const categoryTranslations: Record<string, string> = {
-    '淋浴房': 'Showers',
-    '马桶': 'Toilets',
-    '盆': 'Basins',
-    '智能马桶': 'Smart Toilets',
-    '花洒': 'Showers',
-    '其他产品': 'Others',
-  };
-  
-  const subcategoryTranslations: Record<string, string> = {
-    '整体淋浴房': 'Integrated Shower',
-    '淋浴屏风': 'Shower Screen',
-    '淋浴底座': 'Shower Base',
-    '连体马桶': 'One-Piece Toilet',
-    '分体马桶': 'Two-Piece Toilet',
-    '壁挂马桶': 'Wall Hung Toilet',
-    '台上盆': 'Countertop Basin',
-    '台下盆': 'Undermount Basin',
-    '立柱盆': 'Pedestal Basin',
-    '一体盆': 'Integrated Basin',
-    '全自动智能马桶': 'All-in-One Smart Toilet',
-    '智能马桶盖': 'Smart Seat Cover',
-    '淋浴花洒': 'Rain Shower',
-    '手持花洒': 'Handheld Shower',
-    '淋浴龙头': 'Shower Mixer',
-    '浴室柜': 'Bathroom Cabinet',
-    '五金配件': 'Hardware',
-    '地板': 'Flooring',
-  };
-
   const getCategoryLabel = (cat: string) => {
-    return lang === 'zh' ? cat : categoryTranslations[cat] || cat;
+    if (lang === 'zh') return cat;
+    const found = categories.find((c: any) => c.name === cat);
+    return found?.nameEn || cat;
   };
 
   const getSubcategoryLabel = (subcat: string) => {
-    return lang === 'zh' ? subcat : subcategoryTranslations[subcat] || subcat;
+    if (lang === 'zh') return subcat;
+    for (const cat of categories) {
+      const found = (cat.subcategories || []).find((s: any) => s.name === subcat);
+      if (found) return found.nameEn || subcat;
+    }
+    return subcat;
   };
 
   return (

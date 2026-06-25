@@ -34,12 +34,12 @@ const ProductCard = ({ id, slug, category, name, nameEn, image, description, des
   return (
     <Link to={`/products/${encodeURIComponent(category)}/${slug}`} className="block h-full">
       <div className="group bg-white rounded-lg sm:rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 h-full flex flex-col">
-        <div className="relative aspect-square overflow-hidden">
+        <div className="relative aspect-square overflow-hidden bg-gray-100 flex items-center justify-center">
           <img
             src={image}
             alt={lang === 'zh' ? name : (nameEn || name)}
             loading="lazy"
-            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-500"
           />
           <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300" />
           

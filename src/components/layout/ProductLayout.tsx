@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Filter, ChevronRight } from 'lucide-react';
 import categoriesData from '../../data/categories.json';
@@ -12,32 +13,31 @@ interface ProductLayoutProps {
 const ProductLayout = ({ children, currentCategory, currentSubcategory }: ProductLayoutProps) => {
   const { lang } = useI18n();
   const location = useLocation();
-  const savedCategories = localStorage.getItem('categories');
-  const categories = savedCategories ? JSON.parse(savedCategories) : categoriesData;
+  const [categories, setCategories] = useState<any[]>(categoriesData);
 
-  const subcategoryTranslations: Record<string, string> = {
-    '整体淋浴房': 'Integrated Shower',
-    '淋浴屏风': 'Shower Screen',
-    '淋浴底座': 'Shower Base',
-    '连体马桶': 'One-Piece Toilet',
-    '分体马桶': 'Two-Piece Toilet',
-    '壁挂马桶': 'Wall Hung Toilet',
-    '台上盆': 'Countertop Basin',
-    '台下盆': 'Undermount Basin',
-    '立柱盆': 'Pedestal Basin',
-    '一体盆': 'Integrated Basin',
-    '全自动智能马桶': 'All-in-One Smart Toilet',
-    '智能马桶盖': 'Smart Seat Cover',
-    '淋浴花洒': 'Rain Shower',
-    '手持花洒': 'Handheld Shower',
-    '淋浴龙头': 'Shower Mixer',
-    '浴室柜': 'Bathroom Cabinet',
-    '五金配件': 'Hardware',
-    '地板': 'Flooring',
-  };
+  useEffect(() => {
+    const savedCategories = localStorage.getItem('categories');
+    if (savedCategories) {
+      try {
+        const parsed = JSON.parse(savedCategories);
+        if (Array.isArray(parsed)) {
+          const merged = [...parsed];
+          categoriesData.forEach((cat: any) => {
+            const existingIndex = merged.findIndex((mc: any) => mc.id === cat.id);
+            if (existingIndex < 0) {
+              merged.push(cat);
+            }
+          });
+          setCategories(merged);
+        }
+      } catch (error) {
+        console.error('Failed to parse categories from localStorage:', error);
+      }
+    }
+  }, []);
 
-  const getSubcategoryLabel = (name: string) => {
-    return lang === 'zh' ? name : subcategoryTranslations[name] || name;
+  const getSubcategoryLabel = (subcat: any) => {
+    return lang === 'zh' ? subcat.name : (subcat.nameEn || subcat.name);
   };
 
   // 收集所有分类（用于手机端的横向滚动标签栏）
@@ -45,8 +45,8 @@ const ProductLayout = ({ children, currentCategory, currentSubcategory }: Produc
     { label: lang === 'zh' ? '全部产品' : 'All Products', to: '/products', isActive: !currentCategory && !currentSubcategory },
     ...categories.map((cat: any) => [
       { label: lang === 'zh' ? cat.name : cat.nameEn || cat.name, to: `/products/category/${encodeURIComponent(cat.name)}`, isActive: currentCategory === cat.name },
-      ...(cat.subcategories || []).map((subcat: { id: string; name: string; nameEn: string }) => ({
-        label: getSubcategoryLabel(subcat.name),
+      ...(cat.subcategories || []).map((subcat: any) => ({
+        label: getSubcategoryLabel(subcat),
         to: `/products/subcategory/${encodeURIComponent(subcat.name)}`,
         isActive: currentSubcategory === subcat.name,
       })),
@@ -85,7 +85,7 @@ const ProductLayout = ({ children, currentCategory, currentSubcategory }: Produc
                       {lang === 'zh' ? cat.name : cat.nameEn || cat.name}
                     </Link>
                     <div className="ml-4 space-y-1 pb-2">
-                      {cat.subcategories.map((subcat: { id: string; name: string; nameEn: string }) => (
+                      {cat.subcategories.map((subcat: any) => (
                         <Link
                           key={subcat.id}
                           to={`/products/subcategory/${encodeURIComponent(subcat.name)}`}
@@ -95,7 +95,7 @@ const ProductLayout = ({ children, currentCategory, currentSubcategory }: Produc
                         >
                           <span className="flex items-center">
                             <ChevronRight className="w-3 h-3 mr-1 opacity-50" />
-                            {getSubcategoryLabel(subcat.name)}
+                            {getSubcategoryLabel(subcat)}
                           </span>
                         </Link>
                       ))}

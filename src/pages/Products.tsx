@@ -65,7 +65,13 @@ const Products = () => {
       }
     }
     mergedProducts = mergedProducts.filter((p: any) => !deletedIds.includes(p.id));
-    setProductList(mergedProducts);
+    const seenIds = new Set<string>();
+    const uniqueProducts = mergedProducts.filter((p: any) => {
+      if (!p.id || seenIds.has(p.id)) return false;
+      seenIds.add(p.id);
+      return true;
+    });
+    setProductList(uniqueProducts);
   }, []);
 
   const productsPageConfig = seoConfig.pages.find(p => p.page === 'products');
@@ -99,16 +105,19 @@ const Products = () => {
     }
     if (selectedCertifications.length > 0) {
       filtered = filtered.filter((p: any) => {
-        // 同时检查中英文认证标签
-        const certs = [
-          ...(p.certifications || []),
-          ...(p.certificationsEn || []),
-        ].map((c: string) => c?.trim());
+        const certsZh = Array.isArray(p.certifications) ? p.certifications : [];
+        const certsEn = Array.isArray(p.certificationsEn) ? p.certificationsEn : [];
+        const certs = [...certsZh, ...certsEn].map((c: any) => String(c).trim());
         return selectedCertifications.every(cert => certs.includes(cert));
       });
     }
 
-    return filtered;
+    const seenIds = new Set<string>();
+    return filtered.filter((p: any) => {
+      if (!p.id || seenIds.has(p.id)) return false;
+      seenIds.add(p.id);
+      return true;
+    });
   }, [productList, activeCategory, activeSubcategory, selectedCertifications]);
 
   const toggleCertification = (cert: string) => {

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { useParams, Link, useLocation } from 'react-router-dom';
 import SEO from '../components/seo/SEO';
 import Button from '../components/ui/Button';
@@ -6,6 +6,7 @@ import ProductCard from '../components/ui/ProductCard';
 import ProductLayout from '../components/layout/ProductLayout';
 import { ArrowLeft, Check, Download, FileText, Image, X, CheckCircle } from 'lucide-react';
 import { products } from '../data/loader';
+import defaultCategories from '../data/categories.json';
 import { useI18n } from '../contexts/I18nContext';
 
 const CONTACT_EMAIL = '3312327005@qq.com';
@@ -25,6 +26,28 @@ const ProductDetail = () => {
     message: '',
   });
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+  const [categories, setCategories] = useState<any[]>(defaultCategories);
+
+  useEffect(() => {
+    const savedCategories = localStorage.getItem('categories');
+    if (savedCategories) {
+      try {
+        const parsed = JSON.parse(savedCategories);
+        if (Array.isArray(parsed)) {
+          const merged = [...parsed];
+          defaultCategories.forEach((cat: any) => {
+            const existingIndex = merged.findIndex((mc: any) => mc.id === cat.id);
+            if (existingIndex < 0) {
+              merged.push(cat);
+            }
+          });
+          setCategories(merged);
+        }
+      } catch (error) {
+        console.error('Failed to parse categories from localStorage:', error);
+      }
+    }
+  }, []);
 
   useEffect(() => {
     setActiveImageIndex(0);
@@ -105,42 +128,19 @@ const ProductDetail = () => {
     .filter((p: any) => p.category === product.category && p.id !== product.id)
     .slice(0, 3);
 
-  const categoryTranslations: Record<string, string> = {
-    '淋浴房': 'Showers',
-    '马桶': 'Toilets',
-    '盆': 'Basins',
-    '智能马桶': 'Smart Toilets',
-    '花洒': 'Showers',
-    '其他产品': 'Others',
-  };
-  
-  const subcategoryTranslations: Record<string, string> = {
-    '整体淋浴房': 'Integrated Shower',
-    '淋浴屏风': 'Shower Screen',
-    '淋浴底座': 'Shower Base',
-    '连体马桶': 'One-Piece Toilet',
-    '分体马桶': 'Two-Piece Toilet',
-    '壁挂马桶': 'Wall Hung Toilet',
-    '台上盆': 'Countertop Basin',
-    '台下盆': 'Undermount Basin',
-    '立柱盆': 'Pedestal Basin',
-    '一体盆': 'Integrated Basin',
-    '全自动智能马桶': 'All-in-One Smart Toilet',
-    '智能马桶盖': 'Smart Seat Cover',
-    '淋浴花洒': 'Rain Shower',
-    '手持花洒': 'Handheld Shower',
-    '淋浴龙头': 'Shower Mixer',
-    '浴室柜': 'Bathroom Cabinet',
-    '五金配件': 'Hardware',
-    '地板': 'Flooring',
-  };
-
   const getCategoryLabel = (cat: string) => {
-    return lang === 'zh' ? cat : categoryTranslations[cat] || cat;
+    if (lang === 'zh') return cat;
+    const found = categories.find((c: any) => c.name === cat);
+    return found?.nameEn || cat;
   };
 
   const getSubcategoryLabel = (subcat: string) => {
-    return lang === 'zh' ? subcat : subcategoryTranslations[subcat] || subcat;
+    if (lang === 'zh') return subcat;
+    for (const cat of categories) {
+      const found = (cat.subcategories || []).find((s: any) => s.name === subcat);
+      if (found) return found.nameEn || subcat;
+    }
+    return subcat;
   };
 
   const specTranslations: Record<string, string> = {
@@ -250,11 +250,11 @@ const ProductDetail = () => {
       <ProductLayout currentCategory={product.category} currentSubcategory={product.subcategory}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 mb-12 sm:mb-16">
           <div className="space-y-4">
-            <div className="aspect-square rounded-lg sm:rounded-xl overflow-hidden bg-gray-100 border border-gray-200">
+            <div className="aspect-square rounded-lg sm:rounded-xl overflow-hidden bg-gray-100 border border-gray-200 flex items-center justify-center">
               <img
                 src={product.images[activeImageIndex]}
                 alt={lang === 'zh' ? product.name : (product.nameEn || product.name)}
-                className="w-full h-full object-cover"
+                className="max-w-full max-h-full object-contain"
               />
             </div>
             {product.images.length > 1 && (
@@ -263,7 +263,7 @@ const ProductDetail = () => {
                   <button
                     key={index}
                     onClick={() => setActiveImageIndex(index)}
-                    className={`aspect-square rounded-md sm:rounded-lg overflow-hidden bg-gray-100 border-2 transition-all ${
+                    className={`aspect-square rounded-md sm:rounded-lg overflow-hidden bg-gray-100 border-2 transition-all flex items-center justify-center ${
                       activeImageIndex === index 
                         ? 'border-blue-900 shadow-md' 
                         : 'border-gray-200 hover:border-gray-300'
@@ -273,7 +273,7 @@ const ProductDetail = () => {
                       src={image}
                       alt={`${product.name} ${index + 1}`}
                       loading="lazy"
-                      className="w-full h-full object-cover"
+                      className="max-w-full max-h-full object-contain"
                     />
                   </button>
                 ))}
@@ -285,12 +285,9 @@ const ProductDetail = () => {
             <div className="inline-block bg-blue-100 text-blue-900 px-3 sm:px-4 py-1 rounded-full text-xs sm:text-sm font-medium mb-3 sm:mb-4">
               {getSubcategoryLabel(product.subcategory)}
             </div>
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-1 sm:mb-2 leading-tight">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight">
               {lang === 'zh' ? product.name : product.nameEn || product.name}
             </h1>
-            <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6">
-              {lang === 'zh' ? product.nameEn : product.name}
-            </p>
 
             <p className="text-sm sm:text-lg text-gray-700 mb-6 sm:mb-8 leading-relaxed">
               {lang === 'zh' ? product.description : product.descriptionEn || product.description}

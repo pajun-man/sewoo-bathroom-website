@@ -150,5 +150,32 @@
         "nameEn": "Floor Drain"
       }
     ]
+  },
+  {
+    "id": "cat-7",
+    "name": "蒸汽房与桑拿房",
+    "nameEn": "Steam Room & Sauna Room",
+    "subcategories": [
+      {
+        "id": "sub-7-1",
+        "name": "蒸汽淋浴一体机",
+        "nameEn": "Steam Shower Combo"
+      },
+      {
+        "id": "sub-7-2",
+        "name": "多功能桑拿房",
+        "nameEn": "Multi-function Sauna"
+      },
+      {
+        "id": "sub-7-3",
+        "name": "干蒸桑拿房",
+        "nameEn": "Dry Sauna Room"
+      },
+      {
+        "id": "sub-7-4",
+        "name": "桑拿房组合",
+        "nameEn": "Sauna Combination"
+      }
+    ]
   }
 ]
