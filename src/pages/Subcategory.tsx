@@ -13,6 +13,8 @@ const Subcategory = () => {
   const { subcategory } = useParams();
   const [productList, setProductList] = useState<any[]>([]);
   const [categories, setCategories] = useState<any[]>(defaultCategories);
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 20;
   
   useEffect(() => {
     const savedProducts = localStorage.getItem('products');
@@ -65,7 +67,8 @@ const Subcategory = () => {
       return true;
     });
     setProductList(uniqueProducts);
-  }, []);
+    setCurrentPage(1);
+  }, [subcategory]);
   
   if (!subcategory) {
     return (
@@ -97,6 +100,13 @@ const Subcategory = () => {
     }
     return subcat;
   };
+
+  const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
+  const paginatedProducts = useMemo(() => {
+    const start = (currentPage - 1) * itemsPerPage;
+    const end = start + itemsPerPage;
+    return filteredProducts.slice(start, end);
+  }, [filteredProducts, currentPage]);
 
   return (
     <>
@@ -131,7 +141,7 @@ const Subcategory = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {filteredProducts.map((product: any) => {
+          {paginatedProducts.map((product: any) => {
             const displayCertifications = lang === 'zh' 
               ? (product.certifications || [])
               : (product.certificationsEn || product.certifications || []);
@@ -151,6 +161,36 @@ const Subcategory = () => {
             );
           })}
         </div>
+
+        {totalPages > 1 && (
+          <div className="flex justify-center items-center gap-2 mt-8">
+            <button
+              onClick={() => setCurrentPage(Math.max(1, currentPage - 1))}
+              disabled={currentPage === 1}
+              className={`px-4 py-2 rounded-md border transition-colors ${
+                currentPage === 1
+                  ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
+                  : 'bg-white text-gray-700 hover:bg-gray-50'
+              }`}
+            >
+              {lang === 'zh' ? '上一页' : 'Previous'}
+            </button>
+            <span className="text-sm text-gray-600">
+              {currentPage} {lang === 'zh' ? ' / ' : ' / '} {totalPages}
+            </span>
+            <button
+              onClick={() => setCurrentPage(Math.min(totalPages, currentPage + 1))}
+              disabled={currentPage === totalPages}
+              className={`px-4 py-2 rounded-md border transition-colors ${
+                currentPage === totalPages
+                  ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
+                  : 'bg-white text-gray-700 hover:bg-gray-50'
+              }`}
+            >
+              {lang === 'zh' ? '下一页' : 'Next'}
+            </button>
+          </div>
+        )}
 
         {filteredProducts.length === 0 && (
           <div className="text-center py-20">

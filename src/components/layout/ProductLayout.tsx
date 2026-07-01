@@ -42,7 +42,7 @@ const ProductLayout = ({ children, currentCategory, currentSubcategory }: Produc
 
   // 收集所有分类（用于手机端的横向滚动标签栏）
   const allCategoryChips = [
-    { label: lang === 'zh' ? '全部产品' : 'All Products', to: '/products', isActive: !currentCategory && !currentSubcategory },
+    { label: lang === 'zh' ? '主要产品分类' : 'Featured Products', to: '/products', isActive: !currentCategory && !currentSubcategory },
     ...categories.map((cat: any) => [
       { label: lang === 'zh' ? cat.name : cat.nameEn || cat.name, to: `/products/category/${encodeURIComponent(cat.name)}`, isActive: currentCategory === cat.name },
       ...(cat.subcategories || []).map((subcat: any) => ({
@@ -72,7 +72,7 @@ const ProductLayout = ({ children, currentCategory, currentSubcategory }: Produc
                     !currentCategory && !currentSubcategory ? 'bg-blue-900 text-white' : 'text-gray-700 hover:bg-gray-200'
                   }`}
                 >
-                  {lang === 'zh' ? '全部产品' : 'All Products'}
+                  {lang === 'zh' ? '主要产品分类' : 'Featured Products'}
                 </Link>
                 {categories.map((cat: any) => (
                   <div key={cat.name} className="space-y-1">

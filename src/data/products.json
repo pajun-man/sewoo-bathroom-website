@@ -274,90 +274,6 @@
     "updatedAt": "2024-01-24"
   },
   {
-    "id": "9",
-    "slug": "ceramic-one-piece-toilet",
-    "category": "马桶",
-    "subcategory": "连体马桶",
-    "name": "Ceramic 连体马桶",
-    "nameEn": "Ceramic One-Piece Toilet",
-    "description": "经典连体马桶设计，优质陶瓷材质，静音冲水，节水环保，适合各种风格浴室。",
-    "descriptionEn": "Classic one-piece toilet design with premium ceramic, quiet flushing, water-saving, suitable for all bathroom styles.",
-    "images": [
-      "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
-    ],
-    "specifications": {
-      "材质": "优质陶瓷",
-      "坑距": "300mm/400mm",
-      "冲水方式": "虹吸式",
-      "用水量": "4.8L",
-      "保修": "5年"
-    },
-    "features": [
-      "虹吸静音冲水",
-      "节水设计",
-      "釉面自洁",
-      "易安装"
-    ],
-    "seo": {
-      "title": "Ceramic 连体马桶 - SEWOO 高端卫浴",
-      "titleEn": "Ceramic One-Piece Toilet - SEWOO Premium Bath",
-      "description": "SEWOO Ceramic 连体马桶，虹吸静音冲水，节水环保，适合各种风格浴室。",
-      "descriptionEn": "SEWOO Ceramic one-piece toilet with siphonic flushing. Water-saving and quiet.",
-      "keywords": [
-        "连体马桶",
-        "陶瓷马桶",
-        "虹吸马桶",
-        "Ceramic",
-        "SEWOO"
-      ]
-    },
-    "createdAt": "2024-01-11",
-    "updatedAt": "2024-01-25"
-  },
-  {
-    "id": "10",
-    "slug": "wall-hung-toilet",
-    "category": "马桶",
-    "subcategory": "壁挂马桶",
-    "name": "Wall Hung 壁挂马桶",
-    "nameEn": "Wall Hung Toilet",
-    "description": "壁挂式马桶设计，隐藏式水箱，节省空间，清洁方便，适合现代简约风格浴室。",
-    "descriptionEn": "Wall hung toilet design with hidden cistern, space-saving, easy to clean, perfect for modern minimalist bathrooms.",
-    "images": [
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800",
-      "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800"
-    ],
-    "specifications": {
-      "材质": "优质陶瓷",
-      "承重": "400kg",
-      "冲水方式": "入墙式",
-      "用水量": "4.5L",
-      "保修": "5年"
-    },
-    "features": [
-      "隐藏式水箱",
-      "节省空间",
-      "清洁方便",
-      "现代设计"
-    ],
-    "seo": {
-      "title": "Wall Hung 壁挂马桶 - SEWOO 高端卫浴",
-      "titleEn": "Wall Hung Toilet - SEWOO Premium Bath",
-      "description": "SEWOO Wall Hung 壁挂马桶，隐藏式水箱，节省空间，清洁方便，适合现代简约风格浴室。",
-      "descriptionEn": "SEWOO Wall Hung toilet with hidden cistern. Space-saving and easy to clean.",
-      "keywords": [
-        "壁挂马桶",
-        "悬挂马桶",
-        "入墙马桶",
-        "Wall Hung",
-        "SEWOO"
-      ]
-    },
-    "createdAt": "2024-01-12",
-    "updatedAt": "2024-01-26"
-  },
-  {
     "id": "13",
     "slug": "smart-toilet-2230b",
     "category": "智能马桶",
@@ -4693,30 +4609,29 @@
     "slug": "sewoo-8627-washdown-tornado-toilet",
     "category": "马桶",
     "subcategory": "连体马桶",
-    "name": "SEWOO-8627 喷射虹吸式连体马桶",
+    "name": "SEWOO-8627 直冲单孔超漩式连体马桶",
     "nameEn": "SEWOO-8627 Washdown Tornado One-Piece Toilet",
-    "description": "SEWOO 8627系列喷射式（Washdown Tornado）连体马桶，685x370x780mm尺寸。S-trap坑距可选100/150/200/250mm，P-trap坑距180mm。UF马桶盖配置。高效冲水，节水环保，适合各种风格浴室。",
-    "descriptionEn": "SEWOO 8627 series washdown tornado one-piece toilet, dimensions 685x370x780mm. S-trap: 100/150/200/250mm, P-trap: 180mm. UF seat cover configuration. Efficient flushing, water-saving, suitable for various bathroom styles.",
+    "description": "SEWOO 8627直冲单孔超漩式（Washdown Tornado）连体马桶，685x370x780mm尺寸。S-trap坑距可选100/150/200/250mm，P-trap坑距180mm。UF马桶盖配置。高效冲水，节水环保，适合各种风格浴室",
+    "descriptionEn": "SEWOO 8627 series washdown tornado one-piece toilet, dimensions 685x370x780mm. S-trap: 100/150/200/250mm, P-trap: 180mm. UF seat cover configuration. Efficient flushing, water-saving, suitable for various bathroom styles",
     "images": [
-      "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX8627.png"
     ],
     "specifications": {
       "类型": "连体马桶（一件式）",
-      "冲水方式": "Washdown Tornado 喷射虹吸",
       "尺寸": "685x370x780mm",
       "S-trap坑距": "100/150/200/250mm",
       "P-trap坑距": "180mm",
       "马桶盖": "UF软盖",
       "材质": "优质陶瓷",
-      "保修": "5年"
+      "保修": "5年",
+      "冲水方式": "直冲单孔超漩式"
     },
     "features": [
-      "喷射虹吸高效冲水",
       "多种坑距可选",
       "UF软盖舒适耐用",
       "节水环保",
-      "易清洁釉面"
+      "易清洁釉面",
+      "直冲单孔超漩高效冲水"
     ],
     "certifications": [
       "ISO9001",
@@ -4725,13 +4640,13 @@
       "CE"
     ],
     "seo": {
-      "title": "SEWOO-8627 喷射虹吸式连体马桶 - SEWOO 高端卫浴",
+      "title": "SEWOO-8627 直冲单孔超漩式连体马桶 - SEWOO 高端卫浴",
       "titleEn": "SEWOO-8627 Washdown Tornado One-Piece Toilet - SEWOO Premium Bath",
-      "description": "SEWOO 8627系列喷射式连体马桶，685x370x780mm，S-trap/P-trap多种坑距可选。高效冲水，节水环保。",
-      "descriptionEn": "SEWOO 8627 series washdown tornado one-piece toilet with multiple trap options. Efficient flushing and water-saving.",
+      "description": "SEWOO 8627直冲单孔超漩式（Washdown Tornado）连体马桶，685x370x780mm尺寸。S-trap坑距可选100/150/200/250mm，P-trap坑距180mm。UF马桶盖配置。高效冲水，节水环保，适合各种风格浴室",
+      "descriptionEn": "SEWOO 8627 series washdown tornado one-piece toilet, dimensions 685x370x780mm. S-trap: 100/150/200/250mm, P-trap: 180mm. UF seat cover configuration. Efficient flushing, water-saving, suitable for various bathroom styles",
       "keywords": [
         "连体马桶",
-        "喷射虹吸",
+        "直冲单孔超漩",
         "Washdown Tornado",
         "8627",
         "SEWOO"
@@ -4744,14 +4659,37 @@
       ]
     },
     "createdAt": "2026-06-25",
-    "updatedAt": "2026-06-25",
+    "updatedAt": "2026-06-26",
     "documents": {
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
-    }
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
+    },
+    "specificationsEn": {
+      "Type": "One-Piece Toilet",
+      "Dimensions": "685x370x780mm",
+      "S-trap Rough-in": "100/150/200/250mm",
+      "P-trap Rough-in": "180mm",
+      "Seat Cover": "UF Soft Close Seat",
+      "Material": "Premium Ceramic",
+      "Warranty": "5 Years",
+      "Flushing System": "Washdown Tornado"
+    },
+    "featuresEn": [
+      "Washdown tornado efficient flushing",
+      "Multiple rough-in options",
+      "UF soft close seat, comfortable and durable",
+      "Water-saving and eco-friendly",
+      "Easy-to-clean glaze"
+    ],
+    "certificationsEn": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ]
   },
   {
     "id": "62",
@@ -4763,8 +4701,7 @@
     "description": "SEWOO 8609C0 妇洗器款连体马桶，680x400x730mm尺寸。S-trap坑距100/150/200/250mm，P-trap坑距180mm。UF马桶盖配置。无阀妇洗设计，安装简便，适合家庭日常使用。",
     "descriptionEn": "SEWOO 8609C0 bidet without valve one-piece toilet, dimensions 680x400x730mm. S-trap: 100/150/200/250mm, P-trap: 180mm. UF seat cover. Valve-free bidet design, easy to install.",
     "images": [
-      "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX8609C0.png"
     ],
     "specifications": {
       "类型": "连体马桶（妇洗器款）",
@@ -4809,14 +4746,37 @@
       ]
     },
     "createdAt": "2026-06-25",
-    "updatedAt": "2026-06-25",
+    "updatedAt": "2026-06-26",
     "documents": {
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
-    }
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
+    },
+    "specificationsEn": {
+      "Type": "One-Piece Toilet (Bidet)",
+      "Bidet Function": "Without Valve",
+      "Dimensions": "680x400x730mm",
+      "S-trap Rough-in": "100/150/200/250mm",
+      "P-trap Rough-in": "180mm",
+      "Seat Cover": "UF Soft Close Seat",
+      "Material": "Premium Ceramic",
+      "Warranty": "5 Years"
+    },
+    "featuresEn": [
+      "Valve-free bidet design",
+      "Multiple rough-in options",
+      "UF soft close seat, comfortable and durable",
+      "Easy installation",
+      "Water-saving and eco-friendly"
+    ],
+    "certificationsEn": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ]
   },
   {
     "id": "63",
@@ -4825,11 +4785,10 @@
     "subcategory": "连体马桶",
     "name": "SEWOO-8609C1 妇洗器带阀款连体马桶",
     "nameEn": "SEWOO-8609C1 Bidet With Valve One-Piece Toilet",
-    "description": "SEWOO 8609C1 妇洗器款连体马桶（带阀），680x400x730mm尺寸。S-trap坑距100/150/200/250mm，P-trap坑距180mm。UF马桶盖配置。C1冷热水分开阀 + C2混水阀可选（需另购）。妇洗功能更完善，提供舒适清洁体验。",
-    "descriptionEn": "SEWOO 8609C1 bidet with valve one-piece toilet, dimensions 680x400x730mm. S-trap: 100/150/200/250mm, P-trap: 180mm. UF seat cover. Optional C1 cold/hot water valve + C2 mixer valve (sold separately). Complete bidet function for comfortable cleaning.",
+    "description": "SEWOO 8609C1 妇洗器款连体马桶（带阀），680x400x730mm尺寸。S-trap坑距100/150/200/250mm，P-trap坑距180mm。UF马桶盖配置。C1冷热水分开阀 + C2混水阀可选（需另购）。妇洗功能更完善，提供舒适清洁体验",
+    "descriptionEn": "SEWOO 8609C1 bidet with valve one-piece toilet, dimensions 680x400x730mm. S-trap: 100/150/200/250mm, P-trap: 180mm. UF seat cover. Optional C1 cold/hot water valve + C2 mixer valve (sold separately). Complete bidet function for comfortable cleaning",
     "images": [
-      "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX8609C1.png"
     ],
     "specifications": {
       "类型": "连体马桶（妇洗器带阀款）",
@@ -4876,31 +4835,55 @@
       ]
     },
     "createdAt": "2026-06-25",
-    "updatedAt": "2026-06-25",
+    "updatedAt": "2026-06-26",
     "documents": {
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
-    }
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
+    },
+    "specificationsEn": {
+      "Type": "One-Piece Toilet (Bidet with Valve)",
+      "Bidet Function": "With Valve",
+      "C1 Valve": "Cold/Hot Water Separate Valve (Optional)",
+      "C2 Valve": "Mixer Valve (Optional)",
+      "Dimensions": "680x400x730mm",
+      "S-trap Rough-in": "100/150/200/250mm",
+      "P-trap Rough-in": "180mm",
+      "Seat Cover": "UF Soft Close Seat",
+      "Material": "Premium Ceramic",
+      "Warranty": "5 Years"
+    },
+    "featuresEn": [
+      "Bidet with valve design",
+      "Cold/hot water separate valve optional",
+      "Mixer valve optional",
+      "Multiple rough-in options",
+      "UF soft close seat, comfortable and durable"
+    ],
+    "certificationsEn": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ]
   },
   {
     "id": "64",
     "slug": "sewoo-8609-washdown-rimless-toilet",
     "category": "马桶",
     "subcategory": "连体马桶",
-    "name": "SEWOO-8609 喷射无圈孔连体马桶",
+    "name": "SEWOO-8609 直冲对冲连体马桶",
     "nameEn": "SEWOO-8609 Washdown Rimless One-Piece Toilet",
-    "description": "SEWOO 8609系列 Washdown Rimless 喷射无圈孔连体马桶，680x400x730mm尺寸。S-trap坑距100/150/200/250mm，P-trap坑距180mm。UF马桶盖配置。无圈孔设计更易清洁，卫生无死角。",
+    "description": "SEWOO 8609系列直冲对冲连体马桶，680x400x730mm尺寸。S-trap坑距100/150/200/250mm，P-trap坑距180mm。UF马桶盖配置。无圈孔设计更易清洁，卫生无死角。",
     "descriptionEn": "SEWOO 8609 series washdown rimless one-piece toilet, dimensions 680x400x730mm. S-trap: 100/150/200/250mm, P-trap: 180mm. UF seat cover. Rimless design for easier cleaning, no hygiene dead corners.",
     "images": [
-      "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX8609.png"
     ],
     "specifications": {
       "类型": "连体马桶（无圈孔）",
-      "冲水方式": "Washdown Rimless 喷射无圈孔",
+      "冲水方式": "直冲对冲",
       "尺寸": "680x400x730mm",
       "S-trap坑距": "100/150/200/250mm",
       "P-trap坑距": "180mm",
@@ -4928,40 +4911,62 @@
       "descriptionEn": "SEWOO 8609 series rimless one-piece toilet with multiple trap options. Hygienic and easy to clean.",
       "keywords": [
         "连体马桶",
-        "无圈孔",
-        "Rimless",
+        "直冲马桶，对冲冲水",
         "8609",
         "SEWOO"
       ],
       "keywordsEn": [
         "one-piece toilet",
+        "washdown toilet",
         "rimless",
         "toilet 8609",
         "SEWOO"
       ]
     },
     "createdAt": "2026-06-25",
-    "updatedAt": "2026-06-25",
+    "updatedAt": "2026-06-26",
     "documents": {
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
-    }
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
+    },
+    "specificationsEn": {
+      "Type": "One-Piece Toilet (Rimless)",
+      "Flushing System": "Washdown Rimless",
+      "Dimensions": "680x400x730mm",
+      "S-trap Rough-in": "100/150/200/250mm",
+      "P-trap Rough-in": "180mm",
+      "Seat Cover": "UF Soft Close Seat",
+      "Material": "Premium Ceramic",
+      "Warranty": "5 Years"
+    },
+    "featuresEn": [
+      "Rimless easy-to-clean design",
+      "Hygienic with no dead corners",
+      "Multiple rough-in options",
+      "UF soft close seat, comfortable and durable",
+      "Water-saving and eco-friendly"
+    ],
+    "certificationsEn": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ]
   },
   {
     "id": "65",
     "slug": "sewoo-8617-washdown-rimless-toilet",
     "category": "马桶",
     "subcategory": "连体马桶",
-    "name": "SEWOO-8617 喷射无圈孔连体马桶",
+    "name": "SEWOO-8617 直冲对冲无框连体马桶",
     "nameEn": "SEWOO-8617 Washdown Rimless One-Piece Toilet",
-    "description": "SEWOO 8617系列 Washdown Rimless 喷射无圈孔连体马桶，665x350x750mm尺寸。S-trap坑距250mm，P-trap坑距180mm。PP马桶盖配置。流线型设计，现代简约风格。",
-    "descriptionEn": "SEWOO 8617 series washdown rimless one-piece toilet, dimensions 665x350x750mm. S-trap: 250mm, P-trap: 180mm. PP seat cover. Streamlined design, modern minimalist style.",
+    "description": "SEWOO 8617系列 Washdown Rimless 直冲对冲无框连体马桶，665x350x750mm尺寸。S-trap坑距250mm，P-trap坑距180mm。PP马桶盖配置。流线型设计，现代简约风格",
+    "descriptionEn": "SEWOO 8617 series washdown rimless one-piece toilet, dimensions 665x350x750mm. S-trap: 250mm, P-trap: 180mm. PP seat cover. Streamlined design, modern minimalist style",
     "images": [
-      "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX8617.png"
     ],
     "specifications": {
       "类型": "连体马桶（无圈孔）",
@@ -4987,13 +4992,13 @@
       "CE"
     ],
     "seo": {
-      "title": "SEWOO-8617 喷射无圈孔连体马桶 - SEWOO 高端卫浴",
+      "title": "SEWOO-8617 直冲对冲无框连体马桶 - SEWOO 高端卫浴",
       "titleEn": "SEWOO-8617 Washdown Rimless One-Piece Toilet - SEWOO Premium Bath",
-      "description": "SEWOO 8617系列无圈孔连体马桶，665x350x750mm，流线型现代设计。",
+      "description": "SEWOO 8617系列直冲对冲无框连体马桶，665x350x750mm，流线型现代设计。",
       "descriptionEn": "SEWOO 8617 series rimless one-piece toilet with streamlined modern design.",
       "keywords": [
         "连体马桶",
-        "无圈孔",
+        "直冲对冲，无框连体",
         "Rimless",
         "8617",
         "SEWOO"
@@ -5006,27 +5011,49 @@
       ]
     },
     "createdAt": "2026-06-25",
-    "updatedAt": "2026-06-25",
+    "updatedAt": "2026-06-30",
     "documents": {
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
-    }
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
+    },
+    "specificationsEn": {
+      "Type": "One-Piece Toilet (Rimless)",
+      "Flushing System": "Washdown Rimless",
+      "Dimensions": "665x350x750mm",
+      "S-trap Rough-in": "250mm",
+      "P-trap Rough-in": "180mm",
+      "Seat Cover": "PP Soft Close Seat",
+      "Material": "Premium Ceramic",
+      "Warranty": "5 Years"
+    },
+    "featuresEn": [
+      "Rimless easy-to-clean design",
+      "Streamlined appearance",
+      "PP soft close seat included",
+      "Modern minimalist style",
+      "Water-saving and eco-friendly"
+    ],
+    "certificationsEn": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ]
   },
   {
     "id": "66",
     "slug": "sewoo-8616-washdown-rimless-toilet",
     "category": "马桶",
     "subcategory": "连体马桶",
-    "name": "SEWOO-8616 喷射无圈孔连体马桶",
+    "name": "SEWOO-8616 直冲对冲无框连体马桶",
     "nameEn": "SEWOO-8616 Washdown Rimless One-Piece Toilet",
-    "description": "SEWOO 8616系列 Washdown Rimless 喷射无圈孔连体马桶，690x375x785mm尺寸。S-trap坑距250mm，P-trap坑距180mm。UF马桶盖配置。方形简约设计，稳重大气。",
+    "description": "SEWOO 8616系列 Washdown Rimless 喷直冲对冲无框连体马桶，690x375x785mm尺寸。S-trap坑距250mm，P-trap坑距180mm。UF马桶盖配置。方形简约设计，稳重大气。",
     "descriptionEn": "SEWOO 8616 series washdown rimless one-piece toilet, dimensions 690x375x785mm. S-trap: 250mm, P-trap: 180mm. UF seat cover. Square minimalist design, stable and elegant.",
     "images": [
-      "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX8616.png"
     ],
     "specifications": {
       "类型": "连体马桶（无圈孔）",
@@ -5052,13 +5079,13 @@
       "CE"
     ],
     "seo": {
-      "title": "SEWOO-8616 喷射无圈孔连体马桶 - SEWOO 高端卫浴",
+      "title": "SEWOO-8616 直冲对冲无框连体马桶 - SEWOO 高端卫浴",
       "titleEn": "SEWOO-8616 Washdown Rimless One-Piece Toilet - SEWOO Premium Bath",
-      "description": "SEWOO 8616系列无圈孔连体马桶，690x375x785mm，方形简约设计。",
+      "description": "SEWOO 8616系列直冲对冲无框连体马桶，690x375x785mm，方形简约设计。",
       "descriptionEn": "SEWOO 8616 series rimless one-piece toilet with square minimalist design.",
       "keywords": [
         "连体马桶",
-        "无圈孔",
+        "直冲对冲无框连体",
         "Rimless",
         "8616",
         "SEWOO"
@@ -5071,27 +5098,49 @@
       ]
     },
     "createdAt": "2026-06-25",
-    "updatedAt": "2026-06-25",
+    "updatedAt": "2026-06-30",
     "documents": {
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
-    }
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
+    },
+    "specificationsEn": {
+      "Type": "One-Piece Toilet (Rimless)",
+      "Flushing System": "Washdown Rimless",
+      "Dimensions": "690x375x785mm",
+      "S-trap Rough-in": "250mm",
+      "P-trap Rough-in": "180mm",
+      "Seat Cover": "UF Soft Close Seat",
+      "Material": "Premium Ceramic",
+      "Warranty": "5 Years"
+    },
+    "featuresEn": [
+      "Rimless easy-to-clean design",
+      "Square minimalist appearance",
+      "UF soft close seat included",
+      "Stable and elegant",
+      "Water-saving and eco-friendly"
+    ],
+    "certificationsEn": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ]
   },
   {
     "id": "67",
     "slug": "sewoo-8615-washdown-rimless-toilet",
     "category": "马桶",
     "subcategory": "连体马桶",
-    "name": "SEWOO-8615 喷射无圈孔连体马桶",
+    "name": "SEWOO-8615 直冲对冲无框连体马桶",
     "nameEn": "SEWOO-8615 Washdown Rimless One-Piece Toilet",
-    "description": "SEWOO 8615系列 Washdown Rimless 喷射无圈孔连体马桶，700x375x760mm尺寸。S-trap坑距250mm，P-trap坑距180mm。UF马桶盖配置。紧凑设计，节省空间，适合小户型浴室。",
+    "description": "SEWOO 8615系列 Washdown Rimless直冲对冲无框连体马桶，700x375x760mm尺寸。S-trap坑距250mm，P-trap坑距180mm。UF马桶盖配置。紧凑设计，节省空间，适合小户型浴室。",
     "descriptionEn": "SEWOO 8615 series washdown rimless one-piece toilet, dimensions 700x375x760mm. S-trap: 250mm, P-trap: 180mm. UF seat cover. Compact design, space-saving, suitable for small bathrooms.",
     "images": [
-      "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX8615.png"
     ],
     "specifications": {
       "类型": "连体马桶（无圈孔）",
@@ -5117,13 +5166,13 @@
       "CE"
     ],
     "seo": {
-      "title": "SEWOO-8615 喷射无圈孔连体马桶 - SEWOO 高端卫浴",
+      "title": "SEWOO-8615 直冲对冲无框连体马桶 - SEWOO 高端卫浴",
       "titleEn": "SEWOO-8615 Washdown Rimless One-Piece Toilet - SEWOO Premium Bath",
-      "description": "SEWOO 8615系列无圈孔连体马桶，700x375x760mm，紧凑设计节省空间。",
+      "description": "SEWOO 8615系列直冲对冲无框连体马桶，700x375x760mm，紧凑设计节省空间。",
       "descriptionEn": "SEWOO 8615 series rimless one-piece toilet with compact space-saving design.",
       "keywords": [
         "连体马桶",
-        "无圈孔",
+        "直冲对冲无框连体",
         "Rimless",
         "8615",
         "SEWOO"
@@ -5136,27 +5185,49 @@
       ]
     },
     "createdAt": "2026-06-25",
-    "updatedAt": "2026-06-25",
+    "updatedAt": "2026-06-30",
     "documents": {
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
-    }
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
+    },
+    "specificationsEn": {
+      "Type": "One-Piece Toilet (Rimless)",
+      "Flushing System": "Washdown Rimless",
+      "Dimensions": "700x375x760mm",
+      "S-trap Rough-in": "250mm",
+      "P-trap Rough-in": "180mm",
+      "Seat Cover": "UF Soft Close Seat",
+      "Material": "Premium Ceramic",
+      "Warranty": "5 Years"
+    },
+    "featuresEn": [
+      "Rimless easy-to-clean design",
+      "Compact and space-saving",
+      "UF soft close seat included",
+      "Suitable for small bathrooms",
+      "Water-saving and eco-friendly"
+    ],
+    "certificationsEn": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ]
   },
   {
     "id": "68",
     "slug": "sewoo-8618-62-marble-toilet",
     "category": "马桶",
     "subcategory": "连体马桶",
-    "name": "SEWOO-8618-62 大理石纹连体马桶",
-    "nameEn": "SEWOO-8618-62 Marble Design One-Piece Toilet",
-    "description": "SEWOO 8618-62 大理石纹设计连体马桶，675x370x750mm尺寸。S-trap坑距150/250mm，P-trap坑距180mm。PP马桶盖配置。高温烧制大理石纹理，不褪色，独特美观，彰显品味。",
-    "descriptionEn": "SEWOO 8618-62 marble design one-piece toilet, dimensions 675x370x750mm. S-trap: 150/250mm, P-trap: 180mm. PP seat cover. High-temperature fired marble texture, fade-resistant, unique and elegant.",
+    "name": "SEWOO-8618-62 大理石纹直冲对冲无框连体马桶",
+    "nameEn": "SEWOO-8618-62 Marble Design Washdown Rimless One-Piece Toilet",
+    "description": "SEWOO 8618-62 大理石纹直冲对冲无框连体马桶，675x370x750mm尺寸。S-trap坑距150/250mm，P-trap坑距180mm。PP马桶盖配置。高温烧制大理石纹理，不褪色，独特美观，彰显品味。",
+    "descriptionEn": "SEWOO 8618-62 Marble Design Washdown Rimless one-piece toilet, dimensions 675x370x750mm. S-trap: 150/250mm, P-trap: 180mm. PP seat cover. High-temperature fired marble texture, fade-resistant, unique and elegant.",
     "images": [
-      "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX8618-62.png"
     ],
     "specifications": {
       "类型": "连体马桶（大理石纹）",
@@ -5183,46 +5254,69 @@
       "CE"
     ],
     "seo": {
-      "title": "SEWOO-8618-62 大理石纹连体马桶 - SEWOO 高端卫浴",
-      "titleEn": "SEWOO-8618-62 Marble Design One-Piece Toilet - SEWOO Premium Bath",
-      "description": "SEWOO 8618-62 大理石纹连体马桶，高温烧制不褪色，独特美观。",
-      "descriptionEn": "SEWOO 8618-62 marble design one-piece toilet with high-temperature fired fade-resistant finish.",
+      "title": "SEWOO-8618-62 大理石纹直冲对冲无框连体马桶 - SEWOO 高端卫浴",
+      "titleEn": "SEWOO-8618-62 Marble Design Washdown Rimless Toilet - SEWOO Premium Bath",
+      "description": "SEWOO 8618-62 大理石纹直冲对冲无框连体马桶，高温烧制不褪色，独特美观。",
+      "descriptionEn": "SEWOO 8618-62 Marble Design Washdown Rimless toilet with high-temperature fired fade-resistant finish.",
       "keywords": [
         "连体马桶",
         "大理石纹",
         "Marble design",
-        "8618-62",
+        "直冲，对冲，无框，连体，8618-62",
         "SEWOO"
       ],
       "keywordsEn": [
         "one-piece toilet",
         "marble design",
-        "toilet 8618-62",
+        "Marble Design Washdown，Rimles，stoilet 8618-62",
         "SEWOO"
       ]
     },
     "createdAt": "2026-06-25",
-    "updatedAt": "2026-06-25",
+    "updatedAt": "2026-06-30",
     "documents": {
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
-    }
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
+    },
+    "specificationsEn": {
+      "Type": "One-Piece Toilet (Marble Design)",
+      "Appearance": "Marble Design",
+      "Process": "High-temperature Fired, Fade-resistant",
+      "Dimensions": "675x370x750mm",
+      "S-trap Rough-in": "150/250mm",
+      "P-trap Rough-in": "180mm",
+      "Seat Cover": "PP Soft Close Seat",
+      "Material": "Premium Ceramic",
+      "Warranty": "5 Years"
+    },
+    "featuresEn": [
+      "Unique marble design",
+      "High-temperature fired, fade-resistant",
+      "PP soft close seat included",
+      "Reflects refined taste",
+      "Water-saving and eco-friendly"
+    ],
+    "certificationsEn": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ]
   },
   {
     "id": "69",
     "slug": "sewoo-8615-62-marble-toilet",
     "category": "马桶",
     "subcategory": "连体马桶",
-    "name": "SEWOO-8615-62 大理石纹连体马桶",
-    "nameEn": "SEWOO-8615-62 Marble Design One-Piece Toilet",
-    "description": "SEWOO 8615-62 大理石纹设计连体马桶，700x375x760mm尺寸。S-trap坑距250mm，P-trap坑距180mm。UF马桶盖配置。高温烧制大理石纹理，不褪色，紧凑设计搭配大理石纹，时尚优雅。",
-    "descriptionEn": "SEWOO 8615-62 marble design one-piece toilet, dimensions 700x375x760mm. S-trap: 250mm, P-trap: 180mm. UF seat cover. High-temperature fired marble texture, fade-resistant, compact and elegant.",
+    "name": "SEWOO-8615-62 大理石纹直冲对冲无框连体马桶",
+    "nameEn": "SEWOO-8615-62 Marble Design Washdown Rimless Toilet",
+    "description": "SEWOO 8615-62 大理石纹直冲对冲无框连体马桶，700x375x760mm尺寸。S-trap坑距250mm，P-trap坑距180mm。UF马桶盖配置。高温烧制大理石纹理，不褪色，紧凑设计搭配大理石纹，时尚优雅。",
+    "descriptionEn": "SEWOO 8615-62 Marble Design Washdown Rimless toilet, dimensions 700x375x760mm. S-trap: 250mm, P-trap: 180mm. UF seat cover. High-temperature fired marble texture, fade-resistant, compact and elegant.",
     "images": [
-      "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX8615-62%20.png"
     ],
     "specifications": {
       "类型": "连体马桶（大理石纹）",
@@ -5249,46 +5343,69 @@
       "CE"
     ],
     "seo": {
-      "title": "SEWOO-8615-62 大理石纹连体马桶 - SEWOO 高端卫浴",
-      "titleEn": "SEWOO-8615-62 Marble Design One-Piece Toilet - SEWOO Premium Bath",
-      "description": "SEWOO 8615-62 大理石纹连体马桶，紧凑设计搭配大理石纹，时尚优雅。",
-      "descriptionEn": "SEWOO 8615-62 marble design one-piece toilet with compact and elegant styling.",
+      "title": "SEWOO-8615-62 大理石纹直冲对冲无框连体马桶 - SEWOO 高端卫浴",
+      "titleEn": "SEWOO-8615-62 Marble Design Washdown Rimless Toilet - SEWOO Premium Bath",
+      "description": "SEWOO 8615-62 大理石纹直冲对冲无框连体马桶，紧凑设计搭配大理石纹，时尚优雅。",
+      "descriptionEn": "SEWOO 8615-62 Marble Design Washdown Rimless toilet with compact and elegant styling.",
       "keywords": [
         "连体马桶",
-        "大理石纹",
+        "大理石纹，直冲，对冲，无框，连体",
         "Marble design",
         "8615-62",
         "SEWOO"
       ],
       "keywordsEn": [
         "one-piece toilet",
-        "marble design",
+        "Marble Design， Washdown ，Rimless",
         "toilet 8615-62",
         "SEWOO"
       ]
     },
     "createdAt": "2026-06-25",
-    "updatedAt": "2026-06-25",
+    "updatedAt": "2026-06-30",
     "documents": {
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
-      "quote": "",
-      "appointment": ""
-    }
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
+    },
+    "specificationsEn": {
+      "Type": "One-Piece Toilet (Marble Design)",
+      "Appearance": "Marble Design",
+      "Process": "High-temperature Fired, Fade-resistant",
+      "Dimensions": "700x375x760mm",
+      "S-trap Rough-in": "250mm",
+      "P-trap Rough-in": "180mm",
+      "Seat Cover": "UF Soft Close Seat",
+      "Material": "Premium Ceramic",
+      "Warranty": "5 Years"
+    },
+    "featuresEn": [
+      "Unique marble design",
+      "High-temperature fired, fade-resistant",
+      "UF soft close seat included",
+      "Compact and stylish",
+      "Water-saving and eco-friendly"
+    ],
+    "certificationsEn": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ]
   },
   {
     "id": "70",
     "slug": "sewoo-8609-62-marble-toilet",
     "category": "马桶",
     "subcategory": "连体马桶",
-    "name": "SEWOO-8609-62 大理石纹连体马桶",
-    "nameEn": "SEWOO-8609-62 Marble Design One-Piece Toilet",
-    "description": "SEWOO 8609-62 大理石纹设计连体马桶，680x400x730mm尺寸。S-trap坑距100/150/200/250mm，P-trap坑距180mm。UF马桶盖配置。高温烧制大理石纹理，不褪色，经典款式搭配大理石纹，独特大气。",
-    "descriptionEn": "SEWOO 8609-62 marble design one-piece toilet, dimensions 680x400x730mm. S-trap: 100/150/200/250mm, P-trap: 180mm. UF seat cover. High-temperature fired marble texture, fade-resistant, classic style with marble finish.",
+    "name": "SEWOO-8609-62 大理石纹直冲对冲无框连体马桶",
+    "nameEn": "SEWOO-8609-62 Marble Design Washdown Rimless Toilet",
+    "description": "SEWOO 8609-62 大理石纹直冲对冲无框连体马桶，680x400x730mm尺寸。S-trap坑距100/150/200/250mm，P-trap坑距180mm。UF马桶盖配置。高温烧制大理石纹理，不褪色，经典款式搭配大理石纹，独特大气。",
+    "descriptionEn": "SEWOO 8609-62 Marble Design Washdown Rimless toilet, dimensions 680x400x730mm. S-trap: 100/150/200/250mm, P-trap: 180mm. UF seat cover. High-temperature fired marble texture, fade-resistant, classic style with marble finish.",
     "images": [
-      "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX8609-62.png"
     ],
     "specifications": {
       "类型": "连体马桶（大理石纹）",
@@ -5315,32 +5432,1342 @@
       "CE"
     ],
     "seo": {
-      "title": "SEWOO-8609-62 大理石纹连体马桶 - SEWOO 高端卫浴",
-      "titleEn": "SEWOO-8609-62 Marble Design One-Piece Toilet - SEWOO Premium Bath",
-      "description": "SEWOO 8609-62 大理石纹连体马桶，经典款式搭配大理石纹，独特大气。",
-      "descriptionEn": "SEWOO 8609-62 marble design one-piece toilet with classic elegant styling.",
+      "title": "SEWOO-8609-62 大理石纹直冲对冲无框连体马桶 - SEWOO 高端卫浴",
+      "titleEn": "SEWOO-8609-62 Marble Design Washdown Rimless Toilet - SEWOO Premium Bath",
+      "description": "SEWOO 8609-62 大理石纹直冲对冲无框连体马桶，经典款式搭配大理石纹，独特大气。",
+      "descriptionEn": "SEWOO 8609-62 Marble Design Washdown Rimless with classic elegant styling.",
       "keywords": [
         "连体马桶",
-        "大理石纹",
+        "大理石纹，直冲，对冲，无框，连体",
         "Marble design",
         "8609-62",
         "SEWOO"
       ],
       "keywordsEn": [
         "one-piece toilet",
-        "marble design",
+        "Marble Design， Washdown",
+        "Rimless",
         "toilet 8609-62",
         "SEWOO"
       ]
     },
     "createdAt": "2026-06-25",
-    "updatedAt": "2026-06-25",
+    "updatedAt": "2026-06-30",
+    "documents": {
+      "manual": "",
+      "technicalData": "",
+      "imagesDownload": "",
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
+    },
+    "specificationsEn": {
+      "Type": "One-Piece Toilet (Marble Design)",
+      "Appearance": "Marble Design",
+      "Process": "High-temperature Fired, Fade-resistant",
+      "Dimensions": "680x400x730mm",
+      "S-trap Rough-in": "100/150/200/250mm",
+      "P-trap Rough-in": "180mm",
+      "Seat Cover": "UF Soft Close Seat",
+      "Material": "Premium Ceramic",
+      "Warranty": "5 Years"
+    },
+    "featuresEn": [
+      "Unique marble design",
+      "High-temperature fired, fade-resistant",
+      "UF soft close seat included",
+      "Classic and elegant style",
+      "Water-saving and eco-friendly"
+    ],
+    "certificationsEn": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ]
+  },
+  {
+    "id": "71",
+    "slug": "sewoo-9310-wall-hung-rimless-toilet",
+    "category": "马桶",
+    "subcategory": "壁挂马桶",
+    "name": "SEWOO-9310 壁挂式无圈孔马桶",
+    "nameEn": "SEWOO-9310 Wall-hung Rimless Toilet",
+    "description": "SEWOO 9310壁挂式无圈孔马桶，515x340x370mm尺寸。Washdown Rimless喷射无圈孔冲水，UF软盖配置。挂墙设计节省空间，清洁无死角，现代简约风格。",
+    "descriptionEn": "SEWOO 9310 wall-hung rimless toilet, dimensions 515x340x370mm. Washdown rimless flushing system, UF soft close seat. Wall-mounted design saves space, easy to clean, modern minimalist style.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX9310.png"
+    ],
+    "specifications": {
+      "类型": "壁挂马桶",
+      "冲水方式": "Washdown Rimless 喷射无圈孔",
+      "尺寸": "515x340x370mm",
+      "马桶盖": "UF软盖",
+      "材质": "优质陶瓷",
+      "安装方式": "壁挂式",
+      "保修": "5年"
+    },
+    "features": [
+      "无圈孔易清洁设计",
+      "壁挂节省空间",
+      "UF软盖舒适耐用",
+      "现代简约风格",
+      "节水环保"
+    ],
+    "certifications": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ],
+    "seo": {
+      "title": "SEWOO-9310 壁挂式无圈孔马桶 - SEWOO 高端卫浴",
+      "titleEn": "SEWOO-9310 Wall-hung Rimless Toilet - SEWOO Premium Bath",
+      "description": "SEWOO 9310壁挂式无圈孔马桶，515x340x370mm尺寸。Washdown Rimless喷射无圈孔冲水，UF软盖配置。挂墙设计节省空间，清洁无死角，现代简约风格。",
+      "descriptionEn": "SEWOO 9310 wall-hung rimless toilet, dimensions 515x340x370mm. Washdown rimless flushing system, UF soft close seat. Wall-mounted design saves space, easy to clean, modern minimalist style.",
+      "keywords": [
+        "SEWOO-9310",
+        "壁挂马桶",
+        "马桶",
+        "SEWOO"
+      ],
+      "keywordsEn": [
+        "SEWOO-9310",
+        "壁挂马桶",
+        "马桶",
+        "SEWOO"
+      ]
+    },
+    "createdAt": "2026-06-26",
+    "updatedAt": "2026-06-30",
+    "documents": {
+      "manual": "",
+      "technicalData": "",
+      "imagesDownload": "",
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
+    },
+    "specificationsEn": {
+      "Type": "Wall-hung Toilet",
+      "Flushing System": "Washdown Rimless",
+      "Dimensions": "515x340x370mm",
+      "Seat Cover": "UF Soft Close Seat",
+      "Material": "Premium Ceramic",
+      "Installation Type": "Wall-mounted",
+      "Warranty": "5 Years"
+    },
+    "featuresEn": [
+      "Rimless easy-to-clean design",
+      "Wall-mounted saves space",
+      "UF soft close seat, comfortable and durable",
+      "Modern minimalist style",
+      "Water-saving and eco-friendly"
+    ],
+    "certificationsEn": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ]
+  },
+  {
+    "id": "72",
+    "slug": "sewoo-9311-wall-hung-rimless-toilet",
+    "category": "马桶",
+    "subcategory": "壁挂马桶",
+    "name": "SEWOO-9311 壁挂式无圈孔马桶",
+    "nameEn": "SEWOO-9311 Wall-hung Rimless Toilet",
+    "description": "SEWOO 9311壁挂式无圈孔马桶，505x360x360mm尺寸。Washdown Rimless喷射无圈孔冲水，UF软盖配置。圆润造型设计，挂墙安装，简洁大方。",
+    "descriptionEn": "SEWOO 9311 wall-hung rimless toilet, dimensions 505x360x360mm. Washdown rimless flushing system, UF soft close seat. Rounded design, wall-mounted installation, simple and elegant.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX9311.png"
+    ],
+    "specifications": {
+      "类型": "壁挂马桶",
+      "冲水方式": "Washdown Rimless 喷射无圈孔",
+      "尺寸": "505x360x360mm",
+      "马桶盖": "UF软盖",
+      "材质": "优质陶瓷",
+      "安装方式": "壁挂式",
+      "保修": "5年"
+    },
+    "features": [
+      "无圈孔易清洁设计",
+      "壁挂节省空间",
+      "圆润造型",
+      "UF软盖舒适耐用",
+      "节水环保"
+    ],
+    "certifications": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ],
+    "seo": {
+      "title": "SEWOO-9311 壁挂式无圈孔马桶 - SEWOO 高端卫浴",
+      "titleEn": "SEWOO-9311 Wall-hung Rimless Toilet - SEWOO Premium Bath",
+      "description": "SEWOO 9311壁挂式无圈孔马桶，505x360x360mm尺寸。Washdown Rimless喷射无圈孔冲水，UF软盖配置。圆润造型设计，挂墙安装，简洁大方。",
+      "descriptionEn": "SEWOO 9311 wall-hung rimless toilet, dimensions 505x360x360mm. Washdown rimless flushing system, UF soft close seat. Rounded design, wall-mounted installation, simple and elegant.",
+      "keywords": [
+        "SEWOO-9311",
+        "壁挂马桶",
+        "马桶",
+        "SEWOO"
+      ],
+      "keywordsEn": [
+        "SEWOO-9311",
+        "壁挂马桶",
+        "马桶",
+        "SEWOO"
+      ]
+    },
+    "createdAt": "2026-06-26",
+    "updatedAt": "2026-06-30",
+    "documents": {
+      "manual": "",
+      "technicalData": "",
+      "imagesDownload": "",
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
+    },
+    "specificationsEn": {
+      "Type": "Wall-hung Toilet",
+      "Flushing System": "Washdown Rimless",
+      "Dimensions": "505x360x360mm",
+      "Seat Cover": "UF Soft Close Seat",
+      "Material": "Premium Ceramic",
+      "Installation Type": "Wall-mounted",
+      "Warranty": "5 Years"
+    },
+    "featuresEn": [
+      "Rimless easy-to-clean design",
+      "Wall-mounted saves space",
+      "Rounded design",
+      "UF soft close seat, comfortable and durable",
+      "Water-saving and eco-friendly"
+    ],
+    "certificationsEn": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ]
+  },
+  {
+    "id": "73",
+    "slug": "sewoo-9321-wall-hung-rimless-toilet",
+    "category": "马桶",
+    "subcategory": "壁挂马桶",
+    "name": "SEWOO-9321 壁挂式无圈孔马桶",
+    "nameEn": "SEWOO-9321 Wall-hung Rimless Toilet",
+    "description": "SEWOO 9321壁挂式无圈孔马桶，520x350x365mm尺寸。Washdown Rimless喷射无圈孔冲水，UF软盖配置。方形简约设计，挂墙安装，稳重大气。",
+    "descriptionEn": "SEWOO 9321 wall-hung rimless toilet, dimensions 520x350x365mm. Washdown rimless flushing system, UF soft close seat. Square minimalist design, wall-mounted, stable and elegant.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX9321.png"
+    ],
+    "specifications": {
+      "类型": "壁挂马桶",
+      "冲水方式": "Washdown Rimless 喷射无圈孔",
+      "尺寸": "520x350x365mm",
+      "马桶盖": "UF软盖",
+      "材质": "优质陶瓷",
+      "安装方式": "壁挂式",
+      "保修": "5年"
+    },
+    "features": [
+      "无圈孔易清洁设计",
+      "方形简约外观",
+      "壁挂节省空间",
+      "UF软盖舒适耐用",
+      "稳重大气"
+    ],
+    "certifications": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ],
+    "seo": {
+      "title": "SEWOO-9321 壁挂式无圈孔马桶 - SEWOO 高端卫浴",
+      "titleEn": "SEWOO-9321 Wall-hung Rimless Toilet - SEWOO Premium Bath",
+      "description": "SEWOO 9321壁挂式无圈孔马桶，520x350x365mm尺寸。Washdown Rimless喷射无圈孔冲水，UF软盖配置。方形简约设计，挂墙安装，稳重大气。",
+      "descriptionEn": "SEWOO 9321 wall-hung rimless toilet, dimensions 520x350x365mm. Washdown rimless flushing system, UF soft close seat. Square minimalist design, wall-mounted, stable and elegant.",
+      "keywords": [
+        "SEWOO-9321",
+        "壁挂马桶",
+        "马桶",
+        "SEWOO"
+      ],
+      "keywordsEn": [
+        "SEWOO-9321",
+        "壁挂马桶",
+        "马桶",
+        "SEWOO"
+      ]
+    },
+    "createdAt": "2026-06-26",
+    "updatedAt": "2026-06-30",
+    "documents": {
+      "manual": "",
+      "technicalData": "",
+      "imagesDownload": "",
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
+    },
+    "specificationsEn": {
+      "Type": "Wall-hung Toilet",
+      "Flushing System": "Washdown Rimless",
+      "Dimensions": "520x350x365mm",
+      "Seat Cover": "UF Soft Close Seat",
+      "Material": "Premium Ceramic",
+      "Installation Type": "Wall-mounted",
+      "Warranty": "5 Years"
+    },
+    "featuresEn": [
+      "Rimless easy-to-clean design",
+      "Square minimalist appearance",
+      "Wall-mounted saves space",
+      "UF soft close seat, comfortable and durable",
+      "Stable and elegant"
+    ],
+    "certificationsEn": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ]
+  },
+  {
+    "id": "74",
+    "slug": "sewoo-9322-wall-hung-rimless-toilet",
+    "category": "马桶",
+    "subcategory": "壁挂马桶",
+    "name": "SEWOO-9322 壁挂式无圈孔马桶",
+    "nameEn": "SEWOO-9322 Wall-hung Rimless Toilet",
+    "description": "SEWOO 9322壁挂式无圈孔马桶，530x360x365mm尺寸。Washdown Rimless喷射无圈孔冲水，UF软盖配置。流线型设计，挂墙安装，时尚优雅。",
+    "descriptionEn": "SEWOO 9322 wall-hung rimless toilet, dimensions 530x360x365mm. Washdown rimless flushing system, UF soft close seat. Streamlined design, wall-mounted, stylish and elegant.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX9322.png"
+    ],
+    "specifications": {
+      "类型": "壁挂马桶",
+      "冲水方式": "Washdown Rimless 喷射无圈孔",
+      "尺寸": "530x360x365mm",
+      "马桶盖": "UF软盖",
+      "材质": "优质陶瓷",
+      "安装方式": "壁挂式",
+      "保修": "5年"
+    },
+    "features": [
+      "无圈孔易清洁设计",
+      "流线型外观",
+      "壁挂节省空间",
+      "UF软盖舒适耐用",
+      "时尚优雅"
+    ],
+    "certifications": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ],
+    "seo": {
+      "title": "SEWOO-9322 壁挂式无圈孔马桶 - SEWOO 高端卫浴",
+      "titleEn": "SEWOO-9322 Wall-hung Rimless Toilet - SEWOO Premium Bath",
+      "description": "SEWOO 9322壁挂式无圈孔马桶，530x360x365mm尺寸。Washdown Rimless喷射无圈孔冲水，UF软盖配置。流线型设计，挂墙安装，时尚优雅。",
+      "descriptionEn": "SEWOO 9322 wall-hung rimless toilet, dimensions 530x360x365mm. Washdown rimless flushing system, UF soft close seat. Streamlined design, wall-mounted, stylish and elegant.",
+      "keywords": [
+        "SEWOO-9322",
+        "壁挂马桶",
+        "马桶",
+        "SEWOO"
+      ],
+      "keywordsEn": [
+        "SEWOO-9322",
+        "壁挂马桶",
+        "马桶",
+        "SEWOO"
+      ]
+    },
+    "createdAt": "2026-06-26",
+    "updatedAt": "2026-06-30",
+    "documents": {
+      "manual": "",
+      "technicalData": "",
+      "imagesDownload": "",
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
+    },
+    "specificationsEn": {
+      "Type": "Wall-hung Toilet",
+      "Flushing System": "Washdown Rimless",
+      "Dimensions": "530x360x365mm",
+      "Seat Cover": "UF Soft Close Seat",
+      "Material": "Premium Ceramic",
+      "Installation Type": "Wall-mounted",
+      "Warranty": "5 Years"
+    },
+    "featuresEn": [
+      "Rimless easy-to-clean design",
+      "Streamlined appearance",
+      "Wall-mounted saves space",
+      "UF soft close seat, comfortable and durable",
+      "Stylish and elegant"
+    ],
+    "certificationsEn": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ]
+  },
+  {
+    "id": "75",
+    "slug": "sewoo-9312-wall-hung-rimless-toilet",
+    "category": "马桶",
+    "subcategory": "壁挂马桶",
+    "name": "SEWOO-9312 壁挂式无圈孔马桶",
+    "nameEn": "SEWOO-9312 Wall-hung Rimless Toilet",
+    "description": "SEWOO 9312壁挂式无圈孔马桶，530x360x365mm尺寸。Washdown Rimless喷射无圈孔冲水，UF软盖配置。方形流线结合设计，挂墙安装，独特造型。",
+    "descriptionEn": "SEWOO 9312 wall-hung rimless toilet, dimensions 530x360x365mm. Washdown rimless flushing system, UF soft close seat. Square and streamline combined design, wall-mounted, unique styling.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX9312.png"
+    ],
+    "specifications": {
+      "类型": "壁挂马桶",
+      "冲水方式": "Washdown Rimless 喷射无圈孔",
+      "尺寸": "530x360x365mm",
+      "马桶盖": "UF软盖",
+      "材质": "优质陶瓷",
+      "安装方式": "壁挂式",
+      "保修": "5年"
+    },
+    "features": [
+      "无圈孔易清洁设计",
+      "独特造型设计",
+      "壁挂节省空间",
+      "UF软盖舒适耐用",
+      "节水环保"
+    ],
+    "certifications": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ],
+    "seo": {
+      "title": "SEWOO-9312 壁挂式无圈孔马桶 - SEWOO 高端卫浴",
+      "titleEn": "SEWOO-9312 Wall-hung Rimless Toilet - SEWOO Premium Bath",
+      "description": "SEWOO 9312壁挂式无圈孔马桶，530x360x365mm尺寸。Washdown Rimless喷射无圈孔冲水，UF软盖配置。方形流线结合设计，挂墙安装，独特造型。",
+      "descriptionEn": "SEWOO 9312 wall-hung rimless toilet, dimensions 530x360x365mm. Washdown rimless flushing system, UF soft close seat. Square and streamline combined design, wall-mounted, unique styling.",
+      "keywords": [
+        "SEWOO-9312",
+        "壁挂马桶",
+        "马桶",
+        "SEWOO"
+      ],
+      "keywordsEn": [
+        "SEWOO-9312",
+        "壁挂马桶",
+        "马桶",
+        "SEWOO"
+      ]
+    },
+    "createdAt": "2026-06-26",
+    "updatedAt": "2026-06-30",
     "documents": {
       "manual": "",
       "technicalData": "",
       "imagesDownload": "",
       "quote": "",
       "appointment": ""
-    }
+    },
+    "specificationsEn": {
+      "Type": "Wall-hung Toilet",
+      "Flushing System": "Washdown Rimless",
+      "Dimensions": "530x360x365mm",
+      "Seat Cover": "UF Soft Close Seat",
+      "Material": "Premium Ceramic",
+      "Installation Type": "Wall-mounted",
+      "Warranty": "5 Years"
+    },
+    "featuresEn": [
+      "Rimless easy-to-clean design",
+      "Unique styling design",
+      "Wall-mounted saves space",
+      "UF soft close seat, comfortable and durable",
+      "Water-saving and eco-friendly"
+    ],
+    "certificationsEn": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ]
+  },
+  {
+    "id": "76",
+    "slug": "sewoo-9316-wall-hung-rimless-toilet",
+    "category": "马桶",
+    "subcategory": "壁挂马桶",
+    "name": "SEWOO-9316 壁挂式无圈孔马桶",
+    "nameEn": "SEWOO-9316 Wall-hung Rimless Toilet",
+    "description": "SEWOO 9316壁挂式无圈孔马桶，530x380x350mm尺寸。Washdown Rimless喷射无圈孔冲水，UF软盖配置。宽大舒适设计，挂墙安装，适合追求舒适体验的用户。",
+    "descriptionEn": "SEWOO 9316 wall-hung rimless toilet, dimensions 530x380x350mm. Washdown rimless flushing system, UF soft close seat. Wide and comfortable design, wall-mounted, suitable for users seeking comfort.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX9316.png"
+    ],
+    "specifications": {
+      "类型": "壁挂马桶",
+      "冲水方式": "Washdown Rimless 喷射无圈孔",
+      "尺寸": "530x380x350mm",
+      "马桶盖": "UF软盖",
+      "材质": "优质陶瓷",
+      "安装方式": "壁挂式",
+      "保修": "5年"
+    },
+    "features": [
+      "无圈孔易清洁设计",
+      "宽大舒适",
+      "壁挂节省空间",
+      "UF软盖舒适耐用",
+      "高端体验"
+    ],
+    "certifications": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ],
+    "seo": {
+      "title": "SEWOO-9316 壁挂式无圈孔马桶 - SEWOO 高端卫浴",
+      "titleEn": "SEWOO-9316 Wall-hung Rimless Toilet - SEWOO Premium Bath",
+      "description": "SEWOO 9316壁挂式无圈孔马桶，530x380x350mm尺寸。Washdown Rimless喷射无圈孔冲水，UF软盖配置。宽大舒适设计，挂墙安装，适合追求舒适体验的用户。",
+      "descriptionEn": "SEWOO 9316 wall-hung rimless toilet, dimensions 530x380x350mm. Washdown rimless flushing system, UF soft close seat. Wide and comfortable design, wall-mounted, suitable for users seeking comfort.",
+      "keywords": [
+        "SEWOO-9316",
+        "壁挂马桶",
+        "马桶",
+        "SEWOO"
+      ],
+      "keywordsEn": [
+        "SEWOO-9316",
+        "壁挂马桶",
+        "马桶",
+        "SEWOO"
+      ]
+    },
+    "createdAt": "2026-06-26",
+    "updatedAt": "2026-06-30",
+    "documents": {
+      "manual": "",
+      "technicalData": "",
+      "imagesDownload": "",
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
+    },
+    "specificationsEn": {
+      "Type": "Wall-hung Toilet",
+      "Flushing System": "Washdown Rimless",
+      "Dimensions": "530x380x350mm",
+      "Seat Cover": "UF Soft Close Seat",
+      "Material": "Premium Ceramic",
+      "Installation Type": "Wall-mounted",
+      "Warranty": "5 Years"
+    },
+    "featuresEn": [
+      "Rimless easy-to-clean design",
+      "Wide and comfortable",
+      "Wall-mounted saves space",
+      "UF soft close seat, comfortable and durable",
+      "Premium experience"
+    ],
+    "certificationsEn": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ]
+  },
+  {
+    "id": "77",
+    "slug": "sewoo-9322c0-wall-hung-bidet-toilet",
+    "category": "马桶",
+    "subcategory": "壁挂马桶",
+    "name": "SEWOO-9322C0 壁挂式妇洗器马桶（无阀款）",
+    "nameEn": "SEWOO-9322C0 Wall-hung Bidet Toilet (Without Valve)",
+    "description": "SEWOO 9322C0壁挂式妇洗器马桶（无阀款），530x360x365mm尺寸。Washdown Rimless喷射无圈孔冲水，UF软盖配置。无阀妇洗设计，挂墙安装，清洁卫生。",
+    "descriptionEn": "SEWOO 9322C0 wall-hung bidet toilet without valve, dimensions 530x360x365mm. Washdown rimless flushing system, UF soft close seat. Valve-free bidet design, wall-mounted, clean and hygienic.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX9322C0.png"
+    ],
+    "specifications": {
+      "类型": "壁挂马桶（妇洗器款）",
+      "妇洗功能": "无阀款",
+      "冲水方式": "Washdown Rimless 喷射无圈孔",
+      "尺寸": "530x360x365mm",
+      "马桶盖": "UF软盖",
+      "材质": "优质陶瓷",
+      "安装方式": "壁挂式",
+      "保修": "5年"
+    },
+    "features": [
+      "无阀妇洗设计",
+      "无圈孔易清洁",
+      "壁挂节省空间",
+      "UF软盖舒适耐用",
+      "清洁卫生"
+    ],
+    "certifications": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ],
+    "seo": {
+      "title": "SEWOO-9322C0 壁挂式妇洗器马桶（无阀款） - SEWOO 高端卫浴",
+      "titleEn": "SEWOO-9322C0 Wall-hung Bidet Toilet (Without Valve) - SEWOO Premium Bath",
+      "description": "SEWOO 9322C0壁挂式妇洗器马桶（无阀款），530x360x365mm尺寸。Washdown Rimless喷射无圈孔冲水，UF软盖配置。无阀妇洗设计，挂墙安装，清洁卫生。",
+      "descriptionEn": "SEWOO 9322C0 wall-hung bidet toilet without valve, dimensions 530x360x365mm. Washdown rimless flushing system, UF soft close seat. Valve-free bidet design, wall-mounted, clean and hygienic.",
+      "keywords": [
+        "SEWOO-9322C0",
+        "壁挂马桶",
+        "马桶",
+        "SEWOO"
+      ],
+      "keywordsEn": [
+        "SEWOO-9322C0",
+        "壁挂马桶",
+        "马桶",
+        "SEWOO"
+      ]
+    },
+    "createdAt": "2026-06-26",
+    "updatedAt": "2026-06-30",
+    "documents": {
+      "manual": "",
+      "technicalData": "",
+      "imagesDownload": "",
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
+    },
+    "specificationsEn": {
+      "Type": "Wall-hung Toilet (Bidet)",
+      "Bidet Function": "Without Valve",
+      "Flushing System": "Washdown Rimless",
+      "Dimensions": "530x360x365mm",
+      "Seat Cover": "UF Soft Close Seat",
+      "Material": "Premium Ceramic",
+      "Installation Type": "Wall-mounted",
+      "Warranty": "5 Years"
+    },
+    "featuresEn": [
+      "Valve-free bidet design",
+      "无圈孔易清洁",
+      "Wall-mounted saves space",
+      "UF soft close seat, comfortable and durable",
+      "Clean and hygienic"
+    ],
+    "certificationsEn": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ]
+  },
+  {
+    "id": "78",
+    "slug": "sewoo-9322c1-wall-hung-bidet-toilet",
+    "category": "马桶",
+    "subcategory": "壁挂马桶",
+    "name": "SEWOO-9322C1 壁挂式妇洗器马桶（带阀款）",
+    "nameEn": "SEWOO-9322C1 Wall-hung Bidet Toilet (With Valve)",
+    "description": "SEWOO 9322C1壁挂式妇洗器马桶（带阀款），530x360x365mm尺寸。Washdown Rimless喷射无圈孔冲水，UF软盖配置。C1冷热水分开阀+C2混水阀可选（需另购），挂墙安装，妇洗功能完善。",
+    "descriptionEn": "SEWOO 9322C1 wall-hung bidet toilet with valve, dimensions 530x360x365mm. Washdown rimless flushing system, UF soft close seat. Optional C1 cold/hot water valve + C2 mixer valve (sold separately). Wall-mounted with complete bidet function.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX9322C1.png"
+    ],
+    "specifications": {
+      "类型": "壁挂马桶（妇洗器带阀款）",
+      "妇洗功能": "带阀款",
+      "C1阀": "冷热水分开阀（可选）",
+      "C2阀": "混水阀（可选）",
+      "冲水方式": "Washdown Rimless 喷射无圈孔",
+      "尺寸": "530x360x365mm",
+      "马桶盖": "UF软盖",
+      "材质": "优质陶瓷",
+      "安装方式": "壁挂式",
+      "保修": "5年"
+    },
+    "features": [
+      "带阀妇洗设计",
+      "冷热水分开阀可选",
+      "混水阀可选",
+      "无圈孔易清洁",
+      "壁挂节省空间"
+    ],
+    "certifications": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ],
+    "seo": {
+      "title": "SEWOO-9322C1 壁挂式妇洗器马桶（带阀款） - SEWOO 高端卫浴",
+      "titleEn": "SEWOO-9322C1 Wall-hung Bidet Toilet (With Valve) - SEWOO Premium Bath",
+      "description": "SEWOO 9322C1壁挂式妇洗器马桶（带阀款），530x360x365mm尺寸。Washdown Rimless喷射无圈孔冲水，UF软盖配置。C1冷热水分开阀+C2混水阀可选（需另购），挂墙安装，妇洗功能完善。",
+      "descriptionEn": "SEWOO 9322C1 wall-hung bidet toilet with valve, dimensions 530x360x365mm. Washdown rimless flushing system, UF soft close seat. Optional C1 cold/hot water valve + C2 mixer valve (sold separately). Wall-mounted with complete bidet function.",
+      "keywords": [
+        "SEWOO-9322C1",
+        "壁挂马桶",
+        "马桶",
+        "SEWOO"
+      ],
+      "keywordsEn": [
+        "SEWOO-9322C1",
+        "壁挂马桶",
+        "马桶",
+        "SEWOO"
+      ]
+    },
+    "createdAt": "2026-06-26",
+    "updatedAt": "2026-06-30",
+    "documents": {
+      "manual": "",
+      "technicalData": "",
+      "imagesDownload": "",
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
+    },
+    "specificationsEn": {
+      "Type": "Wall-hung Toilet (Bidet with Valve)",
+      "Bidet Function": "With Valve",
+      "C1 Valve": "Cold/Hot Water Separate Valve (Optional)",
+      "C2 Valve": "Mixer Valve (Optional)",
+      "Flushing System": "Washdown Rimless",
+      "Dimensions": "530x360x365mm",
+      "Seat Cover": "UF Soft Close Seat",
+      "Material": "Premium Ceramic",
+      "Installation Type": "Wall-mounted",
+      "Warranty": "5 Years"
+    },
+    "featuresEn": [
+      "Bidet with valve design",
+      "Cold/hot water separate valve optional",
+      "Mixer valve optional",
+      "无圈孔易清洁",
+      "Wall-mounted saves space"
+    ],
+    "certificationsEn": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ]
+  },
+  {
+    "id": "79",
+    "slug": "sewoo-9700-floor-standing-toilet",
+    "category": "马桶",
+    "subcategory": "落地挂墙马桶",
+    "name": "SEWOO-9700 落地式无圈孔马桶",
+    "nameEn": "SEWOO-9700 Floor-standing Rimless Toilet",
+    "description": "SEWOO 9700落地式无圈孔马桶，565x360x405mm尺寸。Washdown Rimless喷射无圈孔冲水，P-trap坑距180mm，UF软盖配置。落地安装，隐藏式水箱设计，简约现代。",
+    "descriptionEn": "SEWOO 9700 floor-standing rimless toilet, dimensions 565x360x405mm. Washdown rimless flushing system, P-trap 180mm, UF soft close seat. Floor-mounted with concealed cistern design, minimalist and modern.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX9700.png"
+    ],
+    "specifications": {
+      "类型": "落地式马桶",
+      "冲水方式": "Washdown Rimless 喷射无圈孔",
+      "尺寸": "565x360x405mm",
+      "P-trap坑距": "180mm",
+      "马桶盖": "UF软盖",
+      "材质": "优质陶瓷",
+      "安装方式": "落地式",
+      "保修": "5年"
+    },
+    "features": [
+      "无圈孔易清洁设计",
+      "隐藏式水箱设计",
+      "落地安装稳固",
+      "UF软盖舒适耐用",
+      "简约现代"
+    ],
+    "certifications": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ],
+    "seo": {
+      "title": "SEWOO-9700 落地式无圈孔马桶 - SEWOO 高端卫浴",
+      "titleEn": "SEWOO-9700 Floor-standing Rimless Toilet - SEWOO Premium Bath",
+      "description": "SEWOO 9700落地式无圈孔马桶，565x360x405mm尺寸。Washdown Rimless喷射无圈孔冲水，P-trap坑距180mm，UF软盖配置。落地安装，隐藏式水箱设计，简约现代。",
+      "descriptionEn": "SEWOO 9700 floor-standing rimless toilet, dimensions 565x360x405mm. Washdown rimless flushing system, P-trap 180mm, UF soft close seat. Floor-mounted with concealed cistern design, minimalist and modern.",
+      "keywords": [
+        "SEWOO-9700",
+        "落地式马桶",
+        "马桶",
+        "SEWOO"
+      ],
+      "keywordsEn": [
+        "SEWOO-9700",
+        "落地式马桶",
+        "马桶",
+        "SEWOO"
+      ]
+    },
+    "createdAt": "2026-06-26",
+    "updatedAt": "2026-06-30",
+    "documents": {
+      "manual": "",
+      "technicalData": "",
+      "imagesDownload": "",
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
+    },
+    "specificationsEn": {
+      "Type": "Floor-standing Toilet",
+      "Flushing System": "Washdown Rimless",
+      "Dimensions": "565x360x405mm",
+      "P-trap Rough-in": "180mm",
+      "Seat Cover": "UF Soft Close Seat",
+      "Material": "Premium Ceramic",
+      "Installation Type": "Floor-mounted",
+      "Warranty": "5 Years"
+    },
+    "featuresEn": [
+      "Rimless easy-to-clean design",
+      "隐藏式水箱设计",
+      "Floor-mounted, stable",
+      "UF soft close seat, comfortable and durable",
+      "Minimalist and modern"
+    ],
+    "certificationsEn": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ]
+  },
+  {
+    "id": "80",
+    "slug": "sewoo-9701-floor-standing-toilet",
+    "category": "马桶",
+    "subcategory": "落地式马桶",
+    "name": "SEWOO-9701 落地式无圈孔马桶",
+    "nameEn": "SEWOO-9701 Floor-standing Rimless Toilet",
+    "description": "SEWOO 9701落地式无圈孔马桶，540x370x400mm尺寸。Washdown Rimless喷射无圈孔冲水，P-trap坑距180mm，UF软盖配置。方形设计，落地安装，稳重大气。",
+    "descriptionEn": "SEWOO 9701 floor-standing rimless toilet, dimensions 540x370x400mm. Washdown rimless flushing system, P-trap 180mm, UF soft close seat. Square design, floor-mounted, stable and elegant.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX9701.png"
+    ],
+    "specifications": {
+      "类型": "落地式马桶",
+      "冲水方式": "Washdown Rimless 喷射无圈孔",
+      "尺寸": "540x370x400mm",
+      "P-trap坑距": "180mm",
+      "马桶盖": "UF软盖",
+      "材质": "优质陶瓷",
+      "安装方式": "落地式",
+      "保修": "5年"
+    },
+    "features": [
+      "无圈孔易清洁设计",
+      "方形稳重大气",
+      "落地安装稳固",
+      "UF软盖舒适耐用",
+      "隐藏水箱"
+    ],
+    "certifications": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ],
+    "seo": {
+      "title": "SEWOO-9701 落地式无圈孔马桶 - SEWOO 高端卫浴",
+      "titleEn": "SEWOO-9701 Floor-standing Rimless Toilet - SEWOO Premium Bath",
+      "description": "SEWOO 9701落地式无圈孔马桶，540x370x400mm尺寸。Washdown Rimless喷射无圈孔冲水，P-trap坑距180mm，UF软盖配置。方形设计，落地安装，稳重大气。",
+      "descriptionEn": "SEWOO 9701 floor-standing rimless toilet, dimensions 540x370x400mm. Washdown rimless flushing system, P-trap 180mm, UF soft close seat. Square design, floor-mounted, stable and elegant.",
+      "keywords": [
+        "SEWOO-9701",
+        "落地式马桶",
+        "马桶",
+        "SEWOO"
+      ],
+      "keywordsEn": [
+        "SEWOO-9701",
+        "落地式马桶",
+        "马桶",
+        "SEWOO"
+      ]
+    },
+    "createdAt": "2026-06-26",
+    "updatedAt": "2026-06-30",
+    "documents": {
+      "manual": "",
+      "technicalData": "",
+      "imagesDownload": "",
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
+    },
+    "specificationsEn": {
+      "Type": "Floor-standing Toilet",
+      "Flushing System": "Washdown Rimless",
+      "Dimensions": "540x370x400mm",
+      "P-trap Rough-in": "180mm",
+      "Seat Cover": "UF Soft Close Seat",
+      "Material": "Premium Ceramic",
+      "Installation Type": "Floor-mounted",
+      "Warranty": "5 Years"
+    },
+    "featuresEn": [
+      "Rimless easy-to-clean design",
+      "方形稳重大气",
+      "Floor-mounted, stable",
+      "UF soft close seat, comfortable and durable",
+      "隐藏水箱"
+    ],
+    "certificationsEn": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ]
+  },
+  {
+    "id": "81",
+    "slug": "sewoo-8006a-one-piece-toilet",
+    "category": "马桶",
+    "subcategory": "连体马桶",
+    "name": "SEWOO-8006A 直冲式连体马桶",
+    "nameEn": "SEWOO-8006A Washdown One-Piece Toilet",
+    "description": "SEWOO 8006A系列直冲式连体马桶，730x380x770mm尺寸。S-trap坑距250mm，P-trap坑距180mm。PP马桶盖配置。经典造型，高效冲水，节水环保。",
+    "descriptionEn": "SEWOO 8006A series washdown one-piece toilet, dimensions 730x380x770mm. S-trap: 250mm, P-trap: 180mm. PP seat cover. Classic design, efficient flushing, water-saving and eco-friendly.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX8006A.png"
+    ],
+    "specifications": {
+      "类型": "连体马桶（一件式）",
+      "冲水方式": "Washdown 喷射式",
+      "尺寸": "730x380x770mm",
+      "S-trap坑距": "250mm",
+      "P-trap坑距": "180mm",
+      "马桶盖": "PP软盖",
+      "材质": "优质陶瓷",
+      "保修": "5年"
+    },
+    "features": [
+      "喷射式高效冲水",
+      "经典造型",
+      "PP软盖配置",
+      "节水环保",
+      "易清洁釉面"
+    ],
+    "certifications": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ],
+    "seo": {
+      "title": "SEWOO-8006A 直冲式连体马桶 - SEWOO 高端卫浴",
+      "titleEn": "SEWOO-8006A Washdown One-Piece Toilet - SEWOO Premium Bath",
+      "description": "SEWOO 8006A系列直冲式连体马桶，730x380x770mm尺寸。S-trap坑距250mm，P-trap坑距180mm。PP马桶盖配置。经典造型，高效冲水，节水环保。",
+      "descriptionEn": "SEWOO 8006A series washdown one-piece toilet, dimensions 730x380x770mm. S-trap: 250mm, P-trap: 180mm. PP seat cover. Classic design, efficient flushing, water-saving and eco-friendly.",
+      "keywords": [
+        "SEWOO-8006A",
+        "连体马桶",
+        "直冲马桶，马桶",
+        "SEWOO"
+      ],
+      "keywordsEn": [
+        "SEWOO-8006A",
+        "连体马桶",
+        "马桶",
+        "SEWOO"
+      ]
+    },
+    "createdAt": "2026-06-26",
+    "updatedAt": "2026-06-30",
+    "documents": {
+      "manual": "",
+      "technicalData": "",
+      "imagesDownload": "",
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
+    },
+    "specificationsEn": {
+      "Type": "One-Piece Toilet",
+      "Flushing System": "Washdown",
+      "Dimensions": "730x380x770mm",
+      "S-trap Rough-in": "250mm",
+      "P-trap Rough-in": "180mm",
+      "Seat Cover": "PP Soft Close Seat",
+      "Material": "Premium Ceramic",
+      "Warranty": "5 Years"
+    },
+    "featuresEn": [
+      "喷射式高效冲水",
+      "Classic design",
+      "PP soft close seat included",
+      "Water-saving and eco-friendly",
+      "Easy-to-clean glaze"
+    ],
+    "certificationsEn": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ]
+  },
+  {
+    "id": "82",
+    "slug": "sewoo-8601-one-piece-rimless-toilet",
+    "category": "马桶",
+    "subcategory": "连体马桶",
+    "name": "SEWOO-8601 直冲对冲无框连体马桶",
+    "nameEn": "SEWOO-8601 Washdown Rimless One-Piece Toilet",
+    "description": "SEWOO 8601系列直冲对冲无框连体马桶，695x380x720mm尺寸。S-trap坑距250mm，P-trap坑距180mm。PP马桶盖配置。无圈孔设计，易清洁，卫生无死角。",
+    "descriptionEn": "SEWOO 8601 series rimless one-piece toilet, dimensions 695x380x720mm. S-trap: 250mm, P-trap: 180mm. PP seat cover. Rimless design, easy to clean, no hygiene dead corners.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX8601.png"
+    ],
+    "specifications": {
+      "类型": "连体马桶（无圈孔）",
+      "冲水方式": "Washdown Rimless 喷射无圈孔",
+      "尺寸": "695x380x720mm",
+      "S-trap坑距": "250mm",
+      "P-trap坑距": "180mm",
+      "马桶盖": "PP软盖",
+      "材质": "优质陶瓷",
+      "保修": "5年"
+    },
+    "features": [
+      "无圈孔易清洁设计",
+      "卫生无死角",
+      "PP软盖配置",
+      "节水环保",
+      "经典款式"
+    ],
+    "certifications": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ],
+    "seo": {
+      "title": "SEWOO-8601 直冲对冲无框连体马桶 - SEWOO 高端卫浴",
+      "titleEn": "SEWOO-8601 Washdown Rimless One-Piece Toilet - SEWOO Premium Bath",
+      "description": "SEWOO 8601系列直冲对冲无框连体马桶，695x380x720mm尺寸。S-trap坑距250mm，P-trap坑距180mm。PP马桶盖配置。无圈孔设计，易清洁，卫生无死角。",
+      "descriptionEn": "SEWOO 8601 series rimless one-piece toilet, dimensions 695x380x720mm. S-trap: 250mm, P-trap: 180mm. PP seat cover. Rimless design, easy to clean, no hygiene dead corners.",
+      "keywords": [
+        "SEWOO-8601",
+        "连体马桶",
+        "直冲",
+        "对冲，无框，SEWOO"
+      ],
+      "keywordsEn": [
+        "SEWOO-8601",
+        "one-piece",
+        "washdown",
+        "rimless",
+        "toilet",
+        "SEWOO"
+      ]
+    },
+    "createdAt": "2026-06-26",
+    "updatedAt": "2026-06-30",
+    "documents": {
+      "manual": "",
+      "technicalData": "",
+      "imagesDownload": "",
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
+    },
+    "specificationsEn": {
+      "Type": "One-Piece Toilet (Rimless)",
+      "Flushing System": "Washdown Rimless",
+      "Dimensions": "695x380x720mm",
+      "S-trap Rough-in": "250mm",
+      "P-trap Rough-in": "180mm",
+      "Seat Cover": "PP Soft Close Seat",
+      "Material": "Premium Ceramic",
+      "Warranty": "5 Years"
+    },
+    "featuresEn": [
+      "Rimless easy-to-clean design",
+      "Hygienic with no dead corners",
+      "PP soft close seat included",
+      "Water-saving and eco-friendly",
+      "Classic style"
+    ],
+    "certificationsEn": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ]
+  },
+  {
+    "id": "83",
+    "slug": "sewoo-9000-two-piece-toilet",
+    "category": "马桶",
+    "subcategory": "分体马桶",
+    "name": "SEWOO-9000 直冲对冲无框分体马桶",
+    "nameEn": "SEWOO-9000 Washdown Rimless Two-Piece Toilet",
+    "description": "SEWOO 9000系列直冲对冲无框分体马桶，650x365x785mm尺寸。S-trap坑距250mm，P-trap坑距180mm。PP马桶盖配置。方形简约设计，分体安装，维护方便。",
+    "descriptionEn": "SEWOO 9000 series rimless two-piece toilet, dimensions 650x365x785mm. S-trap: 250mm, P-trap: 180mm. PP seat cover. Square minimalist design, two-piece installation, easy maintenance.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX9000.png"
+    ],
+    "specifications": {
+      "类型": "分体马桶（无圈孔）",
+      "冲水方式": "Washdown Rimless 喷射无圈孔",
+      "尺寸": "650x365x785mm",
+      "S-trap坑距": "250mm",
+      "P-trap坑距": "180mm",
+      "马桶盖": "PP软盖",
+      "材质": "优质陶瓷",
+      "保修": "5年"
+    },
+    "features": [
+      "无圈孔易清洁设计",
+      "方形简约外观",
+      "分体安装维护方便",
+      "PP软盖配置",
+      "节水环保"
+    ],
+    "certifications": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ],
+    "seo": {
+      "title": "SEWOO-9000 直冲对冲无框分体马桶 - SEWOO 高端卫浴",
+      "titleEn": "SEWOO-9000 Washdown Rimless Two-Piece Toilet - SEWOO Premium Bath",
+      "description": "SEWOO 9000系列直冲对冲无框分体马桶，650x365x785mm尺寸。S-trap坑距250mm，P-trap坑距180mm。PP马桶盖配置。方形简约设计，分体安装，维护方便。",
+      "descriptionEn": "SEWOO 9000 series rimless two-piece toilet, dimensions 650x365x785mm. S-trap: 250mm, P-trap: 180mm. PP seat cover. Square minimalist design, two-piece installation, easy maintenance.",
+      "keywords": [
+        "SEWOO-9000",
+        "分体马桶",
+        "马桶",
+        "直冲，SEWOO"
+      ],
+      "keywordsEn": [
+        "SEWOO-9000",
+        "Two-Piece Toilet",
+        "Toilet",
+        "washdown",
+        "SEWOO"
+      ]
+    },
+    "createdAt": "2026-06-26",
+    "updatedAt": "2026-06-30",
+    "documents": {
+      "manual": "",
+      "technicalData": "",
+      "imagesDownload": "",
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
+    },
+    "specificationsEn": {
+      "Type": "Two-Piece Toilet (Rimless)",
+      "Flushing System": "Washdown Rimless",
+      "Dimensions": "650x365x785mm",
+      "S-trap Rough-in": "250mm",
+      "P-trap Rough-in": "180mm",
+      "Seat Cover": "PP Soft Close Seat",
+      "Material": "Premium Ceramic",
+      "Warranty": "5 Years"
+    },
+    "featuresEn": [
+      "Rimless easy-to-clean design",
+      "Square minimalist appearance",
+      "Two-piece installation, easy maintenance",
+      "PP soft close seat included",
+      "Water-saving and eco-friendly"
+    ],
+    "certificationsEn": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ]
+  },
+  {
+    "id": "84",
+    "slug": "sewoo-9001-two-piece-toilet",
+    "category": "马桶",
+    "subcategory": "分体马桶",
+    "name": "SEWOO-9001 直冲对冲无框分体马桶",
+    "nameEn": "SEWOO-9001 Washdown Rimless Two-Piece Toilet",
+    "description": "SEWOO 9001系列直冲对冲无框分体，665x370x790mm尺寸。S-trap坑距250mm，P-trap坑距180mm。PP马桶盖配置。流线型设计，分体安装，现代风格。",
+    "descriptionEn": "SEWOO 9001 series rimless two-piece toilet, dimensions 665x370x790mm. S-trap: 250mm, P-trap: 180mm. PP seat cover. Streamlined design, two-piece installation, modern style.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX9001.png"
+    ],
+    "specifications": {
+      "类型": "分体马桶（无圈孔）",
+      "冲水方式": "Washdown Rimless 喷射无圈孔",
+      "尺寸": "665x370x790mm",
+      "S-trap坑距": "250mm",
+      "P-trap坑距": "180mm",
+      "马桶盖": "PP软盖",
+      "材质": "优质陶瓷",
+      "保修": "5年"
+    },
+    "features": [
+      "无圈孔易清洁设计",
+      "流线型外观",
+      "分体安装维护方便",
+      "PP软盖配置",
+      "现代风格"
+    ],
+    "certifications": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ],
+    "seo": {
+      "title": "SEWOO-9001 直冲对冲无框分体马桶 - SEWOO 高端卫浴",
+      "titleEn": "SEWOO-9001 Washdown Rimless Two-Piece Toilet - SEWOO Premium Bath",
+      "description": "SEWOO 9001直冲对冲无框分体马桶，665x370x790mm尺寸。S-trap坑距250mm，P-trap坑距180mm。PP马桶盖配置。流线型设计，分体安装，现代风格。",
+      "descriptionEn": "SEWOO 9001 series rimless two-piece toilet, dimensions 665x370x790mm. S-trap: 250mm, P-trap: 180mm. PP seat cover. Streamlined design, two-piece installation, modern style.",
+      "keywords": [
+        "SEWOO-9001",
+        "分体马桶",
+        "直冲",
+        "对冲，SEWOO"
+      ],
+      "keywordsEn": [
+        "SEWOO-9001",
+        "Washdown",
+        "Rimless",
+        "Two-Piece Toilet",
+        "SEWOO"
+      ]
+    },
+    "createdAt": "2026-06-26",
+    "updatedAt": "2026-06-30",
+    "documents": {
+      "manual": "",
+      "technicalData": "",
+      "imagesDownload": "",
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
+    },
+    "specificationsEn": {
+      "Type": "Two-Piece Toilet (Rimless)",
+      "Flushing System": "Washdown Rimless",
+      "Dimensions": "665x370x790mm",
+      "S-trap Rough-in": "250mm",
+      "P-trap Rough-in": "180mm",
+      "Seat Cover": "PP Soft Close Seat",
+      "Material": "Premium Ceramic",
+      "Warranty": "5 Years"
+    },
+    "featuresEn": [
+      "Rimless easy-to-clean design",
+      "Streamlined appearance",
+      "Two-piece installation, easy maintenance",
+      "PP soft close seat included",
+      "现代风格"
+    ],
+    "certificationsEn": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ]
+  },
+  {
+    "id": "85",
+    "slug": "sewoo-9002-two-piece-toilet",
+    "category": "马桶",
+    "subcategory": "分体马桶",
+    "name": "SEWOO-9002 直冲对冲无框分体马桶",
+    "nameEn": "SEWOO-9002 Washdown Rimless Two-Piece Toilet",
+    "description": "SEWOO 9002系列直冲对冲无框分体马桶，685x380x790mm尺寸。S-trap坑距250mm，P-trap坑距180mm。PP马桶盖配置。圆润造型，分体安装，舒适大方。",
+    "descriptionEn": "SEWOO 9002 series rimless two-piece toilet, dimensions 685x380x790mm. S-trap: 250mm, P-trap: 180mm. PP seat cover. Rounded design, two-piece installation, comfortable and elegant.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX9002.png"
+    ],
+    "specifications": {
+      "类型": "分体马桶（无圈孔）",
+      "冲水方式": "Washdown Rimless 喷射无圈孔",
+      "尺寸": "685x380x790mm",
+      "S-trap坑距": "250mm",
+      "P-trap坑距": "180mm",
+      "马桶盖": "PP软盖",
+      "材质": "优质陶瓷",
+      "保修": "5年"
+    },
+    "features": [
+      "无圈孔易清洁设计",
+      "圆润造型舒适",
+      "分体安装维护方便",
+      "PP软盖配置",
+      "节水环保"
+    ],
+    "certifications": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ],
+    "seo": {
+      "title": "SEWOO-9002 直冲对冲无框分体马桶 - SEWOO 高端卫浴",
+      "titleEn": "SEWOO-9002 Washdown Rimless Two-Piece Toilet - SEWOO Premium Bath",
+      "description": "SEWOO 9002系列直冲对冲无框分体马桶，685x380x790mm尺寸。S-trap坑距250mm，P-trap坑距180mm。PP马桶盖配置。圆润造型，分体安装，舒适大方。",
+      "descriptionEn": "SEWOO 9002 series rimless two-piece toilet, dimensions 685x380x790mm. S-trap: 250mm, P-trap: 180mm. PP seat cover. Rounded design, two-piece installation, comfortable and elegant.",
+      "keywords": [
+        "SEWOO-9002",
+        "分体马桶",
+        "对冲，无框，马桶",
+        "SEWOO"
+      ],
+      "keywordsEn": [
+        "SEWOO-9002",
+        "Washdown，Rimless， Two-Piece Toilet",
+        "Toilet，SEWOO"
+      ]
+    },
+    "createdAt": "2026-06-26",
+    "updatedAt": "2026-06-30",
+    "documents": {
+      "manual": "",
+      "technicalData": "",
+      "imagesDownload": "",
+      "quote": "3312327005@qq.com",
+      "appointment": "3312327005@qq.com"
+    },
+    "specificationsEn": {
+      "Type": "Two-Piece Toilet (Rimless)",
+      "Flushing System": "Washdown Rimless",
+      "Dimensions": "685x380x790mm",
+      "S-trap Rough-in": "250mm",
+      "P-trap Rough-in": "180mm",
+      "Seat Cover": "PP Soft Close Seat",
+      "Material": "Premium Ceramic",
+      "Warranty": "5 Years"
+    },
+    "featuresEn": [
+      "Rimless easy-to-clean design",
+      "Rounded design, comfortable",
+      "Two-piece installation, easy maintenance",
+      "PP soft close seat included",
+      "Water-saving and eco-friendly"
+    ],
+    "certificationsEn": [
+      "ISO9001",
+      "SONCAP",
+      "CNAS",
+      "CE"
+    ]
   }
 ]

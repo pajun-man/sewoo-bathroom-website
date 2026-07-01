@@ -3,6 +3,7 @@ import SEO from '../components/seo/SEO';
 import ProductCard from '../components/ui/ProductCard';
 import ProductLayout from '../components/layout/ProductLayout';
 import products from '../data/products.json';
+import categories from '../data/categories.json';
 import seoConfig from '../data/seo-config.json';
 import { useI18n } from '../contexts/I18nContext';
 
@@ -37,10 +38,10 @@ const getCertificationColor = (cert: string): string => {
 
 const Products = () => {
   const { lang } = useI18n();
-  const [activeCategory, setActiveCategory] = useState<string | null>(null);
-  const [activeSubcategory, setActiveSubcategory] = useState<string | null>(null);
-  const [selectedCertifications, setSelectedCertifications] = useState<string[]>([]);
   const [productList, setProductList] = useState<any[]>(products);
+  const [selectedCertifications, setSelectedCertifications] = useState<string[]>([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 20;
 
   useEffect(() => {
     const savedProducts = localStorage.getItem('products');
@@ -76,7 +77,6 @@ const Products = () => {
 
   const productsPageConfig = seoConfig.pages.find(p => p.page === 'products');
 
-  // 动态从产品数据中提取所有认证标签（包括后台新增的）
   const allCertifications = useMemo(() => {
     const certSet = new Set<string>(defaultCertifications);
     productList.forEach((p: any) => {
@@ -94,15 +94,31 @@ const Products = () => {
     return Array.from(certSet);
   }, [productList]);
 
-  const filteredProducts = useMemo(() => {
-    let filtered = [...productList];
+  const featuredProducts = useMemo(() => {
+    const seenSubcategories = new Set<string>();
+    const featured: any[] = [];
 
-    if (activeCategory) {
-      filtered = filtered.filter((p: any) => p.category === activeCategory);
-    }
-    if (activeSubcategory) {
-      filtered = filtered.filter((p: any) => p.subcategory === activeSubcategory);
-    }
+    categories.forEach((cat: any) => {
+      if (cat.subcategories && cat.subcategories.length > 0) {
+        cat.subcategories.forEach((subcat: any) => {
+          const subcatName = subcat.name;
+          if (!seenSubcategories.has(subcatName)) {
+            seenSubcategories.add(subcatName);
+            const product = productList.find((p: any) => p.subcategory === subcatName);
+            if (product) {
+              featured.push(product);
+            }
+          }
+        });
+      }
+    });
+
+    return featured;
+  }, [productList]);
+
+  const filteredProducts = useMemo(() => {
+    let filtered = [...featuredProducts];
+
     if (selectedCertifications.length > 0) {
       filtered = filtered.filter((p: any) => {
         const certsZh = Array.isArray(p.certifications) ? p.certifications : [];
@@ -112,24 +128,26 @@ const Products = () => {
       });
     }
 
-    const seenIds = new Set<string>();
-    return filtered.filter((p: any) => {
-      if (!p.id || seenIds.has(p.id)) return false;
-      seenIds.add(p.id);
-      return true;
-    });
-  }, [productList, activeCategory, activeSubcategory, selectedCertifications]);
+    return filtered;
+  }, [featuredProducts, selectedCertifications]);
+
+  const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
+  const paginatedProducts = useMemo(() => {
+    const start = (currentPage - 1) * itemsPerPage;
+    const end = start + itemsPerPage;
+    return filteredProducts.slice(start, end);
+  }, [filteredProducts, currentPage]);
 
   const toggleCertification = (cert: string) => {
     setSelectedCertifications(prev =>
       prev.includes(cert) ? prev.filter(c => c !== cert) : [...prev, cert]
     );
+    setCurrentPage(1);
   };
 
   const clearFilters = () => {
     setSelectedCertifications([]);
-    setActiveCategory(null);
-    setActiveSubcategory(null);
+    setCurrentPage(1);
   };
 
   return (
@@ -153,7 +171,7 @@ const Products = () => {
       <ProductLayout>
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-6 mb-4 sm:mb-6">
           <h2 className="text-xl sm:text-2xl font-bold text-gray-900">
-            {activeSubcategory || activeCategory || (lang === 'zh' ? '全部产品' : 'All Products')}
+            {lang === 'zh' ? '主要产品分类' : 'Featured Products'}
           </h2>
           <div className="flex items-center">
             <span className="text-sm sm:text-base text-gray-600">
@@ -202,8 +220,7 @@ const Products = () => {
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-6">
-          {filteredProducts.map((product: any) => {
-            // 同时传递中英文认证标签
+          {paginatedProducts.map((product: any) => {
             const displayCertifications = lang === 'zh' 
               ? (product.certifications || [])
               : (product.certificationsEn || product.certifications || []);
@@ -223,6 +240,36 @@ const Products = () => {
             );
           })}
         </div>
+
+        {totalPages > 1 && (
+          <div className="flex justify-center items-center gap-2 mt-8">
+            <button
+              onClick={() => setCurrentPage(Math.max(1, currentPage - 1))}
+              disabled={currentPage === 1}
+              className={`px-4 py-2 rounded-md border transition-colors ${
+                currentPage === 1
+                  ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
+                  : 'bg-white text-gray-700 hover:bg-gray-50'
+              }`}
+            >
+              {lang === 'zh' ? '上一页' : 'Previous'}
+            </button>
+            <span className="text-sm text-gray-600">
+              {currentPage} {lang === 'zh' ? ' / ' : ' / '} {totalPages}
+            </span>
+            <button
+              onClick={() => setCurrentPage(Math.min(totalPages, currentPage + 1))}
+              disabled={currentPage === totalPages}
+              className={`px-4 py-2 rounded-md border transition-colors ${
+                currentPage === totalPages
+                  ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
+                  : 'bg-white text-gray-700 hover:bg-gray-50'
+              }`}
+            >
+              {lang === 'zh' ? '下一页' : 'Next'}
+            </button>
+          </div>
+        )}
 
         {filteredProducts.length === 0 && (
           <div className="text-center py-20">
