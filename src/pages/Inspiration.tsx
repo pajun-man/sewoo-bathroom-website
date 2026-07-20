@@ -21,11 +21,11 @@ interface Inspiration {
   description: string;
   descriptionEn: string;
   seo?: {
-    title: string;
-    titleEn: string;
-    description: string;
-    descriptionEn: string;
-    keywords: string[];
+    title?: string;
+    titleEn?: string;
+    description?: string;
+    descriptionEn?: string;
+    keywords?: string[];
   };
   styleEn?: string;
   area?: string;
