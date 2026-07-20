@@ -39,7 +39,7 @@ const defaultContactInfo: ContactInfo = {
   phone: '19174230029',
   phoneHours: '周一至周六 9:00-18:00',
   phoneHoursEn: 'Mon-Sat 9:00-18:00',
-  emails: ['3312327005@qq.com'],
+  emails: ['3312327005@qq.com', 'sales@sewoobath.com'],
   workTime: {
     weekday: '周一至周五: 9:00 - 18:00',
     weekdayEn: 'Monday-Friday: 9:00 - 18:00',
@@ -50,25 +50,6 @@ const defaultContactInfo: ContactInfo = {
   },
 };
 
-const getInitialContactInfo = (): ContactInfo => {
-  if (typeof window !== 'undefined') {
-    const saved = localStorage.getItem('contactInfo');
-    if (saved) {
-      try {
-        return JSON.parse(saved);
-      } catch {
-        // fall through
-      }
-    }
-  }
-  if (siteConfig?.contactInfo) {
-    return siteConfig.contactInfo as ContactInfo;
-  }
-  return defaultContactInfo;
-};
-
-const CONTACT_EMAIL = '3312327005@qq.com';
-
 const Contact = () => {
   const { lang, t } = useI18n();
   const [formData, setFormData] = useState({
@@ -78,19 +59,51 @@ const Contact = () => {
     subject: '',
     message: '',
   });
-  const [contactInfo, setContactInfo] = useState<ContactInfo>(getInitialContactInfo);
+  const [contactInfo, setContactInfo] = useState<ContactInfo>(defaultContactInfo);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
 
   useEffect(() => {
-    const saved = localStorage.getItem('contactInfo');
-    if (saved) {
-      try {
-        setContactInfo(JSON.parse(saved));
-      } catch {
-        // keep existing
+    const loadContactInfo = () => {
+      const saved = localStorage.getItem('contactInfo');
+      if (saved) {
+        try {
+          const savedData = JSON.parse(saved);
+          const merged = { ...defaultContactInfo, ...savedData };
+          if (savedData.emails && Array.isArray(savedData.emails)) {
+            merged.emails = savedData.emails;
+          }
+          if (savedData.workTime) {
+            merged.workTime = savedData.workTime;
+          }
+          setContactInfo(merged);
+        } catch {
+          setContactInfo(defaultContactInfo);
+        }
+      } else if (siteConfig?.contactInfo) {
+        const merged = { ...defaultContactInfo, ...siteConfig.contactInfo };
+        if (siteConfig.contactInfo.emails && Array.isArray(siteConfig.contactInfo.emails)) {
+          merged.emails = siteConfig.contactInfo.emails;
+        }
+        if (siteConfig.contactInfo.workTime) {
+          merged.workTime = siteConfig.contactInfo.workTime;
+        }
+        setContactInfo(merged);
       }
-    }
+    };
+
+    loadContactInfo();
+
+    const handleStorageChange = (e: StorageEvent) => {
+      if (e.key === 'contactInfo') {
+        loadContactInfo();
+      }
+    };
+
+    window.addEventListener('storage', handleStorageChange);
+    return () => window.removeEventListener('storage', handleStorageChange);
   }, []);
+
+  const contactEmail = contactInfo.emails[0] || '3312327005@qq.com';
 
   const contactPageConfig = seoConfig.pages.find(p => p.page === 'contact');
 
@@ -110,7 +123,7 @@ const Contact = () => {
         ? (lang === 'zh' ? subjectLabels[formData.subject].zh : subjectLabels[formData.subject].en)
         : (lang === 'zh' ? '产品咨询' : 'Product Inquiry');
 
-      const response = await fetch('https://formsubmit.co/ajax/' + CONTACT_EMAIL, {
+      const response = await fetch('https://formsubmit.co/ajax/' + contactEmail, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
