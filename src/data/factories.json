@@ -63,8 +63,8 @@
     ],
     "phone": "+86 19174230029",
     "phoneEn": "+86 19174230029",
-    "email": "3312327005@qq.com",
-    "emailEn": "3312327005@qq.com",
+    "email": "3312327005@qq.com-sales@sewoobath.com",
+    "emailEn": "3312327005@qq.com-sales@sewoobath.com",
     "workingHours": "周一至周六 8:00-18:00",
     "workingHoursEn": "Mon-Sat 8:00-18:00",
     "certifications": [
@@ -92,8 +92,8 @@
     "exportCountriesEn": "出口国家",
     "patentTechnologies": "100+",
     "patentTechnologiesEn": "专利技术",
-    "factoryStrengthTitle": "工厂实力展示",
-    "factoryStrengthTitleEn": "Factory Strength"
+    "factoryStrengthTitle": "源头自产严控品质",
+    "factoryStrengthTitleEn": "Self-produced at the source with strict quality control"
   },
   {
     "id": "2",
@@ -147,8 +147,8 @@
     ],
     "phone": "+86 19174230029",
     "phoneEn": "+86 19174230029",
-    "email": "3312327005@qq.com",
-    "emailEn": "3312327005@qq.com",
+    "email": "3312327005@qq.com-sales@sewoobath.com",
+    "emailEn": "3312327005@qq.com-sales@sewoobath.com",
     "workingHours": "周一至周六 8:00-18:00",
     "workingHoursEn": "Mon-Sat 8:00-18:00",
     "certifications": [
@@ -181,8 +181,8 @@
     "exportCountriesEn": "出口国家",
     "patentTechnologies": "80+",
     "patentTechnologiesEn": "专利技术",
-    "factoryStrengthTitle": "工厂实力展示",
-    "factoryStrengthTitleEn": "Factory Strength"
+    "factoryStrengthTitle": "源头自产严控品质",
+    "factoryStrengthTitleEn": "Self-produced at the source with strict quality control"
   },
   {
     "id": "1780552325511",
@@ -283,9 +283,9 @@
       }
     ],
     "phone": "+86 19174230029",
-    "phoneEn": "",
-    "email": "3312327005@qq.com",
-    "emailEn": "3312327005@qq.com",
+    "phoneEn": "+86 19174230029",
+    "email": "3312327005@qq.com-sales@sewoobath.com",
+    "emailEn": "3312327005@qq.com-sales@sewoobath.com",
     "workingHours": "周一至周六 8:00-18:00",
     "workingHoursEn": "Mon-Sat 8:00-18:00",
     "certifications": [
@@ -308,8 +308,8 @@
     "exportCountriesEn": "出口国家",
     "patentTechnologies": "80+",
     "patentTechnologiesEn": "专利技术",
-    "factoryStrengthTitle": "工厂实力展示",
-    "factoryStrengthTitleEn": "Factory Strength"
+    "factoryStrengthTitle": "源头自产严控品质",
+    "factoryStrengthTitleEn": "Self-produced at the source with strict quality control"
   },
   {
     "id": "1780646670294",
@@ -323,7 +323,7 @@
     "descriptionEn": "    We are a modern medium-to-large sized wall and floor tile manufacturer integrating R&D, intelligent manufacturing and sales. We have introduced full-range internationally sourced intelligent production equipment, including complete intelligent production lines equipped with an ultra-long 300-meter energy-saving kiln, 7200-ton large-tonnage numerical control presses, high-end wet ball mills, wide-format synchronous intelligent conveying systems and other supporting facilities.\n\n    Our factory arranges mass production of a full spectrum of ceramic tiles, covering mid-to-high-end full-range products such as full-body floor tiles, wall tiles, imitation marble slabs and decorative Roman columns. Leveraging our full-product matching advantages, we provide one-stop complete supporting solutions for residential decoration and commercial construction projects.\n\n    The enterprise has successively obtained multiple authoritative certifications including China Compulsory Certification (3C), ISO9001 Quality Management System Certification, ISO14001 Environmental Management System Certification and GB/T28001 Occupational Health and Safety Management System Certification.\n\n    Committed to green intelligent manufacturing, we have invested over 10 million RMB in environmental protection hardware, with annual environmental protection operation and maintenance expenses exceeding 7 million RMB, enabling us to legally and steadily undertake bulk centralized procurement orders from real estate developers and hotels.",
     "capacity": "4320 万㎡/ 年",
     "capacityEn": "43.2 million square meters per year",
-    "image": "",
+    "image": "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXFactory%20showing.jpg",
     "features": [
       {
         "zh": "符合工程资质",
@@ -342,12 +342,14 @@
         "en": "Quality Assurance for Products and Packaging"
       }
     ],
-    "galleryImages": [],
+    "galleryImages": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXShow%20room%20sampel.jpg"
+    ],
     "videos": [],
     "phone": "+86 19174230029",
-    "phoneEn": "",
-    "email": "3312327005@qq.com",
-    "emailEn": "3312327005@qq.com",
+    "phoneEn": "+86 19174230029",
+    "email": "3312327005@qq.com-sales@sewoobath.com",
+    "emailEn": "3312327005@qq.com-sales@sewoobath.com",
     "workingHours": "",
     "workingHoursEn": "",
     "certifications": [
@@ -380,7 +382,166 @@
     "exportCountriesEn": "出口国家",
     "patentTechnologies": "",
     "patentTechnologiesEn": "",
-    "factoryStrengthTitle": "",
-    "factoryStrengthTitleEn": ""
+    "factoryStrengthTitle": "源头自产严控品质",
+    "factoryStrengthTitleEn": "Self-produced at the source with strict quality control"
+  },
+  {
+    "id": "1784562368331",
+    "name": "广顺卫浴",
+    "nameEn": "Guangshun Sanitary Ware",
+    "category": "其他产品",
+    "categoryEn": "Other Products",
+    "location": "佛山",
+    "locationEn": "Foshan",
+    "description": "我们是一站式卫浴洁具生产出口企业，拥有3万平方米标准化厂房、130名在职员工，年产能达50万套。\n\n公司自主生产全系列卫浴产品，涵盖亚克力浴缸、户外SPA恒温泡池、干蒸桑拿房、整体淋浴房及便携式淋浴房。\n\n全系产品均通过欧盟CE、美国CUPC及澳洲标准认证，满足多国出口准入要求，常年远销欧美及东南亚各国。\n\n企业支持OEM与ODM定制服务，执行严苛的生产品控体系，可稳定承接整柜海外订单，为全球采购商提供可靠的供货服务。",
+    "descriptionEn": "We are a one-stop sanitary ware manufacturer and exporter with our own 30,000 square meters of standardized factory buildings, 130 existing employees and an annual production capacity of 500,000 sets.\n\nWe independently manufacture a full range of products including acrylic bathtubs, outdoor SPA hot tubs, dry steam saunas, integrated shower rooms and portable shower rooms.\n\nAll our products have obtained CE, CUPC and Australian standard certifications, meeting the export access requirements of numerous countries, and are sold to Europe, America and Southeast Asian countries all year round.\n\nWe support OEM & ODM customization, implement strict production quality control, steadily accept full-container overseas orders, and provide reliable supply services for global purchasers.\n",
+    "capacity": "10万件/年",
+    "capacityEn": "100,000 pieces per year",
+    "image": "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX%E5%B7%A5%E5%8E%82%E5%9B%BE%E7%89%87%20.png",
+    "features": [
+      {
+        "zh": "各类认证齐全",
+        "en": "Complete range of certifications available"
+      },
+      {
+        "zh": "浴缸，桑拿房等多品类产品工厂生产",
+        "en": "Factory production of multiple product categories including bathtubs and saunas"
+      },
+      {
+        "zh": "木箱和纸箱自主生产配套",
+        "en": "Self-produced matching wooden and carton boxes"
+      },
+      {
+        "zh": "可定制开模生产",
+        "en": "Custom mold opening and production available"
+      }
+    ],
+    "galleryImages": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX%E5%B7%A5%E5%8E%82%E5%9B%BE%E7%89%87%20(1).jpg",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX%E5%B7%A5%E5%8E%82%E5%9B%BE%E7%89%87%20(2).jpg",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX%E5%B7%A5%E5%8E%82%E5%9B%BE%E7%89%87%20(4).jpg",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX%E5%B7%A5%E5%8E%82%E5%9B%BE%E7%89%87%20(5).jpg",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX%E9%A6%96%E9%A1%B5%E5%9B%BE.jpg",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX%E6%9C%A8%E6%9E%B6%E5%9B%BE%E7%89%87.jpg",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX%E5%B7%A5%E5%8E%82%E5%9B%BE%E7%89%87.jpg",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX%E5%B7%A5%E5%8E%82%E5%9B%BE%E7%89%87%20(3).jpg",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZX%E5%B7%A5%E5%8E%82%E5%9B%BE%E7%89%87%20(2).jpg"
+    ],
+    "videos": [],
+    "phone": "19174230029",
+    "phoneEn": "19174230029",
+    "email": "3312327005@qq.com-sales@sewoobath.com",
+    "emailEn": "3312327005@qq.com-sales@sewoobath.com",
+    "workingHours": "",
+    "workingHoursEn": "",
+    "certifications": [
+      {
+        "name": "CE",
+        "nameEn": "CE",
+        "icon": "Award"
+      },
+      {
+        "name": "cUPC",
+        "nameEn": "cUPC",
+        "icon": "Award"
+      },
+      {
+        "name": "NOM",
+        "nameEn": "NOM",
+        "icon": "Award"
+      },
+      {
+        "name": "WaterMark",
+        "nameEn": "WaterMark",
+        "icon": "Award"
+      }
+    ],
+    "factoryArea": "50000㎡",
+    "factoryAreaEn": "50000㎡",
+    "technicalStaff": "200+",
+    "technicalStaffEn": "",
+    "exportCountries": "",
+    "exportCountriesEn": "",
+    "patentTechnologies": "",
+    "patentTechnologiesEn": "",
+    "factoryStrengthTitle": "源头自产严控品质",
+    "factoryStrengthTitleEn": "Self-produced at the source with strict quality control"
+  },
+  {
+    "id": "1784563033639",
+    "name": "航牌卫浴",
+    "nameEn": "HEEKK Sanitary",
+    "category": "智能马桶",
+    "categoryEn": "Smart Toilets",
+    "location": "ChaoZhou",
+    "locationEn": "ChaoZhou",
+    "description": "我们始于2005年，经过11年的发展与积累，于2016年正式创立，是一家集智能卫生洁具和智能电路控板的开发、生产与销售为一体的综合性现代企业，总部位于享有中国瓷都美誉的广东省潮州市。创立10年来，已成为国内外众多大型卫浴品牌的重点OEM战略合作伙伴，公司产品遍布全国以及世界多个国家与地区\n\n公司秉承“诚信、务实、专业、创新”的核心价值观和“质量为本，信誉为重”的经营理念，以完善的设计、精巧的工艺、严格的产品检测手段以及完善的售后服务，为客户提供品质卓越的卫浴产品。“品质为先，探索不止”是我们的品牌方向。未来，我们将继续不断探索、创新，创造更多优质的产品，振兴中国民族品牌，为广大客户与消费者提供品质卓越的智能卫浴产品，共享现代舒适卫浴生活!",
+    "descriptionEn": "We started our journey in 2005 and achieved official establishment in 2016 after 11 years of development and accumulation. We are a comprehensive modern enterprise integrating the development, production and sales of intelligent sanitary ware and intelligent circuit control boards, with our headquarters located in Chaozhou City, Guangdong Province, known as the Porcelain Capital of China. Over the past decade since its founding, the company has become a key OEM strategic partner for numerous large domestic and foreign bathroom brands, with its products sold across China and many countries and regions worldwide.\n\nAdhering to the core values of \"Integrity, Pragmatism, Professionalism and Innovation\" and the business philosophy of \"Quality-oriented, Reputation-prioritized\", the company provides customers with high-quality bathroom products through sophisticated design, exquisite craftsmanship, strict product testing methods and comprehensive after-sales service. Our brand tenet is \"Quality First, Endless Exploration\". In the future, we will keep exploring and innovating to develop more high-quality products, revitalize Chinese national brands, supply superior intelligent bathroom products for customers and consumers, and share a modern and comfortable bathroom life together!",
+    "capacity": "一百万件/年",
+    "capacityEn": "One million pieces per year",
+    "image": "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXHEEKK%20(1).png",
+    "features": [
+      {
+        "zh": "产品全系列测试和检验报告齐全",
+        "en": "Complete test and inspection reports for the full product range are available."
+      },
+      {
+        "zh": "各类认证齐全",
+        "en": "Complete range of certifications available"
+      },
+      {
+        "zh": "年产量和工厂规模大",
+        "en": "Large annual output and factory scale"
+      },
+      {
+        "zh": "多个专卖店和经销商",
+        "en": "multiple exclusive stores and distributors"
+      }
+    ],
+    "galleryImages": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXHEEKK%20(3).png",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXHEEKK%20(2).png",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXHEEKK%20(9).png",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXHEEKK%20(8).png",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXHEEKK%20(7).png",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXHEEKK%20(6).png",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXHEEKK%20(5).png",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXHEEKK%20(4).png",
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXHEEKK.png"
+    ],
+    "videos": [],
+    "phone": "19174230029",
+    "phoneEn": "19174230029",
+    "email": "3312327005@qq.com-sales@sewoobath.com",
+    "emailEn": "3312327005@qq.com-sales@sewoobath.com",
+    "workingHours": "",
+    "workingHoursEn": "",
+    "certifications": [
+      {
+        "name": "CE",
+        "nameEn": "CE",
+        "icon": "Award"
+      },
+      {
+        "name": "cUPC",
+        "nameEn": "cUPC",
+        "icon": "Award"
+      },
+      {
+        "name": "WaterMark",
+        "nameEn": "WaterMark",
+        "icon": "Award"
+      }
+    ],
+    "factoryArea": "150000㎡",
+    "factoryAreaEn": "150000㎡",
+    "technicalStaff": "700+",
+    "technicalStaffEn": "",
+    "exportCountries": "",
+    "exportCountriesEn": "",
+    "patentTechnologies": "",
+    "patentTechnologiesEn": "",
+    "factoryStrengthTitle": "源头自产严控品质",
+    "factoryStrengthTitleEn": "Self-produced at the source with strict quality control"
   }
 ]

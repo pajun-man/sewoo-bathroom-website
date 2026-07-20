@@ -82,11 +82,6 @@
         "id": "sub-3-3",
         "name": "立柱盆",
         "nameEn": "Pedestal Basin"
-      },
-      {
-        "id": "sub-3-4",
-        "name": "一体盆",
-        "nameEn": "Integrated Basin"
       }
     ]
   },
@@ -123,19 +118,19 @@
         "nameEn": "Shower Set"
       },
       {
-        "id": "sub-5-2",
-        "name": "手持花洒",
-        "nameEn": "Handheld Shower"
-      },
-      {
-        "id": "sub-5-3",
-        "name": "头顶花洒",
-        "nameEn": "Rain Shower"
-      },
-      {
         "id": "sub-5-4",
-        "name": "淋浴龙头",
-        "nameEn": "Shower Mixer"
+        "name": "浴缸龙头",
+        "nameEn": "Bath Faucet"
+      },
+      {
+        "id": "cat-5-1784028516887",
+        "name": "面盆龙头",
+        "nameEn": "Basin Faucet"
+      },
+      {
+        "id": "cat-5-1784028533300",
+        "name": "厨房龙头",
+        "nameEn": "Kitchen Faucet"
       }
     ]
   },
@@ -195,6 +190,23 @@
         "id": "cat-7-1782289780922",
         "name": "蒸汽淋浴一体机",
         "nameEn": "Steam Shower Combo"
+      }
+    ]
+  },
+  {
+    "id": "cat-8",
+    "name": "其他产品",
+    "nameEn": "Other Products",
+    "subcategories": [
+      {
+        "id": "sub-8-1",
+        "name": "化妆镜",
+        "nameEn": "Cosmetic Mirrors"
+      },
+      {
+        "id": "cat-8-1784274125354",
+        "name": "小便斗",
+        "nameEn": "Urinal"
       }
     ]
   }

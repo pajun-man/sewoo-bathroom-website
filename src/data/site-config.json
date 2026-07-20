@@ -1,5 +1,101 @@
 {
-  "navItems": null,
+  "navItems": [
+    {
+      "path": "/",
+      "label": "首页",
+      "labelEn": "Home"
+    },
+    {
+      "path": "/products",
+      "label": "产品中心",
+      "labelEn": "Products",
+      "hasDropdown": true,
+      "dropdownItems": [
+        {
+          "label": "淋浴房",
+          "labelEn": "Showers",
+          "subItems": [
+            "整体淋浴房",
+            "淋浴屏风",
+            "淋浴底座"
+          ]
+        },
+        {
+          "label": "马桶",
+          "labelEn": "Toilets",
+          "subItems": [
+            "连体马桶",
+            "分体马桶",
+            "壁挂马桶"
+          ]
+        },
+        {
+          "label": "盆",
+          "labelEn": "Basins",
+          "subItems": [
+            "台上盆",
+            "台下盆",
+            "立柱盆",
+            "一体盆"
+          ]
+        },
+        {
+          "label": "智能马桶",
+          "labelEn": "Smart Toilets",
+          "subItems": [
+            "全自动智能马桶",
+            "智能马桶盖",
+            "智能小便斗"
+          ]
+        },
+        {
+          "label": "花洒",
+          "labelEn": "Showers",
+          "subItems": [
+            "淋浴花洒套装",
+            "手持花洒",
+            "头顶花洒",
+            "淋浴龙头"
+          ]
+        },
+        {
+          "label": "其他产品",
+          "labelEn": "Others",
+          "subItems": [
+            "浴室家具",
+            "地板",
+            "五金配件",
+            "浴室柜"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/inspiration",
+      "label": "灵感画廊",
+      "labelEn": "Inspiration"
+    },
+    {
+      "path": "/factory",
+      "label": "工厂介绍",
+      "labelEn": "Factory"
+    },
+    {
+      "path": "/about",
+      "label": "关于我们",
+      "labelEn": "About"
+    },
+    {
+      "path": "/dealers",
+      "label": "可持续发展",
+      "labelEn": "Sustainability"
+    },
+    {
+      "path": "/contact",
+      "label": "联系我们",
+      "labelEn": "Contact"
+    }
+  ],
   "siteLogo": "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/%E5%85%AC%E5%8F%B8logo%E7%AE%80%E7%BA%A6%E7%89%88%20(1).png",
   "siteTitle": {
     "zh": "让世界更好的卫浴供应工厂",
@@ -18,7 +114,7 @@
     "phoneHoursEn": "Mon-Sat 9:00-18:00",
     "emails": [
       "3312327005@qq.com",
-      ""
+      "sales@sewoobath.com"
     ],
     "workTime": {
       "weekday": "周一至周五: 9:00 - 18:00",

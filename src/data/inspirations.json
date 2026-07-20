@@ -1,174 +1,200 @@
 [
   {
-    "id": "1",
-    "slug": "modern-minimalist-bathroom",
-    "style": "modern",
-    "title": "现代极简浴室设计",
-    "titleEn": "Modern Minimalist Bathroom Design",
-    "description": "以白色为主调，搭配灰色大理石纹瓷砖，营造出简洁明亮的现代浴室空间。智能马桶和LED浴室镜体现了科技与美学的完美结合。",
-    "descriptionEn": "A bright, modern bathroom with white as the primary color, complemented by gray marble-effect tiles. Smart toilet and LED mirror showcase the perfect blend of technology and aesthetics.",
+    "id": "1784555132814",
+    "slug": "都市夜景浴室",
+    "style": "现代风格",
+    "title": "都市夜景浴室",
+    "titleEn": "Urban night view bathroom",
+    "description": "深色调的都市风格浴室，百叶窗透入城市夜景灯光。黑色大理石台面搭配金色五金配件，营造出神秘而奢华的都市夜生活氛围。智能照明系统可根据场景调节光线，独立式浴缸让您在繁华都市中享受片刻宁静。",
+    "descriptionEn": "A dark-toned urban style bathroom with city night lights filtering through blinds. Black marble countertop paired with gold fixtures creates a mysterious and luxurious urban nightlife atmosphere. Smart lighting system adjusts to different scenes, and the freestanding bathtub lets you enjoy moments of tranquility in the bustling city.",
     "images": [
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800",
-      "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800",
-      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800",
-      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/2.jpg",
-      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/2.jpg"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXM1.png"
     ],
-    "designer": "张伟",
-    "location": "上海·静安区",
-    "seo": {
-      "title": "现代极简浴室设计案例 - SEWOO 灵感画廊",
-      "titleEn": "Modern Minimalist Bathroom Design - SEWOO Inspiration Gallery",
-      "description": "探索 SEWOO 现代极简浴室设计案例，白色主调搭配大理石纹理，智能卫浴产品应用。",
-      "descriptionEn": "Explore SEWOO modern minimalist bathroom designs with white theme and marble textures.",
-      "keywords": [
-        "现代浴室",
-        "极简设计",
-        "白色浴室",
-        "智能卫浴"
-      ]
-    },
-    "updatedAt": "2026-06-01",
     "videos": [],
-    "locationEn": "Jing'an District, Shanghai",
-    "project": "啊啊",
-    "projectEn": "aa",
-    "area": "1000㎡"
+    "project": "都市夜景",
+    "projectEn": "Urban Night",
+    "location": "Mario",
+    "locationEn": "Mario",
+    "area": "13㎡",
+    "shareUrl": "",
+    "downloadUrl": "",
+    "createdAt": "2026-07-20",
+    "updatedAt": "2026-07-20"
   },
   {
-    "id": "2",
-    "slug": "luxury-spa-inspired-bathroom",
-    "style": "classic",
-    "title": "奢华水疗风格浴室",
-    "titleEn": "Luxury Spa-Inspired Bathroom",
-    "description": "灵感来自顶级水疗中心的浴室设计，深色胡桃木饰面与金色五金配件相得益彰。独立式浴缸和头顶花洒营造出沉浸式的沐浴体验。",
-    "descriptionEn": "Inspired by luxury spas, this bathroom features dark walnut wood finishes paired with gold fixtures. Freestanding tub and rain shower create an immersive bathing experience.",
+    "id": "1784555157544",
+    "slug": "复古绿植浴室",
+    "style": "现代风格",
+    "title": "复古绿植浴室",
+    "titleEn": "Vintage Greenery Bathroom",
+    "description": "复古风格的绿色瓷砖浴室，搭配金色淋浴五金和原木浴室柜。大量绿植点缀其间，仿佛置身于热带花园，带来清新自然的沐浴体验。拱形镜子和复古灯饰增添了怀旧气息，让每一次沐浴都成为享受。",
+    "descriptionEn": "A vintage-style green tile bathroom with gold shower fixtures and wooden vanity. Abundant green plants create a tropical garden atmosphere, bringing a fresh and natural bathing experience. Arched mirrors and vintage lighting add a nostalgic touch, making every bath a pleasure.",
     "images": [
-      "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=800",
-      "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXM2.png"
     ],
-    "designer": "李娜",
-    "location": "北京·朝阳区",
-    "seo": {
-      "title": "奢华水疗风格浴室设计 - SEWOO 灵感画廊",
-      "titleEn": "Luxury Spa-Inspired Bathroom - SEWOO Inspiration Gallery",
-      "description": "探索 SEWOO 奢华水疗风格浴室设计案例，深色木饰面搭配金色五金，独立式浴缸配置。",
-      "descriptionEn": "Explore SEWOO luxury spa-inspired bathroom designs with wood finishes and gold fixtures.",
-      "keywords": [
-        "奢华浴室",
-        "水疗风格",
-        "独立浴缸",
-        "金色五金"
-      ]
-    },
     "videos": [],
-    "project": "额额",
-    "projectEn": "ee",
-    "locationEn": "Chaoyang District, Beijing",
-    "area": "1㎡",
-    "updatedAt": "2026-06-01"
-  },
-  {
-    "id": "3",
-    "slug": "scandinavian-cozy-bathroom",
-    "style": "minimalist",
-    "title": "北欧温馨浴室",
-    "titleEn": "Scandinavian Cozy Bathroom",
-    "description": "北欧风格浴室设计，以自然木色和柔和的灰色为主，营造出温暖舒适的沐浴空间。墙挂式浴室柜和简洁的线条体现了功能主义设计理念。",
-    "descriptionEn": "A Scandinavian bathroom with natural wood tones and soft grays, creating a warm and cozy bathing space. Wall-mounted vanity and clean lines embody functional design principles.",
-    "images": [
-      "https://images.unsplash.com/photo-1585421514738-01798e348b17?w=800",
-      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
-    ],
-    "designer": "王明",
-    "location": "深圳·南山区",
-    "seo": {
-      "title": "北欧温馨浴室设计 - SEWOO 灵感画廊",
-      "titleEn": "Scandinavian Cozy Bathroom - SEWOO Inspiration Gallery",
-      "description": "探索 SEWOO 北欧风格浴室设计案例，自然木色柔和配色，温馨舒适的沐浴空间。",
-      "descriptionEn": "Explore SEWOO Scandinavian bathroom designs with natural wood tones and cozy aesthetics.",
-      "keywords": [
-        "北欧浴室",
-        "温馨设计",
-        "木色浴室",
-        "功能主义"
-      ]
-    },
-    "videos": [],
-    "updatedAt": "2026-06-01",
-    "project": "我我",
-    "projectEn": "ww",
-    "locationEn": "Nanshan District, Shenzhen",
-    "area": "0㎡"
-  },
-  {
-    "id": "4",
-    "slug": "contemporary-black-bathroom",
-    "style": "modern",
-    "title": "当代黑色美学浴室",
-    "titleEn": "Contemporary Black Aesthetic Bathroom",
-    "description": "大胆使用黑色作为主色调，配合哑光黑色五金件，打造出极具个性的当代浴室。LED照明系统的巧妙运用为空间增添了层次感。",
-    "descriptionEn": "Bold black as the primary color with matte black fixtures creates a distinctive contemporary bathroom. Clever LED lighting adds layers and depth to the space.",
-    "images": [
-      "https://images.unsplash.com/photo-1618220179428-22790b461013?w=800",
-      "https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=800",
-      "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=800"
-    ],
-    "designer": "陈静",
-    "location": "广州·天河区",
-    "seo": {
-      "title": "当代黑色美学浴室设计 - SEWOO 灵感画廊",
-      "titleEn": "Contemporary Black Bathroom - SEWOO Inspiration Gallery",
-      "description": "探索 SEWOO 当代黑色美学浴室设计案例，大胆配色配合LED照明，极具个性。",
-      "descriptionEn": "Explore SEWOO contemporary black bathroom designs with bold aesthetics and LED lighting.",
-      "keywords": [
-        "黑色浴室",
-        "当代设计",
-        "哑光黑",
-        "LED照明"
-      ]
-    },
-    "videos": [],
-    "project": "揉揉",
-    "projectEn": "rr",
-    "locationEn": "Tianhe District, Guangzhou",
+    "project": "复古绿意",
+    "projectEn": "Vintage Green",
+    "location": "Mario",
+    "locationEn": "Mario",
     "area": "11㎡",
-    "updatedAt": "2026-06-01"
+    "shareUrl": "",
+    "downloadUrl": "",
+    "createdAt": "2026-07-20",
+    "updatedAt": "2026-07-20"
   },
   {
-    "id": "5",
-    "slug": "natural-stone-bathroom",
-    "style": "classic",
-    "title": "天然石材浴室",
-    "titleEn": "Natural Stone Bathroom",
-    "description": "采用天然大理石和花岗岩打造的浴室，每一块石材都独一无二。配合简约设计的卫浴产品，展现出天然材质的高贵气质。",
-    "descriptionEn": "A bathroom crafted from natural marble and granite, where each stone piece is unique. Paired with minimalist fixtures, showcasing the noble character of natural materials.",
+    "id": "1784555171764",
+    "slug": "侘寂海景浴室",
+    "style": "现代风格",
+    "title": "侘寂海景浴室",
+    "titleEn": "Wabi-sabi ocean-view bathroom",
+    "description": "侘寂风格的海景浴室，采用天然石材打造的石盆和石质台面。大幅落地窗正对海景，枯树枝和盆栽点缀，展现原始质朴的自然之美。微水泥墙面与大地色系搭配，让您在沐浴时尽享海天一色的壮阔景色。",
+    "descriptionEn": "A wabi-sabi style ocean view bathroom with natural stone basin and countertop. Large floor-to-ceiling windows face the sea, with dead branches and potted plants showcasing raw and rustic natural beauty. Microcement walls paired with earth tones let you enjoy the vast sea and sky while bathing.",
     "images": [
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800",
-      "https://images.unsplash.com/photo-1585421514738-01798e348b17?w=800",
-      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800"
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXM3.png"
     ],
-    "designer": "刘芳",
-    "location": "成都·锦江区",
-    "seo": {
-      "title": "天然石材浴室设计 - SEWOO 灵感画廊",
-      "titleEn": "Natural Stone Bathroom - SEWOO Inspiration Gallery",
-      "description": "探索 SEWOO 天然石材浴室设计案例，大理石和花岗岩应用，高贵材质美学。",
-      "descriptionEn": "Explore SEWOO natural stone bathroom designs with marble and granite materials.",
-      "keywords": [
-        "大理石浴室",
-        "石材浴室",
-        "天然材质",
-        "高端设计"
-      ]
-    },
     "videos": [],
-    "project": "全球",
-    "projectEn": "qq",
-    "locationEn": "Jinjiang District, Chengdu",
-    "area": "55㎡",
-    "updatedAt": "2026-06-01"
+    "project": "侘寂海景",
+    "projectEn": "Wabi-Sabi Ocean",
+    "location": "Mario",
+    "locationEn": "Mario",
+    "area": "16㎡",
+    "shareUrl": "",
+    "downloadUrl": "",
+    "createdAt": "2026-07-20",
+    "updatedAt": "2026-07-20"
+  },
+  {
+    "id": "1784555242954",
+    "slug": "海景舒适浴室",
+    "style": "极简风格",
+    "title": "海景舒适浴室",
+    "titleEn": "Comfortable Bathroom with Sea View",
+    "description": "极简风格的海景舒适浴室，以白色为主色调，搭配原木色浴室柜和大理石纹理墙面。整面落地玻璃窗将海景引入室内，独立式浴缸正对海面，让您在沐浴时尽享无敌海景。简约而不简单，舒适而优雅。",
+    "descriptionEn": "A minimalist ocean view comfort bathroom with white as the primary color, paired with wood-toned vanity and marble textured walls. Floor-to-ceiling windows bring the sea view indoors, and the freestanding bathtub faces the ocean, letting you enjoy the breathtaking sea view while bathing. Simple yet sophisticated, comfortable yet elegant.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXMI1.png"
+    ],
+    "videos": [],
+    "project": "海景舒适",
+    "projectEn": "Ocean View Comfort",
+    "location": "Mario",
+    "locationEn": "Mario",
+    "area": "15㎡",
+    "shareUrl": "",
+    "downloadUrl": "",
+    "createdAt": "2026-07-20",
+    "updatedAt": "2026-07-20"
+  },
+  {
+    "id": "1784555250375",
+    "slug": "石墙瀑布浴室",
+    "style": "极简风格",
+    "title": "石墙瀑布浴室",
+    "titleEn": "Stone Wall Waterfall Bathroom",
+    "description": "以自然石墙为背景的瀑布式浴室，水流从石墙倾泻而下注入石质浴盆。蜡烛和木质小凳增添温馨氛围，仿佛置身于自然温泉之中。天然岩石的质感与现代卫浴设施完美融合，打造出独一无二的沉浸式沐浴体验。",
+    "descriptionEn": "A waterfall bathroom with natural stone wall backdrop, where water cascades down into the stone bathtub. Candles and wooden stools add warmth, making you feel like you're in a natural hot spring. The texture of natural rock perfectly blends with modern bathroom fixtures, creating a unique immersive bathing experience.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXMI2.png"
+    ],
+    "videos": [],
+    "project": "石墙瀑布",
+    "projectEn": "Stone Waterfall",
+    "location": "Mario",
+    "locationEn": "Mario",
+    "area": "15㎡",
+    "shareUrl": "",
+    "downloadUrl": "",
+    "createdAt": "2026-07-20",
+    "updatedAt": "2026-07-20"
+  },
+  {
+    "id": "1784555261567",
+    "slug": "沙漠岩洞浴室",
+    "style": "极简风格",
+    "title": "沙漠岩洞浴室",
+    "titleEn": "Desert Cave Bathroom",
+    "description": "灵感源自沙漠岩洞的独特浴室设计，岩石质感的墙面和台面融入周围环境。落地窗框出壮丽的沙漠景观，带来原始而震撼的沐浴体验。嵌入式壁龛收纳卫浴用品，暖色调灯光营造出温暖舒适的洞穴氛围。",
+    "descriptionEn": "A unique bathroom design inspired by desert caves, with rock-textured walls and countertops blending into the surroundings. Floor-to-ceiling windows frame the magnificent desert landscape, providing a primitive and stunning bathing experience. Built-in niches store toiletries, and warm lighting creates a cozy cave atmosphere.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXMI3.png"
+    ],
+    "videos": [],
+    "project": "沙漠岩洞",
+    "projectEn": "Desert Cave",
+    "location": "Mario",
+    "locationEn": "Mario",
+    "area": "20㎡",
+    "shareUrl": "",
+    "downloadUrl": "",
+    "createdAt": "2026-07-20",
+    "updatedAt": "2026-07-20"
+  },
+  {
+    "id": "1784555269835",
+    "slug": "石墙瀑布浴室",
+    "style": "经典风格",
+    "title": "石墙瀑布浴室",
+    "titleEn": "Stone Wall Waterfall Bathroom",
+    "description": "另一款石墙瀑布浴室设计，采用深色天然岩石打造墙面和地面，营造出神秘而奢华的洞穴氛围。瀑布式淋浴从石墙顶端倾泻而下，配合暖光照明，让您在自家浴室即可享受奢华SPA体验。木质搁板和绿植点缀增添自然气息。",
+    "descriptionEn": "Another stone wall waterfall bathroom design, using dark natural rock for walls and floors, creating a mysterious and luxurious cave atmosphere. Waterfall shower cascades from the top of the stone wall, paired with warm lighting, allowing you to enjoy a luxurious SPA experience in your own bathroom. Wooden shelves and green plants add natural charm.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXC1.png"
+    ],
+    "videos": [],
+    "project": "石墙瀑布",
+    "projectEn": "Stone Waterfall",
+    "location": "Mario",
+    "locationEn": "Mario",
+    "area": "",
+    "shareUrl": "",
+    "downloadUrl": "",
+    "createdAt": "2026-07-20",
+    "updatedAt": "2026-07-20"
+  },
+  {
+    "id": "1784555276764",
+    "slug": "复古小花砖浴室",
+    "style": "经典风格",
+    "title": "复古小花砖浴室",
+    "titleEn": "Bathroom with vintage small patterned tiles",
+    "description": "充满复古韵味的小花砖浴室，绿色小花砖墙面搭配白色洁具。藤编篮子和大量绿植营造出温馨的田园气息，复古中透着清新自然。拱形窗棂引入自然光，木质百叶窗调节光线，每一处细节都散发着怀旧的温暖。",
+    "descriptionEn": "A retro floral tile bathroom full of vintage charm, with green floral tile walls and white fixtures. Wicker baskets and abundant green plants create a warm pastoral atmosphere, retro yet fresh and natural. Arched windows bring in natural light, and wooden blinds adjust the light, every detail exuding nostalgic warmth.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXC2.png"
+    ],
+    "videos": [],
+    "project": "复古花砖",
+    "projectEn": "Retro Floral",
+    "location": "Mario",
+    "locationEn": "Mario",
+    "area": "9㎡",
+    "shareUrl": "",
+    "downloadUrl": "",
+    "createdAt": "2026-07-20",
+    "updatedAt": "2026-07-20"
+  },
+  {
+    "id": "1784555283944",
+    "slug": "复古黄铜花纹浴室",
+    "style": "经典风格",
+    "title": "复古黄铜花纹浴室",
+    "titleEn": "Vintage Brass Patterned Bathroom",
+    "description": "复古优雅的花纹玻璃浴室，黄铜色五金配件与花纹玻璃窗相互呼应。原木浴室柜和白色陶瓷洁具展现出维多利亚时代的精致与浪漫。复古圆形镜子和黄铜灯饰增添了华丽感，让每一次沐浴都仿佛穿越时光。",
+    "descriptionEn": "A vintage elegant patterned glass bathroom with brass fixtures and patterned glass windows echoing each other. Natural wood vanity and white ceramic fixtures showcase Victorian era elegance and romance. Vintage round mirrors and brass lighting add a luxurious touch, making every bath feel like a journey through time.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXC3.png"
+    ],
+    "videos": [],
+    "project": "复古黄铜",
+    "projectEn": "Vintage Brass",
+    "location": "Mario",
+    "locationEn": "Mario",
+    "area": "10㎡",
+    "shareUrl": "",
+    "downloadUrl": "",
+    "createdAt": "2026-07-20",
+    "updatedAt": "2026-07-20"
   }
 ]
