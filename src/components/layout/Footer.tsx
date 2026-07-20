@@ -22,26 +22,16 @@ interface FooterSocial {
   youtubeUrl: string;
 }
 
-const defaultContactInfo: ContactInfo = siteConfig?.contactInfo ? {
-  companyName: siteConfig.contactInfo.companyName || 'SEWOO',
-  slogan: siteConfig.contactInfo.slogan || '工厂供应链集合体，专注高端卫浴制造二十余年，为全球客户提供优质产品与服务。',
-  sloganEn: siteConfig.contactInfo.sloganEn || 'Factory Supply Chain Collective, specializing in premium bathroom manufacturing for over 20 years, providing quality products and services worldwide.',
-  address: siteConfig.contactInfo.address || '广东省佛山市禅城区',
-  addressEn: siteConfig.contactInfo.addressEn || 'Chancheng District, Foshan City, Guangdong Province',
-  addressLine2: siteConfig.contactInfo.addressLine2 || '卫浴产业园区88号',
-  addressLine2En: siteConfig.contactInfo.addressLine2En || 'No. 88, Bathroom Industrial Park',
-  phone: siteConfig.contactInfo.phone || '+86 400-888-9999',
-  emails: siteConfig.contactInfo.emails || ['info@sewoo-bath.com', 'support@sewoo-bath.com'],
-} : {
+const defaultContactInfo: ContactInfo = {
   companyName: 'SEWOO',
   slogan: '工厂供应链集合体，专注高端卫浴制造二十余年，为全球客户提供优质产品与服务。',
   sloganEn: 'Factory Supply Chain Collective, specializing in premium bathroom manufacturing for over 20 years, providing quality products and services worldwide.',
   address: '广东省佛山市禅城区',
   addressEn: 'Chancheng District, Foshan City, Guangdong Province',
-  addressLine2: '卫浴产业园区88号',
-  addressLine2En: 'No. 88, Bathroom Industrial Park',
-  phone: '+86 400-888-9999',
-  emails: ['info@sewoo-bath.com', 'support@sewoo-bath.com'],
+  addressLine2: '张槎街道青柯村上东后坑工业区C2',
+  addressLine2En: 'C2, Shangdong Houkeng Industrial Zone, Qingke Village, Zhangcha Subdistrict',
+  phone: '+86 19174230029',
+  emails: ['3312327005@qq.com', 'sales@sewoobath.com'],
 };
 
 const defaultSocial: FooterSocial = {
@@ -57,15 +47,41 @@ const Footer = () => {
   const [social, setSocial] = useState<FooterSocial>(defaultSocial);
 
   useEffect(() => {
-    const savedContact = localStorage.getItem('contactInfo');
-    if (savedContact) {
-      try {
-        setContactInfo({ ...defaultContactInfo, ...JSON.parse(savedContact) });
-      } catch {
-        setContactInfo(defaultContactInfo);
+    const loadContactInfo = () => {
+      const saved = localStorage.getItem('contactInfo');
+      if (saved) {
+        try {
+          const savedData = JSON.parse(saved);
+          const merged = { ...defaultContactInfo, ...savedData };
+          if (savedData.emails && Array.isArray(savedData.emails)) {
+            merged.emails = savedData.emails;
+          }
+          setContactInfo(merged);
+        } catch {
+          setContactInfo(defaultContactInfo);
+        }
+      } else if (siteConfig?.contactInfo) {
+        const merged = { ...defaultContactInfo, ...siteConfig.contactInfo };
+        if (siteConfig.contactInfo.emails && Array.isArray(siteConfig.contactInfo.emails)) {
+          merged.emails = siteConfig.contactInfo.emails;
+        }
+        setContactInfo(merged);
       }
-    }
+    };
 
+    loadContactInfo();
+
+    const handleStorageChange = (e: StorageEvent) => {
+      if (e.key === 'contactInfo') {
+        loadContactInfo();
+      }
+    };
+
+    window.addEventListener('storage', handleStorageChange);
+    return () => window.removeEventListener('storage', handleStorageChange);
+  }, []);
+
+  useEffect(() => {
     const savedFooter = localStorage.getItem('footerInfo');
     if (savedFooter) {
       try {
@@ -169,9 +185,13 @@ const Footer = () => {
                 <Phone className="w-5 h-5 text-gray-400 flex-shrink-0" />
                 <span className="text-gray-400">{contactInfo.phone}</span>
               </li>
-              <li className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-gray-400 flex-shrink-0" />
-                <span className="text-gray-400">{contactInfo.emails[0]}</span>
+              <li className="flex items-start space-x-3">
+                <Mail className="w-5 h-5 text-gray-400 mt-1 flex-shrink-0" />
+                <div className="text-gray-400">
+                  {contactInfo.emails.map((email, index) => (
+                    <div key={index}>{email}</div>
+                  ))}
+                </div>
               </li>
             </ul>
           </div>
