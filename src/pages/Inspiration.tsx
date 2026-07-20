@@ -5,6 +5,7 @@ import Button from '../components/ui/Button';
 import defaultInspirations from '../data/inspirations.json';
 import seoConfig from '../data/seo-config.json';
 import { useI18n } from '../contexts/I18nContext';
+import { loadFromStorage } from '../data/loader';
 
 interface Inspiration {
   id: string;
@@ -37,44 +38,49 @@ const Inspiration = () => {
   const [activeStyle, setActiveStyle] = useState('all');
   const [inspirations, setInspirations] = useState<Inspiration[]>(defaultInspirations);
   const [designStyles, setDesignStyles] = useState<{ key: string; name: string; nameEn: string }[]>([
-    { key: 'modern', name: '现代风格', nameEn: 'Modern Style' },
-    { key: 'classic', name: '经典风格', nameEn: 'Classic Style' },
-    { key: 'minimalist', name: '极简风格', nameEn: 'Minimalist Style' },
+    { key: 'modern', name: '现代风格', nameEn: 'Modern style' },
+    { key: 'classic', name: '经典风格', nameEn: 'Classic style' },
+    { key: 'minimalist', name: '极简风格', nameEn: 'Minimalist style' },
   ]);
 
   useEffect(() => {
-    try {
-      const savedInspirations = localStorage.getItem('inspirations');
-      if (savedInspirations) {
-        const parsed = JSON.parse(savedInspirations);
-        if (Array.isArray(parsed) && parsed.length > 0) {
-          const validInspirations = parsed.filter((i: any) => i && i.id && i.title && i.style);
-          if (validInspirations.length > 0) {
-            setInspirations(validInspirations);
+    const loadData = () => {
+      try {
+        const loadedInspirations = loadFromStorage('inspirations', defaultInspirations);
+        setInspirations(loadedInspirations);
+        
+        const savedStyles = localStorage.getItem('designStyles');
+        if (savedStyles) {
+          const parsed = JSON.parse(savedStyles);
+          if (Array.isArray(parsed) && parsed.length > 0) {
+            if (typeof parsed[0] === 'string') {
+              const migrated = parsed.map((s: string) => ({ key: s.toLowerCase().replace(/\s+/g, '-'), name: s, nameEn: s }));
+              setDesignStyles(migrated);
+            } else {
+              const migrated = parsed.map((style: any) => ({
+                key: style.key || style.name.toLowerCase().replace(/\s+/g, '-'),
+                name: style.name,
+                nameEn: style.nameEn || style.name
+              }));
+              setDesignStyles(migrated);
+            }
           }
         }
+      } catch (error) {
+        console.error('Failed to parse from localStorage:', error);
       }
-      
-      const savedStyles = localStorage.getItem('designStyles');
-      if (savedStyles) {
-        const parsed = JSON.parse(savedStyles);
-        if (Array.isArray(parsed) && parsed.length > 0) {
-          if (typeof parsed[0] === 'string') {
-            const migrated = parsed.map((s: string) => ({ key: s.toLowerCase().replace(/\s+/g, '-'), name: s, nameEn: s }));
-            setDesignStyles(migrated);
-          } else {
-            const migrated = parsed.map((style: any) => ({
-              key: style.key || style.name.toLowerCase().replace(/\s+/g, '-'),
-              name: style.name,
-              nameEn: style.nameEn || style.name
-            }));
-            setDesignStyles(migrated);
-          }
-        }
+    };
+
+    loadData();
+
+    const handleStorageChange = (e: StorageEvent) => {
+      if (e.key === 'inspirations' || e.key === 'designStyles') {
+        loadData();
       }
-    } catch (error) {
-      console.error('Failed to parse from localStorage:', error);
-    }
+    };
+
+    window.addEventListener('storage', handleStorageChange);
+    return () => window.removeEventListener('storage', handleStorageChange);
   }, []);
 
   const styles = [
@@ -87,7 +93,12 @@ const Inspiration = () => {
 
   const filteredInspirations = activeStyle === 'all'
     ? inspirations
-    : inspirations.filter(i => i.style === activeStyle);
+    : inspirations.filter(i => {
+        if (i.style === activeStyle) return true;
+        const matchedStyle = designStyles.find(s => s.key === activeStyle);
+        if (matchedStyle && (i.style === matchedStyle.name || i.style === matchedStyle.nameEn)) return true;
+        return false;
+      });
 
   const inspirationPageConfig = seoConfig.pages.find(p => p.page === 'inspiration');
 

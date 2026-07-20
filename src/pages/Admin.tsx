@@ -4,6 +4,8 @@ import { Settings, Package, Palette, FileText, Building, Upload, X, Plus, Save, 
 import defaultFactories from '../data/factories.json';
 import defaultProducts from '../data/products.json';
 import defaultCategories from '../data/categories.json';
+import defaultInspirations from '../data/inspirations.json';
+import { loadFromStorage } from '../data/loader';
 
 interface Product {
   id: string;
@@ -152,11 +154,11 @@ const Admin: React.FC = () => {
   const [siteLogo, setSiteLogo] = useState<string>('');
   const [siteTitle, setSiteTitle] = useState<string>('');
   const [siteTitleEn, setSiteTitleEn] = useState<string>('');
-  const [designStyles, setDesignStyles] = useState<{ name: string; nameEn: string }[]>([
-    { name: '现代风格', nameEn: 'Modern' },
-    { name: '古典风格', nameEn: 'Classic' },
-    { name: '简约风格', nameEn: 'Minimalist' },
-    { name: '奢华风格', nameEn: 'Luxury' },
+  const [designStyles, setDesignStyles] = useState<{ key: string; name: string; nameEn: string }[]>([
+    { key: 'modern', name: '现代风格', nameEn: 'Modern style' },
+    { key: 'classic', name: '经典风格', nameEn: 'Classic style' },
+    { key: 'minimalist', name: '极简风格', nameEn: 'Minimalist style' },
+    { key: 'luxury', name: '奢华风格', nameEn: 'Luxury style' },
   ]);
   const [uploadProgress, setUploadProgress] = useState<number | null>(null);
   const [previewImage, setPreviewImage] = useState<string | null>(null);
@@ -348,7 +350,7 @@ const Admin: React.FC = () => {
     const savedDeletedProducts = localStorage.getItem('deletedProducts');
     const deletedIds: string[] = savedDeletedProducts ? JSON.parse(savedDeletedProducts) : [];
 
-    let mergedProducts = [...defaultProducts];
+    let mergedProducts: any[] = [];
     if (savedProducts) {
       try {
         const parsedProducts = JSON.parse(savedProducts);
@@ -366,6 +368,34 @@ const Admin: React.FC = () => {
         console.error('Failed to parse saved products:', error);
       }
     }
+    
+    defaultProducts.forEach((dp: any) => {
+      const existingIndex = mergedProducts.findIndex((mp: any) => mp.id === dp.id);
+      if (existingIndex >= 0) {
+        const savedProduct = mergedProducts[existingIndex];
+        mergedProducts[existingIndex] = {
+          ...dp,
+          ...savedProduct,
+          images: savedProduct.images || dp.images,
+          specifications: savedProduct.specifications || dp.specifications,
+          specificationsEn: dp.specificationsEn || savedProduct.specificationsEn,
+          features: savedProduct.features || dp.features,
+          featuresEn: dp.featuresEn || savedProduct.featuresEn,
+          description: savedProduct.description || dp.description,
+          descriptionEn: dp.descriptionEn || savedProduct.descriptionEn,
+          certifications: savedProduct.certifications || dp.certifications,
+          certificationsEn: savedProduct.certificationsEn || dp.certificationsEn,
+          seo: {
+            ...dp.seo,
+            ...savedProduct.seo,
+            keywords: dp.seo?.keywords || savedProduct.seo?.keywords,
+            keywordsEn: dp.seo?.keywordsEn || savedProduct.seo?.keywordsEn,
+          },
+        };
+      } else {
+        mergedProducts.push(dp);
+      }
+    });
     const filteredProducts = mergedProducts.filter((p: any) => !deletedIds.includes(p.id));
     const seenIds = new Set<string>();
     const uniqueProducts = filteredProducts.filter((p: any) => {
@@ -374,7 +404,53 @@ const Admin: React.FC = () => {
       return true;
     });
     setProductList(uniqueProducts as Product[]);
-    if (savedInspirations) setInspirationList(JSON.parse(savedInspirations));
+    let mergedInspirations: any[] = [];
+    if (savedInspirations) {
+      try {
+        const parsedInspirations = JSON.parse(savedInspirations);
+        if (Array.isArray(parsedInspirations)) {
+          parsedInspirations.forEach((i: any) => {
+            const existingIndex = mergedInspirations.findIndex((mi: any) => mi.id === i.id);
+            if (existingIndex >= 0) {
+              mergedInspirations[existingIndex] = i;
+            } else {
+              mergedInspirations.push(i);
+            }
+          });
+        }
+      } catch (error) {
+        console.error('Failed to parse saved inspirations:', error);
+      }
+    }
+    defaultInspirations.forEach((di: any) => {
+      const existingIndex = mergedInspirations.findIndex((mi: any) => mi.id === di.id);
+      if (existingIndex >= 0) {
+        const savedInspiration = mergedInspirations[existingIndex];
+        mergedInspirations[existingIndex] = {
+          ...di,
+          ...savedInspiration,
+          images: savedInspiration.images || di.images,
+          descriptionEn: di.descriptionEn || savedInspiration.descriptionEn,
+          titleEn: di.titleEn || savedInspiration.titleEn,
+          seo: {
+            ...di.seo,
+            ...savedInspiration.seo,
+            titleEn: di.seo?.titleEn || savedInspiration.seo?.titleEn,
+            descriptionEn: di.seo?.descriptionEn || savedInspiration.seo?.descriptionEn,
+          },
+        };
+      } else {
+        mergedInspirations.push(di);
+      }
+    });
+    const inspirationSeenIds = new Set<string>();
+    const uniqueInspirations = mergedInspirations.filter((i: any) => {
+      if (!i.id || inspirationSeenIds.has(i.id)) return false;
+      inspirationSeenIds.add(i.id);
+      return true;
+    });
+    setInspirationList(uniqueInspirations);
+    localStorage.setItem('inspirations', JSON.stringify(uniqueInspirations));
     if (savedPages) {
       const parsedPages = JSON.parse(savedPages);
       const filteredPages = parsedPages.filter((p: any) => p.name !== '经销商' && p.name !== 'Dealers');
@@ -388,18 +464,23 @@ const Admin: React.FC = () => {
       const parsed = JSON.parse(savedStyles);
       if (Array.isArray(parsed) && parsed.length > 0) {
         if (typeof parsed[0] === 'string') {
-          const migrated = parsed.map((s: string) => ({ name: s, nameEn: s }));
+          const migrated = parsed.map((s: string) => ({ key: generateSlug(s), name: s, nameEn: s }));
           setDesignStyles(migrated);
           localStorage.setItem('designStyles', JSON.stringify(migrated));
         } else {
-          setDesignStyles(parsed);
+          const migrated = parsed.map((s: any) => ({ 
+            key: s.key || generateSlug(s.name), 
+            name: s.name, 
+            nameEn: s.nameEn 
+          }));
+          setDesignStyles(migrated);
         }
       }
     } else {
       const defaultStyles = [
-        { name: '现代风格', nameEn: 'Modern' },
-        { name: '经典风格', nameEn: 'Classic' },
-        { name: '极简风格', nameEn: 'Minimalist' },
+        { key: 'modern', name: '现代风格', nameEn: 'Modern style' },
+        { key: 'classic', name: '经典风格', nameEn: 'Classic style' },
+        { key: 'minimalist', name: '极简风格', nameEn: 'Minimalist style' },
       ];
       setDesignStyles(defaultStyles);
       localStorage.setItem('designStyles', JSON.stringify(defaultStyles));
@@ -583,6 +664,9 @@ const Admin: React.FC = () => {
   }, []);
 
   const generateSlug = (name: string) => {
+    if (!name || !name.trim()) {
+      return 'inspiration-' + Date.now().toString(36);
+    }
     return name
       .toLowerCase()
       .replace(/[^a-z0-9\u4e00-\u9fa5]+/g, '-')
@@ -675,6 +759,12 @@ const Admin: React.FC = () => {
       const updatedList = inspirationList.filter(i => i.id !== id);
       setInspirationList(updatedList);
       localStorage.setItem('inspirations', JSON.stringify(updatedList));
+      
+      const deletedInspirations = JSON.parse(localStorage.getItem('deletedInspirations') || '[]');
+      if (!deletedInspirations.includes(id)) {
+        deletedInspirations.push(id);
+        localStorage.setItem('deletedInspirations', JSON.stringify(deletedInspirations));
+      }
     }
   };
 
@@ -747,12 +837,26 @@ const Admin: React.FC = () => {
     if (!editingCategory) return;
     
     const isNew = !categories.some(c => c.id === editingCategory.id);
+    const oldCategory = categories.find(c => c.id === editingCategory.id);
+    
     const updatedList = isNew 
       ? [...categories, editingCategory]
       : categories.map(c => c.id === editingCategory.id ? editingCategory : c);
     
     setCategories(updatedList);
     localStorage.setItem('categories', JSON.stringify(updatedList));
+    
+    if (!isNew && oldCategory && oldCategory.name !== editingCategory.name) {
+      const updatedProducts = productList.map(p => {
+        if (p.category === oldCategory.name) {
+          return { ...p, category: editingCategory.name };
+        }
+        return p;
+      });
+      setProductList(updatedProducts);
+      localStorage.setItem('products', JSON.stringify(updatedProducts));
+    }
+    
     setEditingCategory(null);
     alert('分类保存成功！');
   };
@@ -798,7 +902,8 @@ const Admin: React.FC = () => {
 
   const addStyle = () => {
     if (newStyle.trim() && !designStyles.some(s => s.name === newStyle.trim())) {
-      const updatedStyles = [...designStyles, { name: newStyle.trim(), nameEn: newStyleEn.trim() || newStyle.trim() }];
+      const styleKey = generateSlug(newStyle.trim());
+      const updatedStyles = [...designStyles, { key: styleKey, name: newStyle.trim(), nameEn: newStyleEn.trim() || newStyle.trim() }];
       setDesignStyles(updatedStyles);
       localStorage.setItem('designStyles', JSON.stringify(updatedStyles));
       setNewStyle('');
@@ -806,9 +911,9 @@ const Admin: React.FC = () => {
     }
   };
 
-  const deleteStyle = (styleName: string) => {
+  const deleteStyle = (styleKey: string) => {
     if (confirm('确定要删除这个风格吗？')) {
-      const updatedStyles = designStyles.filter(s => s.name !== styleName);
+      const updatedStyles = designStyles.filter(s => s.key !== styleKey);
       setDesignStyles(updatedStyles);
       localStorage.setItem('designStyles', JSON.stringify(updatedStyles));
     }
@@ -836,12 +941,25 @@ const Admin: React.FC = () => {
 
   const saveEditSubcategory = () => {
     if (!editingSubcategoryId || !editingCategory || !editSubName.trim()) return;
+    const oldSub = editingCategory.subcategories.find(s => s.id === editingSubcategoryId);
     const updatedSubs = editingCategory.subcategories.map(s => 
       s.id === editingSubcategoryId 
         ? { ...s, name: editSubName.trim(), nameEn: editSubNameEn.trim() || editSubName.trim() }
         : s
     );
     setEditingCategory({ ...editingCategory, subcategories: updatedSubs });
+    
+    if (oldSub && oldSub.name !== editSubName.trim()) {
+      const updatedProducts = productList.map(p => {
+        if (p.subcategory === oldSub.name) {
+          return { ...p, subcategory: editSubName.trim() };
+        }
+        return p;
+      });
+      setProductList(updatedProducts);
+      localStorage.setItem('products', JSON.stringify(updatedProducts));
+    }
+    
     setEditingSubcategoryId(null);
     setEditSubName('');
     setEditSubNameEn('');
@@ -2048,7 +2166,7 @@ const Admin: React.FC = () => {
                     onClick={() => setEditingInspiration({
                       id: Date.now().toString(),
                       slug: '',
-                      style: designStyles[0]?.name || '现代风格',
+                      style: designStyles[0]?.key || 'modern',
                       title: '',
                       titleEn: '',
                       description: '',
@@ -2098,14 +2216,14 @@ const Admin: React.FC = () => {
                     <div className="mb-4">
                       <label className="block text-sm font-medium text-gray-700 mb-1">设计风格</label>
                       <select
-                        value={editingInspiration.style}
-                        onChange={(e) => setEditingInspiration({ ...editingInspiration, style: e.target.value })}
-                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
-                      >
-                        {designStyles.map((style) => (
-                          <option key={style.name} value={style.name}>{style.name} ({style.nameEn})</option>
-                        ))}
-                      </select>
+                          value={editingInspiration.style}
+                          onChange={(e) => setEditingInspiration({ ...editingInspiration, style: e.target.value })}
+                          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                        >
+                          {designStyles.map((style) => (
+                            <option key={style.key} value={style.key}>{style.name} ({style.nameEn})</option>
+                          ))}
+                        </select>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
@@ -2314,12 +2432,12 @@ const Admin: React.FC = () => {
                       <h3 className="font-semibold text-gray-700 mb-3">设计风格管理</h3>
                       <div className="flex flex-wrap gap-2 mb-3">
                         {designStyles.map((style) => (
-                          <span key={style.name} className="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                          <span key={style.key} className="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
                             {style.name}
                             {style.nameEn && style.nameEn !== style.name && (
                               <span className="ml-1 text-xs text-blue-600">({style.nameEn})</span>
                             )}
-                            <button onClick={() => deleteStyle(style.name)} className="ml-1 hover:text-blue-600">
+                            <button onClick={() => deleteStyle(style.key)} className="ml-1 hover:text-blue-600">
                               <X className="w-3 h-3" />
                             </button>
                           </span>
@@ -2366,7 +2484,7 @@ const Admin: React.FC = () => {
                               />
                               <div>
                                 <div className="font-medium text-gray-900">{inspiration.title}</div>
-                                <div className="text-sm text-gray-500">{inspiration.style} · {inspiration.location}</div>
+                                <div className="text-sm text-gray-500">{designStyles.find(s => s.key === inspiration.style)?.name || inspiration.style} · {inspiration.location}</div>
                               </div>
                             </div>
                             <div className="flex space-x-2">
@@ -4682,6 +4800,66 @@ const Admin: React.FC = () => {
                       >
                         <CopyIcon className="w-5 h-5" />
                         复制到剪贴板
+                      </button>
+
+                      <button
+                        onClick={() => {
+                          if (confirm('确定要从JSON文件重新加载数据吗？用户上传的图片将被保留，其他修改将被覆盖！')) {
+                            const savedProducts = localStorage.getItem('products');
+                            const savedImages: Record<string, string[]> = {};
+                            if (savedProducts) {
+                              try {
+                                const parsed = JSON.parse(savedProducts);
+                                if (Array.isArray(parsed)) {
+                                  parsed.forEach((p: any) => {
+                                    if (p.id && p.images && p.images.length > 0) {
+                                      savedImages[p.id] = p.images;
+                                    }
+                                  });
+                                }
+                              } catch {}
+                            }
+                            localStorage.removeItem('products');
+                            localStorage.removeItem('deletedProducts');
+                            const jsonProducts = defaultProducts.map((p: any) => ({
+                              ...p,
+                              images: savedImages[p.id] || p.images,
+                              documents: p.documents || { manual: '', technicalData: '', imagesDownload: '', quote: '', appointment: '' },
+                              seo: p.seo || { title: '', titleEn: '', description: '', descriptionEn: '', keywords: [], keywordsEn: [] },
+                            }));
+                            setProductList(jsonProducts as Product[]);
+                            localStorage.setItem('products', JSON.stringify(jsonProducts));
+                            
+                            const savedInspirations = localStorage.getItem('inspirations');
+                            const savedInspirationImages: Record<string, string[]> = {};
+                            if (savedInspirations) {
+                              try {
+                                const parsed = JSON.parse(savedInspirations);
+                                if (Array.isArray(parsed)) {
+                                  parsed.forEach((i: any) => {
+                                    if (i.id && i.images && i.images.length > 0) {
+                                      savedInspirationImages[i.id] = i.images;
+                                    }
+                                  });
+                                }
+                              } catch {}
+                            }
+                            localStorage.removeItem('inspirations');
+                            localStorage.removeItem('deletedInspirations');
+                            const jsonInspirations = defaultInspirations.map((i: any) => ({
+                              ...i,
+                              images: savedInspirationImages[i.id] || i.images,
+                            }));
+                            setInspirationList(jsonInspirations);
+                            localStorage.setItem('inspirations', JSON.stringify(jsonInspirations));
+                            
+                            alert('数据已从JSON文件重新加载！用户上传的图片已保留。');
+                          }
+                        }}
+                        className="flex-1 flex items-center justify-center gap-2 bg-green-600 text-white py-3 px-6 rounded-lg hover:bg-green-700 transition-colors font-medium"
+                      >
+                        <RefreshCw className="w-5 h-5" />
+                        从JSON重新加载
                       </button>
                     </div>
 

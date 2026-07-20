@@ -2,7 +2,9 @@ import { useParams, Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { ArrowLeft, MapPin, User, Download, Share2, ChevronRight } from 'lucide-react';
 import SEO from '../components/seo/SEO';
-import { inspirations as defaultInspirations, seoConfig } from '../data/loader';
+import { seoConfig } from '../data/loader';
+import { loadFromStorage } from '../data/loader';
+import defaultInspirations from '../data/inspirations.json';
 import { useI18n } from '../contexts/I18nContext';
 
 const InspirationDetail = () => {
@@ -16,8 +18,8 @@ const InspirationDetail = () => {
     setActiveImageIndex(0);
     window.scrollTo(0, 0);
     
-    const savedInspirations = localStorage.getItem('inspirations');
-    const dataSource = savedInspirations ? JSON.parse(savedInspirations) : defaultInspirations;
+    const dataSource = loadFromStorage('inspirations', defaultInspirations);
+    
     const found = dataSource.find(
       (i: any) => i.slug === slug && i.style === style
     );
@@ -38,9 +40,9 @@ const InspirationDetail = () => {
   }
 
   const styleLabels: Record<string, { zh: string; en: string }> = {
-    modern: { zh: '现代风格', en: 'Modern Style' },
-    classic: { zh: '经典风格', en: 'Classic Style' },
-    minimalist: { zh: '极简风格', en: 'Minimalist Style' },
+    modern: { zh: '现代风格', en: 'Modern style' },
+    classic: { zh: '经典风格', en: 'Classic style' },
+    minimalist: { zh: '极简风格', en: 'Minimalist style' },
   };
 
   const inspirationPageConfig = seoConfig.pages.find(p => p.page === 'inspiration');
