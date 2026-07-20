@@ -51,28 +51,28 @@ const InspirationCard = ({
           <div className="absolute top-4 left-4 bg-blue-900 text-white text-xs px-3 py-1 rounded-full">
             {styleLabels[style] ? (lang === 'zh' ? styleLabels[style].zh : styleLabels[style].en) : style}
           </div>
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-        </div>
-        <div className="p-6">
-          <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-blue-900 transition-colors">
-            {lang === 'zh' ? title : (titleEn || title)}
-          </h3>
-          <p className="text-gray-600 mb-4 line-clamp-2">
-            {lang === 'zh' ? description : (descriptionEn || description)}
-          </p>
-          <div className="flex items-center justify-between text-sm text-gray-500">
-            {project && (
-              <div className="flex items-center">
-                <User className="w-4 h-4 mr-1" />
-                <span>{lang === 'zh' ? project : (projectEn || project)}</span>
-              </div>
-            )}
-            {location && (
-              <div className="flex items-center">
-                <MapPin className="w-4 h-4 mr-1" />
-                <span>{lang === 'zh' ? location : (locationEn || location)}</span>
-              </div>
-            )}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          <div className="absolute bottom-0 right-0 left-0 p-4 md:p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <h3 className="text-lg md:text-xl font-semibold mb-1 md:mb-2">
+              {lang === 'zh' ? title : (titleEn || title)}
+            </h3>
+            <p className="text-sm text-gray-200 line-clamp-2 mb-2 md:mb-3">
+              {lang === 'zh' ? description : (descriptionEn || description)}
+            </p>
+            <div className="flex items-center gap-3 text-xs text-gray-300">
+              {project && (
+                <div className="flex items-center">
+                  <User className="w-3 h-3 mr-1" />
+                  <span>{lang === 'zh' ? project : (projectEn || project)}</span>
+                </div>
+              )}
+              {location && (
+                <div className="flex items-center">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  <span>{lang === 'zh' ? location : (locationEn || location)}</span>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>
