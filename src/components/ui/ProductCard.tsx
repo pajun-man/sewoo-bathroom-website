@@ -42,27 +42,6 @@ const ProductCard = ({ id, slug, category, name, nameEn, image, description, des
             className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-500"
           />
           <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300" />
-          
-          {certifications && certifications.length > 0 && (
-            <div className="absolute top-2 sm:top-3 right-2 sm:right-3 flex flex-wrap gap-1 sm:gap-2 justify-end">
-              {certifications.slice(0, 3).map((cert) => (
-                <span
-                  key={cert}
-                  className={`px-1.5 sm:px-2 py-1 text-[10px] sm:text-xs font-semibold rounded-md border ${
-                    certificationStyles[cert] || 'bg-gray-100 text-gray-700 border-gray-200'
-                  }`}
-                  title={certificationLabels[cert] || cert}
-                >
-                  {certificationLabels[cert] || cert}
-                </span>
-              ))}
-              {certifications.length > 3 && (
-                <span className="px-1.5 sm:px-2 py-1 text-[10px] sm:text-xs font-semibold rounded-md border bg-gray-100 text-gray-700 border-gray-200">
-                  +{certifications.length - 3}
-                </span>
-              )}
-            </div>
-          )}
         </div>
         <div className="p-4 sm:p-6 flex flex-col flex-1">
           <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-gray-900 mb-1 sm:mb-2 group-hover:text-blue-900 transition-colors leading-tight">
@@ -75,6 +54,26 @@ const ProductCard = ({ id, slug, category, name, nameEn, image, description, des
             <span>{lang === 'zh' ? '了解详情' : 'Learn More'}</span>
             <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-1 sm:ml-2 group-hover:translate-x-2 transition-transform" />
           </div>
+          {certifications && certifications.length > 0 && (
+            <div className="flex flex-wrap gap-1 mt-3">
+              {certifications.slice(0, 3).map((cert) => (
+                <span
+                  key={cert}
+                  className={`px-1.5 sm:px-2 py-0.5 text-[10px] sm:text-xs font-semibold rounded-md border ${
+                    certificationStyles[cert] || 'bg-gray-100 text-gray-700 border-gray-200'
+                  }`}
+                  title={certificationLabels[cert] || cert}
+                >
+                  {certificationLabels[cert] || cert}
+                </span>
+              ))}
+              {certifications.length > 3 && (
+                <span className="px-1.5 sm:px-2 py-0.5 text-[10px] sm:text-xs font-semibold rounded-md border bg-gray-100 text-gray-700 border-gray-200">
+                  +{certifications.length - 3}
+                </span>
+              )}
+            </div>
+          )}
         </div>
       </div>
     </Link>
