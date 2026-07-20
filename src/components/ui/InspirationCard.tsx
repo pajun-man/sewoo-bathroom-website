@@ -33,10 +33,13 @@ const InspirationCard = ({
 }: InspirationCardProps) => {
   const { lang } = useI18n();
   
-  const styleLabels: Record<string, { zh: string; en: string }> = {
-    modern: { zh: '现代风格', en: 'Modern Style' },
-    classic: { zh: '经典风格', en: 'Classic Style' },
-    minimalist: { zh: '极简风格', en: 'Minimalist Style' },
+  const styleMap: Record<string, { zh: string; en: string }> = {
+    '现代风格': { zh: '现代风格', en: 'Modern style' },
+    '经典风格': { zh: '经典风格', en: 'Classic style' },
+    '极简风格': { zh: '极简风格', en: 'Minimalist style' },
+    'modern': { zh: '现代风格', en: 'Modern style' },
+    'classic': { zh: '经典风格', en: 'Classic style' },
+    'minimalist': { zh: '极简风格', en: 'Minimalist style' },
   };
 
   return (
@@ -49,7 +52,7 @@ const InspirationCard = ({
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
           />
           <div className="absolute top-4 left-4 bg-blue-900 text-white text-xs px-3 py-1 rounded-full">
-            {styleLabels[style] ? (lang === 'zh' ? styleLabels[style].zh : styleLabels[style].en) : style}
+            {styleMap[style] ? (lang === 'zh' ? styleMap[style].zh : styleMap[style].en) : style}
           </div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           <div className="absolute bottom-0 right-0 left-0 p-4 md:p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
