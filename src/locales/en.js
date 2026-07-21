@@ -107,8 +107,17 @@ export default {
       quality: 'Quality First',
       innovation: 'Technological Innovation',
       sustainability: 'Green Manufacturing',
-      customer: 'Customer Oriented'
+      customer: 'Customer Oriented',
+      global: 'Global Layout'
     },
+    qualityDesc: 'Strict quality control system ensures every product meets international standards.',
+    innovationDesc: 'Continuous R&D investment, mastering core technologies, providing OEM/ODM customization services.',
+    customerDesc: 'Customer demand-oriented, providing one-stop supply chain solutions.',
+    globalDesc: 'Five production bases covering over 50 countries worldwide.',
+    qualityFull: 'Quality First',
+    innovationFull: 'Technological Innovation',
+    customerFull: 'Customer Oriented',
+    globalFull: 'Global Layout',
     timeline: {
       title: 'Our Journey',
       2003: 'Company Founded, First Production Base',
@@ -145,6 +154,11 @@ export default {
       phone: '+86 757 8888 8888',
       email: 'contact@sewoo.com',
       workHours: 'Monday - Friday 9:00 AM - 6:00 PM'
+    },
+    faq: {
+      title: 'FAQ',
+      desc: 'Before contacting us, you can check our frequently asked questions. You may find the answer you need.',
+      view: 'View FAQ'
     }
   },
   admin: {

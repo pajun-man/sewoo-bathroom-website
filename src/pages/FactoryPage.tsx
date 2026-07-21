@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/seo/SEO';
-import { Factory, Building2, Truck, Award, ArrowRight } from 'lucide-react';
+import { Factory, Building2, Truck, Award, ArrowRight, Box, Globe, CheckCircle, Building, Users } from 'lucide-react';
 import { useI18n } from '../contexts/I18nContext';
 import factoriesData from '../data/factories.json';
+import defaultHomeConfig from '../data/home-config.json';
 
 interface Factory {
   id: string;
@@ -43,13 +44,51 @@ interface Factory {
 
 const defaultFactories: Factory[] = factoriesData as Factory[];
 
+interface FactoryStat {
+  id: string;
+  value: string;
+  label: string;
+  labelEn: string;
+  icon: string;
+}
+
+const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
+  Factory,
+  Box,
+  Globe,
+  Award,
+  Building,
+  Users,
+  CheckCircle,
+  Building2,
+  Truck,
+};
+
 const FactoryPage = () => {
   const { lang } = useI18n();
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const [factories, setFactories] = useState<Factory[]>(defaultFactories);
   const [factoryCategories, setFactoryCategories] = useState<{ id: string; name: string; nameEn: string }[]>([]);
+  const [factoryStats, setFactoryStats] = useState<FactoryStat[]>((defaultHomeConfig.factoryStats as FactoryStat[]) || [
+    { id: "bases", value: "5+", label: "生产基地", labelEn: "Production Bases", icon: "Factory" },
+    { id: "capacity", value: "2.8M", label: "年产能（件）", labelEn: "Annual Capacity (pcs)", icon: "Box" },
+    { id: "countries", value: "50+", label: "出口国家", labelEn: "Export Countries", icon: "Globe" },
+    { id: "certification", value: "ISO9001", label: "质量认证", labelEn: "Quality Certified", icon: "Award" }
+  ]);
 
   useEffect(() => {
+    try {
+      const savedHomeConfig = localStorage.getItem('homeConfig');
+      if (savedHomeConfig) {
+        const parsed = JSON.parse(savedHomeConfig);
+        if (parsed.factoryStats && Array.isArray(parsed.factoryStats) && parsed.factoryStats.length > 0) {
+          setFactoryStats(parsed.factoryStats as FactoryStat[]);
+        }
+      }
+    } catch (error) {
+      console.error('Failed to parse homeConfig from localStorage:', error);
+    }
+
     try {
       const savedFactories = localStorage.getItem('factories');
       if (savedFactories) {
@@ -189,26 +228,16 @@ const FactoryPage = () => {
         </div>
 
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="bg-blue-900 text-white rounded-xl p-8 text-center">
-            <Building2 className="w-12 h-12 mx-auto mb-4" />
-            <div className="text-4xl font-bold mb-2">5+</div>
-            <div className="text-blue-200">{lang === 'zh' ? '生产基地' : 'Production Bases'}</div>
-          </div>
-          <div className="bg-blue-900 text-white rounded-xl p-8 text-center">
-            <Factory className="w-12 h-12 mx-auto mb-4" />
-            <div className="text-4xl font-bold mb-2">2.8M</div>
-            <div className="text-blue-200">{lang === 'zh' ? '年产能（件）' : 'Annual Capacity (pcs)'}</div>
-          </div>
-          <div className="bg-blue-900 text-white rounded-xl p-8 text-center">
-            <Truck className="w-12 h-12 mx-auto mb-4" />
-            <div className="text-4xl font-bold mb-2">50+</div>
-            <div className="text-blue-200">{lang === 'zh' ? '出口国家' : 'Export Countries'}</div>
-          </div>
-          <div className="bg-blue-900 text-white rounded-xl p-8 text-center">
-            <Award className="w-12 h-12 mx-auto mb-4" />
-            <div className="text-4xl font-bold mb-2">ISO9001</div>
-            <div className="text-blue-200">{lang === 'zh' ? '质量认证' : 'Quality Certified'}</div>
-          </div>
+          {factoryStats.map((stat) => {
+            const IconComponent = iconMap[stat.icon] || Factory;
+            return (
+              <div key={stat.id} className="bg-blue-900 text-white rounded-xl p-8 text-center">
+                <IconComponent className="w-12 h-12 mx-auto mb-4" />
+                <div className="text-4xl font-bold mb-2">{stat.value}</div>
+                <div className="text-blue-200">{lang === 'zh' ? stat.label : stat.labelEn}</div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </>

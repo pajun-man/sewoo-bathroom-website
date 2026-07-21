@@ -66,7 +66,26 @@ const ProductDetail = () => {
             parsed.forEach(p => {
               const existingIndex = mergedProducts.findIndex(mp => mp.id === p.id);
               if (existingIndex >= 0) {
-                mergedProducts[existingIndex] = p;
+                const jsonProduct = mergedProducts[existingIndex];
+                const mergedProduct = { ...jsonProduct, ...p };
+                mergedProduct.images = p.images || jsonProduct.images;
+                mergedProduct.name = p.name || jsonProduct.name;
+                mergedProduct.description = p.description || jsonProduct.description;
+                mergedProduct.specifications = p.specifications || jsonProduct.specifications;
+                mergedProduct.features = p.features || jsonProduct.features;
+                mergedProduct.certifications = p.certifications || jsonProduct.certifications;
+                if (jsonProduct.nameEn) mergedProduct.nameEn = jsonProduct.nameEn;
+                if (jsonProduct.descriptionEn) mergedProduct.descriptionEn = jsonProduct.descriptionEn;
+                if (jsonProduct.featuresEn) mergedProduct.featuresEn = jsonProduct.featuresEn;
+                if (jsonProduct.specificationsEn) mergedProduct.specificationsEn = jsonProduct.specificationsEn;
+                if (jsonProduct.certificationsEn) mergedProduct.certificationsEn = jsonProduct.certificationsEn;
+                if (jsonProduct.seo) {
+                  mergedProduct.seo = { ...jsonProduct.seo, ...p.seo };
+                  if (jsonProduct.seo.titleEn) mergedProduct.seo.titleEn = jsonProduct.seo.titleEn;
+                  if (jsonProduct.seo.descriptionEn) mergedProduct.seo.descriptionEn = jsonProduct.seo.descriptionEn;
+                  if (jsonProduct.seo.keywordsEn) mergedProduct.seo.keywordsEn = jsonProduct.seo.keywordsEn;
+                }
+                mergedProducts[existingIndex] = mergedProduct;
               } else {
                 mergedProducts.push(p);
               }
@@ -113,7 +132,26 @@ const ProductDetail = () => {
         parsed.forEach(p => {
           const existingIndex = dataSource.findIndex(mp => mp.id === p.id);
           if (existingIndex >= 0) {
-            dataSource[existingIndex] = p;
+            const jsonProduct = dataSource[existingIndex];
+            const mergedProduct = { ...jsonProduct, ...p };
+            mergedProduct.images = p.images || jsonProduct.images;
+            mergedProduct.name = p.name || jsonProduct.name;
+            mergedProduct.description = p.description || jsonProduct.description;
+            mergedProduct.specifications = p.specifications || jsonProduct.specifications;
+            mergedProduct.features = p.features || jsonProduct.features;
+            mergedProduct.certifications = p.certifications || jsonProduct.certifications;
+            if (jsonProduct.nameEn) mergedProduct.nameEn = jsonProduct.nameEn;
+            if (jsonProduct.descriptionEn) mergedProduct.descriptionEn = jsonProduct.descriptionEn;
+            if (jsonProduct.featuresEn) mergedProduct.featuresEn = jsonProduct.featuresEn;
+            if (jsonProduct.specificationsEn) mergedProduct.specificationsEn = jsonProduct.specificationsEn;
+            if (jsonProduct.certificationsEn) mergedProduct.certificationsEn = jsonProduct.certificationsEn;
+            if (jsonProduct.seo) {
+              mergedProduct.seo = { ...jsonProduct.seo, ...p.seo };
+              if (jsonProduct.seo.titleEn) mergedProduct.seo.titleEn = jsonProduct.seo.titleEn;
+              if (jsonProduct.seo.descriptionEn) mergedProduct.seo.descriptionEn = jsonProduct.seo.descriptionEn;
+              if (jsonProduct.seo.keywordsEn) mergedProduct.seo.keywordsEn = jsonProduct.seo.keywordsEn;
+            }
+            dataSource[existingIndex] = mergedProduct;
           } else {
             dataSource.push(p);
           }

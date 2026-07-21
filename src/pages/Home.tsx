@@ -3,7 +3,7 @@ import SEO from '../components/seo/SEO';
 import ProductCard from '../components/ui/ProductCard';
 import InspirationCard from '../components/ui/InspirationCard';
 import Button from '../components/ui/Button';
-import { ArrowRight, Droplets, Cpu, Sparkles, Leaf, Building, Award, Users, Globe, ChevronRight, CheckCircle } from 'lucide-react';
+import { ArrowRight, Droplets, Cpu, Sparkles, Leaf, Building, Award, Users, Globe, ChevronRight, CheckCircle, Factory, Box } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { products as defaultProducts, inspirations as defaultInspirations, seoConfig } from '../data/loader';
 import defaultHomeConfig from '../data/home-config.json';
@@ -44,12 +44,23 @@ interface Factory {
   image: string;
 }
 
-interface FactoryStats {
-  capacity: { value: string; label: string; labelEn: string };
-  patents: { value: string; label: string; labelEn: string };
-  passRate: { value: string; label: string; labelEn: string };
-  experience: { value: string; label: string; labelEn: string };
+interface FactoryStat {
+  id: string;
+  value: string;
+  label: string;
+  labelEn: string;
+  icon: string;
 }
+
+const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
+  Factory,
+  Box,
+  Globe,
+  Award,
+  Building,
+  Users,
+  CheckCircle,
+};
 
 interface FactorySection {
   title: string;
@@ -77,10 +88,10 @@ interface HomeConfig {
     useVideo: boolean;
   };
   factories: Factory[];
-  factoryStats: FactoryStats;
+  factoryStats: FactoryStat[];
   factorySection: FactorySection;
   featuredProducts: FeaturedProduct[];
-  stats: { value: string; label: string; labelEn: string }[];
+  stats: { value: string; valueEn: string; label: string; labelEn: string }[];
   certifications: string[];
 }
 
@@ -96,12 +107,12 @@ const Home = () => {
       useVideo: false,
     },
     factories: [],
-    factoryStats: defaultHomeConfig.factoryStats || {
-      capacity: { value: "50万+", label: "年产能", labelEn: "Annual Capacity" },
-      patents: { value: "30+", label: "专利技术", labelEn: "Patents" },
-      passRate: { value: "99.8%", label: "合格率", labelEn: "Pass Rate" },
-      experience: { value: "20+", label: "年行业经验", labelEn: "Years Experience" }
-    },
+    factoryStats: (defaultHomeConfig.factoryStats as FactoryStat[]) || [
+      { id: "bases", value: "5+", label: "生产基地", labelEn: "Production Bases", icon: "Factory" },
+      { id: "capacity", value: "2.8M", label: "年产能（件）", labelEn: "Annual Capacity (pcs)", icon: "Box" },
+      { id: "countries", value: "50+", label: "出口国家", labelEn: "Export Countries", icon: "Globe" },
+      { id: "certification", value: "ISO9001", label: "质量认证", labelEn: "Quality Certified", icon: "Award" }
+    ],
     factorySection: defaultHomeConfig.factorySection || {
       title: "先进生产设施",
       titleEn: "Advanced Manufacturing Facilities",
@@ -150,12 +161,12 @@ const Home = () => {
         const compatibleConfig = { 
           ...parsed,
           factories: [],
-          factoryStats: parsed.factoryStats || defaultHomeConfig.factoryStats || {
-            capacity: { value: "50万+", label: "年产能", labelEn: "Annual Capacity" },
-            patents: { value: "30+", label: "专利技术", labelEn: "Patents" },
-            passRate: { value: "99.8%", label: "合格率", labelEn: "Pass Rate" },
-            experience: { value: "20+", label: "年行业经验", labelEn: "Years Experience" }
-          },
+          factoryStats: (parsed.factoryStats as FactoryStat[]) || (defaultHomeConfig.factoryStats as FactoryStat[]) || [
+            { id: "bases", value: "5+", label: "生产基地", labelEn: "Production Bases", icon: "Factory" },
+            { id: "capacity", value: "2.8M", label: "年产能（件）", labelEn: "Annual Capacity (pcs)", icon: "Box" },
+            { id: "countries", value: "50+", label: "出口国家", labelEn: "Export Countries", icon: "Globe" },
+            { id: "certification", value: "ISO9001", label: "质量认证", labelEn: "Quality Certified", icon: "Award" }
+          ],
           factorySection: parsed.factorySection || defaultHomeConfig.factorySection || {
             title: "先进生产设施",
             titleEn: "Advanced Manufacturing Facilities",
@@ -476,22 +487,23 @@ const Home = () => {
                   {lang === 'zh' ? homeConfig.factorySection?.description : homeConfig.factorySection?.descriptionEn}
                 </p>
                 <div className="grid grid-cols-2 gap-4 mb-8">
-                  <div className="bg-blue-50 rounded-xl p-4">
-                    <div className="text-3xl font-bold text-blue-600">{homeConfig.factoryStats?.capacity?.value}</div>
-                    <div className="text-sm text-gray-600">{lang === 'zh' ? homeConfig.factoryStats?.capacity?.label : homeConfig.factoryStats?.capacity?.labelEn}</div>
-                  </div>
-                  <div className="bg-green-50 rounded-xl p-4">
-                    <div className="text-3xl font-bold text-green-600">{homeConfig.factoryStats?.patents?.value}</div>
-                    <div className="text-sm text-gray-600">{lang === 'zh' ? homeConfig.factoryStats?.patents?.label : homeConfig.factoryStats?.patents?.labelEn}</div>
-                  </div>
-                  <div className="bg-yellow-50 rounded-xl p-4">
-                    <div className="text-3xl font-bold text-yellow-600">{homeConfig.factoryStats?.passRate?.value}</div>
-                    <div className="text-sm text-gray-600">{lang === 'zh' ? homeConfig.factoryStats?.passRate?.label : homeConfig.factoryStats?.passRate?.labelEn}</div>
-                  </div>
-                  <div className="bg-purple-50 rounded-xl p-4">
-                    <div className="text-3xl font-bold text-purple-600">{homeConfig.factoryStats?.experience?.value}</div>
-                    <div className="text-sm text-gray-600">{lang === 'zh' ? homeConfig.factoryStats?.experience?.label : homeConfig.factoryStats?.experience?.labelEn}</div>
-                  </div>
+                  {homeConfig.factoryStats?.map((stat, index) => {
+                    const IconComponent = iconMap[stat.icon] || Building;
+                    const colors = [
+                      'bg-blue-50 text-blue-600',
+                      'bg-green-50 text-green-600',
+                      'bg-yellow-50 text-yellow-600',
+                      'bg-purple-50 text-purple-600',
+                    ];
+                    const colorClass = colors[index % colors.length];
+                    return (
+                      <div key={stat.id} className={`${colorClass.split(' ')[0]} rounded-xl p-4`}>
+                        <IconComponent className={`w-6 h-6 mb-2 ${colorClass.split(' ')[1]}`} />
+                        <div className={`text-3xl font-bold ${colorClass.split(' ')[1]}`}>{stat.value}</div>
+                        <div className="text-sm text-gray-600">{lang === 'zh' ? stat.label : stat.labelEn}</div>
+                      </div>
+                    );
+                  })}
                 </div>
                 <Link to="/factory" className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors">
                   {lang === 'zh' ? homeConfig.factorySection?.buttonText : homeConfig.factorySection?.buttonTextEn}
@@ -549,7 +561,7 @@ const Home = () => {
                     {index === 3 && <Users className="w-8 h-8 text-white" />}
                   </div>
                   <div className="text-4xl md:text-5xl font-bold text-white mb-2">
-                    {stat.value}
+                    {lang === 'zh' ? stat.value : (stat.valueEn || stat.value)}
                   </div>
                   <div className="text-blue-200">{lang === 'zh' ? stat.label : stat.labelEn}</div>
                 </div>

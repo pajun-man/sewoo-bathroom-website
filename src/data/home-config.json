@@ -63,28 +63,36 @@
       "image": "https://images.unsplash.com/photo-1585421514738-01798e348b17?w=600"
     }
   ],
-  "factoryStats": {
-    "capacity": {
-      "value": "50万+",
-      "label": "年产能",
-      "labelEn": "Annual Capacity"
+  "factoryStats": [
+    {
+      "id": "bases",
+      "value": "5+",
+      "label": "生产基地",
+      "labelEn": "Production Bases",
+      "icon": "Factory"
     },
-    "patents": {
-      "value": "30+",
-      "label": "专利技术",
-      "labelEn": "Patents"
+    {
+      "id": "capacity",
+      "value": "2.8M",
+      "label": "年产能（件）",
+      "labelEn": "Annual Capacity (pcs)",
+      "icon": "Box"
     },
-    "passRate": {
-      "value": "99.8%",
-      "label": "合格率",
-      "labelEn": "Pass Rate"
+    {
+      "id": "countries",
+      "value": "50+",
+      "label": "出口国家",
+      "labelEn": "Export Countries",
+      "icon": "Globe"
     },
-    "experience": {
-      "value": "20+",
-      "label": "年行业经验",
-      "labelEn": "Years Experience"
+    {
+      "id": "certification",
+      "value": "ISO9001",
+      "label": "质量认证",
+      "labelEn": "Quality Certified",
+      "icon": "Award"
     }
-  },
+  ],
   "factorySection": {
     "title": "五大生产基地",
     "titleEn": "Five Production Bases",
@@ -130,21 +138,25 @@
   "stats": [
     {
       "value": "5",
+      "valueEn": "5",
       "label": "生产基地",
       "labelEn": "Production Bases"
     },
     {
       "value": "50+",
+      "valueEn": "50+",
       "label": "出口国家",
       "labelEn": "Export Countries"
     },
     {
       "value": "20+",
+      "valueEn": "20+",
       "label": "年行业经验",
       "labelEn": "Years Experience"
     },
     {
       "value": "500万+",
+      "valueEn": "5M+",
       "label": "年产能",
       "labelEn": "Annual Capacity"
     }

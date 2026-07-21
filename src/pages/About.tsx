@@ -141,7 +141,7 @@ const About = () => {
 
         <div className="mb-20" id="technology">
           <h2 className="text-4xl font-bold text-gray-900 text-center mb-12">
-            {lang === 'zh' ? '技术创新' : 'Technological Innovation'}
+            {t('技术创新')}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-gray-50 p-8 rounded-lg">

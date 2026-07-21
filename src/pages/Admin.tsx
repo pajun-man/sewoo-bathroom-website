@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Settings, Package, Palette, FileText, Building, Upload, X, Plus, Save, Edit2, Trash2, Mail, MessageSquare, FolderOpen, Download, FileImage, Phone, Calendar, Share2, Check, ChevronDown, ChevronRight, Leaf, Menu, Image as ImageIcon, Tags, Pencil, Database, RefreshCw, Copy as CopyIcon } from 'lucide-react';
+import { Settings, Package, Palette, FileText, Building, Upload, X, Plus, Save, Edit2, Trash2, Mail, MessageSquare, FolderOpen, Download, FileImage, Phone, Calendar, Share2, Check, ChevronDown, ChevronRight, Leaf, Menu, Image as ImageIcon, Tags, Pencil, Database, RefreshCw, Copy as CopyIcon, Factory, Box, Globe, Award } from 'lucide-react';
 import defaultFactories from '../data/factories.json';
 import defaultProducts from '../data/products.json';
 import defaultCategories from '../data/categories.json';
@@ -337,6 +337,12 @@ const Admin: React.FC = () => {
       { value: '500万+', label: '年产能', labelEn: 'Annual Capacity' },
     ],
     certifications: ['ISO 9001', 'ISO 14001', 'CE认证'],
+    factoryStats: [
+      { id: 'bases', value: '5+', label: '生产基地', labelEn: 'Production Bases', icon: 'Factory' },
+      { id: 'capacity', value: '2.8M', label: '年产能（件）', labelEn: 'Annual Capacity (pcs)', icon: 'Box' },
+      { id: 'countries', value: '50+', label: '出口国家', labelEn: 'Export Countries', icon: 'Globe' },
+      { id: 'certification', value: 'ISO9001', label: '质量认证', labelEn: 'Quality Certified', icon: 'Award' }
+    ],
   });
 
   useEffect(() => {
@@ -637,6 +643,12 @@ const Admin: React.FC = () => {
               media: parsed.hero.media || [],
               useVideo: parsed.hero.useVideo || false,
             },
+            factoryStats: parsed.factoryStats || [
+              { id: 'bases', value: '5+', label: '生产基地', labelEn: 'Production Bases', icon: 'Factory' },
+              { id: 'capacity', value: '2.8M', label: '年产能（件）', labelEn: 'Annual Capacity (pcs)', icon: 'Box' },
+              { id: 'countries', value: '50+', label: '出口国家', labelEn: 'Export Countries', icon: 'Globe' },
+              { id: 'certification', value: 'ISO9001', label: '质量认证', labelEn: 'Quality Certified', icon: 'Award' }
+            ],
           });
         } else {
           localStorage.removeItem('homeConfig');
@@ -3925,6 +3937,136 @@ const Admin: React.FC = () => {
                         </div>
                       </div>
                     ))}
+                  </div>
+                </div>
+
+                <div className="bg-white rounded-lg shadow-md p-6">
+                  <div className="flex justify-between items-center mb-6">
+                    <h2 className="text-xl font-bold text-gray-900 flex items-center">
+                      <Award className="w-6 h-6 mr-2 text-indigo-600" />
+                      工厂数据卡片管理
+                    </h2>
+                    <button
+                      onClick={() => {
+                        const newStat = {
+                          id: `stat-${Date.now()}`,
+                          value: '',
+                          label: '',
+                          labelEn: '',
+                          icon: 'Factory'
+                        };
+                        setHomeConfig({
+                          ...homeConfig,
+                          factoryStats: [...(homeConfig.factoryStats || []), newStat]
+                        });
+                      }}
+                      className="flex items-center space-x-2 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
+                    >
+                      <Plus className="w-5 h-5" />
+                      <span>添加数据卡片</span>
+                    </button>
+                  </div>
+
+                  <div className="space-y-4 mb-6">
+                    {(homeConfig.factoryStats || []).map((stat: any, index: number) => (
+                      <div key={stat.id} className="p-4 bg-indigo-50 rounded-lg">
+                        <div className="grid grid-cols-1 md:grid-cols-6 gap-4 items-end">
+                          <div className="md:col-span-1">
+                            <label className="block text-sm font-medium text-gray-700 mb-1">数值</label>
+                            <input
+                              type="text"
+                              value={stat.value}
+                              onChange={(e) => {
+                                const newStats = [...(homeConfig.factoryStats || [])];
+                                newStats[index] = { ...stat, value: e.target.value };
+                                setHomeConfig({ ...homeConfig, factoryStats: newStats });
+                              }}
+                              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500"
+                              placeholder="如 5+"
+                            />
+                          </div>
+                          <div className="md:col-span-2">
+                            <label className="block text-sm font-medium text-gray-700 mb-1">中文标签</label>
+                            <input
+                              type="text"
+                              value={stat.label}
+                              onChange={(e) => {
+                                const newStats = [...(homeConfig.factoryStats || [])];
+                                newStats[index] = { ...stat, label: e.target.value };
+                                setHomeConfig({ ...homeConfig, factoryStats: newStats });
+                              }}
+                              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500"
+                              placeholder="如 生产基地"
+                            />
+                          </div>
+                          <div className="md:col-span-2">
+                            <label className="block text-sm font-medium text-gray-700 mb-1">英文标签</label>
+                            <input
+                              type="text"
+                              value={stat.labelEn}
+                              onChange={(e) => {
+                                const newStats = [...(homeConfig.factoryStats || [])];
+                                newStats[index] = { ...stat, labelEn: e.target.value };
+                                setHomeConfig({ ...homeConfig, factoryStats: newStats });
+                              }}
+                              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500"
+                              placeholder="如 Production Bases"
+                            />
+                          </div>
+                          <div className="md:col-span-1">
+                            <label className="block text-sm font-medium text-gray-700 mb-1">图标</label>
+                            <select
+                              value={stat.icon}
+                              onChange={(e) => {
+                                const newStats = [...(homeConfig.factoryStats || [])];
+                                newStats[index] = { ...stat, icon: e.target.value };
+                                setHomeConfig({ ...homeConfig, factoryStats: newStats });
+                              }}
+                              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500"
+                            >
+                              <option value="Factory">Factory</option>
+                              <option value="Box">Box</option>
+                              <option value="Globe">Globe</option>
+                              <option value="Award">Award</option>
+                              <option value="Building">Building</option>
+                              <option value="Users">Users</option>
+                              <option value="CheckCircle">CheckCircle</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div className="flex justify-between items-center mt-3">
+                          <div className="text-sm text-gray-500">
+                            ID: {stat.id}
+                          </div>
+                          <button
+                            onClick={() => {
+                              const newStats = (homeConfig.factoryStats || []).filter((_: any, i: number) => i !== index);
+                              setHomeConfig({ ...homeConfig, factoryStats: newStats });
+                            }}
+                            className="flex items-center space-x-1 px-3 py-1 text-red-600 hover:bg-red-100 rounded-lg transition-colors text-sm"
+                          >
+                            <Trash2 className="w-4 h-4" />
+                            <span>删除</span>
+                          </button>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+
+                  {(homeConfig.factoryStats || []).length === 0 && (
+                    <div className="text-center py-8 text-gray-500 mb-4">
+                      暂无数据卡片，点击右上角按钮添加
+                    </div>
+                  )}
+
+                  <div className="flex space-x-4">
+                    <button
+                      onClick={handleSaveHomeConfig}
+                      className="flex items-center space-x-2 px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
+                    >
+                      <Save className="w-5 h-5" />
+                      <span>保存数据卡片</span>
+                    </button>
                   </div>
                 </div>
 

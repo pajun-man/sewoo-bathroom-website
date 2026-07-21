@@ -107,8 +107,13 @@ export default {
       quality: '品质至上',
       innovation: '技术创新',
       sustainability: '绿色制造',
-      customer: '客户为本'
+      customer: '客户为本',
+      global: '全球布局'
     },
+    qualityDesc: '严格质量管控体系，确保每件产品达到国际标准。',
+    innovationDesc: '持续研发投入，掌握核心技术，提供OEM/ODM定制服务。',
+    customerDesc: '以客户需求为导向，提供一站式供应链解决方案。',
+    globalDesc: '五大生产基地，覆盖全球50+国家市场。',
     timeline: {
       title: '发展历程',
       2003: '公司成立，首个生产基地投产',
@@ -145,6 +150,11 @@ export default {
       phone: '+86 757 8888 8888',
       email: 'contact@sewoo.com',
       workHours: '周一至周五 9:00 - 18:00'
+    },
+    faq: {
+      title: '常见问题',
+      desc: '在联系我们之前，您可以先查看我们的常见问题解答，或许能找到您需要的答案。',
+      view: '查看 FAQ'
     }
   },
   admin: {
