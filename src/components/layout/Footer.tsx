@@ -164,6 +164,11 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/catalog" className="text-gray-400 hover:text-white transition-colors">
+                  {lang === 'zh' ? '产品图册' : 'Product Catalog'}
+                </Link>
+              </li>
+              <li>
                 <Link to="/contact" className="text-gray-400 hover:text-white transition-colors">
                   {t('联系我们')}
                 </Link>

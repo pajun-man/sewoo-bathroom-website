@@ -3955,10 +3955,10 @@ const Admin: React.FC = () => {
                           labelEn: '',
                           icon: 'Factory'
                         };
-                        setHomeConfig({
-                          ...homeConfig,
-                          factoryStats: [...(homeConfig.factoryStats || []), newStat]
-                        });
+                        const newFactoryStats = [...(homeConfig.factoryStats || []), newStat];
+                        const newConfig = { ...homeConfig, factoryStats: newFactoryStats };
+                        setHomeConfig(newConfig);
+                        localStorage.setItem('homeConfig', JSON.stringify(newConfig));
                       }}
                       className="flex items-center space-x-2 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
                     >
@@ -3979,7 +3979,9 @@ const Admin: React.FC = () => {
                               onChange={(e) => {
                                 const newStats = [...(homeConfig.factoryStats || [])];
                                 newStats[index] = { ...stat, value: e.target.value };
-                                setHomeConfig({ ...homeConfig, factoryStats: newStats });
+                                const newConfig = { ...homeConfig, factoryStats: newStats };
+                                setHomeConfig(newConfig);
+                                localStorage.setItem('homeConfig', JSON.stringify(newConfig));
                               }}
                               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500"
                               placeholder="如 5+"
@@ -3993,7 +3995,9 @@ const Admin: React.FC = () => {
                               onChange={(e) => {
                                 const newStats = [...(homeConfig.factoryStats || [])];
                                 newStats[index] = { ...stat, label: e.target.value };
-                                setHomeConfig({ ...homeConfig, factoryStats: newStats });
+                                const newConfig = { ...homeConfig, factoryStats: newStats };
+                                setHomeConfig(newConfig);
+                                localStorage.setItem('homeConfig', JSON.stringify(newConfig));
                               }}
                               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500"
                               placeholder="如 生产基地"
@@ -4007,7 +4011,9 @@ const Admin: React.FC = () => {
                               onChange={(e) => {
                                 const newStats = [...(homeConfig.factoryStats || [])];
                                 newStats[index] = { ...stat, labelEn: e.target.value };
-                                setHomeConfig({ ...homeConfig, factoryStats: newStats });
+                                const newConfig = { ...homeConfig, factoryStats: newStats };
+                                setHomeConfig(newConfig);
+                                localStorage.setItem('homeConfig', JSON.stringify(newConfig));
                               }}
                               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500"
                               placeholder="如 Production Bases"
@@ -4020,7 +4026,9 @@ const Admin: React.FC = () => {
                               onChange={(e) => {
                                 const newStats = [...(homeConfig.factoryStats || [])];
                                 newStats[index] = { ...stat, icon: e.target.value };
-                                setHomeConfig({ ...homeConfig, factoryStats: newStats });
+                                const newConfig = { ...homeConfig, factoryStats: newStats };
+                                setHomeConfig(newConfig);
+                                localStorage.setItem('homeConfig', JSON.stringify(newConfig));
                               }}
                               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500"
                             >
@@ -4041,7 +4049,9 @@ const Admin: React.FC = () => {
                           <button
                             onClick={() => {
                               const newStats = (homeConfig.factoryStats || []).filter((_: any, i: number) => i !== index);
-                              setHomeConfig({ ...homeConfig, factoryStats: newStats });
+                              const newConfig = { ...homeConfig, factoryStats: newStats };
+                              setHomeConfig(newConfig);
+                              localStorage.setItem('homeConfig', JSON.stringify(newConfig));
                             }}
                             className="flex items-center space-x-1 px-3 py-1 text-red-600 hover:bg-red-100 rounded-lg transition-colors text-sm"
                           >

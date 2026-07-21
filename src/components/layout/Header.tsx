@@ -65,6 +65,7 @@ const defaultNavItems: NavItem[] = siteConfig?.navItems?.length > 0 ? siteConfig
   { path: '/factory', label: '工厂介绍', labelEn: 'Factory' },
   { path: '/about', label: '关于我们', labelEn: 'About' },
   { path: '/dealers', label: '可持续发展', labelEn: 'Sustainability' },
+  { path: '/catalog', label: '产品图册', labelEn: 'Catalog' },
   { path: '/contact', label: '联系我们', labelEn: 'Contact' },
 ];
 

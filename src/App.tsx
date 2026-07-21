@@ -18,6 +18,7 @@ import Dealers from "./pages/Dealers";
 import Admin from "./pages/Admin";
 import ExportData from "./pages/ExportData";
 import Analytics from "./pages/Analytics";
+import Catalog from "./pages/Catalog";
 import { I18nProvider } from "./contexts/I18nContext";
 
 // 访问记录组件
@@ -78,6 +79,7 @@ function App() {
             <Route path="/about" element={<Layout><About /></Layout>} />
             <Route path="/dealers" element={<Layout><Dealers /></Layout>} />
             <Route path="/contact" element={<Layout><Contact /></Layout>} />
+            <Route path="/catalog" element={<Layout><Catalog /></Layout>} />
             <Route path="/analytics" element={<Analytics />} />
             <Route path="/admin" element={<Admin />} />
             <Route path="/export-data" element={<ExportData />} />
