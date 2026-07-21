@@ -229,6 +229,34 @@ const Admin: React.FC = () => {
       treesPlantedLabelEn: 'Trees Planted',
     },
   });
+
+  const [catalogConfig, setCatalogConfig] = useState({
+    title: '',
+    titleEn: '',
+    description: '',
+    descriptionEn: '',
+    buttonText: '',
+    buttonTextEn: '',
+  });
+
+  const [catalogList, setCatalogList] = useState([
+    { id: '1', name: '瓷砖石材材料', nameEn: 'Tiles and Stone Materials', pdfUrl: 'https://catalog.sewoobath.com/1.Tiles-and-Stone-Materials.pdf', size: '16.44 MB' },
+    { id: '2', name: '门窗', nameEn: 'Doors and Windows', pdfUrl: 'https://catalog.sewoobath.com/2.Doors-and-windows.pdf', size: '29.73 MB' },
+    { id: '3', name: '橱柜', nameEn: 'Cabinets', pdfUrl: 'https://catalog.sewoobath.com/3.Cabinets.pdf', size: '26.96 MB' },
+    { id: '4', name: '浴室柜', nameEn: 'Bathroom Cabinets', pdfUrl: 'https://catalog.sewoobath.com/4.Cabinets-Bathroom.pdf', size: '34.37 MB' },
+    { id: '5', name: '浴缸桑拿房', nameEn: 'Bathtubs and Sauna Rooms', pdfUrl: 'https://catalog.sewoobath.com/5.Bathtubs-and-sauna-rooms-2.pdf', size: '30.61 MB' },
+    { id: '6', name: '智能马桶', nameEn: 'Smart Toilets', pdfUrl: 'https://catalog.sewoobath.com/6.Smart-toilets.pdf', size: '10.21 MB' },
+    { id: '7', name: '陶瓷产品', nameEn: 'Ceramics Products', pdfUrl: 'https://catalog.sewoobath.com/7.Ceramics-products.pdf', size: '28.02 MB' },
+    { id: '8', name: '淋浴房', nameEn: 'Shower Doors', pdfUrl: 'https://catalog.sewoobath.com/8.Shower-doors.pdf', size: '8.52 MB' },
+    { id: '9', name: '花洒套装龙头', nameEn: 'Shower Sets and Faucets', pdfUrl: 'https://catalog.sewoobath.com/9.Shower-sets-and-faucets.pdf', size: '6.81 MB' },
+    { id: '10', name: '配件', nameEn: 'Accessories', pdfUrl: 'https://catalog.sewoobath.com/10.Accessories.pdf', size: '24.02 MB' },
+    { id: '11', name: '盆', nameEn: 'Sinks', pdfUrl: 'https://catalog.sewoobath.com/11.Sinks.pdf', size: '7.63 MB' },
+    { id: '12', name: '地毯', nameEn: 'Carpets', pdfUrl: 'https://catalog.sewoobath.com/12.Carpets-1.pdf', size: '34.12 MB' },
+    { id: '13', name: '公共酒店用品', nameEn: 'Public Hotel Supplies', pdfUrl: 'https://catalog.sewoobath.com/13.Public-Hotel-supplies.pdf', size: '34.04 MB' },
+    { id: '14', name: '综合图册', nameEn: 'Comprehensive Atlas', pdfUrl: 'https://catalog.sewoobath.com/Comprehensive-Atlas.pdf', size: '32.66 MB' },
+    { id: '15', name: 'CUPC认证', nameEn: 'CUPC Certification', pdfUrl: 'https://catalog.sewoobath.com/CUPC.pdf', size: '37.57 MB' },
+  ]);
+
   const [newSubcategory, setNewSubcategory] = useState('');
   const [newSubcategoryEn, setNewSubcategoryEn] = useState('');
   const [editingSubcategoryId, setEditingSubcategoryId] = useState<string | null>(null);
@@ -542,6 +570,28 @@ const Admin: React.FC = () => {
         console.error('Failed to parse sustainability data');
       }
     }
+
+    const savedCatalogConfig = localStorage.getItem('catalogConfig');
+    if (savedCatalogConfig) {
+      try {
+        setCatalogConfig(JSON.parse(savedCatalogConfig));
+      } catch {
+        console.error('Failed to parse catalog config');
+      }
+    }
+
+    const savedCatalogList = localStorage.getItem('catalogs');
+    if (savedCatalogList) {
+      try {
+        const parsed = JSON.parse(savedCatalogList);
+        if (Array.isArray(parsed)) {
+          setCatalogList(parsed);
+        }
+      } catch {
+        console.error('Failed to parse catalog list');
+      }
+    }
+
     const savedFactories = localStorage.getItem('factories');
     if (savedFactories) {
       try {
@@ -801,6 +851,12 @@ const Admin: React.FC = () => {
   const handleSaveSustainability = () => {
     localStorage.setItem('sustainability', JSON.stringify(sustainabilityData));
     alert('可持续发展数据保存成功！');
+  };
+
+  const handleSaveCatalog = () => {
+    localStorage.setItem('catalogConfig', JSON.stringify(catalogConfig));
+    localStorage.setItem('catalogs', JSON.stringify(catalogList));
+    alert('图册设置保存成功！');
   };
 
   const handleSaveContactInfo = () => {
@@ -3086,6 +3142,185 @@ const Admin: React.FC = () => {
                       <button onClick={handleSaveSustainability} className="flex items-center space-x-2 px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors">
                         <Save className="w-5 h-5" />
                         <span>保存可持续发展数据</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-8 bg-blue-50 rounded-xl p-6">
+                  <div className="flex justify-between items-center mb-6">
+                    <h3 className="text-lg font-bold text-gray-900 flex items-center">
+                      <FileText className="w-5 h-5 mr-2 text-blue-600" />
+                      图册页面设置
+                    </h3>
+                  </div>
+
+                  <div className="space-y-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-1">页面标题（中文）</label>
+                        <input
+                          type="text"
+                          value={catalogConfig.title || '产品图册下载'}
+                          onChange={(e) => setCatalogConfig({ ...catalogConfig, title: e.target.value })}
+                          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-1">页面标题（英文）</label>
+                        <input
+                          type="text"
+                          value={catalogConfig.titleEn || 'Product Catalog Downloads'}
+                          onChange={(e) => setCatalogConfig({ ...catalogConfig, titleEn: e.target.value })}
+                          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                        />
+                      </div>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-1">页面描述（中文）</label>
+                        <textarea
+                          value={catalogConfig.description || ''}
+                          onChange={(e) => setCatalogConfig({ ...catalogConfig, description: e.target.value })}
+                          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                          rows={2}
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-1">页面描述（英文）</label>
+                        <textarea
+                          value={catalogConfig.descriptionEn || ''}
+                          onChange={(e) => setCatalogConfig({ ...catalogConfig, descriptionEn: e.target.value })}
+                          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                          rows={2}
+                        />
+                      </div>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-1">按钮文字（中文）</label>
+                        <input
+                          type="text"
+                          value={catalogConfig.buttonText || '下载图册'}
+                          onChange={(e) => setCatalogConfig({ ...catalogConfig, buttonText: e.target.value })}
+                          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-1">按钮文字（英文）</label>
+                        <input
+                          type="text"
+                          value={catalogConfig.buttonTextEn || 'Download Catalog'}
+                          onChange={(e) => setCatalogConfig({ ...catalogConfig, buttonTextEn: e.target.value })}
+                          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                        />
+                      </div>
+                    </div>
+
+                    <div className="border-t pt-6">
+                      <h4 className="font-semibold text-gray-900 mb-4 flex items-center">
+                        <FolderOpen className="w-4 h-4 mr-2" />
+                        图册列表
+                        <button
+                          onClick={() => {
+                            const newItem = {
+                              id: `cat-${Date.now()}`,
+                              name: '',
+                              nameEn: '',
+                              pdfUrl: '',
+                              size: ''
+                            };
+                            setCatalogList([...catalogList, newItem]);
+                          }}
+                          className="ml-auto flex items-center space-x-1 px-3 py-1 bg-blue-600 text-white rounded-lg hover:bg-blue-700 text-sm"
+                        >
+                          <Plus className="w-4 h-4" />
+                          <span>添加图册</span>
+                        </button>
+                      </h4>
+                      <div className="space-y-4">
+                        {catalogList.map((item, index) => (
+                          <div key={item.id} className="bg-white rounded-lg p-4">
+                            <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+                              <div>
+                                <label className="block text-sm font-medium text-gray-700 mb-1">名称（中文）</label>
+                                <input
+                                  type="text"
+                                  value={item.name}
+                                  onChange={(e) => {
+                                    const newList = [...catalogList];
+                                    newList[index] = { ...item, name: e.target.value };
+                                    setCatalogList(newList);
+                                  }}
+                                  className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm"
+                                  placeholder="如：瓷砖石材材料"
+                                />
+                              </div>
+                              <div>
+                                <label className="block text-sm font-medium text-gray-700 mb-1">名称（英文）</label>
+                                <input
+                                  type="text"
+                                  value={item.nameEn}
+                                  onChange={(e) => {
+                                    const newList = [...catalogList];
+                                    newList[index] = { ...item, nameEn: e.target.value };
+                                    setCatalogList(newList);
+                                  }}
+                                  className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm"
+                                  placeholder="如：Tiles and Stone"
+                                />
+                              </div>
+                              <div>
+                                <label className="block text-sm font-medium text-gray-700 mb-1">PDF链接</label>
+                                <input
+                                  type="text"
+                                  value={item.pdfUrl}
+                                  onChange={(e) => {
+                                    const newList = [...catalogList];
+                                    newList[index] = { ...item, pdfUrl: e.target.value };
+                                    setCatalogList(newList);
+                                  }}
+                                  className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm"
+                                  placeholder="https://catalog.sewoobath.com/xxx.pdf"
+                                />
+                              </div>
+                              <div>
+                                <label className="block text-sm font-medium text-gray-700 mb-1">文件大小</label>
+                                <input
+                                  type="text"
+                                  value={item.size}
+                                  onChange={(e) => {
+                                    const newList = [...catalogList];
+                                    newList[index] = { ...item, size: e.target.value };
+                                    setCatalogList(newList);
+                                  }}
+                                  className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm"
+                                  placeholder="如：16.44 MB"
+                                />
+                              </div>
+                              <div className="flex items-end">
+                                <button
+                                  onClick={() => {
+                                    const newList = catalogList.filter((_, i) => i !== index);
+                                    setCatalogList(newList);
+                                  }}
+                                  className="w-full px-3 py-2 text-red-600 hover:bg-red-50 rounded-lg text-sm"
+                                >
+                                  删除
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div className="flex space-x-4">
+                      <button onClick={handleSaveCatalog} className="flex items-center space-x-2 px-6 py-3 bg-blue-900 text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <Save className="w-5 h-5" />
+                        <span>保存图册设置</span>
                       </button>
                     </div>
                   </div>
