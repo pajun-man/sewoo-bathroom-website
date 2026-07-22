@@ -233,8 +233,8 @@ const Admin: React.FC = () => {
   const [catalogConfig, setCatalogConfig] = useState({
     title: '',
     titleEn: '',
-    description: '',
-    descriptionEn: '',
+    description: '我们的图册，您需要更多的产品可以查看，现在还在持续更新中...',
+    descriptionEn: 'You can browse our catalog if you need more products, and it is still being updated continuously...',
     buttonText: '',
     buttonTextEn: '',
   });
@@ -244,17 +244,20 @@ const Admin: React.FC = () => {
     { id: '2', name: '门窗', nameEn: 'Doors and Windows', pdfUrl: 'https://catalog.sewoobath.com/2.Doors-and-windows.pdf', size: '29.73 MB' },
     { id: '3', name: '橱柜', nameEn: 'Cabinets', pdfUrl: 'https://catalog.sewoobath.com/3.Cabinets.pdf', size: '26.96 MB' },
     { id: '4', name: '浴室柜', nameEn: 'Bathroom Cabinets', pdfUrl: 'https://catalog.sewoobath.com/4.Cabinets-Bathroom.pdf', size: '34.37 MB' },
-    { id: '5', name: '浴缸桑拿房', nameEn: 'Bathtubs and Sauna Rooms', pdfUrl: 'https://catalog.sewoobath.com/5.Bathtubs-and-sauna-rooms-2.pdf', size: '30.61 MB' },
     { id: '6', name: '智能马桶', nameEn: 'Smart Toilets', pdfUrl: 'https://catalog.sewoobath.com/6.Smart-toilets.pdf', size: '10.21 MB' },
     { id: '7', name: '陶瓷产品', nameEn: 'Ceramics Products', pdfUrl: 'https://catalog.sewoobath.com/7.Ceramics-products.pdf', size: '28.02 MB' },
-    { id: '8', name: '淋浴房', nameEn: 'Shower Doors', pdfUrl: 'https://catalog.sewoobath.com/8.Shower-doors.pdf', size: '8.52 MB' },
+    { id: '8', name: '淋浴房', nameEn: 'Shower Doors', pdfUrl: 'https://catalog.sewoobath.com/8.Shower-door.pdf', size: '9.77 MB' },
     { id: '9', name: '花洒套装龙头', nameEn: 'Shower Sets and Faucets', pdfUrl: 'https://catalog.sewoobath.com/9.Shower-sets-and-faucets.pdf', size: '6.81 MB' },
     { id: '10', name: '配件', nameEn: 'Accessories', pdfUrl: 'https://catalog.sewoobath.com/10.Accessories.pdf', size: '24.02 MB' },
     { id: '11', name: '盆', nameEn: 'Sinks', pdfUrl: 'https://catalog.sewoobath.com/11.Sinks.pdf', size: '7.63 MB' },
-    { id: '12', name: '地毯', nameEn: 'Carpets', pdfUrl: 'https://catalog.sewoobath.com/12.Carpets-1.pdf', size: '34.12 MB' },
     { id: '13', name: '公共酒店用品', nameEn: 'Public Hotel Supplies', pdfUrl: 'https://catalog.sewoobath.com/13.Public-Hotel-supplies.pdf', size: '34.04 MB' },
     { id: '14', name: '综合图册', nameEn: 'Comprehensive Atlas', pdfUrl: 'https://catalog.sewoobath.com/Comprehensive-Atlas.pdf', size: '32.66 MB' },
     { id: '15', name: 'CUPC认证', nameEn: 'CUPC Certification', pdfUrl: 'https://catalog.sewoobath.com/CUPC.pdf', size: '37.57 MB' },
+    { id: 'cat-1784640854587', name: '浴缸桑拿房-1', nameEn: 'Bathtubs and Sauna Rooms-1', pdfUrl: 'https://catalog.sewoobath.com/5.Bathtubs-sauna-rooms-1.pdf', size: '13.32 MB' },
+    { id: 'cat-1784640855026', name: '浴缸桑拿房-2', nameEn: 'Bathtubs and Sauna Rooms-2', pdfUrl: 'https://catalog.sewoobath.com/5.Bathtubs-and-sauna-rooms-2.pdf', size: '30.61 MB' },
+    { id: 'cat-1784640855226', name: '地毯-1', nameEn: 'Carpets-1', pdfUrl: 'https://catalog.sewoobath.com/12.Carpets-1.pdf', size: '34.12 MB' },
+    { id: 'cat-1784640855630', name: '地毯-2', nameEn: 'Carpets-2', pdfUrl: 'https://catalog.sewoobath.com/12.Carpets-2.pdf', size: '29.66 MB' },
+    { id: 'cat-1784640935368', name: '地毯-3', nameEn: 'Carpets-3', pdfUrl: 'https://catalog.sewoobath.com/12.Carpets-3.pdf', size: '27.83 MB' },
   ]);
 
   const [newSubcategory, setNewSubcategory] = useState('');

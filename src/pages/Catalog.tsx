@@ -41,13 +41,6 @@ const defaultCatalogs: CatalogItem[] = [
     size: '34.37 MB'
   },
   {
-    id: '5',
-    name: '浴缸桑拿房',
-    nameEn: 'Bathtubs and Sauna Rooms',
-    pdfUrl: 'https://catalog.sewoobath.com/5.Bathtubs-and-sauna-rooms-2.pdf',
-    size: '30.61 MB'
-  },
-  {
     id: '6',
     name: '智能马桶',
     nameEn: 'Smart Toilets',
@@ -65,8 +58,8 @@ const defaultCatalogs: CatalogItem[] = [
     id: '8',
     name: '淋浴房',
     nameEn: 'Shower Doors',
-    pdfUrl: 'https://catalog.sewoobath.com/8.Shower-doors.pdf',
-    size: '8.52 MB'
+    pdfUrl: 'https://catalog.sewoobath.com/8.Shower-door.pdf',
+    size: '9.77 MB'
   },
   {
     id: '9',
@@ -90,13 +83,6 @@ const defaultCatalogs: CatalogItem[] = [
     size: '7.63 MB'
   },
   {
-    id: '12',
-    name: '地毯',
-    nameEn: 'Carpets',
-    pdfUrl: 'https://catalog.sewoobath.com/12.Carpets-1.pdf',
-    size: '34.12 MB'
-  },
-  {
     id: '13',
     name: '公共酒店用品',
     nameEn: 'Public Hotel Supplies',
@@ -117,6 +103,41 @@ const defaultCatalogs: CatalogItem[] = [
     pdfUrl: 'https://catalog.sewoobath.com/CUPC.pdf',
     size: '37.57 MB'
   },
+  {
+    id: 'cat-1784640854587',
+    name: '浴缸桑拿房-1',
+    nameEn: 'Bathtubs and Sauna Rooms-1',
+    pdfUrl: 'https://catalog.sewoobath.com/5.Bathtubs-sauna-rooms-1.pdf',
+    size: '13.32 MB'
+  },
+  {
+    id: 'cat-1784640855026',
+    name: '浴缸桑拿房-2',
+    nameEn: 'Bathtubs and Sauna Rooms-2',
+    pdfUrl: 'https://catalog.sewoobath.com/5.Bathtubs-and-sauna-rooms-2.pdf',
+    size: '30.61 MB'
+  },
+  {
+    id: 'cat-1784640855226',
+    name: '地毯-1',
+    nameEn: 'Carpets-1',
+    pdfUrl: 'https://catalog.sewoobath.com/12.Carpets-1.pdf',
+    size: '34.12 MB'
+  },
+  {
+    id: 'cat-1784640855630',
+    name: '地毯-2',
+    nameEn: 'Carpets-2',
+    pdfUrl: 'https://catalog.sewoobath.com/12.Carpets-2.pdf',
+    size: '29.66 MB'
+  },
+  {
+    id: 'cat-1784640935368',
+    name: '地毯-3',
+    nameEn: 'Carpets-3',
+    pdfUrl: 'https://catalog.sewoobath.com/12.Carpets-3.pdf',
+    size: '27.83 MB'
+  },
 ];
 
 interface CatalogConfig {
@@ -129,12 +150,12 @@ interface CatalogConfig {
 }
 
 const defaultCatalogConfig: CatalogConfig = {
-  title: '产品图册下载',
-  titleEn: 'Product Catalog Downloads',
-  description: '浏览并下载我们的产品图册，了解全系列卫浴产品详情',
-  descriptionEn: 'Browse and download our product catalogs',
-  buttonText: '下载图册',
-  buttonTextEn: 'Download Catalog',
+  title: '',
+  titleEn: '',
+  description: '我们的图册，您需要更多的产品可以查看，现在还在持续更新中...',
+  descriptionEn: 'You can browse our catalog if you need more products, and it is still being updated continuously...',
+  buttonText: '',
+  buttonTextEn: '',
 };
 
 const Catalog = () => {
