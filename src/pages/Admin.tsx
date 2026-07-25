@@ -357,7 +357,7 @@ const Admin: React.FC = () => {
       buttonTextEn: 'Explore Products',
       button2Text: '参观工厂',
       button2TextEn: 'Visit Factory',
-      backgroundImage: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1920',
+      backgroundImage: 'https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=1920',
       media: [],
       useVideo: false,
     },
