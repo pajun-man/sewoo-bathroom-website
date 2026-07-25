@@ -368,7 +368,7 @@ const Home = () => {
             <div
               className="absolute inset-0"
               style={{
-                backgroundImage: homeConfig.hero.backgroundImage ? `url(${homeConfig.hero.backgroundImage})` : 'url(https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1920)',
+                backgroundImage: homeConfig.hero.backgroundImage ? `url(${homeConfig.hero.backgroundImage})` : 'url(/hero-banner.jpg)',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 opacity: 0.35,
