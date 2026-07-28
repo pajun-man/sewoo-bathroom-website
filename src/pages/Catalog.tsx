@@ -72,8 +72,8 @@ const defaultCatalogs: CatalogItem[] = [
     id: '10',
     name: '配件',
     nameEn: 'Accessories',
-    pdfUrl: 'https://catalog.sewoobath.com/10.Accessories.pdf',
-    size: '24.02 MB'
+    pdfUrl: 'https://catalog.sewoobath.com/10.SEWOO%20Catalog%20of%20Acessories.pdf',
+    size: '26.79 MB'
   },
   {
     id: '11',

@@ -248,7 +248,7 @@ const Admin: React.FC = () => {
     { id: '7', name: '陶瓷产品', nameEn: 'Ceramics Products', pdfUrl: 'https://catalog.sewoobath.com/7.Ceramics-products.pdf', size: '28.02 MB' },
     { id: '8', name: '淋浴房', nameEn: 'Shower Doors', pdfUrl: 'https://catalog.sewoobath.com/8.Shower-door.pdf', size: '9.77 MB' },
     { id: '9', name: '花洒套装龙头', nameEn: 'Shower Sets and Faucets', pdfUrl: 'https://catalog.sewoobath.com/9.Shower-sets-and-faucets.pdf', size: '6.81 MB' },
-    { id: '10', name: '配件', nameEn: 'Accessories', pdfUrl: 'https://catalog.sewoobath.com/10.Accessories.pdf', size: '24.02 MB' },
+    { id: '10', name: '配件', nameEn: 'Accessories', pdfUrl: 'https://catalog.sewoobath.com/10.SEWOO%20Catalog%20of%20Acessories.pdf', size: '26.79 MB' },
     { id: '11', name: '盆', nameEn: 'Sinks', pdfUrl: 'https://catalog.sewoobath.com/11.Sinks.pdf', size: '7.63 MB' },
     { id: '13', name: '公共酒店用品', nameEn: 'Public Hotel Supplies', pdfUrl: 'https://catalog.sewoobath.com/13.Public-Hotel-supplies.pdf', size: '34.04 MB' },
     { id: '14', name: '综合图册', nameEn: 'Comprehensive Atlas', pdfUrl: 'https://catalog.sewoobath.com/Comprehensive-Atlas.pdf', size: '32.66 MB' },
