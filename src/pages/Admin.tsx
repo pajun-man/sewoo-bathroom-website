@@ -316,9 +316,9 @@ const Admin: React.FC = () => {
     addressLine2: '卫浴产业园区88号',
     phone: '+86 400-888-9999',
     email: 'info@sewoo-bath.com',
-    instagramUrl: 'https://instagram.com/sewoobath',
-    facebookUrl: 'https://facebook.com/sewoobath',
-    youtubeUrl: 'https://youtube.com/sewoobath',
+    instagramUrl: 'https://www.instagram.com/sewoomario/',
+    facebookUrl: 'https://www.facebook.com/profile.php?id=61556984946217',
+    youtubeUrl: 'https://www.youtube.com/@SEWOO-Mario',
   });
 
   const [navItems, setNavItems] = useState([
