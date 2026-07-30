@@ -35,9 +35,9 @@ const defaultContactInfo: ContactInfo = {
 };
 
 const defaultSocial: FooterSocial = {
-  instagramUrl: 'https://instagram.com/sewoobath',
-  facebookUrl: 'https://facebook.com/sewoobath',
-  youtubeUrl: 'https://youtube.com/sewoobath',
+  instagramUrl: 'https://www.instagram.com/sewoomario/',
+  facebookUrl: 'https://www.facebook.com/profile.php?id=61556984946217',
+  youtubeUrl: 'https://www.youtube.com/@SEWOO-Mario',
 };
 
 const Footer = () => {
