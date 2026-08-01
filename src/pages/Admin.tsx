@@ -200,9 +200,9 @@ const Admin: React.FC = () => {
       { icon: 'Sun', title: '清洁能源', titleEn: 'Clean Energy', description: '积极投资太阳能和风能项目，为碳中和目标努力。', descriptionEn: 'Actively investing in solar and wind energy projects for carbon neutrality.', stat: 'Zero', statLabel: '碳排放', statLabelEn: 'Carbon Emission' },
     ],
     initiatives: [
-      { title: '节水技术研发', titleEn: 'Water-Saving Technology R&D', description: '持续投入研发更高效的节水技术。', descriptionEn: 'Continuously investing in more efficient water-saving technologies.', image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600' },
-      { title: '环保材料创新', titleEn: 'Eco-Friendly Material Innovation', description: '使用可回收和生物降解材料。', descriptionEn: 'Using recyclable and biodegradable materials.', image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d365f?w=600' },
-      { title: '碳中和工厂', titleEn: 'Carbon-Neutral Factory', description: '所有生产基地已实现碳中和。', descriptionEn: 'All production bases have achieved carbon neutrality.', image: 'https://images.unsplash.com/photo-1600612253971-1e7b7d365f0e?w=600' },
+      { title: '节水技术研发', titleEn: 'Water-Saving Technology R&D', description: '持续投入研发更高效的节水技术。', descriptionEn: 'Continuously investing in more efficient water-saving technologies.', image: 'https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXGreen%20Production.png' },
+      { title: '环保材料创新', titleEn: 'Eco-Friendly Material Innovation', description: '使用可回收和生物降解材料。', descriptionEn: 'Using recyclable and biodegradable materials.', image: 'https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXSaving%20Technologies.png' },
+      { title: '碳中和工厂', titleEn: 'Carbon-Neutral Factory', description: '所有生产基地已实现碳中和。', descriptionEn: 'All production bases have achieved carbon neutrality.', image: 'https://cdn.jsdelivr.net/gh/pajun-man/my-img-bed@main/img/factory-WZXCarbon%20Neutral%20Factory.png' },
     ],
     socialTitle: '回馈社会，创造价值',
     socialTitleEn: 'Giving Back to Society, Creating Value',
