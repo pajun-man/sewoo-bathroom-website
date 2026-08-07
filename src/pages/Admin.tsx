@@ -634,6 +634,7 @@ const Admin: React.FC = () => {
       { id: 'cat-3', name: '智能马桶', nameEn: 'Smart Toilets' },
       { id: 'cat-4', name: '花洒', nameEn: 'Shower Heads' },
       { id: 'cat-5', name: '其他产品', nameEn: 'Other Products' },
+      { id: 'cat-6', name: '浴缸', nameEn: 'Bathtubs' },
     ];
 
     const savedFactoryCategories = localStorage.getItem('factoryCategories');
@@ -641,7 +642,14 @@ const Admin: React.FC = () => {
       try {
         const parsed = JSON.parse(savedFactoryCategories);
         if (Array.isArray(parsed)) {
-          setFactoryCategories(parsed);
+          const merged = [...parsed];
+          defaultFactoryCategories.forEach((dc) => {
+            if (!merged.find((m: FactoryCategory) => m.id === dc.id)) {
+              merged.push(dc);
+            }
+          });
+          setFactoryCategories(merged);
+          localStorage.setItem('factoryCategories', JSON.stringify(merged));
         } else {
           throw new Error('Invalid factory categories format');
         }
