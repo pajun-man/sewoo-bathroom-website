@@ -167,7 +167,7 @@ const Header = () => {
               >
                 <Globe className="w-5 h-5" />
                 <span className="text-sm font-medium">
-                  {lang === 'zh' ? t('中文') : t('English')}
+                  {lang === 'zh' ? '中 / EN' : 'EN / 中'}
                 </span>
                 <ChevronDown className="w-4 h-4" />
               </button>
